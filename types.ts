@@ -1,19 +1,28 @@
+export type Role = "guest" | "jobseeker" | "employer" | "admin";
 
-export type Role = 'guest' | 'jobseeker' | 'employer' | 'admin';
+export type JobStatus =
+  | "draft"
+  | "pending"
+  | "approved"
+  | "published"
+  | "suspended";
 
-export type JobStatus = 'draft' | 'pending' | 'approved' | 'published' | 'suspended';
+export type SalaryType = "hourly" | "daily" | "monthly";
 
-export type SalaryType = 'hourly' | 'daily' | 'monthly';
+export type ApplicationStatus =
+  | "submitted"
+  | "contacted"
+  | "interview"
+  | "offer"
+  | "rejected";
 
-export type ApplicationStatus = 'submitted' | 'contacted' | 'interview' | 'offer' | 'rejected';
-
-export type JobHuntingStatus = 'active' | 'passive' | 'closed';
+export type JobHuntingStatus = "active" | "passive" | "closed";
 
 export interface Profile {
   id: string;
   role: Role;
-  displayName: string;
-  createdAt: string;
+  display_name: string;
+  created_at: string;
 }
 
 export interface SeekerProfile extends Profile {
@@ -35,7 +44,7 @@ export interface Employer {
   areaCity: string;
   contactEmail: string;
   contactPhone: string;
-  status: 'pending' | 'approved' | 'rejected';
+  status: "pending" | "approved" | "rejected";
   vibeTags?: string[];
   preferredMBTI?: string[];
 }
@@ -79,7 +88,7 @@ export interface Application {
   jobTitle: string;
   seekerUserId: string;
   seekerName: string;
-  contactType: 'phone' | 'line' | 'email';
+  contactType: "phone" | "line" | "email";
   contactValue: string;
   message: string;
   status: ApplicationStatus;

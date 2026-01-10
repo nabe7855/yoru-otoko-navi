@@ -72,10 +72,10 @@ const Header: React.FC = () => {
                     className="flex items-center gap-3 px-4 py-2 rounded-xl border border-gray-100 hover:bg-gray-50 transition"
                   >
                     <div className="w-8 h-8 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600 text-xs font-bold">
-                      {user.displayName?.[0] || user.id[0].toUpperCase()}
+                      {user.display_name?.[0] || user.id[0].toUpperCase()}
                     </div>
                     <span className="text-xs font-bold text-gray-700 hidden lg:inline">
-                      {user.displayName || "マイページ"}
+                      {user.display_name || "マイページ"}
                     </span>
                   </Link>
                   <button

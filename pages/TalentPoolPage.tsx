@@ -23,7 +23,7 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
 
   const handleSendOffer = (talent: SeekerProfile) => {
     const message = prompt(
-      `${talent.displayName}さんに送るメッセージを入力してください:`,
+      `${talent.display_name}さんに送るメッセージを入力してください:`,
       "当店の雰囲気にぴったりだと思いスカウトさせていただきました！一度お話しませんか？"
     );
     if (message) {
@@ -31,7 +31,7 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
         jobId: "offer",
         jobTitle: `スカウト (${employer.name})`,
         seekerUserId: talent.id,
-        seekerName: talent.displayName,
+        seekerName: talent.display_name,
         contactType: "line",
         contactValue: "N/A",
         message: message,
@@ -60,11 +60,11 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
           >
             <div className="p-6 bg-indigo-50/30 flex items-center gap-4">
               <div className="w-16 h-16 rounded-2xl bg-white shadow-sm flex items-center justify-center text-2xl font-bold text-indigo-500">
-                {talent.displayName[0]}
+                {talent.display_name?.[0] || talent.id[0]}
               </div>
               <div>
                 <h3 className="font-bold text-lg text-gray-800">
-                  {talent.displayName}
+                  {talent.display_name}
                 </h3>
                 <span className="text-[10px] px-2 py-0.5 bg-indigo-600 text-white font-bold rounded-full uppercase tracking-widest">
                   {talent.mbti || "MBTI不明"}

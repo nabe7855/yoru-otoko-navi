@@ -1,28 +1,25 @@
-import { supabase } from "@/lib/supabase";
+import { createClient } from "@/lib/supabase/client";
 import { Application, Employer, Job, Profile, SeekerProfile } from "@/types";
-import {
-  mockApplications,
-  mockEmployers,
-  mockJobs,
-  mockProfiles,
-} from "./mockData";
+import { mockApplications, mockEmployers, mockJobs } from "./mockData";
+
+const supabase = createClient();
 
 export const jobService = {
   // Profiles
   async getProfiles(): Promise<Profile[]> {
-    const { data, error } = await supabase.from("users").select("*");
+    const { data, error } = await supabase.from("profiles").select("*");
     if (error) {
       console.error("Error fetching profiles:", error);
-      return mockProfiles;
+      return [];
     }
     return data as Profile[];
   },
 
   async getSeekerProfile(userId: string): Promise<SeekerProfile | null> {
     const { data, error } = await supabase
-      .from("seeker_profiles")
-      .select("*, users(*)")
-      .eq("user_id", userId)
+      .from("profiles")
+      .select("*, seeker_profiles(*)")
+      .eq("id", userId)
       .single();
 
     if (error) {
@@ -30,20 +27,43 @@ export const jobService = {
       return null;
     }
 
-    const profile = data.users;
+    const profile = data; // 'profiles' table data
+    const seekerProfileData = data.seeker_profiles; // 'seeker_profiles' table data
+
+    if (!seekerProfileData) {
+      console.warn("No seeker profile data found for user:", userId);
+      return null;
+    }
+
     return {
       ...profile,
-      ...data,
-      personalityTags: data.personality_tags || [],
-      jobHuntingStatus: data.job_hunting_status || "passive",
-      desiredAtmosphere: data.desired_atmosphere || "",
-      desiredPersonType: data.desired_person_type || "",
-      lifestyle: data.lifestyle || "",
+      ...seekerProfileData,
+      personalityTags: seekerProfileData.personality_tags || [],
+      jobHuntingStatus: seekerProfileData.job_hunting_status || "passive",
+      desiredAtmosphere: seekerProfileData.desired_atmosphere || "",
+      desiredPersonType: seekerProfileData.desired_person_type || "",
+      lifestyle: seekerProfileData.lifestyle || "",
     } as SeekerProfile;
   },
 
   async saveSeekerProfile(profile: SeekerProfile): Promise<void> {
-    const { error } = await supabase
+    console.log("Attempting to update profiles table:", profile.id);
+    // Update profiles table
+    const { error: profileError } = await supabase
+      .from("profiles")
+      .update({
+        display_name: profile.display_name,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", profile.id);
+
+    if (profileError) {
+      console.error("profiles table update failed:", profileError);
+      return;
+    }
+
+    // Update seeker_profiles table
+    const { error: seekerProfileError } = await supabase
       .from("seeker_profiles")
       .update({
         personality_tags: profile.personalityTags,
@@ -55,7 +75,8 @@ export const jobService = {
         updated_at: new Date().toISOString(),
       })
       .eq("user_id", profile.id);
-    if (error) console.error("Error saving seeker profile:", error);
+    if (seekerProfileError)
+      console.error("Error saving seeker profile:", seekerProfileError);
   },
 
   // Jobs

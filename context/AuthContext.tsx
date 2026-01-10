@@ -1,18 +1,18 @@
 "use client";
 
-import { supabase } from "@/lib/supabase";
+import { createClient } from "@/lib/supabase/client";
 import { Profile, Role } from "@/types";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 interface AuthContextType {
   user: Profile | null;
-  login: (email: string, password: string) => Promise<{ error: any }>;
+  login: (email: string, password: string) => Promise<{ error: Error | null }>;
   signup: (
     email: string,
     password: string,
     role: Role,
     displayName: string
-  ) => Promise<{ error: any }>;
+  ) => Promise<{ error: Error | null }>;
   logout: () => Promise<void>;
   isLoading: boolean;
 }
@@ -22,31 +22,42 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
+  const supabase = createClient();
   const [user, setUser] = useState<Profile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchProfile = async (userId: string) => {
-    const { data, error } = await supabase
-      .from("users")
-      .select("*")
-      .eq("id", userId)
-      .single();
+  const fetchProfile = async (userId: string): Promise<Profile | null> => {
+    try {
+      const { data, error } = await supabase
+        .from("profiles")
+        .select("*")
+        .eq("id", userId)
+        .single();
 
-    if (error) {
-      console.error("Error fetching profile:", error);
+      if (error) {
+        if (error.code === "PGRST116") {
+          // データがないだけならログを出して null を返す
+          console.log("No profile found for user:", userId);
+        } else {
+          console.error("Error fetching profile:", error);
+        }
+        return null;
+      }
+      return data as Profile;
+    } catch (e) {
+      console.error("Unexpected error in fetchProfile:", e);
       return null;
     }
-    return data as Profile;
   };
 
   useEffect(() => {
-    // 現在のセッションを確認
     const initAuth = async () => {
+      setIsLoading(true);
       const {
-        data: { session },
-      } = await supabase.auth.getSession();
-      if (session?.user) {
-        const profile = await fetchProfile(session.user.id);
+        data: { user: authUser },
+      } = await supabase.auth.getUser();
+      if (authUser) {
+        const profile = await fetchProfile(authUser.id);
         setUser(profile);
       }
       setIsLoading(false);
@@ -54,7 +65,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
     initAuth();
 
-    // 認証状態の変化を監視
     const {
       data: { subscription },
     } = supabase.auth.onAuthStateChange(async (event, session) => {
@@ -77,7 +87,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
       email,
       password,
     });
-    return { error };
+    return { error: error as Error | null };
   };
 
   const signup = async (
@@ -86,25 +96,26 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     role: Role,
     displayName: string
   ) => {
-    // 1. Auth 登録
+    console.log("Starting sign up process for:", email);
     const { data, error } = await supabase.auth.signUp({
       email,
       password,
+      options: {
+        data: {
+          display_name: displayName,
+          role: role,
+        },
+      },
     });
 
-    if (error) return { error };
-
-    if (data.user) {
-      // 2. profiles (または users) テーブルに情報を保存
-      const { error: profileError } = await supabase.from("users").insert({
-        id: data.user.id,
-        email,
-        role,
-        display_name: displayName,
-      });
-      if (profileError) return { error: profileError };
+    if (error) {
+      console.error("Sign up failed:", error);
+      return { error: error as Error | null };
     }
 
+    console.log(
+      "User signed up successfully. Profile will be created via database trigger."
+    );
     return { error: null };
   };
 
