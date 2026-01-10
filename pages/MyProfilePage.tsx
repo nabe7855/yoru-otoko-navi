@@ -14,17 +14,20 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
   const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
-    const p = jobService.getSeekerProfile(userId);
-    if (p) {
-      setProfile({
-        ...p,
-        personalityTags: p.personalityTags || [],
-        jobHuntingStatus: p.jobHuntingStatus || "passive",
-        desiredAtmosphere: p.desiredAtmosphere || "",
-        desiredPersonType: p.desiredPersonType || "",
-        lifestyle: p.lifestyle || "",
-      });
-    }
+    const fetchProfile = async () => {
+      const p = await jobService.getSeekerProfile(userId);
+      if (p) {
+        setProfile({
+          ...p,
+          personalityTags: p.personalityTags || [],
+          jobHuntingStatus: p.jobHuntingStatus || "passive",
+          desiredAtmosphere: p.desiredAtmosphere || "",
+          desiredPersonType: p.desiredPersonType || "",
+          lifestyle: p.lifestyle || "",
+        });
+      }
+    };
+    fetchProfile();
   }, [userId]);
 
   const handleSave = (e: React.FormEvent) => {

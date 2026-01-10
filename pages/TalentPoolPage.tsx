@@ -14,8 +14,11 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
   );
 
   useEffect(() => {
-    const list = jobService.getMatchingTalents(employer.id);
-    setTalents(list);
+    const fetchTalents = async () => {
+      const list = await jobService.getMatchingTalents(employer.id);
+      setTalents(list);
+    };
+    fetchTalents();
   }, [employer.id]);
 
   const handleSendOffer = (talent: SeekerProfile) => {

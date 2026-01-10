@@ -16,9 +16,16 @@ const JobListPage: React.FC<JobListPageProps> = ({
   if (!initialFilters) return null;
   const [filters, setFilters] = useState(initialFilters);
   const [jobs, setJobs] = useState<Job[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setJobs(jobService.searchJobs(filters));
+    const fetchJobs = async () => {
+      setLoading(true);
+      const data = await jobService.searchJobs(filters);
+      setJobs(data);
+      setLoading(false);
+    };
+    fetchJobs();
   }, [filters]);
 
   const toggleTag = (tag: string) => {
@@ -149,7 +156,9 @@ const JobListPage: React.FC<JobListPageProps> = ({
         </div>
 
         <div className="space-y-4">
-          {jobs.length > 0 ? (
+          {loading ? (
+            <div className="py-20 text-center text-gray-400">読み込み中...</div>
+          ) : jobs.length > 0 ? (
             jobs.map((job) => (
               <JobCard key={job.id} job={job} onClick={onViewJob} />
             ))

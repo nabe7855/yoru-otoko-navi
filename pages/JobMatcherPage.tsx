@@ -58,9 +58,14 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
             text: "ありがとうございます！あなたにぴったりの求人を解析しました...",
           },
         ]);
-        const res = jobService.getMatchedJobs(newAnswers);
-        setResults(res);
-        setIsFinished(true);
+        const fetchResults = async () => {
+          const matched = await jobService.searchJobs(newAnswers);
+          // hot は暫定的に全公開求人を代入
+          const hot = await jobService.getJobs();
+          setResults({ matched: matched.slice(0, 5), hot: hot.slice(0, 3) });
+          setIsFinished(true);
+        };
+        fetchResults();
       }, 1000);
     }
   };

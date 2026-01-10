@@ -39,13 +39,17 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
   const [relatedJobs, setRelatedJobs] = useState<Job[]>([]);
 
   useEffect(() => {
-    const allJobs = jobService
-      .getJobs()
-      .filter((j) => j.status === "published" && j.id !== job.id);
-    const related = allJobs
-      .filter((j) => j.category === job.category || j.areaPref === job.areaPref)
-      .slice(0, 3);
-    setRelatedJobs(related);
+    const fetchRelatedJobs = async () => {
+      const allJobs = await jobService.getJobs();
+      const filtered = allJobs.filter((j) => j.id !== job.id);
+      const related = filtered
+        .filter(
+          (j) => j.category === job.category || j.areaPref === job.areaPref
+        )
+        .slice(0, 3);
+      setRelatedJobs(related);
+    };
+    fetchRelatedJobs();
   }, [job]);
 
   return (

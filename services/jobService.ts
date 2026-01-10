@@ -1,4 +1,5 @@
-import { Application, Employer, Job, Profile, SeekerProfile } from "../types";
+import { supabase } from "@/lib/supabase";
+import { Application, Employer, Job, Profile, SeekerProfile } from "@/types";
 import {
   mockApplications,
   mockEmployers,
@@ -6,157 +7,227 @@ import {
   mockProfiles,
 } from "./mockData";
 
-const STORAGE_KEYS = {
-  JOBS: "nightjob_jobs",
-  APPS: "nightjob_applications",
-  EMPLOYERS: "nightjob_employers",
-  PROFILES: "nightjob_profiles",
-};
-
-const getStorage = <T>(key: string, initial: T[]): T[] => {
-  const data = localStorage.getItem(key);
-  return data ? JSON.parse(data) : initial;
-};
-
-const setStorage = <T>(key: string, data: T[]) => {
-  localStorage.setItem(key, JSON.stringify(data));
-};
-
 export const jobService = {
-  getJobs: (): Job[] => getStorage(STORAGE_KEYS.JOBS, mockJobs),
-
-  getJobById: (id: string): Job | undefined => {
-    return jobService.getJobs().find((j) => j.id === id);
+  // Profiles
+  async getProfiles(): Promise<Profile[]> {
+    const { data, error } = await supabase.from("users").select("*");
+    if (error) {
+      console.error("Error fetching profiles:", error);
+      return mockProfiles;
+    }
+    return data as Profile[];
   },
 
-  searchJobs: (filters: {
-    category?: string;
-    pref?: string;
-    tags?: string[];
-    salaryMin?: number;
-  }): Job[] => {
-    let jobs = jobService.getJobs().filter((j) => j.status === "published");
-    if (filters.category)
-      jobs = jobs.filter((j) => j.category === filters.category);
-    if (filters.pref) jobs = jobs.filter((j) => j.areaPref === filters.pref);
-    if (filters.salaryMin !== undefined) {
-      const min = filters.salaryMin;
-      jobs = jobs.filter((j) => j.salaryMin >= min);
+  async getSeekerProfile(userId: string): Promise<SeekerProfile | null> {
+    const { data, error } = await supabase
+      .from("seeker_profiles")
+      .select("*, users(*)")
+      .eq("user_id", userId)
+      .single();
+
+    if (error) {
+      console.error("Error fetching seeker profile:", error);
+      return null;
     }
-    if (filters.tags && filters.tags.length > 0) {
-      const activeTags = filters.tags;
-      jobs = jobs.filter((j) => activeTags.every((t) => j.tags.includes(t)));
-    }
-    return jobs;
-  },
 
-  getMatchedJobs: (answers: any): { matched: Job[]; hot: Job[] } => {
-    const allJobs = jobService
-      .getJobs()
-      .filter((j) => j.status === "published");
-
-    const scored = allJobs
-      .map((job) => {
-        let score = 0;
-        if (job.areaPref === answers.area) score += 50;
-        if (answers.income && job.salaryMin >= parseInt(answers.income))
-          score += 30;
-        if (job.isHot) score += 20;
-
-        return { job, score };
-      })
-      .sort((a, b) => b.score - a.score);
-
+    const profile = data.users;
     return {
-      matched: scored.slice(0, 5).map((s) => s.job),
-      hot: allJobs.filter((j) => j.isHot).slice(0, 3),
-    };
+      ...profile,
+      ...data,
+      personalityTags: data.personality_tags || [],
+      jobHuntingStatus: data.job_hunting_status || "passive",
+      desiredAtmosphere: data.desired_atmosphere || "",
+      desiredPersonType: data.desired_person_type || "",
+      lifestyle: data.lifestyle || "",
+    } as SeekerProfile;
   },
 
-  createJob: (jobData: Partial<Job>): Job => {
-    const jobs = jobService.getJobs();
-    const newJob: Job = {
-      id: `j${Date.now()}`,
-      status: "pending",
-      publishedAt: "",
-      updatedAt: new Date().toISOString(),
-      images: [],
-      tags: [],
-      ...jobData,
-    } as Job;
-    setStorage(STORAGE_KEYS.JOBS, [newJob, ...jobs]);
-    return newJob;
+  async saveSeekerProfile(profile: SeekerProfile): Promise<void> {
+    const { error } = await supabase
+      .from("seeker_profiles")
+      .update({
+        personality_tags: profile.personalityTags,
+        job_hunting_status: profile.jobHuntingStatus,
+        desired_atmosphere: profile.desiredAtmosphere,
+        desired_person_type: profile.desiredPersonType,
+        lifestyle: profile.lifestyle,
+        mbti: profile.mbti,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("user_id", profile.id);
+    if (error) console.error("Error saving seeker profile:", error);
   },
 
-  updateJobStatus: (jobId: string, status: Job["status"]) => {
-    const jobs = jobService.getJobs();
-    const updated = jobs.map((j) =>
-      j.id === jobId
-        ? {
-            ...j,
-            status,
-            publishedAt:
-              status === "published" ? new Date().toISOString() : j.publishedAt,
-          }
-        : j
-    );
-    setStorage(STORAGE_KEYS.JOBS, updated);
-  },
+  // Jobs
+  async getJobs(): Promise<Job[]> {
+    const { data, error } = await supabase
+      .from("jobs")
+      .select("*")
+      .eq("status", "published")
+      .order("published_at", { ascending: false });
 
-  getApplications: (): Application[] =>
-    getStorage(STORAGE_KEYS.APPS, mockApplications),
-
-  submitApplication: (appData: Partial<Application>) => {
-    const apps = jobService.getApplications();
-    const newApp: Application = {
-      id: `a${Date.now()}`,
-      createdAt: new Date().toISOString(),
-      status: "submitted",
-      ...appData,
-    } as Application;
-    setStorage(STORAGE_KEYS.APPS, [newApp, ...apps]);
-    return newApp;
-  },
-
-  updateApplicationStatus: (appId: string, status: Application["status"]) => {
-    const apps = jobService.getApplications();
-    const updated = apps.map((a) => (a.id === appId ? { ...a, status } : a));
-    setStorage(STORAGE_KEYS.APPS, updated);
-  },
-
-  getEmployers: (): Employer[] =>
-    getStorage(STORAGE_KEYS.EMPLOYERS, mockEmployers),
-
-  updateEmployerStatus: (employerId: string, status: Employer["status"]) => {
-    const employers = jobService.getEmployers();
-    const updated = employers.map((e) =>
-      e.id === employerId ? { ...e, status } : e
-    );
-    setStorage(STORAGE_KEYS.EMPLOYERS, updated);
-  },
-
-  getProfiles: (): Profile[] => getStorage(STORAGE_KEYS.PROFILES, mockProfiles),
-
-  getSeekerProfile: (userId: string): SeekerProfile | undefined => {
-    const profiles = jobService.getProfiles();
-    return profiles.find((p) => p.id === userId) as SeekerProfile;
-  },
-
-  saveSeekerProfile: (profile: SeekerProfile) => {
-    const profiles = jobService.getProfiles();
-    const updated = profiles.map((p) => (p.id === profile.id ? profile : p));
-    if (!profiles.find((p) => p.id === profile.id)) {
-      updated.push(profile);
+    if (error) {
+      console.error("Error fetching jobs:", error);
+      return mockJobs;
     }
-    setStorage(STORAGE_KEYS.PROFILES, updated);
+    return data as Job[];
   },
 
-  getMatchingTalents: (employerId: string): SeekerProfile[] => {
-    const employer = jobService.getEmployers().find((e) => e.id === employerId);
-    if (!employer) return [];
-    const allProfiles = jobService.getProfiles() as SeekerProfile[];
-    return allProfiles
-      .filter((p) => p.role === "jobseeker" && p.jobHuntingStatus === "active")
-      .map((p) => p);
+  async getJobById(id: string): Promise<Job | null> {
+    const { data, error } = await supabase
+      .from("jobs")
+      .select("*")
+      .eq("id", id)
+      .single();
+
+    if (error) {
+      console.error("Error fetching job by id:", error);
+      return null;
+    }
+    return data as Job;
+  },
+
+  async searchJobs(filters: any): Promise<Job[]> {
+    let query = supabase.from("jobs").select("*").eq("status", "published");
+
+    if (filters.category) query = query.eq("category", filters.category);
+    if (filters.pref) query = query.eq("area_pref", filters.pref);
+    if (filters.city) query = query.ilike("area_city", `%${filters.city}%`);
+    if (filters.employmentType)
+      query = query.eq("employment_type", filters.employmentType);
+    if (filters.salaryMin !== undefined)
+      query = query.gte("salary_min", filters.salaryMin);
+
+    if (filters.tags && filters.tags.length > 0) {
+      query = query.contains("tags", filters.tags);
+    }
+
+    const { data, error } = await query.order("published_at", {
+      ascending: false,
+    });
+
+    if (error) {
+      console.error("Error searching jobs:", error);
+      return [];
+    }
+    return data as Job[];
+  },
+
+  async createJob(jobData: any): Promise<Job | null> {
+    const newJob = {
+      ...jobData,
+      id: crypto.randomUUID(),
+      status: "pending",
+      created_at: new Date().toISOString(),
+      updated_at: new Date().toISOString(),
+    };
+
+    const { data, error } = await supabase
+      .from("jobs")
+      .insert([newJob])
+      .select()
+      .single();
+    if (error) {
+      console.error("Error creating job:", error);
+      return null;
+    }
+    return data as Job;
+  },
+
+  async updateJobStatus(jobId: string, status: Job["status"]): Promise<void> {
+    const { error } = await supabase
+      .from("jobs")
+      .update({
+        status,
+        published_at:
+          status === "published" ? new Date().toISOString() : undefined,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", jobId);
+    if (error) console.error("Error updating job status:", error);
+  },
+
+  // Employers
+  async getEmployers(): Promise<Employer[]> {
+    const { data, error } = await supabase.from("employers").select("*");
+    if (error) {
+      console.error("Error fetching employers:", error);
+      return mockEmployers;
+    }
+    return data as Employer[];
+  },
+
+  async updateEmployerStatus(
+    employerId: string,
+    status: Employer["status"]
+  ): Promise<void> {
+    const { error } = await supabase
+      .from("employers")
+      .update({ status })
+      .eq("id", employerId);
+    if (error) console.error("Error updating employer status:", error);
+  },
+
+  // Applications
+  async getApplications(): Promise<Application[]> {
+    const { data, error } = await supabase
+      .from("applications")
+      .select("*")
+      .order("created_at", { ascending: false });
+
+    if (error) {
+      console.error("Error fetching applications:", error);
+      return mockApplications;
+    }
+    return data as Application[];
+  },
+
+  async submitApplication(appData: any): Promise<Application | null> {
+    const newApp = {
+      ...appData,
+      id: crypto.randomUUID(),
+      status: "submitted",
+      created_at: new Date().toISOString(),
+    };
+
+    const { data, error } = await supabase
+      .from("applications")
+      .insert([newApp])
+      .select()
+      .single();
+    if (error) {
+      console.error("Error submitting application:", error);
+      return null;
+    }
+    return data as Application;
+  },
+
+  async updateApplicationStatus(
+    appId: string,
+    status: Application["status"]
+  ): Promise<void> {
+    const { error } = await supabase
+      .from("applications")
+      .update({ status })
+      .eq("id", appId);
+    if (error) console.error("Error updating application status:", error);
+  },
+
+  async getMatchingTalents(employerId: string): Promise<SeekerProfile[]> {
+    const { data, error } = await supabase
+      .from("seeker_profiles")
+      .select("*, users(*)")
+      .eq("job_hunting_status", "active");
+
+    if (error) {
+      console.error("Error fetching matching talents:", error);
+      return [];
+    }
+    return data.map((d: any) => ({
+      ...d.users,
+      ...d,
+      personalityTags: d.personality_tags || [],
+      jobHuntingStatus: d.job_hunting_status || "active",
+    })) as SeekerProfile[];
   },
 };

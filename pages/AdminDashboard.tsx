@@ -6,11 +6,19 @@ const AdminDashboard: React.FC = () => {
   const [pendingJobs, setPendingJobs] = useState<Job[]>([]);
   const [pendingEmployers, setPendingEmployers] = useState<Employer[]>([]);
 
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    setPendingJobs(jobService.getJobs().filter((j) => j.status === "pending"));
-    setPendingEmployers(
-      jobService.getEmployers().filter((e) => e.status === "pending")
-    );
+    const fetchPending = async () => {
+      setLoading(true);
+      const allJobs = await jobService.getJobs();
+      setPendingJobs(allJobs.filter((j) => j.status === "pending"));
+
+      const allEmployers = await jobService.getEmployers();
+      setPendingEmployers(allEmployers.filter((e) => e.status === "pending"));
+      setLoading(false);
+    };
+    fetchPending();
   }, []);
 
   const handleApproveJob = (jobId: string) => {

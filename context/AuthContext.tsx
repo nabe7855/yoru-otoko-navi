@@ -28,8 +28,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     setIsLoading(false);
   }, []);
 
-  const login = (role: Role) => {
-    const profiles = jobService.getProfiles();
+  const login = async (role: Role) => {
+    const profiles = await jobService.getProfiles();
     const profile = profiles.find((p) => p.role === role) || profiles[0];
     setUser(profile);
     localStorage.setItem("demo_user", JSON.stringify(profile));

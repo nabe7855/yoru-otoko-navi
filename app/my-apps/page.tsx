@@ -1,24 +1,33 @@
 "use client";
 import { useAuth } from "@/context/AuthContext";
 import { jobService } from "@/services/jobService";
-import { Application } from "@/types";
+import type { Application } from "@/types";
 import { useEffect, useState } from "react";
 
 export default function MyApps() {
   const { user } = useAuth();
   const [apps, setApps] = useState<Application[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (user) {
-      const allApps = jobService.getApplications();
-      setApps(allApps.filter((a) => a.seekerUserId === user.id));
-    }
+    const fetchApps = async () => {
+      if (user) {
+        setLoading(true);
+        const allApps = await jobService.getApplications();
+        setApps(allApps.filter((a) => a.seekerUserId === user.id));
+        setLoading(false);
+      }
+    };
+    fetchApps();
   }, [user]);
 
   if (!user)
     return (
       <div className="p-20 text-center text-gray-400">ログインが必要です。</div>
     );
+
+  if (loading)
+    return <div className="p-20 text-center text-gray-400">読み込み中...</div>;
 
   return (
     <div className="container mx-auto px-4 py-12 max-w-4xl">
