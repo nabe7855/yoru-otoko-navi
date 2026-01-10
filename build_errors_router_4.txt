@@ -1,0 +1,63 @@
+﻿
+> yoru-otoko-navi@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+笨・Compiled successfully in 1587.5ms
+  Running TypeScript ...
+node.exe : Failed to
+ compile.
+発生場所 行:1 文字:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Program Files\nod
+ejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Fail   
+ ed to compile.:    
+String) [], Rem    o
+teException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+
+./app/layout.tsx:6:1
+9
+Type error: Cannot f
+ind name 'Geist'.
+
+[0m [90m 4 |[39m 
+[36mimport[39m [3
+2m"./globals.css"[3
+9m[33m;[39m
+ [90m 5 |[39m
+[31m[1m>[22m[39m
+[90m 6 |[39m [36m
+const[39m geistSans
+ [33m=[39m [33mGe
+ist[39m({
+ [90m   |[39m     
+              [31m
+[1m^[22m[39m
+ [90m 7 |[39m   va
+riable[33m:[39m [
+32m"--font-geist-san
+s"[39m[33m,[39m
+ [90m 8 |[39m   su
+bsets[33m:[39m [[
+32m"latin"[39m][33
+m,[39m
+ [90m 9 |[39m })[
+33m;[39m[0m
+Next.js build worker
+ exited with code: 1
+ and signal: null
+

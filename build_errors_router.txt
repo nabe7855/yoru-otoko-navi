@@ -1,0 +1,341 @@
+﻿
+> yoru-otoko-navi@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+node.exe : 
+発生場所 行:1 文字:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Program Files\nod
+ejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (:Str   
+ ing) [], Remote    
+Exception
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+> Build error occurr
+ed
+Error: Turbopack bui
+ld failed with 3 err
+ors:
+./context/AuthContex
+t.tsx:3:17
+Ecmascript file had 
+an error
+[0m [90m 1 |[39m 
+[36mimport[39m { j
+obService } [36mfro
+m[39m [32m"@/servi
+ces/jobService"[39m
+[33m;[39m
+ [90m 2 |[39m [36
+mimport[39m { [33m
+Profile[39m[33m,[
+39m [33mRole[39m }
+ [36mfrom[39m [32
+m"@/types"[39m[33m
+;[39m
+[31m[1m>[22m[39m
+[90m 3 |[39m [36m
+import[39m [33mRea
+ct[39m[33m,[39m {
+ createContext[33m,
+[39m useContext[33
+m,[39m useEffect[3
+3m,[39m useState } 
+[36mfrom[39m [32m
+"react"[39m[33m;[
+39m
+ [90m   |[39m     
+            [31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m[31m[1
+m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36
+minterface[39m [33
+mAuthContextType[39
+m {
+ [90m 6 |[39m   us
+er[33m:[39m [33mP
+rofile[39m [33m|[
+39m [36mnull[39m[
+33m;[39m[0m
+
+You're importing a c
+omponent that needs 
+`createContext`. Thi
+s React Hook only wo
+rks in a Client Comp
+onent. To fix, mark 
+the file (or its par
+ent) with the `"use 
+client"` directive.
+
+ Learn more: https:/
+/nextjs.org/docs/app
+/api-reference/direc
+tives/use-client
+
+
+
+Import traces:
+  Server Component:
+    ./context/AuthCo
+ntext.tsx
+    ./app/layout.tsx
+
+  Client Component B
+rowser:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent Browser]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent Browser]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+  Client Component S
+SR:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent SSR]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent SSR]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+
+./context/AuthContex
+t.tsx:3:44
+Ecmascript file had 
+an error
+[0m [90m 1 |[39m 
+[36mimport[39m { j
+obService } [36mfro
+m[39m [32m"@/servi
+ces/jobService"[39m
+[33m;[39m
+ [90m 2 |[39m [36
+mimport[39m { [33m
+Profile[39m[33m,[
+39m [33mRole[39m }
+ [36mfrom[39m [32
+m"@/types"[39m[33m
+;[39m
+[31m[1m>[22m[39m
+[90m 3 |[39m [36m
+import[39m [33mRea
+ct[39m[33m,[39m {
+ createContext[33m,
+[39m useContext[33
+m,[39m useEffect[3
+3m,[39m useState } 
+[36mfrom[39m [32m
+"react"[39m[33m;[
+39m
+ [90m   |[39m     
+                    
+                   
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+[31m[1m^[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36
+minterface[39m [33
+mAuthContextType[39
+m {
+ [90m 6 |[39m   us
+er[33m:[39m [33mP
+rofile[39m [33m|[
+39m [36mnull[39m[
+33m;[39m[0m
+
+You're importing a c
+omponent that needs 
+`useEffect`. This Re
+act Hook only works 
+in a Client Componen
+t. To fix, mark the 
+file (or its parent)
+ with the `"use clie
+nt"` directive.
+
+ Learn more: https:/
+/nextjs.org/docs/app
+/api-reference/direc
+tives/use-client
+
+
+
+Import traces:
+  Server Component:
+    ./context/AuthCo
+ntext.tsx
+    ./app/layout.tsx
+
+  Client Component B
+rowser:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent Browser]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent Browser]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+  Client Component S
+SR:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent SSR]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent SSR]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+
+./context/AuthContex
+t.tsx:3:55
+Ecmascript file had 
+an error
+[0m [90m 1 |[39m 
+[36mimport[39m { j
+obService } [36mfro
+m[39m [32m"@/servi
+ces/jobService"[39m
+[33m;[39m
+ [90m 2 |[39m [36
+mimport[39m { [33m
+Profile[39m[33m,[
+39m [33mRole[39m }
+ [36mfrom[39m [32
+m"@/types"[39m[33m
+;[39m
+[31m[1m>[22m[39m
+[90m 3 |[39m [36m
+import[39m [33mRea
+ct[39m[33m,[39m {
+ createContext[33m,
+[39m useContext[33
+m,[39m useEffect[3
+3m,[39m useState } 
+[36mfrom[39m [32m
+"react"[39m[33m;[
+39m
+ [90m   |[39m     
+                    
+                    
+          [31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m[31m[1m^
+[22m[39m
+ [90m 4 |[39m
+ [90m 5 |[39m [36
+minterface[39m [33
+mAuthContextType[39
+m {
+ [90m 6 |[39m   us
+er[33m:[39m [33mP
+rofile[39m [33m|[
+39m [36mnull[39m[
+33m;[39m[0m
+
+You're importing a c
+omponent that needs 
+`useState`. This Rea
+ct Hook only works i
+n a Client Component
+. To fix, mark the f
+ile (or its parent) 
+with the `"use clien
+t"` directive.
+
+ Learn more: https:/
+/nextjs.org/docs/app
+/api-reference/direc
+tives/use-client
+
+
+
+Import traces:
+  Server Component:
+    ./context/AuthCo
+ntext.tsx
+    ./app/layout.tsx
+
+  Client Component B
+rowser:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent Browser]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent Browser]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+  Client Component S
+SR:
+    ./context/AuthCo
+ntext.tsx [Client Co
+mponent SSR]
+    ./app/profile/pa
+ge.tsx [Client Compo
+nent SSR]
+    ./app/profile/pa
+ge.tsx [Server Compo
+nent]
+
+
+    at <unknown> (./
+context/AuthContext.
+tsx:3:17)
+    at <unknown> (./
+context/AuthContext.
+tsx:3:44)
+    at <unknown> (./
+context/AuthContext.
+tsx:3:55)
+
