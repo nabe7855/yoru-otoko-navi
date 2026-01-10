@@ -1,0 +1,37 @@
+﻿
+> yoru-otoko-navi@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+笨・Compiled successfully in 1601.6ms
+  Running TypeScript ...
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/16) ...
+  Generating static pages using 23 workers (4/16) 
+  Generating static pages using 23 workers (8/16) 
+  Generating static pages using 23 workers (12/16) 
+笨・Generating static pages using 23 workers (16/16) in 530.8ms
+  Finalizing page optimization ...
+
+Route (app)
+笏・笳・/
+笏・笳・/_not-found
+
+Route (pages)
+笏・笳・/AdminDashboard
+笏・笳・/ApplyPage
+笏・笳・/EmployerDashboard
+笏・笳・/HomePage
+笏・笳・/JobDetailPage
+笏・笳・/JobListPage
+笏・笳・/JobMatcherPage
+笏・笳・/MyProfilePage
+笏・笳・/PostJobPage
+笏・笳・/PrefSearchPage
+笏・笳・/TalentPoolPage
+
+笳・ (Static)  prerendered as static content
+
+

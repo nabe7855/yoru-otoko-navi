@@ -1,0 +1,70 @@
+﻿
+> yoru-otoko-navi@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+
+  Creating an optimized production build ...
+笨・Compiled successfully in 1338.4ms
+  Running TypeScript ...
+  Collecting page data using 23 workers ...
+  Generating static pages using 23 workers (0/16) ...
+node.exe : TypeError
+: Cannot read proper
+ties of undefined (r
+eading 'employerName
+')
+発生場所 行:1 文字:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Program Files\nod
+ejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (Type   
+ Error: Cann...'    
+employerName'):    S
+tring) [], Rem    ot
+eException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+    at <unknown> (C:
+\Users\nabe7\Documen
+ts\Projects\Projects
+\yoru-otoko-navi\.ne
+xt\server\chunks\ssr
+\[root-of-the-server
+]__de819cb0._.js:1:1
+000)
+Error occurred prere
+ndering page "/Apply
+Page". Read more: ht
+tps://nextjs.org/doc
+s/messages/prerender
+-error
+TypeError: Cannot re
+ad properties of und
+efined (reading 'emp
+loyerName')
+    at <unknown> (C:
+\Users\nabe7\Documen
+ts\Projects\Projects
+\yoru-otoko-navi\.ne
+xt\server\chunks\ssr
+\[root-of-the-server
+]__de819cb0._.js:1:1
+000)
+Export encountered a
+n error on /ApplyPag
+e, exiting the build
+.
+筧ｯ Next.js build wor
+ker exited with code
+: 1 and signal: null
+
