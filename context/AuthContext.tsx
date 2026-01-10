@@ -1,13 +1,19 @@
 "use client";
 
-import { jobService } from "@/services/jobService";
+import { supabase } from "@/lib/supabase";
 import { Profile, Role } from "@/types";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 interface AuthContextType {
   user: Profile | null;
-  login: (role: Role) => void;
-  logout: () => void;
+  login: (email: string, password: string) => Promise<{ error: any }>;
+  signup: (
+    email: string,
+    password: string,
+    role: Role,
+    displayName: string
+  ) => Promise<{ error: any }>;
+  logout: () => Promise<void>;
   isLoading: boolean;
 }
 
@@ -19,29 +25,96 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   const [user, setUser] = useState<Profile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // セッションのモック（実際はlocalStorageなどから取得）
-    const savedUser = localStorage.getItem("demo_user");
-    if (savedUser) {
-      setUser(JSON.parse(savedUser));
-    }
-    setIsLoading(false);
-  }, []);
+  const fetchProfile = async (userId: string) => {
+    const { data, error } = await supabase
+      .from("users")
+      .select("*")
+      .eq("id", userId)
+      .single();
 
-  const login = async (role: Role) => {
-    const profiles = await jobService.getProfiles();
-    const profile = profiles.find((p) => p.role === role) || profiles[0];
-    setUser(profile);
-    localStorage.setItem("demo_user", JSON.stringify(profile));
+    if (error) {
+      console.error("Error fetching profile:", error);
+      return null;
+    }
+    return data as Profile;
   };
 
-  const logout = () => {
+  useEffect(() => {
+    // 現在のセッションを確認
+    const initAuth = async () => {
+      const {
+        data: { session },
+      } = await supabase.auth.getSession();
+      if (session?.user) {
+        const profile = await fetchProfile(session.user.id);
+        setUser(profile);
+      }
+      setIsLoading(false);
+    };
+
+    initAuth();
+
+    // 認証状態の変化を監視
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(async (event, session) => {
+      if (session?.user) {
+        const profile = await fetchProfile(session.user.id);
+        setUser(profile);
+      } else {
+        setUser(null);
+      }
+      setIsLoading(false);
+    });
+
+    return () => {
+      subscription.unsubscribe();
+    };
+  }, []);
+
+  const login = async (email: string, password: string) => {
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    return { error };
+  };
+
+  const signup = async (
+    email: string,
+    password: string,
+    role: Role,
+    displayName: string
+  ) => {
+    // 1. Auth 登録
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+    });
+
+    if (error) return { error };
+
+    if (data.user) {
+      // 2. profiles (または users) テーブルに情報を保存
+      const { error: profileError } = await supabase.from("users").insert({
+        id: data.user.id,
+        email,
+        role,
+        display_name: displayName,
+      });
+      if (profileError) return { error: profileError };
+    }
+
+    return { error: null };
+  };
+
+  const logout = async () => {
+    await supabase.auth.signOut();
     setUser(null);
-    localStorage.removeItem("demo_user");
   };
 
   return (
-    <AuthContext.Provider value={{ user, login, logout, isLoading }}>
+    <AuthContext.Provider value={{ user, login, signup, logout, isLoading }}>
       {children}
     </AuthContext.Provider>
   );
