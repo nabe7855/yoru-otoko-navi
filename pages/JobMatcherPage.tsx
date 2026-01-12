@@ -136,8 +136,9 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
   }
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-2xl h-[calc(100vh-140px)] flex flex-col">
-      <div className="flex-grow overflow-y-auto space-y-4 p-4 no-scrollbar">
+    <div className="fixed inset-0 top-20 bottom-[170px] z-0 flex flex-col bg-slate-50 w-full md:static md:h-auto md:bg-transparent md:container md:mx-auto md:max-w-2xl md:py-8 md:px-4">
+      {/* Chat History */}
+      <div className="flex-grow overflow-y-auto p-4 space-y-4 no-scrollbar pb-4 md:pb-8">
         {chatHistory.map((msg, i) => (
           <div
             key={i}
@@ -146,9 +147,9 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
             } animate-fade-in`}
           >
             <div
-              className={`max-w-[80%] px-5 py-3 rounded-2xl text-sm font-medium shadow-sm ${
+              className={`max-w-[85%] px-5 py-3 rounded-2xl text-sm font-bold shadow-sm leading-relaxed ${
                 msg.type === "bot"
-                  ? "bg-white text-gray-800 border border-gray-100 rounded-bl-none"
+                  ? "bg-white text-gray-800 border border-indigo-50 rounded-bl-none"
                   : "bg-indigo-600 text-white rounded-br-none"
               }`}
             >
@@ -159,28 +160,29 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
         <div ref={chatEndRef} />
       </div>
 
-      <div className="p-4 bg-white/80 backdrop-blur-md rounded-3xl border border-gray-100 shadow-xl mt-4">
-        <div className="grid grid-cols-2 gap-2">
+      {/* Input Area (Fixed at bottom of this container) */}
+      <div className="bg-white border-t border-indigo-50 p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-10 w-full">
+        <div className="grid grid-cols-2 gap-3">
           {MATCHING_QUESTIONS[step].options.map((opt) => (
             <button
               key={opt}
               onClick={() => handleAnswer(opt)}
-              className="px-4 py-3 bg-slate-50 border border-slate-100 text-slate-700 font-bold text-xs rounded-xl hover:bg-indigo-50 hover:border-indigo-200 hover:text-indigo-600 transition active:scale-95"
+              className="px-2 py-4 bg-slate-50 border-2 border-slate-100 text-slate-700 font-bold text-xs rounded-xl hover:bg-indigo-50 hover:border-indigo-600 hover:text-indigo-600 transition active:scale-95 shadow-sm"
             >
               {opt}
             </button>
           ))}
         </div>
-        <div className="mt-4 flex justify-between items-center px-2">
+        <div className="mt-3 flex justify-between items-center px-1">
           <span className="text-[10px] text-gray-400 font-bold uppercase tracking-widest">
             Question {step + 1} / {MATCHING_QUESTIONS.length}
           </span>
-          <div className="flex gap-1">
+          <div className="flex gap-1.5">
             {[...Array(MATCHING_QUESTIONS.length)].map((_, i) => (
               <div
                 key={i}
-                className={`w-1.5 h-1.5 rounded-full ${
-                  i <= step ? "bg-indigo-600" : "bg-gray-200"
+                className={`w-1.5 h-1.5 rounded-full transition-all ${
+                  i <= step ? "bg-indigo-600 scale-125" : "bg-gray-200"
                 }`}
               ></div>
             ))}
