@@ -9,63 +9,53 @@ const Footer: React.FC = () => {
   return (
     <>
       {/* Mobile Fixed Bottom Navigation */}
-      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-xl border-t border-gray-100 p-2.5 shadow-[0_-8px_30px_rgba(0,0,0,0.08)]">
-        <div className="container mx-auto max-w-md flex items-center justify-between gap-2">
+      <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 flex flex-col shadow-[0_-8px_30px_rgba(0,0,0,0.08)] bg-white">
+        {/* 1st Row: Diagnosis Banner */}
+        <Link href="/matcher" className="w-full block">
+          <img
+            src="/フッターナビゲーション1.png"
+            alt="30秒診断"
+            className="w-full h-auto object-cover max-h-24"
+          />
+        </Link>
+
+        {/* 2nd Row: Navigation Buttons */}
+        <div className="flex border-t border-gray-100 pb-4">
           <Link
             href="/"
-            className={`flex flex-col items-center flex-1 py-1.5 rounded-xl transition ${
+            className={`flex-1 flex flex-col items-center justify-center py-2 transition ${
               pathname === "/"
                 ? "text-indigo-600 bg-indigo-50/50"
                 : "text-gray-400"
             }`}
           >
             <i className="fas fa-home text-lg"></i>
-            <span className="text-[9px] font-black mt-1">ホーム</span>
-          </Link>
-
-          <Link
-            href="/matcher"
-            className={`flex flex-col items-center flex-[1.5] py-2.5 rounded-2xl transition shadow-lg ${
-              pathname === "/matcher"
-                ? "bg-indigo-600 text-white shadow-indigo-200"
-                : "bg-white border border-gray-100 text-indigo-600 shadow-gray-200/50"
-            }`}
-          >
-            <div className="relative">
-              <i className="fas fa-bolt text-lg"></i>
-              {pathname !== "/matcher" && (
-                <span className="absolute -top-1 -right-1 flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
-                </span>
-              )}
-            </div>
-            <span className="text-[10px] font-black mt-0.5">30秒診断</span>
+            <span className="text-[10px] font-black mt-0.5">ホーム</span>
           </Link>
 
           <button
             onClick={() => window.open("https://line.me/", "_blank")}
-            className="flex flex-col items-center flex-1 py-1.5 text-[#06C755]"
+            className="flex-1 flex flex-col items-center justify-center py-2 text-[#06C755]"
           >
             <i className="fab fa-line text-2xl"></i>
-            <span className="text-[9px] font-black mt-0.5">相談</span>
+            <span className="text-[10px] font-black mt-0.5">LINE相談</span>
           </button>
 
           <Link
             href="/jobs"
-            className={`flex flex-col items-center flex-1 py-1.5 rounded-xl transition ${
+            className={`flex-1 flex flex-col items-center justify-center py-2 transition ${
               pathname === "/jobs"
                 ? "text-indigo-600 bg-indigo-50/50"
                 : "text-gray-400"
             }`}
           >
             <i className="fas fa-search text-lg"></i>
-            <span className="text-[9px] font-black mt-1">探す</span>
+            <span className="text-[10px] font-black mt-0.5">探す</span>
           </Link>
         </div>
       </div>
 
-      <footer className="bg-gray-900 text-white py-12 pb-36 md:pb-12">
+      <footer className="bg-gray-900 text-white py-12 pb-48 md:pb-12">
         <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
