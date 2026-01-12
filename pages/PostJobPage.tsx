@@ -18,22 +18,22 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
   const [formData, setFormData] = useState({
     title: "",
     category: CATEGORIES[0],
-    employmentType: EMPLOYMENT_TYPES[1],
-    areaPref: PREFECTURES[0],
-    areaCity: "",
-    salaryType: "hourly",
-    salaryMin: 1200,
-    salaryMax: 1500,
+    employment_type: EMPLOYMENT_TYPES[1],
+    area_pref: PREFECTURES[0],
+    area_city: "",
+    salary_type: "hourly",
+    salary_min: 1200,
+    salary_max: 1500,
     description: "",
     tags: [] as string[],
     qualifications: "",
-    accessInfo: "",
-    salaryDetails: "",
+    access_info: "",
+    salary_details: "",
     benefits: "",
     insurance: "",
-    workingHours: "",
+    working_hours: "",
     holidays: "",
-    workplaceInfo: "",
+    workplace_info: "",
   });
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -41,9 +41,9 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
 
     onSubmit({
       ...formData,
-      employerId,
-      employerName,
-      updatedAt: new Date().toISOString(),
+      employer_id: employerId,
+      employer_name: employerName,
+      updated_at: new Date().toISOString(),
       status: "pending",
     });
   };
@@ -111,9 +111,12 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
                 </label>
                 <select
                   className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-blue-100 outline-none font-bold"
-                  value={formData.employmentType}
+                  value={formData.employment_type}
                   onChange={(e) =>
-                    setFormData({ ...formData, employmentType: e.target.value })
+                    setFormData({
+                      ...formData,
+                      employment_type: e.target.value,
+                    })
                   }
                 >
                   {EMPLOYMENT_TYPES.map((t) => (
@@ -140,12 +143,12 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
                 },
                 {
                   label: "勤務地・交通手段",
-                  field: "accessInfo",
+                  field: "access_info",
                   placeholder: "北海道勇払郡安平町、植苗駅より車9分など",
                 },
                 {
                   label: "給与・報酬の詳細",
-                  field: "salaryDetails",
+                  field: "salary_details",
                   placeholder: "時給1200円、月収例20.8万円など",
                 },
                 {
@@ -160,7 +163,7 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
                 },
                 {
                   label: "勤務時間",
-                  field: "workingHours",
+                  field: "working_hours",
                   placeholder: "8:30～17:00（実働7.5h）など",
                 },
                 {
@@ -170,7 +173,7 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
                 },
                 {
                   label: "職場情報・PR",
-                  field: "workplaceInfo",
+                  field: "workplace_info",
                   placeholder: "2020～2022年度、全国277名が社員登用！など",
                 },
               ].map((item) => (

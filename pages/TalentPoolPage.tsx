@@ -74,7 +74,7 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
 
             <div className="p-6 flex-grow space-y-4">
               <div className="flex flex-wrap gap-1">
-                {talent.personalityTags?.map((tag) => (
+                {talent.personality_tags?.map((tag) => (
                   <span
                     key={tag}
                     className="px-3 py-1 bg-slate-100 text-slate-500 text-[10px] font-bold rounded-full"
@@ -90,7 +90,7 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
                     希望する雰囲気
                   </span>
                   <p className="text-xs text-gray-600 line-clamp-2">
-                    {talent.desiredAtmosphere || "未設定"}
+                    {talent.desired_atmosphere || "未設定"}
                   </p>
                 </div>
                 <div className="p-3 bg-gray-50 rounded-xl">
@@ -98,7 +98,7 @@ const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
                     会いたい人物像
                   </span>
                   <p className="text-xs text-gray-600 line-clamp-2">
-                    {talent.desiredPersonType || "未設定"}
+                    {talent.desired_person_type || "未設定"}
                   </p>
                 </div>
               </div>

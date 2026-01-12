@@ -57,7 +57,7 @@ const AdminDashboard: React.FC = () => {
                 <div>
                   <h3 className="font-bold">{emp.name}</h3>
                   <p className="text-xs text-gray-400">
-                    {emp.areaPref} {emp.areaCity} | {emp.businessType}
+                    {emp.area_pref} {emp.area_city} | {emp.business_type}
                   </p>
                 </div>
                 <div className="flex gap-2">
@@ -97,7 +97,7 @@ const AdminDashboard: React.FC = () => {
                 <div className="mb-4">
                   <h3 className="font-bold line-clamp-1">{job.title}</h3>
                   <p className="text-xs text-indigo-600 font-medium">
-                    店舗: {job.employerName}
+                    店舗: {job.employer_name}
                   </p>
                 </div>
                 <div className="flex gap-2 justify-end">

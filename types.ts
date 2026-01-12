@@ -22,76 +22,77 @@ export interface Profile {
   id: string;
   role: Role;
   display_name: string;
+  email: string;
   created_at: string;
 }
 
 export interface SeekerProfile extends Profile {
   mbti?: string;
-  personalityTags: string[];
+  personality_tags: string[];
   lifestyle: string;
-  desiredAtmosphere: string;
-  desiredPersonType: string;
-  jobHuntingStatus: JobHuntingStatus;
+  desired_atmosphere: string;
+  desired_person_type: string;
+  job_hunting_status: JobHuntingStatus;
   bio?: string;
 }
 
 export interface Employer {
   id: string;
-  ownerUserId: string;
+  owner_user_id: string;
   name: string;
-  businessType: string;
-  areaPref: string;
-  areaCity: string;
-  contactEmail: string;
-  contactPhone: string;
+  business_type: string;
+  area_pref: string;
+  area_city: string;
+  contact_email: string;
+  contact_phone: string;
   status: "pending" | "approved" | "rejected";
-  vibeTags?: string[];
-  preferredMBTI?: string[];
+  vibe_tags?: string[];
+  preferred_mbti?: string[];
 }
 
 export interface Job {
   id: string;
-  employerId: string;
-  employerName: string;
+  employer_id: string;
+  employer_name: string;
   title: string;
   description: string;
   category: string;
-  employmentType: string;
-  areaPref: string;
-  areaCity: string;
-  salaryType: SalaryType;
-  salaryMin: number;
-  salaryMax: number;
+  employment_type: string;
+  area_pref: string;
+  area_city: string;
+  salary_type: SalaryType;
+  salary_min: number;
+  salary_max: number;
   tags: string[];
   status: JobStatus;
-  publishedAt: string;
-  updatedAt: string;
+  published_at: string;
+  updated_at: string;
   images: string[];
-  isHot?: boolean; // 急募フラグ
+  is_hot?: boolean; // 急募フラグ
   // 詳細フィールド
   qualifications?: string;
-  accessInfo?: string;
-  salaryDetails?: string;
+  access_info?: string;
+  salary_details?: string;
   benefits?: string;
   insurance?: string;
-  workingHours?: string;
+  working_hours?: string;
   holidays?: string;
-  workplaceInfo?: string;
+  workplace_info?: string;
   // マッチング用
-  requiredMBTI?: string[];
-  shopVibe?: string[];
+  required_mbti?: string[];
+  shop_vibe?: string[];
 }
 
 export interface Application {
   id: string;
-  jobId: string;
-  jobTitle: string;
-  seekerUserId: string;
-  seekerName: string;
-  contactType: "phone" | "line" | "email";
-  contactValue: string;
+  job_id: string;
+  job_title: string;
+  seeker_user_id: string;
+  seeker_name: string;
+  contact_type: "phone" | "line" | "email";
+  contact_value: string;
   message: string;
   status: ApplicationStatus;
-  createdAt: string;
-  isOffer?: boolean; // スカウト（逆指名）かどうか
+  created_at: string;
+  is_offer?: boolean; // スカウト（逆指名）かどうか
 }

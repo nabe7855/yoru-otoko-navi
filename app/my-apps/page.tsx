@@ -14,7 +14,7 @@ export default function MyApps() {
       if (user) {
         setLoading(true);
         const allApps = await jobService.getApplications();
-        setApps(allApps.filter((a) => a.seekerUserId === user.id));
+        setApps(allApps.filter((a) => a.seeker_user_id === user.id));
         setLoading(false);
       }
     };
@@ -41,10 +41,10 @@ export default function MyApps() {
             <div className="flex justify-between items-start mb-4">
               <div>
                 <h3 className="font-bold text-lg text-indigo-600">
-                  {app.jobTitle}
+                  {app.job_title}
                 </h3>
                 <p className="text-gray-400 text-xs">
-                  応募日: {app.createdAt.split("T")[0]}
+                  応募日: {app.created_at.split("T")[0]}
                 </p>
               </div>
               <span

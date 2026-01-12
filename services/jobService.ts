@@ -38,11 +38,6 @@ export const jobService = {
     return {
       ...profile,
       ...seekerProfileData,
-      personalityTags: seekerProfileData.personality_tags || [],
-      jobHuntingStatus: seekerProfileData.job_hunting_status || "passive",
-      desiredAtmosphere: seekerProfileData.desired_atmosphere || "",
-      desiredPersonType: seekerProfileData.desired_person_type || "",
-      lifestyle: seekerProfileData.lifestyle || "",
     } as SeekerProfile;
   },
 
@@ -66,12 +61,13 @@ export const jobService = {
     const { error: seekerProfileError } = await supabase
       .from("seeker_profiles")
       .update({
-        personality_tags: profile.personalityTags,
-        job_hunting_status: profile.jobHuntingStatus,
-        desired_atmosphere: profile.desiredAtmosphere,
-        desired_person_type: profile.desiredPersonType,
+        personality_tags: profile.personality_tags,
+        job_hunting_status: profile.job_hunting_status,
+        desired_atmosphere: profile.desired_atmosphere,
+        desired_person_type: profile.desired_person_type,
         lifestyle: profile.lifestyle,
         mbti: profile.mbti,
+        bio: profile.bio,
         updated_at: new Date().toISOString(),
       })
       .eq("user_id", profile.id);
@@ -114,10 +110,10 @@ export const jobService = {
     if (filters.category) query = query.eq("category", filters.category);
     if (filters.pref) query = query.eq("area_pref", filters.pref);
     if (filters.city) query = query.ilike("area_city", `%${filters.city}%`);
-    if (filters.employmentType)
-      query = query.eq("employment_type", filters.employmentType);
-    if (filters.salaryMin !== undefined)
-      query = query.gte("salary_min", filters.salaryMin);
+    if (filters.employment_type)
+      query = query.eq("employment_type", filters.employment_type);
+    if (filters.salary_min !== undefined)
+      query = query.gte("salary_min", filters.salary_min);
 
     if (filters.tags && filters.tags.length > 0) {
       query = query.contains("tags", filters.tags);
@@ -176,6 +172,30 @@ export const jobService = {
       return mockEmployers;
     }
     return data as Employer[];
+  },
+
+  async createEmployer(
+    employerData: Omit<Employer, "id" | "status">
+  ): Promise<Employer | null> {
+    const newEmployer = {
+      ...employerData,
+      id: crypto.randomUUID(),
+      status: "pending",
+    };
+
+    console.log("DEBUG: Attempting to create employer with data:", newEmployer);
+
+    const { data, error } = await supabase
+      .from("employers")
+      .insert([newEmployer])
+      .select()
+      .single();
+
+    if (error) {
+      console.error("Error creating employer:", error);
+      return null;
+    }
+    return data as Employer;
   },
 
   async updateEmployerStatus(

@@ -44,7 +44,7 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
       const filtered = allJobs.filter((j) => j.id !== job.id);
       const related = filtered
         .filter(
-          (j) => j.category === job.category || j.areaPref === job.areaPref
+          (j) => j.category === job.category || j.area_pref === job.area_pref
         )
         .slice(0, 3);
       setRelatedJobs(related);
@@ -70,7 +70,7 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
                 {job.category}
               </span>
               <span className="px-3 py-1 bg-slate-100 text-slate-600 text-[11px] font-bold rounded-md tracking-wider">
-                {job.employmentType}
+                {job.employment_type}
               </span>
             </div>
 
@@ -88,7 +88,7 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
                     給与目安
                   </span>
                   <span className="text-xl font-black text-blue-600">
-                    {job.salaryMin.toLocaleString()}円〜
+                    {job.salary_min.toLocaleString()}円〜
                   </span>
                 </div>
               </div>
@@ -101,7 +101,7 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
                     勤務地
                   </span>
                   <span className="text-sm font-bold text-gray-700">
-                    {job.areaPref} {job.areaCity}
+                    {job.area_pref} {job.area_city}
                   </span>
                 </div>
               </div>
@@ -142,14 +142,14 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
 
             <div className="divide-y divide-gray-100">
               <DetailRow label="経験・資格" content={job.qualifications} />
-              <DetailRow label="勤務地・交通" content={job.accessInfo} />
-              <DetailRow label="給与・報酬" content={job.salaryDetails} />
+              <DetailRow label="勤務地・交通" content={job.access_info} />
+              <DetailRow label="給与・報酬" content={job.salary_details} />
               <DetailRow label="待遇・福利厚生" content={job.benefits} />
               <DetailRow label="加入保険" content={job.insurance} />
-              <DetailRow label="雇用形態" content={job.employmentType} />
-              <DetailRow label="勤務時間" content={job.workingHours} />
+              <DetailRow label="雇用形態" content={job.employment_type} />
+              <DetailRow label="勤務時間" content={job.working_hours} />
               <DetailRow label="休日・休暇" content={job.holidays} />
-              <DetailRow label="PR・職場情報" content={job.workplaceInfo} />
+              <DetailRow label="PR・職場情報" content={job.workplace_info} />
             </div>
           </div>
 
@@ -184,7 +184,7 @@ const JobDetailPage: React.FC<JobDetailPageProps> = ({
                     掲載主
                   </span>
                   <h4 className="font-bold text-gray-800 line-clamp-1">
-                    {job.employerName}
+                    {job.employer_name}
                   </h4>
                 </div>
               </div>

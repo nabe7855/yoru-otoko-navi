@@ -40,9 +40,10 @@ export default function Apply({ params }: { params: Promise<{ id: string }> }) {
       onSubmit={async (data) => {
         await jobService.submitApplication({
           ...data,
-          jobId: job.id,
-          jobTitle: job.title,
-          seekerUserId: user?.id,
+          job_id: job.id,
+          job_title: job.title,
+          seeker_user_id: user?.id,
+          seeker_name: data.name,
         });
         alert("応募が完了しました！店舗からの連絡をお待ちください。");
         router.push("/");

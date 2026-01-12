@@ -21,12 +21,12 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
     const fetchData = async () => {
       setLoading(true);
       const allJobs = await jobService.getJobs();
-      const myJobs = allJobs.filter((j) => j.employerId === employer.id);
+      const myJobs = allJobs.filter((j) => j.employer_id === employer.id);
       setJobs(myJobs);
 
       const allApps = await jobService.getApplications();
       const myJobIds = myJobs.map((j) => j.id);
-      setApplications(allApps.filter((a) => myJobIds.includes(a.jobId)));
+      setApplications(allApps.filter((a) => myJobIds.includes(a.job_id)));
       setLoading(false);
     };
     fetchData();
@@ -121,10 +121,10 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
                         </span>
                       </td>
                       <td className="px-6 py-4 text-gray-600">
-                        {job.salaryMin.toLocaleString()}円〜
+                        {job.salary_min.toLocaleString()}円〜
                       </td>
                       <td className="px-6 py-4 text-gray-400">
-                        {job.updatedAt.split("T")[0]}
+                        {job.updated_at.split("T")[0]}
                       </td>
                       <td className="px-6 py-4">
                         <button className="text-indigo-600 hover:underline">
@@ -151,20 +151,20 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
                     <div>
                       <div className="flex items-center space-x-2 mb-1">
-                        <h3 className="font-bold text-lg">{app.seekerName}</h3>
+                        <h3 className="font-bold text-lg">{app.seeker_name}</h3>
                         <span className="px-2 py-1 bg-gray-100 text-gray-500 text-[10px] font-bold rounded uppercase">
-                          {app.contactType}
+                          {app.contact_type}
                         </span>
                       </div>
                       <p className="text-sm text-indigo-600 font-medium mb-2">
-                        対象求人: {app.jobTitle}
+                        対象求人: {app.job_title}
                       </p>
                       <p className="text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
                         {app.message || "メッセージなし"}
                       </p>
                       <div className="mt-3 flex items-center space-x-4 text-xs text-gray-400">
-                        <span>連絡先: {app.contactValue}</span>
-                        <span>応募日: {app.createdAt.split("T")[0]}</span>
+                        <span>連絡先: {app.contact_value}</span>
+                        <span>応募日: {app.created_at.split("T")[0]}</span>
                       </div>
                     </div>
 

@@ -19,10 +19,10 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
       if (p) {
         setProfile({
           ...p,
-          personalityTags: p.personalityTags || [],
-          jobHuntingStatus: p.jobHuntingStatus || "passive",
-          desiredAtmosphere: p.desiredAtmosphere || "",
-          desiredPersonType: p.desiredPersonType || "",
+          personality_tags: p.personality_tags || [],
+          job_hunting_status: p.job_hunting_status || "passive",
+          desired_atmosphere: p.desired_atmosphere || "",
+          desired_person_type: p.desired_person_type || "",
           lifestyle: p.lifestyle || "",
         });
       }
@@ -44,14 +44,14 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
 
   const toggleTag = (tag: string) => {
     if (!profile) return;
-    const current = profile.personalityTags || [];
+    const current = profile.personality_tags || [];
     if (current.includes(tag)) {
       setProfile({
         ...profile,
-        personalityTags: current.filter((t) => t !== tag),
+        personality_tags: current.filter((t) => t !== tag),
       });
     } else {
-      setProfile({ ...profile, personalityTags: [...current, tag] });
+      setProfile({ ...profile, personality_tags: [...current, tag] });
     }
   };
 
@@ -81,10 +81,10 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
                     key={status}
                     type="button"
                     onClick={() =>
-                      setProfile({ ...profile, jobHuntingStatus: status })
+                      setProfile({ ...profile, job_hunting_status: status })
                     }
                     className={`py-4 px-6 rounded-2xl border-2 transition-all font-bold text-sm ${
-                      profile.jobHuntingStatus === status
+                      profile.job_hunting_status === status
                         ? "border-indigo-600 bg-white text-indigo-600 shadow-md"
                         : "border-white bg-white/50 text-gray-400 hover:border-gray-200"
                     }`}
@@ -170,7 +170,7 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
                     type="button"
                     onClick={() => toggleTag(tag)}
                     className={`px-5 py-2 rounded-full border-2 text-sm font-bold transition-all ${
-                      profile.personalityTags?.includes(tag)
+                      profile.personality_tags?.includes(tag)
                         ? "bg-indigo-600 border-indigo-600 text-white shadow-lg shadow-indigo-200"
                         : "bg-white border-gray-100 text-gray-400 hover:border-indigo-100 hover:text-indigo-400"
                     }`}
@@ -198,11 +198,11 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
                   rows={3}
                   className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-purple-100 outline-none text-sm leading-relaxed"
                   placeholder="例: アットホームで派閥がない、落ち着いた大人な雰囲気、など"
-                  value={profile.desiredAtmosphere}
+                  value={profile.desired_atmosphere}
                   onChange={(e) =>
                     setProfile({
                       ...profile,
-                      desiredAtmosphere: e.target.value,
+                      desired_atmosphere: e.target.value,
                     })
                   }
                 />
@@ -216,11 +216,11 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
                   rows={3}
                   className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-purple-100 outline-none text-sm leading-relaxed"
                   placeholder="例: 経営者の方、静かに飲まれる方、紳士的な方、など"
-                  value={profile.desiredPersonType}
+                  value={profile.desired_person_type}
                   onChange={(e) =>
                     setProfile({
                       ...profile,
-                      desiredPersonType: e.target.value,
+                      desired_person_type: e.target.value,
                     })
                   }
                 />

@@ -11,10 +11,10 @@ const ApplyPage: React.FC<ApplyPageProps> = ({ job, onSubmit, onCancel }) => {
   if (!job) return null;
   const [formData, setFormData] = useState({
     name: "",
-    contactType: "line",
-    contactValue: "",
+    contact_type: "line",
+    contact_value: "",
     message: "",
-    startDate: "",
+    start_date: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -32,7 +32,7 @@ const ApplyPage: React.FC<ApplyPageProps> = ({ job, onSubmit, onCancel }) => {
           <h1 className="text-3xl font-black text-gray-900 mt-4">
             求人に応募する
           </h1>
-          <p className="text-gray-400 mt-2">店舗: {job.employerName}</p>
+          <p className="text-gray-400 mt-2">店舗: {job.employer_name}</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -62,10 +62,10 @@ const ApplyPage: React.FC<ApplyPageProps> = ({ job, onSubmit, onCancel }) => {
                   key={type}
                   type="button"
                   onClick={() =>
-                    setFormData({ ...formData, contactType: type })
+                    setFormData({ ...formData, contact_type: type })
                   }
                   className={`py-3 rounded-xl border-2 flex flex-col items-center justify-center transition ${
-                    formData.contactType === type
+                    formData.contact_type === type
                       ? "border-indigo-600 bg-indigo-50 text-indigo-600"
                       : "border-gray-100 text-gray-400 hover:border-gray-200"
                   }`}
@@ -95,15 +95,15 @@ const ApplyPage: React.FC<ApplyPageProps> = ({ job, onSubmit, onCancel }) => {
               type="text"
               className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
               placeholder={`${
-                formData.contactType === "line"
+                formData.contact_type === "line"
                   ? "LINE ID"
-                  : formData.contactType === "phone"
+                  : formData.contact_type === "phone"
                   ? "電話番号"
                   : "メールアドレス"
               }を入力`}
-              value={formData.contactValue}
+              value={formData.contact_value}
               onChange={(e) =>
-                setFormData({ ...formData, contactValue: e.target.value })
+                setFormData({ ...formData, contact_value: e.target.value })
               }
             />
           </div>
@@ -115,9 +115,9 @@ const ApplyPage: React.FC<ApplyPageProps> = ({ job, onSubmit, onCancel }) => {
             <input
               type="date"
               className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
-              value={formData.startDate}
+              value={formData.start_date}
               onChange={(e) =>
-                setFormData({ ...formData, startDate: e.target.value })
+                setFormData({ ...formData, start_date: e.target.value })
               }
             />
           </div>

@@ -21,7 +21,7 @@ export default function PostJob() {
       }
       setLoading(true);
       const employers = await jobService.getEmployers();
-      const emp = employers.find((e) => e.ownerUserId === user.id);
+      const emp = employers.find((e) => e.owner_user_id === user.id);
       setEmployer(emp || null);
       setLoading(false);
     };
