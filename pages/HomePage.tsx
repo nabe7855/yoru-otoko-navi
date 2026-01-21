@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import JapanMap from "../components/JapanMap";
 import { EMPLOYMENT_TYPES } from "../constants";
 
 interface HomePageProps {
@@ -165,7 +166,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   const [empType, setEmpType] = useState("");
   const [currentBanner, setCurrentBanner] = useState(0);
   const [salaryTab, setSalaryTab] = useState<"regular" | "part" | "dispatch">(
-    "regular"
+    "regular",
   );
   const pickupScrollRef = useRef<HTMLDivElement>(null);
 
@@ -282,27 +283,13 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
               AREA SEARCH
             </h2>
             <div className="w-16 h-0.5 bg-indigo-600 mx-auto"></div>
+            <p className="text-gray-500 text-sm mt-4">
+              地図から都道府県を選択してください
+            </p>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {MAP_REGIONS.map((region) => (
-              <div key={region.name} className="flex flex-col">
-                <h4 className="text-xs font-bold text-gray-400 mb-2 uppercase tracking-tighter">
-                  {region.name}
-                </h4>
-                <div className="flex flex-wrap gap-1.5">
-                  {region.prefs.map((p) => (
-                    <button
-                      key={p}
-                      onClick={() => onSearch({ pref: getFullPrefName(p) })}
-                      className="px-2 py-1 bg-[#1a2b4b] text-white text-[10px] font-bold rounded hover:bg-indigo-600 transition"
-                    >
-                      {p}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          <JapanMap
+            onPrefectureClick={(prefName) => onSearch({ pref: prefName })}
+          />
         </div>
 
         {/* Banners */}
