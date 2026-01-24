@@ -40,6 +40,7 @@ import {
   History,
   Laptop,
   Layers,
+  ListFilter,
   MapPin,
   Martini,
   Megaphone,
@@ -176,6 +177,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   const [featuredJobs, setFeaturedJobs] = useState<Job[]>([]);
   const [recentJobs, setRecentJobs] = useState<Job[]>([]);
   const [keyword, setKeyword] = useState("");
+  const [isSearchAccordionOpen, setIsSearchAccordionOpen] = useState(false);
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -659,84 +661,109 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             <div className="bg-slate-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-slate-900/40 text-white relative overflow-hidden border border-white/10">
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
               <div className="relative z-10 space-y-8">
-                <div className="relative group">
-                  <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-amber-400 transition-colors">
-                    <Search size={22} />
+                <div className="flex flex-col md:flex-row gap-3">
+                  <div className="relative group flex-grow">
+                    <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-amber-400 transition-colors">
+                      <Search size={22} />
+                    </div>
+                    <input
+                      type="text"
+                      placeholder="エリア・キーワードを入力（例：新宿 日払い 30代）"
+                      className="w-full bg-white/5 border-2 border-white/10 hover:border-white/20 focus:border-amber-500/50 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-white placeholder:text-white/30 focus:outline-none focus:ring-4 focus:ring-amber-500/10 transition-all"
+                      value={keyword}
+                      onChange={(e) => setKeyword(e.target.value)}
+                    />
                   </div>
-                  <input
-                    type="text"
-                    placeholder="エリア・キーワードを入力（例：新宿 日払い 30代）"
-                    className="w-full bg-white/5 border-2 border-white/10 hover:border-white/20 focus:border-amber-500/50 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-white placeholder:text-white/30 focus:outline-none focus:ring-4 focus:ring-amber-500/10 transition-all"
-                    value={keyword}
-                    onChange={(e) => setKeyword(e.target.value)}
-                  />
+                  <button
+                    onClick={() =>
+                      setIsSearchAccordionOpen(!isSearchAccordionOpen)
+                    }
+                    className={`flex items-center justify-center gap-2 px-6 py-5 rounded-2xl font-black transition-all active:scale-95 whitespace-nowrap ${
+                      isSearchAccordionOpen
+                        ? "bg-amber-500 text-slate-900 shadow-lg shadow-amber-500/20"
+                        : "bg-white/10 text-white border border-white/10 hover:bg-white/20"
+                    }`}
+                  >
+                    <ListFilter size={20} />
+                    こだわり検索
+                    <ChevronRight
+                      size={18}
+                      className={`transition-transform duration-300 ${isSearchAccordionOpen ? "rotate-90" : ""}`}
+                    />
+                  </button>
                 </div>
-                <div className="space-y-3">
-                  <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
-                    <Zap size={14} className="text-amber-500" />{" "}
-                    人気の条件から即検索
-                  </p>
-                  <div className="flex gap-2.5 overflow-x-auto pb-1 scrollbar-hide">
-                    {quickTags.map((tag, idx) => (
-                      <button
-                        key={idx}
-                        className="flex-shrink-0 px-5 py-2.5 bg-white/10 hover:bg-amber-500 hover:text-slate-900 border border-white/10 rounded-full text-xs font-black transition-all active:scale-95"
-                        onClick={() => onSearch({ keyword: tag })}
-                      >
-                        {tag}
+
+                <div
+                  className={`space-y-8 overflow-hidden transition-all duration-500 ease-in-out ${isSearchAccordionOpen ? "max-h-[1000px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"}`}
+                >
+                  <div className="space-y-3">
+                    <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
+                      <Zap size={14} className="text-amber-500" />{" "}
+                      人気の条件から即検索
+                    </p>
+                    <div className="flex gap-2.5 overflow-x-auto pb-1 scrollbar-hide">
+                      {quickTags.map((tag, idx) => (
+                        <button
+                          key={idx}
+                          className="flex-shrink-0 px-5 py-2.5 bg-white/10 hover:bg-amber-500 hover:text-slate-900 border border-white/10 rounded-full text-xs font-black transition-all active:scale-95"
+                          onClick={() => onSearch({ keyword: tag })}
+                        >
+                          {tag}
+                        </button>
+                      ))}
+                      <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-white/20 transition-all">
+                        <ChevronRight size={18} />
                       </button>
-                    ))}
-                    <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-white/20 transition-all">
-                      <ChevronRight size={18} />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <button
+                      onClick={() => setIsMapOpen(true)}
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-amber-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                    >
+                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform shadow-inner">
+                        <MapPin size={26} strokeWidth={2.5} />
+                      </div>
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                        エリアで探す
+                      </span>
+                    </button>
+                    <button
+                      onClick={() => setIsJobTypeOpen(true)}
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-indigo-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                    >
+                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform shadow-inner">
+                        <Briefcase size={26} strokeWidth={2.5} />
+                      </div>
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                        職種で探す
+                      </span>
+                    </button>
+                    <button
+                      onClick={() => setIsSalaryOpen(true)}
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-emerald-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                    >
+                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform shadow-inner">
+                        <Wallet size={26} strokeWidth={2.5} />
+                      </div>
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                        給与で探す
+                      </span>
+                    </button>
+                    <button
+                      onClick={() => setIsWorkStyleOpen(true)}
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                    >
+                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shadow-inner">
+                        <Layers size={26} strokeWidth={2.5} />
+                      </div>
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                        働き方で探す
+                      </span>
                     </button>
                   </div>
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                  <button
-                    onClick={() => setIsMapOpen(true)}
-                    className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-amber-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
-                  >
-                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform shadow-inner">
-                      <MapPin size={26} strokeWidth={2.5} />
-                    </div>
-                    <span className="text-[11px] md:text-xs font-black tracking-tighter">
-                      エリアで探す
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => setIsJobTypeOpen(true)}
-                    className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-indigo-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
-                  >
-                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform shadow-inner">
-                      <Briefcase size={26} strokeWidth={2.5} />
-                    </div>
-                    <span className="text-[11px] md:text-xs font-black tracking-tighter">
-                      職種で探す
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => setIsSalaryOpen(true)}
-                    className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-emerald-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
-                  >
-                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform shadow-inner">
-                      <Wallet size={26} strokeWidth={2.5} />
-                    </div>
-                    <span className="text-[11px] md:text-xs font-black tracking-tighter">
-                      給与で探す
-                    </span>
-                  </button>
-                  <button
-                    onClick={() => setIsWorkStyleOpen(true)}
-                    className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
-                  >
-                    <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shadow-inner">
-                      <Layers size={26} strokeWidth={2.5} />
-                    </div>
-                    <span className="text-[11px] md:text-xs font-black tracking-tighter">
-                      働き方で探す
-                    </span>
-                  </button>
-                </div>
+
                 <button
                   className="w-full gradient-gold hover:brightness-110 text-slate-900 font-black py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3"
                   onClick={handleKeywordSearch}
