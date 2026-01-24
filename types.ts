@@ -131,6 +131,7 @@ export interface JobFilters {
   category?: string;
   pref?: string;
   city?: string;
+  region?: string;
   employment_type?: string;
   employmentType?: string;
   salary_min?: number;

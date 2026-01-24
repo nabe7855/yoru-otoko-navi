@@ -207,13 +207,13 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     setCurrentSlide((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
   const handleRegionSelect = (region: string) => {
-    // 地方タップ時は、マップ内での遷移のみとし、トップレベルでの検索は行わない（ズームイン動作）
-    console.log("Region selected:", region);
+    // 地方検索短縮ボタンからのコールバック
+    onSearch({ region });
   };
 
   const handlePrefectureSelect = (pref: string) => {
-    // 県選択時は、マップ内での詳細ズーム（市区町村選択）へ移行するため、ここでの検索・遷移は行わない
-    console.log("Prefecture selected for zoom:", pref);
+    // 県検索短縮ボタンからのコールバック
+    onSearch({ pref });
   };
 
   const handleMunicipalitySelect = (pref: string, muni: string) => {

@@ -20,6 +20,7 @@ export default function Home() {
       if (filters.category) params.set("category", filters.category as string);
       if (filters.pref) params.set("pref", filters.pref as string);
       if (filters.city) params.set("city", filters.city as string);
+      if (filters.region) params.set("region", filters.region as string);
       if (filters.employmentType)
         params.set("employmentType", filters.employmentType as string);
       if (filters.keyword) params.set("keyword", filters.keyword as string);
