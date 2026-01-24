@@ -11,11 +11,11 @@ const Footer: React.FC = () => {
           <div className="sm:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <span className="text-3xl font-black bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
-                夜漢ナビ
+                夜男ナビ
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-sm font-medium">
-              夜漢ナビ（やかんナビ）は、男性ナイトワークに特化した日本最大級の求人プラットフォームです。
+              夜男ナビ（よるおナビ）は、男性ナイトワークに特化した日本最大級の求人プラットフォームです。
               全国の厳選された優良店舗のみを掲載し、あなたの「稼ぎたい」を全力でサポートします。
             </p>
           </div>
@@ -91,7 +91,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="pt-8 border-t border-slate-800 text-[10px] md:text-xs text-center font-black tracking-widest text-slate-600">
-          &copy; {new Date().getFullYear()} YAKAN NAVI. ALL RIGHTS RESERVED.
+          &copy; {new Date().getFullYear()} YORUO NAVI. ALL RIGHTS RESERVED.
         </div>
       </div>
     </footer>

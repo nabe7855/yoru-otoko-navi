@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "夜漢ナビ (Yakan Navi) | 男性ナイトワーク求人サイト",
+  title: "夜男ナビ (Yoruo Navi) | 男性ナイトワーク求人サイト",
   description:
     "男性向けナイトワーク求人プラットフォーム。黒服、ボーイ、店長候補など、高収入・好待遇の求人を多数掲載。",
 };

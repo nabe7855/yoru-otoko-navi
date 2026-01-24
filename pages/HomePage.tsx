@@ -96,7 +96,7 @@ const SLIDES = [
     image:
       "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=1600",
     title: "未経験から、プロの黒服へ。",
-    subtitle: "キャリアアップを夜漢ナビが徹底サポート。",
+    subtitle: "キャリアアップを夜男ナビが徹底サポート。",
     badge: "EDUCATION SUPPORT",
   },
   {
@@ -621,11 +621,11 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
               </div>
             </div>
 
-            {/* 夜漢ナビが選ばれる理由 */}
+            {/* 夜男ナビが選ばれる理由 */}
             <div className="bg-slate-900 rounded-[2.5rem] p-10 text-white flex flex-col gap-8 shadow-xl">
               <div className="text-center md:text-left">
                 <h4 className="text-xl font-black mb-2">
-                  夜漢ナビが選ばれる理由
+                  夜男ナビが選ばれる理由
                 </h4>
                 <p className="text-slate-400 text-sm">
                   安心・安全に稼げる環境を保証します。
@@ -912,7 +912,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                   </span>
                 </h2>
                 <p className="text-slate-400 text-xs md:text-base font-medium">
-                  現場スタッフから幹部候補まで。夜漢ナビで人生を変えた男たちの軌跡。
+                  現場スタッフから幹部候補まで。夜男ナビで人生を変えた男たちの軌跡。
                 </p>
               </div>
               <div className="flex overflow-x-auto gap-4 pb-6 -mx-4 px-4 scrollbar-hide snap-x snap-mandatory md:mx-0 md:px-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:overflow-visible md:pb-0">
@@ -1054,14 +1054,14 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 ))}
               </div>
             </div>
-            {/* 夜漢コラム セクション */}
+            {/* 夜男コラム セクション */}
             <section className="pt-10 pb-6">
               <div className="flex items-center justify-between mb-8 px-1">
                 <h2 className="text-xl md:text-3xl font-black text-slate-800 flex items-center gap-4">
                   <div className="p-2 bg-indigo-50 rounded-xl text-indigo-600">
                     <BookOpen size={24} />
                   </div>
-                  夜漢コラム
+                  夜男コラム
                 </h2>
                 <button className="text-xs md:text-sm font-black text-indigo-600 hover:text-indigo-800 transition bg-indigo-50 px-4 py-2 rounded-full">
                   コラム一覧
