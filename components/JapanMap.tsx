@@ -29,7 +29,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-indigo-500/80",
     hoverColor: "hover:fill-indigo-400",
     glowColor: "shadow-indigo-500/40",
-    labelPos: { x: 880, y: 100 },
+    labelPos: { x: 806, y: 154 },
   },
   {
     id: "tohoku",
@@ -37,7 +37,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-blue-500/80",
     hoverColor: "hover:fill-blue-400",
     glowColor: "shadow-blue-500/40",
-    labelPos: { x: 880, y: 430 },
+    labelPos: { x: 662, y: 442 },
   },
   {
     id: "kanto",
@@ -45,7 +45,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-emerald-500/80",
     hoverColor: "hover:fill-emerald-400",
     glowColor: "shadow-emerald-500/40",
-    labelPos: { x: 880, y: 750 },
+    labelPos: { x: 620, y: 645 },
   },
   {
     id: "chubu",
@@ -53,7 +53,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-amber-500/80",
     hoverColor: "hover:fill-amber-400",
     glowColor: "shadow-amber-500/40",
-    labelPos: { x: 700, y: 680 },
+    labelPos: { x: 515, y: 633 },
   },
   {
     id: "kansai",
@@ -61,7 +61,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-orange-500/80",
     hoverColor: "hover:fill-orange-400",
     glowColor: "shadow-orange-500/40",
-    labelPos: { x: 550, y: 820 },
+    labelPos: { x: 417, y: 718 },
   },
   {
     id: "chugoku",
@@ -69,7 +69,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-rose-500/80",
     hoverColor: "hover:fill-rose-400",
     glowColor: "shadow-rose-500/40",
-    labelPos: { x: 350, y: 700 },
+    labelPos: { x: 276, y: 701 },
   },
   {
     id: "shikoku",
@@ -77,7 +77,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-yellow-500/80",
     hoverColor: "hover:fill-yellow-400",
     glowColor: "shadow-yellow-500/40",
-    labelPos: { x: 330, y: 960 },
+    labelPos: { x: 310, y: 772 },
   },
   {
     id: "kyushu",
@@ -85,7 +85,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
     color: "fill-purple-500/80",
     hoverColor: "hover:fill-purple-400",
     glowColor: "shadow-purple-500/40",
-    labelPos: { x: 110, y: 750 },
+    labelPos: { x: 174, y: 700 },
   },
 ];
 
@@ -264,29 +264,16 @@ const JapanMap: React.FC<JapanMapProps> = ({
                   {view === "regional" &&
                     isRegionActive &&
                     detail.prefectures.map((pref) => {
-                      const nums = pref.path.match(/-?\d+(\.\d+)?/g);
-                      if (!nums) return null;
-                      // rough centroid
-                      let sx = 0,
-                        sy = 0,
-                        count = 0;
-                      for (let i = 0; i < nums.length; i += 2) {
-                        sx += parseFloat(nums[i]);
-                        sy += parseFloat(nums[i + 1]);
-                        count++;
-                      }
-                      const cx = sx / count;
-                      const cy = sy / count;
-
                       return (
                         <text
                           key={`label-${pref.code}`}
-                          x={cx}
-                          y={cy}
+                          x={pref.labelPos.x}
+                          y={pref.labelPos.y}
                           textAnchor="middle"
-                          className="text-[14px] font-black fill-white pointer-events-none opacity-90"
+                          className="text-[18px] font-black fill-white pointer-events-none"
                           style={{
-                            textShadow: "0 2px 4px rgba(0,0,0,0.8)",
+                            textShadow:
+                              "0 0 10px rgba(0,0,0,1), 0 0 5px rgba(0,0,0,1)",
                           }}
                         >
                           {pref.name}
