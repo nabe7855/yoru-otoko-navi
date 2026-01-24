@@ -660,7 +660,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             {/* 検索セクション */}
             <div className="bg-slate-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-slate-900/40 text-white relative overflow-hidden border border-white/10">
               <div className="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
-              <div className="relative z-10 space-y-8">
+              <div className="relative z-10 flex flex-col">
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="relative group flex-grow">
                     <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-amber-400 transition-colors">
@@ -694,7 +694,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 </div>
 
                 <div
-                  className={`space-y-8 overflow-hidden transition-all duration-500 ease-in-out ${isSearchAccordionOpen ? "max-h-[1000px] opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"}`}
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${isSearchAccordionOpen ? "max-h-[1000px] opacity-100 mt-8 space-y-8" : "max-h-0 opacity-0 mt-0 space-y-0"}`}
                 >
                   <div className="space-y-3">
                     <p className="text-[10px] font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
@@ -765,7 +765,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 </div>
 
                 <button
-                  className="w-full gradient-gold hover:brightness-110 text-slate-900 font-black py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3"
+                  className={`w-full gradient-gold hover:brightness-110 text-slate-900 font-black py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3 ${isSearchAccordionOpen ? "mt-8" : "mt-0"}`}
                   onClick={handleKeywordSearch}
                 >
                   <Search size={24} />
