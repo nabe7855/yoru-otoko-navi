@@ -1,11 +1,31 @@
 "use client";
 
-import { ListFilter, MapPin, Search as SearchIcon, X } from "lucide-react";
+import { ListFilter, MapPin, Search, X } from "lucide-react";
+import { useRouter } from "next/navigation";
 import React, { useEffect, useMemo, useState } from "react";
+import JapanMap from "../components/JapanMap";
 import JobCard from "../components/JobCard";
-import { CATEGORIES, PREFECTURES, TAGS } from "../constants";
+import SearchSection from "../components/SearchSection";
+import {
+  CATEGORIES,
+  JOB_TYPES_FOR_OVERLAY,
+  PREFECTURES,
+  SALARY_OPTIONS_FOR_OVERLAY,
+  TAGS,
+  WORK_STYLE_OPTIONS_FOR_OVERLAY,
+} from "../constants";
 import { jobService } from "../services/jobService";
 import { Job, JobFilters } from "../types";
+
+interface ActiveFilters {
+  categories: string[];
+  prefs: string[];
+  cities: string[];
+  tags: string[];
+  salaries: string[];
+  styles: string[];
+  regions: string[];
+}
 
 interface JobListPageProps {
   initialFilters: JobFilters;
@@ -16,11 +36,57 @@ const JobListPage: React.FC<JobListPageProps> = ({
   initialFilters,
   onViewJob,
 }) => {
-  const [filters, setFilters] = useState<JobFilters>(initialFilters || {});
+  const router = useRouter();
+  const safeFilters = initialFilters || {};
+  const [filters, setFilters] = useState<JobFilters>(safeFilters);
   const [jobs, setJobs] = useState<Job[]>([]);
   const [loading, setLoading] = useState(true);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
   const [keyword, setKeyword] = useState("");
+
+  // Search UI states
+  const [isSearchAccordionOpen, setIsSearchAccordionOpen] = useState(false);
+  const [isMapOpen, setIsMapOpen] = useState(false);
+  const [isJobTypeOpen, setIsJobTypeOpen] = useState(false);
+  const [isSalaryOpen, setIsSalaryOpen] = useState(false);
+  const [isWorkStyleOpen, setIsWorkStyleOpen] = useState(false);
+
+  // Initialize activeFilters from initialFilters
+  const [activeFilters, setActiveFilters] = useState<ActiveFilters>(() => {
+    return {
+      categories: Array.isArray(safeFilters.category)
+        ? safeFilters.category
+        : safeFilters.category
+          ? [safeFilters.category]
+          : [],
+      prefs: Array.isArray(safeFilters.pref)
+        ? safeFilters.pref
+        : safeFilters.pref
+          ? [safeFilters.pref]
+          : [],
+      cities: Array.isArray(safeFilters.city)
+        ? safeFilters.city
+        : safeFilters.city
+          ? [safeFilters.city]
+          : [],
+      regions: Array.isArray(safeFilters.region)
+        ? safeFilters.region
+        : safeFilters.region
+          ? [safeFilters.region]
+          : [],
+      tags: Array.isArray(safeFilters.tags) ? safeFilters.tags : [],
+      salaries: Array.isArray(safeFilters.salary)
+        ? safeFilters.salary
+        : safeFilters.salary
+          ? [safeFilters.salary]
+          : [],
+      styles: Array.isArray(safeFilters.style)
+        ? safeFilters.style
+        : safeFilters.style
+          ? [safeFilters.style]
+          : [],
+    };
+  });
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -41,6 +107,49 @@ const JobListPage: React.FC<JobListPageProps> = ({
         job.area_city.toLowerCase().includes(keyword.toLowerCase()),
     );
   }, [jobs, keyword]);
+
+  const toggleFilter = (type: keyof ActiveFilters, value: string) => {
+    setActiveFilters((prev) => {
+      const current = prev[type];
+      const isSelected = current.includes(value);
+      if (isSelected) {
+        return { ...prev, [type]: current.filter((v) => v !== value) };
+      } else {
+        return { ...prev, [type]: [...current, value] };
+      }
+    });
+  };
+
+  const handleSearch = () => {
+    const params = new URLSearchParams();
+
+    if (activeFilters.categories.length > 0) {
+      activeFilters.categories.forEach((c) => params.append("category", c));
+    }
+    if (activeFilters.prefs.length > 0) {
+      activeFilters.prefs.forEach((p) => params.append("pref", p));
+    }
+    if (activeFilters.cities.length > 0) {
+      activeFilters.cities.forEach((c) => params.append("city", c));
+    }
+    if (activeFilters.regions.length > 0) {
+      activeFilters.regions.forEach((r) => params.append("region", r));
+    }
+    if (activeFilters.tags.length > 0) {
+      activeFilters.tags.forEach((t) => params.append("tags", t));
+    }
+    if (activeFilters.salaries.length > 0) {
+      activeFilters.salaries.forEach((s) => params.append("salary", s));
+    }
+    if (activeFilters.styles.length > 0) {
+      activeFilters.styles.forEach((s) => params.append("style", s));
+    }
+    if (keyword) {
+      params.set("keyword", keyword);
+    }
+
+    router.push(`/jobs?${params.toString()}`);
+  };
 
   const toggleArrayFilter = (key: string, value: string) => {
     const current = (filters[key] as string[]) || [];
@@ -69,36 +178,22 @@ const JobListPage: React.FC<JobListPageProps> = ({
 
   return (
     <div className="container mx-auto px-4 py-6 md:py-8 pb-24">
-      <div className="flex flex-col md:flex-row md:items-center justify-between mb-6 gap-4">
-        <h1 className="text-xl md:text-2xl font-black text-slate-900">
-          求人一覧
-          {filters.pref && (
-            <span className="ml-2 text-indigo-600">in {filters.pref}</span>
-          )}
-        </h1>
-
-        <div className="flex items-center gap-2">
-          <div className="relative flex-1 md:w-64">
-            <input
-              type="text"
-              placeholder="店名やキーワードで検索"
-              value={keyword}
-              onChange={(e) => setKeyword(e.target.value)}
-              className="w-full bg-white border border-slate-200 rounded-xl px-4 py-2 pl-10 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20"
-            />
-            <SearchIcon
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400"
-              size={16}
-            />
-          </div>
-          <button
-            onClick={() => setIsFilterOpen(!isFilterOpen)}
-            className="lg:hidden flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-xl text-sm font-black shadow-sm"
-          >
-            <ListFilter size={18} />
-            絞り込み
-          </button>
-        </div>
+      <div className="mb-8">
+        <SearchSection
+          keyword={keyword}
+          onKeywordChange={setKeyword}
+          activeFilters={activeFilters}
+          onFilterToggle={toggleFilter}
+          onSearch={handleSearch}
+          onMapOpen={() => setIsMapOpen(true)}
+          onJobTypeOpen={() => setIsJobTypeOpen(true)}
+          onSalaryOpen={() => setIsSalaryOpen(true)}
+          onWorkStyleOpen={() => setIsWorkStyleOpen(true)}
+          isAccordionOpen={isSearchAccordionOpen}
+          onAccordionToggle={() =>
+            setIsSearchAccordionOpen(!isSearchAccordionOpen)
+          }
+        />
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -149,124 +244,127 @@ const JobListPage: React.FC<JobListPageProps> = ({
               </div>
 
               <div>
-                <h4 className="text-sm font-black text-slate-800 mb-4">
-                  業態から選ぶ
+                <h4 className="text-sm font-black text-slate-800 mb-4 flex items-center gap-2">
+                  <ListFilter size={16} className="text-indigo-600" />
+                  職種で絞る
                 </h4>
                 <div className="space-y-3">
-                  {CATEGORIES.slice(0, 8).map((c) => {
-                    const isSelected = Array.isArray(filters.category)
-                      ? filters.category.includes(c)
-                      : filters.category === c;
-                    return (
-                      <label
-                        key={c}
-                        className="flex items-center gap-3 cursor-pointer group"
-                      >
-                        <input
-                          type="checkbox"
-                          checked={isSelected}
-                          onChange={() => toggleArrayFilter("category", c)}
-                          className="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 transition"
-                        />
-                        <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition">
-                          {c}
-                        </span>
-                      </label>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div>
-                <h4 className="text-sm font-black text-slate-800 mb-4">
-                  こだわり条件
-                </h4>
-                <div className="grid grid-cols-1 gap-3">
-                  {TAGS.slice(0, 8).map((tag) => (
+                  {CATEGORIES.map((category) => (
                     <label
-                      key={tag}
+                      key={category}
                       className="flex items-center gap-3 cursor-pointer group"
                     >
-                      <input
-                        type="checkbox"
-                        checked={filters.tags?.includes(tag) || false}
-                        onChange={() => toggleArrayFilter("tags", tag)}
-                        className="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 transition"
-                      />
-                      <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition">
-                        {tag}
+                      <div className="relative">
+                        <input
+                          type="checkbox"
+                          className="peer sr-only"
+                          checked={
+                            Array.isArray(filters.category) &&
+                            filters.category.includes(category)
+                          }
+                          onChange={() =>
+                            toggleArrayFilter("category", category)
+                          }
+                        />
+                        <div className="w-5 h-5 border-2 border-slate-300 rounded-md peer-checked:bg-indigo-600 peer-checked:border-indigo-600 transition-all"></div>
+                        <svg
+                          className="absolute w-3 h-3 text-white top-1 left-1 opacity-0 peer-checked:opacity-100 transition-opacity pointer-events-none"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                      </div>
+                      <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition-colors">
+                        {category}
                       </span>
                     </label>
                   ))}
                 </div>
               </div>
-            </div>
 
-            {isFilterOpen && (
-              <button
-                onClick={() => setIsFilterOpen(false)}
-                className="w-full mt-8 py-4 gradient-gold text-slate-900 font-black rounded-xl shadow-lg"
-              >
-                条件を適用する
-              </button>
-            )}
+              <div>
+                <h4 className="text-sm font-black text-slate-800 mb-4 flex items-center gap-2">
+                  <ListFilter size={16} className="text-indigo-600" />
+                  特徴で絞る
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  {TAGS.map((tag) => (
+                    <button
+                      key={tag}
+                      onClick={() => toggleArrayFilter("tags", tag)}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-bold border transition-all ${
+                        Array.isArray(filters.tags) &&
+                        filters.tags.includes(tag)
+                          ? "bg-indigo-600 text-white border-indigo-600 shadow-md shadow-indigo-200"
+                          : "bg-white text-slate-500 border-slate-200 hover:border-indigo-300 hover:text-indigo-600"
+                      }`}
+                    >
+                      {tag}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </aside>
 
-        {/* Main List Area */}
-        <main className="lg:col-span-9 space-y-6">
-          <div className="bg-white rounded-2xl border border-slate-200 p-4 md:p-5 flex flex-col md:flex-row md:items-center justify-between gap-4 shadow-sm">
-            <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-center sm:text-left">
-              <p className="text-sm font-bold text-slate-500">
-                ヒット件数:{" "}
-                <span className="font-black text-slate-900 text-lg">
-                  {filteredJobs.length}
-                </span>{" "}
-                件
-              </p>
-              <div className="flex flex-wrap gap-1.5 justify-center sm:justify-start">
-                {(Object.keys(filters) as Array<keyof JobFilters>).map(
-                  (key) => {
-                    if (key === "keyword") return null;
-                    const val = filters[key];
-                    if (!val) return null;
+        {/* Main Content */}
+        <main className="lg:col-span-9">
+          <div className="bg-white rounded-[2rem] border border-slate-200 p-6 md:p-8 shadow-sm mb-8">
+            <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+              <div className="flex items-baseline gap-2">
+                <h2 className="text-xl font-black text-slate-900">
+                  {keyword ? `"${keyword}" の検索結果` : "検索結果"}
+                </h2>
+                <span className="text-sm font-bold text-slate-500">
+                  {filteredJobs.length}件
+                </span>
+              </div>
 
-                    const colorClass =
-                      key === "category"
-                        ? "bg-amber-50 text-amber-600 border-amber-100"
-                        : "bg-indigo-50 text-indigo-600 border-indigo-100";
+              <div className="flex flex-wrap gap-2">
+                {Object.keys(filters).map((key) => {
+                  const value = filters[key as keyof JobFilters];
+                  if (!value || (Array.isArray(value) && value.length === 0))
+                    return null;
+                  if (key === "salary_min") return null;
 
-                    if (Array.isArray(val)) {
-                      return val.map((v) => (
-                        <span
-                          key={`${key}-${v}`}
-                          className={`inline-flex items-center gap-1.5 px-3 py-1 ${colorClass} text-[10px] font-black rounded-lg border uppercase tracking-tighter`}
-                        >
-                          {v}{" "}
-                          <X
-                            size={10}
-                            className="cursor-pointer hover:text-red-500"
-                            onClick={() => removeFilter(key as any, v)}
-                          />
-                        </span>
-                      ));
-                    }
-
-                    return (
+                  if (Array.isArray(value)) {
+                    return value.map((v) => (
                       <span
-                        key={key}
-                        className={`inline-flex items-center gap-1.5 px-3 py-1 ${colorClass} text-[10px] font-black rounded-lg border uppercase tracking-tighter`}
+                        key={`${key}-${v}`}
+                        className="inline-flex items-center gap-1 px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold"
                       >
-                        {val as string}{" "}
+                        {v}
                         <X
-                          size={10}
-                          className="cursor-pointer hover:text-red-500"
-                          onClick={() => removeFilter(key as any)}
+                          size={12}
+                          className="cursor-pointer hover:text-indigo-900"
+                          onClick={() => removeFilter(key as any, v)}
                         />
                       </span>
-                    );
-                  },
-                )}
+                    ));
+                  }
+
+                  return (
+                    <span
+                      key={key}
+                      className="inline-flex items-center gap-1 px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full text-xs font-bold"
+                    >
+                      {value}
+                      <X
+                        size={12}
+                        className="cursor-pointer hover:text-indigo-900"
+                        onClick={() => removeFilter(key as any)}
+                      />
+                    </span>
+                  );
+                })}
               </div>
             </div>
             <div className="flex items-center gap-3 border-t md:border-t-0 pt-3 md:pt-0 justify-center">
@@ -293,7 +391,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
             ) : (
               <div className="col-span-full py-24 text-center bg-white rounded-[3rem] border-2 border-dashed border-slate-200 flex flex-col items-center gap-6">
                 <div className="w-20 h-20 bg-slate-50 rounded-full flex items-center justify-center text-slate-300">
-                  <SearchIcon size={40} />
+                  <Search size={40} />
                 </div>
                 <div>
                   <p className="text-slate-500 font-black text-lg">
@@ -307,6 +405,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
                   onClick={() => {
                     setFilters({});
                     setKeyword("");
+                    router.push(`/jobs`);
                   }}
                   className="text-indigo-600 font-black hover:underline px-6 py-2 bg-indigo-50 rounded-full transition"
                 >
@@ -317,6 +416,186 @@ const JobListPage: React.FC<JobListPageProps> = ({
           </div>
         </main>
       </div>
+
+      {/* Modals */}
+      {isMapOpen && (
+        <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
+          <div className="w-full max-w-6xl max-h-[90vh] bg-white rounded-3xl overflow-hidden">
+            <JapanMap
+              onRegionSelect={(region) => {
+                // Determine current params to keep other filters if needed,
+                // or just search by region as implied by "Search by Region"
+                // Usually "Search by Region" implies clearing other area filters but keeping refined filters?
+                // For simplicity and "Search by Region" semantics, let's toggle the region and search.
+
+                // Construct params for immediate search
+                const params = new URLSearchParams();
+
+                // Keep existing non-area filters (categories, tags, etc.)
+                activeFilters.categories.forEach((c) =>
+                  params.append("category", c),
+                );
+                activeFilters.tags.forEach((t) => params.append("tags", t));
+                activeFilters.salaries.forEach((s) =>
+                  params.append("salary", s),
+                );
+                activeFilters.styles.forEach((s) => params.append("style", s));
+                if (keyword) params.set("keyword", keyword);
+
+                // Set the selected region
+                params.append("region", region);
+
+                router.push(`/jobs?${params.toString()}`);
+                setIsMapOpen(false);
+              }}
+              onPrefectureSelect={(pref) => {
+                const params = new URLSearchParams();
+
+                // Keep existing non-area filters
+                activeFilters.categories.forEach((c) =>
+                  params.append("category", c),
+                );
+                activeFilters.tags.forEach((t) => params.append("tags", t));
+                activeFilters.salaries.forEach((s) =>
+                  params.append("salary", s),
+                );
+                activeFilters.styles.forEach((s) => params.append("style", s));
+                if (keyword) params.set("keyword", keyword);
+
+                // Set the selected prefecture
+                params.append("pref", pref);
+
+                router.push(`/jobs?${params.toString()}`);
+                setIsMapOpen(false);
+              }}
+              onMunicipalitySelect={(pref, city) => {
+                // Already handled by navigation but let's be safe
+                // Actually map component might handle navigation for municipality?
+                // No, JapanMap usually calls onMunicipalitySelect.
+                // Let's implement this too for consistency
+                const params = new URLSearchParams();
+                activeFilters.categories.forEach((c) =>
+                  params.append("category", c),
+                );
+                activeFilters.tags.forEach((t) => params.append("tags", t));
+                activeFilters.salaries.forEach((s) =>
+                  params.append("salary", s),
+                );
+                activeFilters.styles.forEach((s) => params.append("style", s));
+                if (keyword) params.set("keyword", keyword);
+
+                params.append("pref", pref);
+                params.append("city", city);
+
+                router.push(`/jobs?${params.toString()}`);
+                setIsMapOpen(false);
+              }}
+            />
+            <button
+              onClick={() => setIsMapOpen(false)}
+              className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-100 transition"
+            >
+              <X size={20} />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {isJobTypeOpen && (
+        <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 max-h-[80vh] overflow-y-auto">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-black text-white">職種で探す</h3>
+              <button
+                onClick={() => setIsJobTypeOpen(false)}
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <X size={20} className="text-white" />
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {JOB_TYPES_FOR_OVERLAY.map((type) => (
+                <button
+                  key={type.id}
+                  onClick={() => {
+                    toggleFilter("categories", type.id);
+                    setIsJobTypeOpen(false);
+                  }}
+                  className="p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition text-left"
+                >
+                  <span className="text-sm font-bold text-white">
+                    {type.name}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isSalaryOpen && (
+        <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 max-h-[80vh] overflow-y-auto">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-black text-white">給与で探す</h3>
+              <button
+                onClick={() => setIsSalaryOpen(false)}
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <X size={20} className="text-white" />
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {SALARY_OPTIONS_FOR_OVERLAY.map((option) => (
+                <button
+                  key={option.id}
+                  onClick={() => {
+                    toggleFilter("salaries", option.id);
+                    setIsSalaryOpen(false);
+                  }}
+                  className="p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition text-left"
+                >
+                  <span className="text-sm font-bold text-white">
+                    {option.name}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
+
+      {isWorkStyleOpen && (
+        <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
+          <div className="w-full max-w-2xl bg-slate-900 rounded-3xl p-8 max-h-[80vh] overflow-y-auto">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-xl font-black text-white">働き方で探す</h3>
+              <button
+                onClick={() => setIsWorkStyleOpen(false)}
+                className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition"
+              >
+                <X size={20} className="text-white" />
+              </button>
+            </div>
+            <div className="grid grid-cols-2 gap-3">
+              {WORK_STYLE_OPTIONS_FOR_OVERLAY.map((option) => (
+                <button
+                  key={option.id}
+                  onClick={() => {
+                    toggleFilter("styles", option.id);
+                    setIsWorkStyleOpen(false);
+                  }}
+                  className="p-4 bg-white/5 border border-white/10 rounded-xl hover:bg-white/10 transition text-left"
+                >
+                  <span className="text-sm font-bold text-white">
+                    {option.name}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
