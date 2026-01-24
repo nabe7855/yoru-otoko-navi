@@ -129,7 +129,10 @@ const App: React.FC = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
               <div className="sm:col-span-2">
                 <span className="text-3xl font-black bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent mb-6 inline-block">
-                  夜男ナビ
+                  夜男ナビ{" "}
+                  <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-100">
+                    -ヨルオナビ-
+                  </span>
                 </span>
                 <p className="text-sm leading-relaxed max-w-sm font-medium">
                   夜男ナビ（よるおナビ）は、男性ナイトワークに特化した日本最大級の求人プラットフォームです。

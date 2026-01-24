@@ -25,7 +25,10 @@ const Header: React.FC = () => {
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 group">
               <span className="text-xl md:text-3xl font-black bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent group-hover:brightness-110 transition tracking-tighter">
-                夜男ナビ
+                夜男ナビ{" "}
+                <span className="text-sm md:text-base font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-100">
+                  -ヨルオナビ-
+                </span>
               </span>
             </Link>
           </div>

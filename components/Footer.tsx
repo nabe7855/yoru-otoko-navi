@@ -11,7 +11,10 @@ const Footer: React.FC = () => {
           <div className="sm:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <span className="text-3xl font-black bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
-                夜男ナビ
+                夜男ナビ{" "}
+                <span className="text-lg font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-200 to-amber-100">
+                  -ヨルオナビ-
+                </span>
               </span>
             </Link>
             <p className="text-sm leading-relaxed max-w-sm font-medium">
