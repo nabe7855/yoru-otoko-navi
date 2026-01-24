@@ -11,7 +11,7 @@ interface AuthContextType {
     email: string,
     password: string,
     role: Role,
-    displayName: string
+    displayName: string,
   ) => Promise<{ error: Error | null }>;
   logout: () => Promise<void>;
   isLoading: boolean;
@@ -26,29 +26,31 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
   const [user, setUser] = useState<Profile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  const fetchProfile = async (userId: string): Promise<Profile | null> => {
-    try {
-      const { data, error } = await supabase
-        .from("users")
-        .select("*")
-        .eq("id", userId)
-        .single();
+  const fetchProfile = React.useCallback(
+    async (userId: string): Promise<Profile | null> => {
+      try {
+        const { data, error } = await supabase
+          .from("users")
+          .select("*")
+          .eq("id", userId)
+          .single();
 
-      if (error) {
-        if (error.code === "PGRST116") {
-          // データがないだけならログを出して null を返す
-          console.log("No profile found for user:", userId);
-        } else {
-          console.error("Error fetching profile:", error);
+        if (error) {
+          if (error.code === "PGRST116") {
+            console.log("No profile found for user:", userId);
+          } else {
+            console.error("Error fetching profile:", error);
+          }
+          return null;
         }
+        return data as Profile;
+      } catch (e) {
+        console.error("Unexpected error in fetchProfile:", e);
         return null;
       }
-      return data as Profile;
-    } catch (e) {
-      console.error("Unexpected error in fetchProfile:", e);
-      return null;
-    }
-  };
+    },
+    [supabase],
+  );
 
   useEffect(() => {
     const initAuth = async () => {
@@ -67,7 +69,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 
     const {
       data: { subscription },
-    } = supabase.auth.onAuthStateChange(async (event, session) => {
+    } = supabase.auth.onAuthStateChange(async (_event, session) => {
       if (session?.user) {
         const profile = await fetchProfile(session.user.id);
         setUser(profile);
@@ -80,7 +82,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     return () => {
       subscription.unsubscribe();
     };
-  }, []);
+  }, [supabase, fetchProfile]);
 
   const login = async (email: string, password: string) => {
     const { error } = await supabase.auth.signInWithPassword({
@@ -94,10 +96,10 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     email: string,
     password: string,
     role: Role,
-    displayName: string
+    displayName: string,
   ) => {
     console.log("Starting sign up process for:", email);
-    const { data, error } = await supabase.auth.signUp({
+    const { error } = await supabase.auth.signUp({
       email,
       password,
       options: {
@@ -114,7 +116,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
     }
 
     console.log(
-      "User signed up successfully. Profile will be created via database trigger."
+      "User signed up successfully. Profile will be created via database trigger.",
     );
     return { error: null };
   };

@@ -7,18 +7,15 @@ import { useEffect, useState } from "react";
 
 export default function TalentPool() {
   const { user } = useAuth();
-
-  if (!user || user.role !== "employer") {
-    return (
-      <div className="p-20 text-center text-gray-400">権限がありません。</div>
-    );
-  }
-
   const [employer, setEmployer] = useState<Employer | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchEmployer = async () => {
+      if (!user || user.role !== "employer") {
+        setLoading(false);
+        return;
+      }
       setLoading(true);
       const employers = await jobService.getEmployers();
       const emp = employers.find((e) => e.owner_user_id === user.id);
@@ -26,7 +23,13 @@ export default function TalentPool() {
       setLoading(false);
     };
     fetchEmployer();
-  }, [user.id]);
+  }, [user]);
+
+  if (!user || user.role !== "employer") {
+    return (
+      <div className="p-20 text-center text-gray-400">権限がありません。</div>
+    );
+  }
 
   if (loading)
     return <div className="p-20 text-center text-gray-400">読み込み中...</div>;

@@ -33,15 +33,17 @@ export default function Employer() {
     business_type: "",
     area_pref: "",
     area_city: "",
-    contact_email: "",
+    contact_email: user?.email || "",
     contact_phone: "",
   });
 
-  useEffect(() => {
-    if (user?.email) {
+  const [prevUserEmail, setPrevUserEmail] = useState(user?.email);
+  if (user?.email && user.email !== prevUserEmail) {
+    setPrevUserEmail(user.email);
+    if (!newStore.contact_email) {
       setNewStore((prev) => ({ ...prev, contact_email: user.email }));
     }
-  }, [user]);
+  }
 
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();

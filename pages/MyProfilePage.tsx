@@ -9,11 +9,11 @@ interface MyProfilePageProps {
 }
 
 const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
-  if (!userId) return null;
   const [profile, setProfile] = useState<SeekerProfile | null>(null);
   const [isSaving, setIsSaving] = useState(false);
 
   useEffect(() => {
+    if (!userId) return;
     const fetchProfile = async () => {
       const p = await jobService.getSeekerProfile(userId);
       if (p) {
@@ -92,17 +92,17 @@ const MyProfilePage: React.FC<MyProfilePageProps> = ({ userId, onSave }) => {
                     {status === "active"
                       ? "🔥 積極的に探し中"
                       : status === "passive"
-                      ? "👀 良い所があれば"
-                      : "💤 お休み中"}
+                        ? "👀 良い所があれば"
+                        : "💤 お休み中"}
                     <p className="text-[10px] mt-1 opacity-70 font-normal">
                       {status === "active"
                         ? "店舗からスカウトが届きます"
                         : status === "passive"
-                        ? "条件が合う場合のみ通知"
-                        : "非公開になります"}
+                          ? "条件が合う場合のみ通知"
+                          : "非公開になります"}
                     </p>
                   </button>
-                )
+                ),
               )}
             </div>
           </section>

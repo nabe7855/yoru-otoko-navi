@@ -1,0 +1,108 @@
+﻿
+> yoru-otoko-navi@0.1.0 build
+> next build
+
+笆ｲ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local
+
+node.exe : 笞 The "m
+iddleware" file conv
+ention is deprecated
+. Please use "proxy"
+ instead. Learn more
+: https://nextjs.org
+/docs/messages/middl
+eware-to-proxy
+発生場所 行:1 文字:1
++ & "C:\Program File
+s\nodejs/node.exe" "
+C:\Program Files\nod
+ejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
+    + CategoryInfo  
+            : NotS  
+  pecified: (笞 T   
+ he "middlew...l    
+eware-to-proxy:    S
+tring) [], Rem    ot
+eException
+    + FullyQualifie 
+   dErrorId : Nati  
+  veCommandError
+ 
+  Creating an optimized production build ...
+笨・Compiled successfully in 1634.7ms
+  Running TypeScript ...
+Failed to compile.
+
+./app/test/螟懈ｼ｢繝翫ン-(
+yakan-navi) (1)/App.
+tsx:54:40
+Type error: Binding 
+element 'isActive' i
+mplicitly has an 'an
+y' type.
+
+[0m [90m 52 |[39m
+         {[90m/* Mo
+bile Sticky Navigati
+on */[39m}
+ [90m 53 |[39m    
+     [33m<[39m[33
+mnav[39m className
+[33m=[39m[32m"lg:h
+idden fixed bottom-0
+ left-0 right-0 bg-w
+hite/90 backdrop-blu
+r-md border-t border
+-slate-200 h-16 flex
+ items-center justif
+y-around px-2 z-[55]
+ shadow-[0_-5px_15px
+_rgba(0,0,0,0.05)]"
+[39m[33m>[39m
+[31m[1m>[22m[39m
+[90m 54 |[39m     
+      [33m<[39m[3
+3mNavLink[39m to[3
+3m=[39m[32m"/"[39
+m className[33m=[3
+9m{({isActive}) [33
+m=>[39m [32m`flex 
+flex-col items-cente
+r gap-1 transition-c
+olors ${isActive ? '
+text-indigo-600' : '
+text-slate-400'}`[3
+9m}[33m>[39m
+ [90m    |[39m    
+                    
+                [31
+m[1m^[22m[39m
+ [90m 55 |[39m    
+         [33m<[39m
+[33mHomeIcon[39m s
+ize[33m=[39m{[35m
+20[39m} [33m/[39m
+[33m>[39m
+ [90m 56 |[39m    
+         [33m<[39m
+[33mspan[39m class
+Name[33m=[39m[32m
+"text-[10px] font-bl
+ack uppercase tracki
+ng-tighter"[39m[33
+m>[39m繝帙・繝[33m<[
+39m[33m/[39m[33ms
+pan[39m[33m>[39m
+ [90m 57 |[39m    
+       [33m<[39m[
+33m/[39m[33mNavLin
+k[39m[33m>[39m[0
+m
+Next.js build worker
+ exited with code: 1
+ and signal: null

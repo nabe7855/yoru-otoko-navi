@@ -7,35 +7,34 @@ interface TalentPoolPageProps {
 }
 
 const TalentPoolPage: React.FC<TalentPoolPageProps> = ({ employer }) => {
-  if (!employer) return null;
   const [talents, setTalents] = useState<SeekerProfile[]>([]);
-  const [selectedTalent, setSelectedTalent] = useState<SeekerProfile | null>(
-    null
-  );
 
   useEffect(() => {
+    if (!employer) return;
     const fetchTalents = async () => {
-      const list = await jobService.getMatchingTalents(employer.id);
+      const list = await jobService.getMatchingTalents();
       setTalents(list);
     };
     fetchTalents();
-  }, [employer.id]);
+  }, [employer?.id, employer]);
+
+  if (!employer) return null;
 
   const handleSendOffer = (talent: SeekerProfile) => {
     const message = prompt(
       `${talent.display_name}さんに送るメッセージを入力してください:`,
-      "当店の雰囲気にぴったりだと思いスカウトさせていただきました！一度お話しませんか？"
+      "当店の雰囲気にぴったりだと思いスカウトさせていただきました！一度お話しませんか？",
     );
     if (message) {
       jobService.submitApplication({
-        jobId: "offer",
-        jobTitle: `スカウト (${employer.name})`,
-        seekerUserId: talent.id,
-        seekerName: talent.display_name,
-        contactType: "line",
-        contactValue: "N/A",
+        job_id: "offer",
+        job_title: `スカウト (${employer.name})`,
+        seeker_user_id: talent.id,
+        seeker_name: talent.display_name,
+        contact_type: "line",
+        contact_value: "N/A",
         message: message,
-        isOffer: true,
+        is_offer: true,
       });
       alert("スカウトを送信しました！");
     }

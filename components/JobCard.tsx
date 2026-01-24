@@ -1,71 +1,203 @@
+import {
+  Car,
+  ChevronRight,
+  MapPin,
+  MessageCircle,
+  ParkingCircle,
+  Star,
+  Zap,
+} from "lucide-react";
+import Link from "next/link";
 import React from "react";
 import { Job } from "../types";
 
 interface JobCardProps {
   job: Job;
-  onClick: (id: string) => void;
+  onClick?: (id: string) => void;
 }
 
 const JobCard: React.FC<JobCardProps> = ({ job, onClick }) => {
+  const hasParking = job.tags?.includes("駐車場無料") || false;
+  const canCommuteByCar = job.tags?.includes("車通勤可") || false;
+
+  const handleCardClick = () => {
+    if (onClick) {
+      onClick(job.id);
+    }
+  };
+
   return (
     <div
-      className="bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition cursor-pointer overflow-hidden flex flex-col md:flex-row"
-      onClick={() => onClick(job.id)}
+      className="group bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col relative cursor-pointer"
+      onClick={handleCardClick}
     >
-      <div className="w-full md:w-64 h-48 md:h-auto shrink-0 relative">
-        <img
-          src={
-            job.images[0] || "https://picsum.photos/seed/placeholder/400/300"
-          }
-          alt={job.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-2 left-2 px-2 py-1 bg-black/60 backdrop-blur-sm text-white text-[10px] font-bold rounded">
-          {job.category}
+      {/* 1. アイキャッチ（上部） */}
+      <div className="relative flex flex-row h-32 sm:h-44 bg-slate-50">
+        {/* ラベル */}
+        <div className="absolute top-2 left-2 z-10 flex flex-col gap-1">
+          {job.salary_min >= 500000 && (
+            <span className="bg-amber-500 text-slate-950 text-[10px] font-black px-2 py-0.5 rounded shadow-lg uppercase tracking-wider">
+              高収入
+            </span>
+          )}
+          {job.is_hot && (
+            <span className="bg-orange-600 text-white text-[10px] font-black px-2 py-0.5 rounded shadow-lg uppercase tracking-wider animate-pulse">
+              急募！
+            </span>
+          )}
+        </div>
+
+        {/* 左側：現場写真 */}
+        <div className="w-1/2 h-full overflow-hidden">
+          <img
+            src={
+              (job.images && job.images[0]) ||
+              "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?auto=format&fit=crop&q=80&w=600"
+            }
+            alt={job.employer_name}
+            className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+          />
+        </div>
+
+        {/* 右側：給与バッジ・店舗名 */}
+        <div className="w-1/2 p-3 sm:p-5 flex flex-col justify-center bg-slate-900 text-white relative">
+          <div className="absolute top-0 right-0 w-24 h-24 bg-amber-500/5 rounded-full -mr-10 -mt-10 blur-2xl"></div>
+          <div className="mb-1 md:mb-2">
+            <span className="text-[10px] md:text-xs font-black text-amber-500 block mb-1">
+              想定給与
+            </span>
+            <div className="text-lg md:text-2xl font-black text-white tracking-tight leading-none italic mb-1">
+              {job.salary_min.toLocaleString()}円〜
+            </div>
+            {/* 安心の注釈追加 */}
+            <span className="text-[8px] md:text-[10px] text-amber-500/80 font-bold block">
+              ※試用期間中も給与同額を保証
+            </span>
+          </div>
+          <h3 className="text-xs md:text-sm font-bold text-slate-300 line-clamp-1">
+            {job.employer_name}
+          </h3>
         </div>
       </div>
 
-      <div className="p-5 flex-grow flex flex-col justify-between">
-        <div>
-          <div className="flex justify-between items-start mb-2">
-            <h3 className="text-lg font-bold text-gray-900 line-clamp-2 leading-snug">
-              {job.title}
-            </h3>
-          </div>
-          <div className="flex items-center text-indigo-600 font-bold text-lg mb-2">
-            <span className="text-sm mr-1">
-              {job.salary_type === "hourly"
-                ? "時給"
-                : job.salary_type === "daily"
-                ? "日給"
-                : "月給"}
+      {/* 2. ヘッダー / キャッチコピー */}
+      <div className="p-4 md:p-6 bg-white border-b border-slate-50">
+        <h2 className="text-sm md:text-lg font-black text-slate-900 mb-4 leading-relaxed">
+          {job.title ||
+            "未経験大歓迎！圧倒的な稼ぎやすさと安定した環境を提供します。"}
+        </h2>
+
+        {/* 3. メリットタグ + アイコン */}
+        <div className="flex flex-wrap gap-1.5 md:gap-2 mb-6">
+          {(job.tags || []).slice(0, 5).map((tag, idx) => (
+            <span
+              key={idx}
+              className="bg-slate-900 text-amber-400 text-[9px] md:text-[10px] font-black px-2.5 py-1 rounded border border-amber-900/30 flex items-center gap-1"
+            >
+              {tag === "駐車場無料" && (
+                <ParkingCircle size={12} className="shrink-0" />
+              )}
+              {tag === "車通勤可" && <Car size={12} className="shrink-0" />}
+              {tag}
             </span>
-            {job.salary_min.toLocaleString()}円 〜{" "}
-            {job.salary_max.toLocaleString()}円
-          </div>
-          <div className="flex items-center text-gray-500 text-sm mb-3">
-            <i className="fas fa-map-marker-alt mr-2 text-gray-400"></i>
-            {job.area_pref} {job.area_city}
-            <span className="mx-2 text-gray-300">|</span>
-            <i className="fas fa-store mr-2 text-gray-400"></i>
-            {job.employer_name}
-          </div>
-          <div className="flex flex-wrap gap-1">
-            {job.tags.slice(0, 4).map((tag) => (
-              <span
-                key={tag}
-                className="px-2 py-1 bg-gray-100 text-gray-600 text-[10px] rounded-full"
+          ))}
+          {/* アイコンのみの強調表示（任意） */}
+          {(hasParking || canCommuteByCar) && (
+            <div className="flex gap-1.5 ml-auto">
+              {hasParking && (
+                <div
+                  className="w-7 h-7 bg-emerald-50 text-emerald-600 rounded-full flex items-center justify-center border border-emerald-100"
+                  title="駐車場無料"
+                >
+                  <ParkingCircle size={16} />
+                </div>
+              )}
+              {canCommuteByCar && (
+                <div
+                  className="w-7 h-7 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center border border-blue-100"
+                  title="車通勤可"
+                >
+                  <Car size={16} />
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* 4. 詳細情報（職種別給与・アクセス） */}
+        <div className="space-y-3 bg-slate-50 rounded-2xl p-4 mb-6 border border-slate-100">
+          {job.role_salaries &&
+            job.role_salaries.map((rs, idx) => (
+              <div
+                key={idx}
+                className="flex items-center justify-between text-[11px] md:text-sm font-bold"
               >
-                {tag}
-              </span>
+                <span className="text-slate-500 flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div>
+                  {rs.roleName}
+                </span>
+                <span className="text-slate-900 font-black">{rs.amount}</span>
+              </div>
             ))}
+          {!job.role_salaries && (
+            <div className="flex items-center justify-between text-[11px] md:text-sm font-bold">
+              <span className="text-slate-500 flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-indigo-500"></div>
+                {job.category}
+              </span>
+              <span className="text-slate-900 font-black">
+                {job.salary_min.toLocaleString()}円〜
+              </span>
+            </div>
+          )}
+          <div className="pt-2 border-t border-slate-200 mt-2 flex items-center gap-2 text-[10px] md:text-xs text-slate-600">
+            <MapPin size={14} className="text-slate-400 shrink-0" />
+            <span className="font-bold">
+              {job.area_pref}
+              {job.area_city}
+            </span>
+            <span className="text-slate-400">
+              ({job.access_info || "駅チカ"})
+            </span>
           </div>
         </div>
 
-        <div className="mt-4 pt-4 border-t border-gray-50 flex items-center justify-between text-xs text-gray-400">
-          <span>更新日: {job.updated_at.split("T")[0]}</span>
-          <span className="text-indigo-600 font-medium">
-            詳細を見る <i className="fas fa-chevron-right ml-1"></i>
+        {/* 5. アクションエリア */}
+        <div className="flex gap-2">
+          <button className="p-3.5 bg-slate-100 text-slate-400 hover:text-red-500 hover:bg-red-50 transition-all rounded-2xl border border-slate-200 flex items-center justify-center shrink-0">
+            <Star size={20} className="fill-current" />
+          </button>
+
+          <button
+            className="flex-1 bg-emerald-500 text-white font-black py-3.5 rounded-2xl shadow-lg shadow-emerald-500/20 hover:bg-emerald-600 transition-all active:scale-[0.98] flex items-center justify-center gap-2 text-sm md:text-base"
+            onClick={(e) => {
+              e.stopPropagation();
+              //応募へのログアウトなど将来的に入れる
+            }}
+          >
+            <MessageCircle size={18} />
+            LINEで話を聞く
+          </button>
+
+          <Link
+            href={`/jobs/${job.id}`}
+            className="hidden sm:flex items-center justify-center p-3.5 bg-slate-900 text-white rounded-2xl border border-slate-800 hover:bg-black transition-all"
+            title="詳細を見る"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <ChevronRight size={20} />
+          </Link>
+        </div>
+
+        <div className="mt-4 flex items-center justify-between">
+          <div className="flex items-center gap-1.5">
+            <Zap size={12} className="text-amber-500" />
+            <span className="text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+              面接時履歴書不要 ・ 1分で応募
+            </span>
+          </div>
+          <span className="text-[10px] text-slate-300 font-bold">
+            掲載終了まで あと4日
           </span>
         </div>
       </div>

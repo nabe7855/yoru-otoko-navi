@@ -1,4 +1,31 @@
 export type Role = "guest" | "jobseeker" | "employer" | "admin";
+export type Region =
+  | "hokkaido"
+  | "tohoku"
+  | "kanto"
+  | "chubu"
+  | "kansai"
+  | "chugoku"
+  | "shikoku"
+  | "kyushu";
+
+export interface RoleSalary {
+  roleName: string;
+  amount: string;
+}
+
+export interface SuccessStory {
+  id: string;
+  name: string;
+  age: number;
+  storeName: string;
+  area: string;
+  monthlyIncome: string;
+  formerIncome: string;
+  formerJob: string;
+  catchphrase: string;
+  image: string;
+}
 
 export type JobStatus =
   | "draft"
@@ -81,6 +108,9 @@ export interface Job {
   // マッチング用
   required_mbti?: string[];
   shop_vibe?: string[];
+  // 新しいUI用
+  role_salaries?: RoleSalary[];
+  is_new?: boolean;
 }
 
 export interface Application {
@@ -96,3 +126,52 @@ export interface Application {
   created_at: string;
   is_offer?: boolean; // スカウト（逆指名）かどうか
 }
+
+export interface JobFilters {
+  category?: string;
+  pref?: string;
+  city?: string;
+  employment_type?: string;
+  employmentType?: string;
+  salary_min?: number;
+  tags?: string[];
+  keyword?: string;
+  role?: string;
+  salary?: string;
+  style?: string;
+}
+
+export interface YakanColumn {
+  id: string;
+  title: string;
+  category: string;
+  date: string;
+  image: string;
+}
+
+export interface SubBanner {
+  title: string;
+  image: string;
+  link: string;
+}
+
+export interface MasterGuide {
+  id: string;
+  title: string;
+  target: string;
+  copy: string;
+  microCopy: string;
+  icon: React.ReactNode;
+  gradient: string;
+  accent: string;
+}
+
+export type JobCreateInput = Omit<
+  Job,
+  "id" | "status" | "created_at" | "updated_at" | "published_at"
+>;
+
+export type ApplicationInput = Omit<
+  Application,
+  "id" | "status" | "created_at"
+>;

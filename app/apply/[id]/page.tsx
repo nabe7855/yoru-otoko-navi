@@ -1,6 +1,6 @@
 "use client";
 import { useAuth } from "@/context/AuthContext";
-import ApplyPage from "@/pages/ApplyPage";
+import ApplyPage, { ApplyFormData } from "@/pages/ApplyPage";
 import { jobService } from "@/services/jobService";
 import { Job } from "@/types";
 import { useRouter } from "next/navigation";
@@ -37,12 +37,16 @@ export default function Apply({ params }: { params: Promise<{ id: string }> }) {
     <ApplyPage
       job={job}
       onCancel={() => router.push(`/jobs/${job.id}`)}
-      onSubmit={async (data) => {
+      onSubmit={async (data: ApplyFormData) => {
+        if (!user) {
+          alert("応募するにはログインが必要です。");
+          return;
+        }
         await jobService.submitApplication({
           ...data,
           job_id: job.id,
           job_title: job.title,
-          seeker_user_id: user?.id,
+          seeker_user_id: user.id,
           seeker_name: data.name,
         });
         alert("応募が完了しました！店舗からの連絡をお待ちください。");

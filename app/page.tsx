@@ -1,11 +1,12 @@
 "use client";
 import HomePage from "@/pages/HomePage";
+import { JobFilters } from "@/types";
 import { useRouter } from "next/navigation";
 
 export default function Home() {
   const router = useRouter();
 
-  const handleSearch = (filters: any) => {
+  const handleSearch = (filters: JobFilters) => {
     // 検索条件をクエリパラメータに変換して /jobs へ遷移、または都道府県検索へ
     if (filters.pref && !filters.category) {
       router.push(`/pref/${filters.pref}`);

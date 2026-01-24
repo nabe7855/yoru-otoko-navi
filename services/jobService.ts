@@ -1,5 +1,14 @@
 import { createClient } from "@/lib/supabase/client";
-import { Application, Employer, Job, Profile, SeekerProfile } from "@/types";
+import {
+  Application,
+  ApplicationInput,
+  Employer,
+  Job,
+  JobCreateInput,
+  JobFilters,
+  Profile,
+  SeekerProfile,
+} from "@/types";
 import { mockApplications, mockEmployers, mockJobs } from "./mockData";
 
 const supabase = createClient();
@@ -104,7 +113,7 @@ export const jobService = {
     return data as Job;
   },
 
-  async searchJobs(filters: any): Promise<Job[]> {
+  async searchJobs(filters: JobFilters): Promise<Job[]> {
     let query = supabase.from("jobs").select("*").eq("status", "published");
 
     if (filters.category) query = query.eq("category", filters.category);
@@ -130,7 +139,7 @@ export const jobService = {
     return data as Job[];
   },
 
-  async createJob(jobData: any): Promise<Job | null> {
+  async createJob(jobData: JobCreateInput): Promise<Job | null> {
     const newJob = {
       ...jobData,
       id: crypto.randomUUID(),
@@ -175,7 +184,7 @@ export const jobService = {
   },
 
   async createEmployer(
-    employerData: Omit<Employer, "id" | "status">
+    employerData: Omit<Employer, "id" | "status">,
   ): Promise<Employer | null> {
     const newEmployer = {
       ...employerData,
@@ -200,7 +209,7 @@ export const jobService = {
 
   async updateEmployerStatus(
     employerId: string,
-    status: Employer["status"]
+    status: Employer["status"],
   ): Promise<void> {
     const { error } = await supabase
       .from("employers")
@@ -223,7 +232,9 @@ export const jobService = {
     return data as Application[];
   },
 
-  async submitApplication(appData: any): Promise<Application | null> {
+  async submitApplication(
+    appData: ApplicationInput,
+  ): Promise<Application | null> {
     const newApp = {
       ...appData,
       id: crypto.randomUUID(),
@@ -245,7 +256,7 @@ export const jobService = {
 
   async updateApplicationStatus(
     appId: string,
-    status: Application["status"]
+    status: Application["status"],
   ): Promise<void> {
     const { error } = await supabase
       .from("applications")
@@ -254,7 +265,7 @@ export const jobService = {
     if (error) console.error("Error updating application status:", error);
   },
 
-  async getMatchingTalents(employerId: string): Promise<SeekerProfile[]> {
+  async getMatchingTalents(): Promise<SeekerProfile[]> {
     const { data, error } = await supabase
       .from("seeker_profiles")
       .select("*, users(*)")
@@ -264,11 +275,11 @@ export const jobService = {
       console.error("Error fetching matching talents:", error);
       return [];
     }
-    return data.map((d: any) => ({
+    return (data as (SeekerProfile & { users: Profile })[]).map((d) => ({
       ...d.users,
       ...d,
-      personalityTags: d.personality_tags || [],
-      jobHuntingStatus: d.job_hunting_status || "active",
+      personality_tags: d.personality_tags || [],
+      job_hunting_status: d.job_hunting_status || "active",
     })) as SeekerProfile[];
   },
 };

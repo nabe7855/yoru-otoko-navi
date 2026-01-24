@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import { CATEGORIES, EMPLOYMENT_TYPES, PREFECTURES } from "../constants";
+import { JobCreateInput, SalaryType } from "../types";
 
 interface PostJobPageProps {
   employerId: string;
   employerName: string;
-  onSubmit: (data: any) => void;
+  onSubmit: (data: JobCreateInput) => void;
   onCancel: () => void;
 }
 
@@ -14,14 +15,13 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
   onSubmit,
   onCancel,
 }) => {
-  if (!employerId) return null;
   const [formData, setFormData] = useState({
     title: "",
     category: CATEGORIES[0],
     employment_type: EMPLOYMENT_TYPES[1],
     area_pref: PREFECTURES[0],
     area_city: "",
-    salary_type: "hourly",
+    salary_type: "hourly" as SalaryType,
     salary_min: 1200,
     salary_max: 1500,
     description: "",
@@ -34,7 +34,10 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
     working_hours: "",
     holidays: "",
     workplace_info: "",
+    images: [] as string[],
   });
+
+  if (!employerId) return null;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,8 +46,6 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
       ...formData,
       employer_id: employerId,
       employer_name: employerName,
-      updated_at: new Date().toISOString(),
-      status: "pending",
     });
   };
 
@@ -185,7 +186,14 @@ const PostJobPage: React.FC<PostJobPageProps> = ({
                     rows={3}
                     className="w-full px-6 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-4 focus:ring-blue-100 outline-none text-sm leading-relaxed"
                     placeholder={item.placeholder}
-                    value={(formData as any)[item.field]}
+                    value={
+                      (
+                        formData as unknown as Record<
+                          string,
+                          string | number | string[]
+                        >
+                      )[item.field]
+                    }
                     onChange={(e) =>
                       setFormData({ ...formData, [item.field]: e.target.value })
                     }

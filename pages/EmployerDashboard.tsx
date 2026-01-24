@@ -11,13 +11,13 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
   employer,
   onPostJob,
 }) => {
-  if (!employer) return null;
   const [jobs, setJobs] = useState<Job[]>([]);
   const [applications, setApplications] = useState<Application[]>([]);
   const [loading, setLoading] = useState(true);
   const [activeTab, setActiveTab] = useState<"jobs" | "applications">("jobs");
 
   useEffect(() => {
+    if (!employer) return;
     const fetchData = async () => {
       setLoading(true);
       const allJobs = await jobService.getJobs();
@@ -30,15 +30,17 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
       setLoading(false);
     };
     fetchData();
-  }, [employer.id]);
+  }, [employer?.id, employer]);
+
+  if (!employer) return null;
 
   const handleUpdateAppStatus = async (
     appId: string,
-    status: Application["status"]
+    status: Application["status"],
   ) => {
     await jobService.updateApplicationStatus(appId, status);
     setApplications((prev) =>
-      prev.map((a) => (a.id === appId ? { ...a, status } : a))
+      prev.map((a) => (a.id === appId ? { ...a, status } : a)),
     );
   };
 
@@ -109,15 +111,15 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
                             job.status === "published"
                               ? "bg-green-50 text-green-600"
                               : job.status === "pending"
-                              ? "bg-yellow-50 text-yellow-600"
-                              : "bg-gray-100 text-gray-500"
+                                ? "bg-yellow-50 text-yellow-600"
+                                : "bg-gray-100 text-gray-500"
                           }`}
                         >
                           {job.status === "published"
                             ? "公開中"
                             : job.status === "pending"
-                            ? "審査中"
-                            : "下書き"}
+                              ? "審査中"
+                              : "下書き"}
                         </span>
                       </td>
                       <td className="px-6 py-4 text-gray-600">
@@ -173,7 +175,10 @@ const EmployerDashboard: React.FC<EmployerDashboardProps> = ({
                         className="bg-gray-50 border border-gray-200 rounded-lg text-sm p-2 font-medium"
                         value={app.status}
                         onChange={(e) =>
-                          handleUpdateAppStatus(app.id, e.target.value as any)
+                          handleUpdateAppStatus(
+                            app.id,
+                            e.target.value as Application["status"],
+                          )
                         }
                       >
                         <option value="submitted">未対応</option>

@@ -13,9 +13,8 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
   onViewJob,
   onBack,
 }) => {
-  if (!onViewJob) return null;
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<any>({});
+  const [answers, setAnswers] = useState<Record<string, string>>({});
   const [chatHistory, setChatHistory] = useState<
     { type: "bot" | "user"; text: string }[]
   >([
@@ -34,6 +33,8 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [chatHistory]);
+
+  if (!onViewJob) return null;
 
   const handleAnswer = (option: string) => {
     const currentQuestion = MATCHING_QUESTIONS[step];
@@ -136,9 +137,9 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
   }
 
   return (
-    <div className="fixed inset-0 top-20 bottom-[170px] z-0 flex flex-col bg-slate-50 w-full md:static md:h-auto md:bg-transparent md:container md:mx-auto md:max-w-2xl md:py-8 md:px-4">
+    <div className="fixed inset-0 top-20 bottom-0 z-50 flex flex-col bg-slate-50 w-full md:static md:h-auto md:bg-transparent md:container md:mx-auto md:max-w-2xl md:py-8 md:px-4 md:z-0">
       {/* Chat History */}
-      <div className="flex-grow overflow-y-auto p-4 space-y-4 no-scrollbar pb-4 md:pb-8">
+      <div className="flex-grow overflow-y-auto p-4 space-y-4 no-scrollbar pb-24 md:pb-8">
         {chatHistory.map((msg, i) => (
           <div
             key={i}
@@ -160,8 +161,8 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
         <div ref={chatEndRef} />
       </div>
 
-      {/* Input Area (Fixed at bottom of this container) */}
-      <div className="bg-white border-t border-indigo-50 p-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-10 w-full">
+      {/* Input Area (Fixed at bottom of this container, above mobile nav) */}
+      <div className="bg-white border-t border-indigo-50 p-4 pb-20 md:pb-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[60] w-full">
         <div className="grid grid-cols-2 gap-3">
           {MATCHING_QUESTIONS[step].options.map((opt) => (
             <button

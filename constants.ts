@@ -120,6 +120,227 @@ export const MATCHING_QUESTIONS = [
   },
 ];
 
+export const JOB_TYPES_FOR_OVERLAY = [
+  {
+    name: "黒服(ボーイ)",
+    icon: "Users",
+    id: "Boy",
+  },
+  {
+    name: "幹部候補（マネージャー）",
+    icon: "TrendingUp",
+    id: "Manager",
+  },
+  {
+    name: "店長",
+    icon: "Briefcase",
+    id: "StoreManager",
+  },
+  {
+    name: "送りドライバー",
+    icon: "Car",
+    id: "Driver",
+  },
+  {
+    name: "キャッシャー",
+    icon: "Coins",
+    id: "Cashier",
+  },
+  {
+    name: "キッチン",
+    icon: "Utensils",
+    id: "Kitchen",
+  },
+  {
+    name: "ソムリエ",
+    icon: "Wine",
+    id: "Sommelier",
+  },
+  {
+    name: "バーテンダー",
+    icon: "Martini",
+    id: "Bartender",
+  },
+  {
+    name: "ヘアメイク",
+    icon: "Scissors",
+    id: "HairMake",
+  },
+  {
+    name: "エスコート",
+    icon: "UserPlus",
+    id: "Escort",
+  },
+  {
+    name: "カメラマン",
+    icon: "Camera",
+    id: "Cameraman",
+  },
+  {
+    name: "スカウトマン",
+    icon: "Search",
+    id: "Scoutman",
+  },
+  {
+    name: "キャッチ",
+    icon: "Megaphone",
+    id: "Catch",
+  },
+  {
+    name: "メンズコンカフェ",
+    icon: "Coffee",
+    id: "MenConCafe",
+  },
+  {
+    name: "ホスト",
+    icon: "Star",
+    id: "Host",
+  },
+  {
+    name: "ボーイズバー",
+    icon: "Music",
+    id: "BoysBar",
+  },
+];
+
+export const SALARY_OPTIONS_FOR_OVERLAY = [
+  { name: "月給30万円〜", icon: "Banknote", id: "monthly_30" },
+  { name: "月給50万円〜", icon: "Gem", id: "monthly_50" },
+  { name: "月給80万円〜", icon: "Trophy", id: "monthly_80" },
+  { name: "日給1.2万円〜", icon: "HandCoins", id: "daily_12" },
+  { name: "日給1.5万円〜", icon: "Coins", id: "daily_15" },
+  { name: "時給1,500円〜", icon: "Clock", id: "hourly_15" },
+  { name: "時給2,000円〜", icon: "Zap", id: "hourly_20" },
+  { name: "高額バックあり", icon: "Percent", id: "high_back" },
+  { name: "即日日払いOK", icon: "Wallet", id: "daily_pay" },
+  { name: "昇給随時", icon: "ArrowUpRight", id: "raise" },
+];
+
+export const WORK_STYLE_OPTIONS_FOR_OVERLAY = [
+  { name: "正社員・転職", icon: "Briefcase", id: "FullTime" },
+  { name: "アルバイト", icon: "Utensils", id: "PartTime" },
+  { name: "パート", icon: "ShoppingBag", id: "Part" },
+  { name: "派遣", icon: "Calculator", id: "Temporary" },
+  { name: "契約社員", icon: "PenTool", id: "Contract" },
+  { name: "業務委託", icon: "Scissors", id: "Outsourcing" },
+  { name: "在宅ワーク", icon: "Headset", id: "Remote" },
+  { name: "フリーランス", icon: "Laptop", id: "Freelance" },
+  { name: "新卒", icon: "GraduationCap", id: "NewGrad" },
+  { name: "インターン", icon: "Award", id: "Intern" },
+];
+
+export const MOCK_COLUMNS = [
+  {
+    id: "1",
+    title:
+      "黒服（ボーイ）の仕事内容とは？未経験から店長を目指すキャリアパスを徹底解説",
+    category: "働き方ガイド",
+    date: "2024.03.15",
+    image:
+      "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: "2",
+    title: "ナイトワーク業界の必須用語集。新人スタッフがまず覚えるべき基礎知識",
+    category: "業界知識",
+    date: "2024.03.10",
+    image:
+      "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: "3",
+    title:
+      "日払い・週払いの仕組みとは？急な出費も安心なナイトワークの給与システム",
+    category: "給与・待遇",
+    date: "2024.03.05",
+    image:
+      "https://images.unsplash.com/photo-1554224155-1696413575b8?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: "4",
+    title:
+      "【完全版】寮完備求人のメリット・デメリット。一人暮らしを始めるならどっち？",
+    category: "ライフスタイル",
+    date: "2024.02.28",
+    image:
+      "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=800",
+  },
+];
+
+export const MASTER_GUIDES_ENHANCED = [
+  {
+    id: "diagnosis",
+    title: "適職タイプ診断",
+    target: "初心者・迷っている人",
+    copy: "君の武器は何か？5分でわかる適職診断",
+    microCopy: "累計1万人が診断！",
+    iconName: "Target",
+    gradient: "from-slate-800 to-slate-950",
+    accent: "border-amber-500/30",
+  },
+  {
+    id: "knowhow",
+    title: "稼げるノウハウ集",
+    target: "ガッツリ稼ぎたい人",
+    copy: "月収100万への最短ルート。デキる男の処世術",
+    microCopy: "現役店長が徹底監修",
+    iconName: "Book",
+    gradient: "from-slate-900 to-black",
+    accent: "border-amber-600/50",
+  },
+  {
+    id: "beginner",
+    title: "未経験スタートガイド",
+    target: "不安な初心者",
+    copy: "知識ゼロからプロへ。初日に差がつく基礎知識",
+    microCopy: "初心者の8割が閲覧中",
+    iconName: "UserCheck",
+    gradient: "from-blue-900/20 to-slate-950",
+    accent: "border-blue-500/30",
+  },
+  {
+    id: "income",
+    title: "リアルな収支図鑑",
+    target: "現実志向の人",
+    copy: "ぶっちゃけいくら残る？1ヶ月のシミュレーション",
+    microCopy: "現場のリアルな数字を公開",
+    iconName: "CreditCard",
+    gradient: "from-emerald-900/20 to-slate-950",
+    accent: "border-emerald-500/30",
+  },
+  {
+    id: "safety",
+    title: "トラブル回避Q&A",
+    target: "慎重派な人",
+    copy: "安心して働くために。知っておくべき法律と知恵",
+    microCopy: "顧問弁護士が法的アドバイス",
+    iconName: "Shield",
+    gradient: "from-rose-900/20 to-slate-950",
+    accent: "border-rose-500/30",
+  },
+];
+
+export const SUB_BANNERS = [
+  {
+    title: "転職・中途採用の求人",
+    image:
+      "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=800",
+    link: "/search?type=mid",
+  },
+  {
+    title: "2026・27 新卒採用・インターンシップ情報",
+    image:
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800",
+    link: "/search?type=new",
+  },
+  {
+    title: "語学を活かせる求人",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=800",
+    link: "/search?type=language",
+  },
+];
+
 // Prefecture code mapping for SVG map
 export const PREFECTURE_CODE_MAP: Record<string, string> = {
   "01": "北海道",
@@ -170,3 +391,240 @@ export const PREFECTURE_CODE_MAP: Record<string, string> = {
   "46": "鹿児島県",
   "47": "沖縄県",
 };
+
+import { Region, SuccessStory } from "./types";
+
+export const REGIONS_DATA: Record<Region, string[]> = {
+  hokkaido: ["北海道"],
+  tohoku: ["青森", "岩手", "宮城", "秋田", "山形", "福島"],
+  kanto: ["東京", "神奈川", "埼玉", "千葉", "茨城", "栃木", "群馬"],
+  chubu: [
+    "愛知",
+    "静岡",
+    "岐阜",
+    "三重",
+    "新潟",
+    "富山",
+    "石川",
+    "福井",
+    "山梨",
+    "長野",
+  ],
+  kansai: ["大阪", "兵庫", "京都", "滋賀", "奈良", "和歌山"],
+  chugoku: ["鳥取", "島根", "岡山", "広島", "山口"],
+  shikoku: ["徳島", "香川", "愛媛", "高知"],
+  kyushu: ["福岡", "佐賀", "長崎", "熊本", "大分", "宮崎", "鹿児島", "沖縄"],
+};
+
+export const MUNICIPALITIES_DATA: Record<string, string[]> = {
+  東京: [
+    "新宿区",
+    "渋谷区",
+    "港区",
+    "中央区",
+    "豊島区",
+    "台東区",
+    "品川区",
+    "目黒区",
+    "世田谷区",
+    "中野区",
+    "杉並区",
+    "北区",
+    "荒川区",
+    "板橋区",
+    "練馬区",
+    "足立区",
+    "葛飾区",
+    "江戸川区",
+    "八王子市",
+    "立川市",
+    "武蔵野市",
+    "町田市",
+  ],
+  神奈川: [
+    "横浜市",
+    "川崎市",
+    "相模原市",
+    "厚木市",
+    "大和市",
+    "海老名市",
+    "藤沢市",
+    "鎌倉市",
+    "横須賀市",
+    "平塚市",
+    "茅ヶ崎市",
+  ],
+  大阪: [
+    "大阪市北区",
+    "大阪市中央区",
+    "大阪市淀川区",
+    "大阪市天王寺区",
+    "堺市",
+    "東大阪市",
+    "豊中市",
+    "吹田市",
+    "高槻市",
+    "枚方市",
+    "八尾市",
+    "寝屋川市",
+  ],
+  愛知: [
+    "名古屋市中区",
+    "名古屋市中村区",
+    "名古屋市東区",
+    "名古屋市熱田区",
+    "一宮市",
+    "豊橋市",
+    "岡崎市",
+    "豊田市",
+    "春日井市",
+    "安城市",
+  ],
+  福岡: [
+    "福岡市博多区",
+    "福岡市中央区",
+    "福岡市早良区",
+    "北九州市小倉北区",
+    "久留米市",
+    "飯塚市",
+    "大牟田市",
+  ],
+  北海道: [
+    "札幌市中央区",
+    "札幌市北区",
+    "札幌市すすきの",
+    "旭川市",
+    "函館市",
+    "小樽市",
+    "釧路市",
+    "苫高牧市",
+    "帯広市",
+  ],
+  宮城: [
+    "仙台市青葉区",
+    "仙台市宮城野区",
+    "仙台市若林区",
+    "石巻市",
+    "大崎市",
+    "名取市",
+  ],
+  兵庫: [
+    "神戸市中央区",
+    "神戸市兵庫区",
+    "西宮市",
+    "尼崎市",
+    "姫路市",
+    "明石市",
+    "加古川市",
+    "宝塚市",
+  ],
+  京都: [
+    "京都市中京区",
+    "京都市下京区",
+    "京都市東山区",
+    "京都市左京区",
+    "宇治市",
+    "舞鶴市",
+  ],
+  埼玉: [
+    "さいたま市",
+    "川口市",
+    "川越市",
+    "越谷市",
+    "草加市",
+    "所沢市",
+    "上尾市",
+    "熊谷市",
+  ],
+  千葉: [
+    "千葉市中央区",
+    "船橋市",
+    "市川市",
+    "松戸市",
+    "柏市",
+    "浦安市",
+    "成田市",
+    "市原市",
+  ],
+  静岡: [
+    "静岡市葵区",
+    "静岡市清水区",
+    "浜松市中区",
+    "沼津市",
+    "富士市",
+    "三島市",
+  ],
+  広島: ["広島市中区", "広島市南区", "福山市", "呉市", "東広島市", "尾道市"],
+  群馬: ["高崎市", "前橋市", "太田市", "伊勢崎市", "桐生市"],
+  栃木: ["宇都宮市", "小山市", "足利市", "栃木市"],
+  茨城: ["水戸市", "つくば市", "日立市", "土浦市", "ひたちなか市"],
+  山梨: ["甲府市", "富士吉田市", "笛吹市"],
+  長野: ["長野市", "松本市", "上田市", "佐久市"],
+  岐阜: ["岐阜市", "大垣市", "各務原市", "多治見市"],
+  三重: ["四日市市", "津市", "鈴鹿市", "松阪市"],
+  滋賀: ["大津市", "草津市", "彦根市"],
+  奈良: ["奈良市", "橿原市", "生駒市"],
+  和歌山: ["和歌山市", "田辺市", "紀の川市"],
+  岡山: ["岡山市北区", "倉敷市", "津山市"],
+  山口: ["下関市", "山口市", "宇部市", "周南市"],
+  徳島: ["徳島市", "阿南市"],
+  香川: ["高松市", "丸亀市"],
+  愛媛: ["松山市", "今治市", "新居浜市"],
+  高知: ["高知市", "南国市"],
+  佐賀: ["佐賀市", "唐津市"],
+  長崎: ["長崎市", "佐世保市", "諫早市"],
+  熊本: ["熊本市中央区", "八代市", "玉名市"],
+  大分: ["大分市", "別府市", "中津市"],
+  宮崎: ["宮崎市", "都城市", "延岡市"],
+  鹿児島: ["鹿児島市", "霧島市", "鹿屋市"],
+  沖縄: ["那覇市", "沖縄市", "宜野湾市", "浦添市"],
+};
+
+export const DEFAULT_MUNICIPALITIES = [
+  "中心部・駅周辺",
+  "郊外エリア",
+  "主要繁華街",
+  "駅チカ店舗",
+];
+
+export const SUCCESS_STORIES: SuccessStory[] = [
+  {
+    id: "1",
+    name: "ケンタ",
+    age: 26,
+    storeName: "Club AMBASSADOR",
+    area: "新宿・歌舞伎町",
+    monthlyIncome: "650,000円",
+    formerIncome: "220,000円",
+    formerJob: "建設業",
+    catchphrase: "未経験から3ヶ月で店長代理へ昇格。人生が変わった。",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: "2",
+    name: "ユウキ",
+    age: 23,
+    storeName: "Lounge PHOENIX",
+    area: "港区・六本木",
+    monthlyIncome: "480,000円",
+    formerIncome: "180,000円",
+    formerJob: "飲食・居酒屋",
+    catchphrase: "自由な働き方で、趣味の車もキャッシュで購入。",
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    id: "3",
+    name: "ショウ",
+    age: 31,
+    storeName: "Club Ginza Royal",
+    area: "中央区・銀座",
+    monthlyIncome: "850,000円",
+    formerIncome: "300,000円",
+    formerJob: "不動産営業",
+    catchphrase: "営業スキルを活かし、半年でマネージャーへ。",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800",
+  },
+];

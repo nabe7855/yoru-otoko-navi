@@ -1,5 +1,6 @@
 "use client";
 import PrefSearchPage from "@/pages/PrefSearchPage";
+import { JobFilters } from "@/types";
 import { useRouter } from "next/navigation";
 import { use } from "react";
 
@@ -11,7 +12,7 @@ export default function PrefPage({
   const resolvedParams = use(params);
   const router = useRouter();
 
-  const handleSearch = (filters: any) => {
+  const handleSearch = (filters: JobFilters) => {
     const params = new URLSearchParams();
     if (filters.category) params.set("category", filters.category);
     if (filters.pref) params.set("pref", filters.pref);

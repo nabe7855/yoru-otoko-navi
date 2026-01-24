@@ -1,8 +1,20 @@
+"use client";
+
+import {
+  ArrowRight,
+  Building2,
+  ChevronLeft,
+  MapPin,
+  Navigation,
+  Search,
+  Sparkles,
+  TrendingUp,
+} from "lucide-react";
 import React from "react";
 
 interface PrefSearchPageProps {
   prefName: string;
-  onSearch: (filters: any) => void;
+  onSearch: (filters: Record<string, unknown>) => void;
   onBack: () => void;
 }
 
@@ -50,58 +62,19 @@ const OTHER_CITIES = [
   "砂川市",
   "伊達市",
   "紋別市",
-  "音更町",
-  "名寄市",
-  "深川市",
-  "稚内市",
-  "長沼町",
-  "倶知安町",
-  "根室市",
-  "栗山町",
-  "士別市",
-  "留萌市",
-  "幕別町",
-  "三笠市",
-  "当別町",
-  "芽室町",
-  "共和町",
-  "芦別市",
 ];
 
 const STATIONS = [
   "札幌駅",
   "大通駅",
-  "さっぽろ駅",
   "すすきの駅",
   "白石駅",
   "帯広駅",
-  "福住駅",
   "旭川駅",
   "苫小牧駅",
   "千歳駅",
-  "真駒内駅",
-  "新札幌駅",
-  "手稲駅",
-  "北広島駅",
-  "大谷地駅",
-  "上野幌駅",
   "琴似駅",
-  "宮の沢駅",
-  "豊水すすきの駅",
-  "釧路駅",
   "麻生駅",
-  "狸小路駅",
-  "元町駅",
-  "発寒駅",
-  "新さっぽろ駅",
-  "環状通東駅",
-  "沼ノ端駅",
-  "南郷18丁目駅",
-  "小樽駅",
-  "発寒南駅",
-  "新道東駅",
-  "苗穂駅",
-  "五稜郭駅",
 ];
 
 const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
@@ -109,51 +82,94 @@ const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
   onSearch,
   onBack,
 }) => {
+  const relatedJobsCount = ((prefName?.length || 0) * 123 + 1000) % 5000;
   if (!prefName) return null;
+
   return (
     <div className="bg-white min-h-screen">
-      <div className="container mx-auto px-4 py-8">
-        {/* Breadcrumbs / Back */}
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        {/* Header Navigation */}
         <button
           onClick={onBack}
-          className="text-gray-400 text-sm hover:text-indigo-600 mb-6 transition flex items-center"
+          className="group mb-10 flex items-center gap-2 text-slate-400 hover:text-indigo-600 transition font-black text-xs md:text-sm bg-slate-50 px-6 py-3 rounded-2xl border border-slate-100 active:scale-95"
         >
-          <i className="fas fa-chevron-left mr-2"></i> 全国から探し直す
+          <ChevronLeft
+            size={16}
+            className="group-hover:-translate-x-1 transition-transform"
+          />
+          全国から探し直す
         </button>
 
-        {/* Heading */}
-        <div className="flex items-end mb-10 border-l-4 border-blue-400 pl-4">
-          <h1 className="text-3xl font-bold text-gray-800 mr-4">
-            {prefName}の求人を探す
-          </h1>
-          <span className="text-gray-400 text-lg mb-0.5">741,367件</span>
+        {/* Hero Section */}
+        <div className="relative mb-16 p-8 md:p-12 bg-slate-900 rounded-[2.5rem] overflow-hidden shadow-2xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/10 rounded-full -mr-20 -mt-20 blur-[100px] pointer-events-none"></div>
+          <div className="relative z-10">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-1.5 h-8 bg-amber-500 rounded-full"></div>
+              <span className="text-amber-500 font-black text-xs md:text-sm uppercase tracking-[0.3em]">
+                Area Search
+              </span>
+            </div>
+            <div className="flex flex-col md:flex-row md:items-end gap-4 md:gap-8">
+              <h1 className="text-3xl md:text-6xl font-black text-white tracking-tighter">
+                {prefName}{" "}
+                <span className="text-lg md:text-2xl font-bold text-slate-500 tracking-normal ml-2">
+                  の求人を探す
+                </span>
+              </h1>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/5 rounded-full border border-white/10 backdrop-blur-sm">
+                <TrendingUp size={16} className="text-emerald-400" />
+                <span className="text-white font-black text-xs">
+                  現在 {relatedJobsCount.toLocaleString()} 件掲載中
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        {/* Section 1: Major Cities */}
-        <section className="mb-12">
-          <h2 className="text-xl font-bold text-gray-800 mb-6">
-            エリアから求人を探す
-          </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        {/* Section 1: Major Cities (Featured) */}
+        <section className="mb-20">
+          <div className="flex items-center gap-4 mb-10">
+            <div className="p-3 bg-indigo-50 rounded-2xl text-indigo-600 shadow-sm">
+              <Sparkles size={24} />
+            </div>
+            <div>
+              <h2 className="text-xl md:text-3xl font-black text-slate-800 tracking-tight">
+                主要エリアから探す
+              </h2>
+              <p className="text-slate-400 text-xs md:text-sm font-bold mt-1 tracking-wider uppercase">
+                — RECOMMENDED AREAS —
+              </p>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
             {MAJOR_CITIES.map((city) => (
               <div
                 key={city.name}
                 onClick={() => onSearch({ pref: prefName, city: city.name })}
-                className="flex items-center border border-gray-200 rounded overflow-hidden hover:border-blue-500 cursor-pointer transition group"
+                className="group relative flex flex-col aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl hover:shadow-2xl hover:border-indigo-500/30 cursor-pointer transition-all duration-500"
               >
                 <img
                   src={city.img}
                   alt={city.name}
-                  className="w-20 h-20 object-cover"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0"
                 />
-                <div className="px-4 py-2 flex-grow bg-white group-hover:bg-blue-50 transition">
-                  <div className="flex justify-between items-center">
-                    <span className="font-bold text-gray-700 group-hover:text-blue-600">
-                      {city.name}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                <div className="relative mt-auto p-6 md:p-8">
+                  <div className="flex items-center gap-2 text-amber-500 font-bold text-[10px] uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <TrendingUp size={12} /> Hot Area
+                  </div>
+                  <h3 className="text-xl md:text-2xl font-black text-white mb-2">
+                    {city.name}
+                  </h3>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-bold text-slate-300 flex items-center gap-1">
+                      <Building2 size={12} /> {city.count} 案件
                     </span>
-                    <span className="text-xs text-gray-400">
-                      {city.count}件
-                    </span>
+                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white scale-0 group-hover:scale-100 transition-transform">
+                      <ArrowRight size={16} />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -161,40 +177,80 @@ const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
           </div>
         </section>
 
-        {/* Section 2: Grid Cities */}
-        <section className="mb-12">
-          <div className="flex flex-wrap gap-2">
+        {/* Section 2: Municipalities List */}
+        <section className="mb-20">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="p-3 bg-slate-900 rounded-2xl text-white shadow-lg">
+              <MapPin size={24} />
+            </div>
+            <h2 className="text-xl md:text-2xl font-black text-slate-800 tracking-tight">
+              市区町村から探す
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
             {OTHER_CITIES.map((city) => (
               <button
                 key={city}
                 onClick={() => onSearch({ pref: prefName, city })}
-                className="px-4 py-2 bg-white border border-gray-200 rounded text-gray-700 text-sm hover:border-blue-400 hover:text-blue-500 transition shadow-sm"
+                className="group flex flex-col gap-1 p-4 bg-white border border-slate-100 rounded-2xl hover:border-indigo-500 hover:shadow-lg transition-all text-left active:scale-[0.97]"
               >
-                {city}(
-                {Math.floor(Math.random() * 20000 + 2000).toLocaleString()}件)
+                <span className="text-xs md:text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition-colors uppercase">
+                  {city}
+                </span>
+                <span className="text-[10px] font-black text-slate-300 group-hover:text-indigo-400 tracking-tighter">
+                  {Math.floor(100 + city.length * 50).toLocaleString()}{" "}
+                  <span>求人</span>
+                </span>
               </button>
             ))}
           </div>
         </section>
 
-        {/* Section 3: Stations */}
+        {/* Section 3: Stations List */}
         <section className="mb-20">
-          <h2 className="text-xl font-bold text-gray-800 mb-6">
-            駅周辺のバイトを探す
-          </h2>
-          <div className="flex flex-wrap gap-x-6 gap-y-4">
+          <div className="flex items-center gap-4 mb-8">
+            <div className="p-3 bg-indigo-600 rounded-2xl text-white shadow-lg shadow-indigo-100">
+              <Navigation size={24} />
+            </div>
+            <h2 className="text-xl md:text-2xl font-black text-slate-800 tracking-tight">
+              主要な駅から探す
+            </h2>
+          </div>
+          <div className="flex flex-wrap gap-3">
             {STATIONS.map((station) => (
               <button
                 key={station}
                 onClick={() => onSearch({ pref: prefName, keyword: station })}
-                className="text-gray-600 hover:text-blue-600 hover:underline text-sm border-b border-gray-200 pb-0.5"
+                className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-full text-slate-600 font-bold text-xs md:text-sm hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all active:scale-[0.95] flex items-center gap-2"
               >
-                {station}(
-                {Math.floor(Math.random() * 5000 + 500).toLocaleString()}件)
+                <div className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>
+                {station}
+                <span className="text-[10px] text-slate-400 opacity-60 ml-1">
+                  {Math.floor(50 + station.length * 10).toLocaleString()}
+                </span>
               </button>
             ))}
           </div>
         </section>
+
+        {/* Global Search Option */}
+        <div className="py-16 text-center border-t border-slate-100 mt-20">
+          <div className="w-16 h-16 bg-slate-900 rounded-3xl flex items-center justify-center text-white mx-auto mb-6 shadow-xl rotate-3">
+            <Search size={32} />
+          </div>
+          <h3 className="text-xl font-black text-slate-800 mb-4">
+            他のエリアでも探してみますか？
+          </h3>
+          <p className="text-slate-400 text-sm font-medium mb-8 max-w-sm mx-auto">
+            希望の条件が見つからない場合は、近隣の都道府県やこだわり条件から絞り込んでみてください。
+          </p>
+          <button
+            onClick={onBack}
+            className="px-10 py-4 gradient-gold text-slate-900 font-black rounded-2xl shadow-xl hover:brightness-110 transition active:scale-95"
+          >
+            全国のエリア一覧へ戻る
+          </button>
+        </div>
       </div>
     </div>
   );
