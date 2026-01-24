@@ -11,6 +11,7 @@ function JobsContent() {
   const categories = searchParams?.getAll("category");
   const prefs = searchParams?.getAll("pref");
   const cities = searchParams?.getAll("city");
+  const regions = searchParams?.getAll("region");
   const tags = searchParams?.getAll("tags");
   const salaries = searchParams?.getAll("salary");
   const styles = searchParams?.getAll("style");
@@ -20,6 +21,7 @@ function JobsContent() {
     category: categories?.length ? categories : undefined,
     pref: prefs?.length ? prefs : undefined,
     city: cities?.length ? cities : undefined,
+    region: regions?.length ? regions : undefined,
     tags: tags?.length ? tags : undefined,
     salary: salaries?.length ? salaries : undefined,
     style: styles?.length ? styles : undefined,

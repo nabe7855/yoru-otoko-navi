@@ -138,26 +138,51 @@ export const jobService = {
       }
     }
 
+    const normalizedPrefList: string[] = [];
+    const { LocationService } = require("@/lib/location");
+    const prefectures = LocationService.getAllPrefectures();
+
+    const normalizePref = (pStr: string) => {
+      const found = prefectures.find(
+        (p: any) =>
+          p.id === pStr.toLowerCase() ||
+          p.name === pStr ||
+          p.name.replace(/[県府都]$/, "") === pStr,
+      );
+      return found ? found.name : pStr;
+    };
+
     if (filters.pref) {
-      const { LocationService } = require("@/lib/location");
-      const prefectures = LocationService.getAllPrefectures();
-
-      const normalize = (pStr: string) => {
-        const found = prefectures.find(
-          (p: any) =>
-            p.id === pStr.toLowerCase() ||
-            p.name === pStr ||
-            p.name.replace(/[県府都]$/, "") === pStr,
-        );
-        return found ? found.name : pStr;
-      };
-
       if (Array.isArray(filters.pref)) {
-        const normalizedPrefs = filters.pref.map(normalize);
-        query = query.in("area_pref", normalizedPrefs);
+        filters.pref.forEach((p) => normalizedPrefList.push(normalizePref(p)));
       } else {
-        query = query.eq("area_pref", normalize(filters.pref));
+        normalizedPrefList.push(normalizePref(filters.pref));
       }
+    }
+
+    if (filters.region) {
+      const regions = LocationService.getRegions();
+      const regionInput = Array.isArray(filters.region)
+        ? filters.region
+        : [filters.region];
+
+      regionInput.forEach((rName) => {
+        const foundRegion = regions.find(
+          (r: any) => r.name === rName || r.id === rName,
+        );
+        if (foundRegion) {
+          foundRegion.prefs.forEach((pCode: string) => {
+            const p = LocationService.getPrefectureByCode(pCode);
+            if (p && !normalizedPrefList.includes(p.name)) {
+              normalizedPrefList.push(p.name);
+            }
+          });
+        }
+      });
+    }
+
+    if (normalizedPrefList.length > 0) {
+      query = query.in("area_pref", normalizedPrefList);
     }
 
     if (filters.city) {

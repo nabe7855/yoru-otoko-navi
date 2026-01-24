@@ -248,15 +248,19 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     });
   };
 
-  const handleRegionSelect = (region: string) => {
-    toggleFilter("regions", region);
+  const handleRegionSelect = (regionSlug: string) => {
+    const region = LocationService.getRegions().find(
+      (r) => r.id === regionSlug,
+    );
+    if (region) {
+      addFilter("regions", region.name);
+    }
   };
 
   const handlePrefectureSelect = (prefSlug: string) => {
     const pref = LocationService.getPrefectureBySlug(prefSlug);
     if (pref) {
       addFilter("prefs", pref.name);
-      // Find region
       const regions = LocationService.getRegions();
       const region = regions.find((r: any) => r.prefs.includes(pref.code));
       if (region) addFilter("regions", region.name);
