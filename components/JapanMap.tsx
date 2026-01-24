@@ -211,13 +211,35 @@ const JapanMap: React.FC<JapanMapProps> = ({
         </div>
 
         {(view === "regional" || view === "municipal") && (
-          <button
-            onClick={handleBack}
-            className="flex items-center gap-2 text-xs font-black text-slate-300 hover:text-white transition-all bg-white/5 hover:bg-white/10 px-4 py-2.5 rounded-2xl border border-white/10 active:scale-95 shrink-0"
-          >
-            <ChevronLeft size={16} />
-            戻る
-          </button>
+          <div className="flex items-center gap-2 shrink-0">
+            {/* Direct Search Shortcut in Header */}
+            <button
+              onClick={() =>
+                view === "regional"
+                  ? onRegionSelect?.(activeRegion!)
+                  : onPrefectureSelect?.(activePref!)
+              }
+              className="group/search-btn flex items-center gap-2 px-3 md:px-5 py-2.5 rounded-2xl border border-amber-500/30 bg-amber-500/10 backdrop-blur-xl text-amber-400 font-black text-[10px] md:text-sm tracking-tight md:tracking-widest shadow-lg hover:bg-amber-400 hover:text-slate-900 active:scale-95 transition-all"
+            >
+              <Navigation2
+                size={14}
+                className="group-hover/search-btn:rotate-12 transition-transform"
+              />
+              <span className="whitespace-nowrap">
+                {view === "regional"
+                  ? `${currentRegionData?.label}地方すべてで検索`
+                  : `${activePref}全体で検索`}
+              </span>
+            </button>
+
+            <button
+              onClick={handleBack}
+              className="flex items-center gap-2 text-[10px] md:text-xs font-black text-slate-300 hover:text-white transition-all bg-white/5 hover:bg-white/10 px-3 md:px-4 py-2.5 rounded-2xl border border-white/10 active:scale-95 shrink-0"
+            >
+              <ChevronLeft size={16} />
+              <span className="hidden sm:inline">戻る</span>
+            </button>
+          </div>
         )}
       </div>
 
@@ -238,34 +260,6 @@ const JapanMap: React.FC<JapanMapProps> = ({
                 <feComposite in="SourceGraphic" in2="blur" operator="over" />
               </filter>
             </defs>
-
-            {/* Region Search Shortcut */}
-            {view === "regional" && activeRegion && (
-              <foreignObject
-                x={DETAILED_MAP_DATA[activeRegion].bbox.x}
-                y={DETAILED_MAP_DATA[activeRegion].bbox.y - 40}
-                width={DETAILED_MAP_DATA[activeRegion].bbox.width}
-                height="60"
-                className="overflow-visible"
-              >
-                <div className="flex justify-center items-start w-full">
-                  <button
-                    onClick={() => onRegionSelect?.(activeRegion)}
-                    className="group/btn flex items-center gap-2 px-6 py-2.5 rounded-full border border-white/20 bg-white/10 backdrop-blur-xl text-white font-black text-xs md:text-sm tracking-widest shadow-2xl hover:bg-white/20 active:scale-95 transition-all animate-label-in"
-                    style={{
-                      borderColor: `hsla(${currentRegionData?.hue}, 80%, 60%, 0.3)`,
-                      boxShadow: `0 10px 30px -10px hsla(${currentRegionData?.hue}, 80%, 40%, 0.5)`,
-                    }}
-                  >
-                    <Navigation2
-                      size={16}
-                      className="text-white group-hover/btn:rotate-12 transition-transform"
-                    />
-                    {currentRegionData?.label}地方すべてで検索
-                  </button>
-                </div>
-              </foreignObject>
-            )}
 
             {REGION_MAP_DATA.map((region) => {
               const detail = DETAILED_MAP_DATA[region.id];
@@ -410,19 +404,6 @@ const JapanMap: React.FC<JapanMapProps> = ({
                 {activePref}
               </p>
             </div>
-
-            <button
-              onClick={() => onPrefectureSelect?.(activePref!)}
-              className="ml-auto flex flex-col items-center justify-center p-3 rounded-2xl bg-white/10 border border-white/10 hover:bg-white/20 transition-all group/pref-btn active:scale-95"
-            >
-              <Navigation2
-                size={18}
-                className="text-indigo-400 mb-1 group-hover/pref-btn:scale-110 transition-transform"
-              />
-              <span className="text-[9px] font-black text-slate-300">
-                県全体
-              </span>
-            </button>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
