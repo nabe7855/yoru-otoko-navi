@@ -268,8 +268,16 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     setIsMapOpen(false);
   };
 
-  const handleMunicipalitySelect = (prefSlug: string, muni: string) => {
-    const pref = LocationService.getPrefectureBySlug(prefSlug);
+  const handleMunicipalitySelect = (prefNameOrSlug: string, muni: string) => {
+    // JapanMap passes prefecture name (e.g., "長野県"), not slug
+    const allPrefs = LocationService.getAllPrefectures();
+    const pref = allPrefs.find(
+      (p: any) =>
+        p.name === prefNameOrSlug ||
+        p.id === prefNameOrSlug ||
+        p.name.replace(/[県府都]$/, "") === prefNameOrSlug,
+    );
+
     if (pref) {
       addFilter("prefs", pref.name);
       const regions = LocationService.getRegions();
