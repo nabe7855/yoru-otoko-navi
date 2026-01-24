@@ -1,7 +1,6 @@
 "use client";
 import { City, LocationService, Prefecture } from "@/lib/location";
 import PrefSearchPage from "@/pages/PrefSearchPage";
-import { JobFilters } from "@/types";
 import { useRouter } from "next/navigation";
 import { use, useEffect, useState } from "react";
 
@@ -42,7 +41,7 @@ export default function PrefPage({
     fetchData();
   }, [resolvedParams.name]);
 
-  const handleSearch = (filters: JobFilters) => {
+  const handleSearch = (filters: any) => {
     const searchParams = new URLSearchParams();
     if (filters.category)
       searchParams.set("category", filters.category as string);

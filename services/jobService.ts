@@ -130,23 +130,52 @@ export const jobService = {
   async searchJobs(filters: JobFilters): Promise<Job[]> {
     let query = supabase.from("jobs").select("*").eq("status", "published");
 
-    if (filters.category) query = query.eq("category", filters.category);
+    if (filters.category) {
+      if (Array.isArray(filters.category)) {
+        query = query.in("category", filters.category);
+      } else {
+        query = query.eq("category", filters.category);
+      }
+    }
+
     if (filters.pref) {
-      // Normalize prefecture name (e.g., "tokyo" or "東京" -> "東京都")
       const { LocationService } = require("@/lib/location");
       const prefectures = LocationService.getAllPrefectures();
-      const foundPref = prefectures.find(
-        (p: any) =>
-          p.id === filters.pref?.toLowerCase() ||
-          p.name === filters.pref ||
-          p.name.replace(/[県府都]$/, "") === filters.pref,
-      );
-      const normalizedPref = foundPref ? foundPref.name : filters.pref;
-      query = query.eq("area_pref", normalizedPref);
+
+      const normalize = (pStr: string) => {
+        const found = prefectures.find(
+          (p: any) =>
+            p.id === pStr.toLowerCase() ||
+            p.name === pStr ||
+            p.name.replace(/[県府都]$/, "") === pStr,
+        );
+        return found ? found.name : pStr;
+      };
+
+      if (Array.isArray(filters.pref)) {
+        const normalizedPrefs = filters.pref.map(normalize);
+        query = query.in("area_pref", normalizedPrefs);
+      } else {
+        query = query.eq("area_pref", normalize(filters.pref));
+      }
     }
-    if (filters.city) query = query.ilike("area_city", `%${filters.city}%`);
-    if (filters.employment_type)
-      query = query.eq("employment_type", filters.employment_type);
+
+    if (filters.city) {
+      if (Array.isArray(filters.city)) {
+        query = query.in("area_city", filters.city);
+      } else {
+        query = query.ilike("area_city", `%${filters.city}%`);
+      }
+    }
+
+    if (filters.employment_type) {
+      if (Array.isArray(filters.employment_type)) {
+        query = query.in("employment_type", filters.employment_type);
+      } else {
+        query = query.eq("employment_type", filters.employment_type);
+      }
+    }
+
     if (filters.salary_min !== undefined)
       query = query.gte("salary_min", filters.salary_min);
 

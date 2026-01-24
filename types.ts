@@ -128,18 +128,19 @@ export interface Application {
 }
 
 export interface JobFilters {
-  category?: string;
-  pref?: string;
-  city?: string;
-  region?: string;
-  employment_type?: string;
-  employmentType?: string;
+  category?: string | string[];
+  pref?: string | string[];
+  city?: string | string[];
+  region?: string | string[];
+  employment_type?: string | string[];
+  employmentType?: string | string[];
   salary_min?: number;
   tags?: string[];
   keyword?: string;
-  role?: string;
-  salary?: string;
-  style?: string;
+  role?: string | string[];
+  salary?: string | string[];
+  style?: string | string[];
+  [key: string]: string | number | string[] | undefined;
 }
 
 export interface YakanColumn {

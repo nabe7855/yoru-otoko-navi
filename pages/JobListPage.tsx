@@ -5,18 +5,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import JobCard from "../components/JobCard";
 import { CATEGORIES, PREFECTURES, TAGS } from "../constants";
 import { jobService } from "../services/jobService";
-import { Job } from "../types";
-
-export interface JobFilters {
-  category?: string;
-  pref?: string;
-  city?: string;
-  employment_type?: string;
-  salary_min?: number;
-  tags?: string[];
-  keyword?: string;
-  [key: string]: string | number | string[] | undefined;
-}
+import { Job, JobFilters } from "../types";
 
 interface JobListPageProps {
   initialFilters: JobFilters;
@@ -53,21 +42,28 @@ const JobListPage: React.FC<JobListPageProps> = ({
     );
   }, [jobs, keyword]);
 
-  const toggleTag = (tag: string) => {
-    const currentTags = filters.tags || [];
-    if (currentTags.includes(tag)) {
+  const toggleArrayFilter = (key: string, value: string) => {
+    const current = (filters[key] as string[]) || [];
+    if (current.includes(value)) {
       setFilters({
         ...filters,
-        tags: currentTags.filter((t: string) => t !== tag),
+        [key]: current.filter((v) => v !== value),
       });
     } else {
-      setFilters({ ...filters, tags: [...currentTags, tag] });
+      setFilters({ ...filters, [key]: [...current, value] });
     }
   };
 
-  const removeFilter = (key: string) => {
+  const removeFilter = (key: string, value?: string) => {
     const newFilters = { ...filters };
-    delete newFilters[key];
+    if (value && Array.isArray(newFilters[key])) {
+      newFilters[key] = (newFilters[key] as string[]).filter(
+        (v) => v !== value,
+      );
+      if ((newFilters[key] as string[]).length === 0) delete newFilters[key];
+    } else {
+      delete newFilters[key];
+    }
     setFilters(newFilters);
   };
 
@@ -157,27 +153,27 @@ const JobListPage: React.FC<JobListPageProps> = ({
                   業態から選ぶ
                 </h4>
                 <div className="space-y-3">
-                  {CATEGORIES.slice(0, 8).map((c) => (
-                    <label
-                      key={c}
-                      className="flex items-center gap-3 cursor-pointer group"
-                    >
-                      <input
-                        type="checkbox"
-                        checked={filters.category === c}
-                        onChange={() =>
-                          setFilters({
-                            ...filters,
-                            category: filters.category === c ? "" : c,
-                          })
-                        }
-                        className="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 transition"
-                      />
-                      <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition">
-                        {c}
-                      </span>
-                    </label>
-                  ))}
+                  {CATEGORIES.slice(0, 8).map((c) => {
+                    const isSelected = Array.isArray(filters.category)
+                      ? filters.category.includes(c)
+                      : filters.category === c;
+                    return (
+                      <label
+                        key={c}
+                        className="flex items-center gap-3 cursor-pointer group"
+                      >
+                        <input
+                          type="checkbox"
+                          checked={isSelected}
+                          onChange={() => toggleArrayFilter("category", c)}
+                          className="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 transition"
+                        />
+                        <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition">
+                          {c}
+                        </span>
+                      </label>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -194,7 +190,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
                       <input
                         type="checkbox"
                         checked={filters.tags?.includes(tag) || false}
-                        onChange={() => toggleTag(tag)}
+                        onChange={() => toggleArrayFilter("tags", tag)}
                         className="w-4 h-4 rounded border-slate-300 text-indigo-600 focus:ring-indigo-500 transition"
                       />
                       <span className="text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition">
@@ -229,25 +225,47 @@ const JobListPage: React.FC<JobListPageProps> = ({
                 件
               </p>
               <div className="flex flex-wrap gap-1.5 justify-center sm:justify-start">
-                {filters.pref && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-indigo-50 text-indigo-600 text-[10px] font-black rounded-lg border border-indigo-100 uppercase tracking-tighter">
-                    {filters.pref as string}{" "}
-                    <X
-                      size={10}
-                      className="cursor-pointer hover:text-red-500"
-                      onClick={() => removeFilter("pref")}
-                    />
-                  </span>
-                )}
-                {filters.category && (
-                  <span className="inline-flex items-center gap-1.5 px-3 py-1 bg-amber-50 text-amber-600 text-[10px] font-black rounded-lg border border-amber-100 uppercase tracking-tighter">
-                    {filters.category as string}{" "}
-                    <X
-                      size={10}
-                      className="cursor-pointer hover:text-red-500"
-                      onClick={() => removeFilter("category")}
-                    />
-                  </span>
+                {(Object.keys(filters) as Array<keyof JobFilters>).map(
+                  (key) => {
+                    if (key === "keyword") return null;
+                    const val = filters[key];
+                    if (!val) return null;
+
+                    const colorClass =
+                      key === "category"
+                        ? "bg-amber-50 text-amber-600 border-amber-100"
+                        : "bg-indigo-50 text-indigo-600 border-indigo-100";
+
+                    if (Array.isArray(val)) {
+                      return val.map((v) => (
+                        <span
+                          key={`${key}-${v}`}
+                          className={`inline-flex items-center gap-1.5 px-3 py-1 ${colorClass} text-[10px] font-black rounded-lg border uppercase tracking-tighter`}
+                        >
+                          {v}{" "}
+                          <X
+                            size={10}
+                            className="cursor-pointer hover:text-red-500"
+                            onClick={() => removeFilter(key as any, v)}
+                          />
+                        </span>
+                      ));
+                    }
+
+                    return (
+                      <span
+                        key={key}
+                        className={`inline-flex items-center gap-1.5 px-3 py-1 ${colorClass} text-[10px] font-black rounded-lg border uppercase tracking-tighter`}
+                      >
+                        {val as string}{" "}
+                        <X
+                          size={10}
+                          className="cursor-pointer hover:text-red-500"
+                          onClick={() => removeFilter(key as any)}
+                        />
+                      </span>
+                    );
+                  },
                 )}
               </div>
             </div>

@@ -70,7 +70,17 @@ import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 
 interface HomePageProps {
-  onSearch: (filters: Record<string, unknown>) => void;
+  onSearch: (filters: Record<string, any>) => void;
+}
+
+interface ActiveFilters {
+  categories: string[];
+  prefs: string[];
+  cities: string[];
+  tags: string[];
+  salaries: string[];
+  styles: string[];
+  regions: string[];
 }
 
 const SLIDES = [
@@ -178,6 +188,15 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   const [recentJobs, setRecentJobs] = useState<Job[]>([]);
   const [keyword, setKeyword] = useState("");
   const [isSearchAccordionOpen, setIsSearchAccordionOpen] = useState(false);
+  const [activeFilters, setActiveFilters] = useState<ActiveFilters>({
+    categories: [],
+    prefs: [],
+    cities: [],
+    tags: [],
+    salaries: [],
+    styles: [],
+    regions: [],
+  });
 
   useEffect(() => {
     const fetchJobs = async () => {
@@ -208,37 +227,53 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
+  const toggleFilter = (type: keyof ActiveFilters, value: string) => {
+    setActiveFilters((prev) => {
+      const current = prev[type];
+      const isSelected = current.includes(value);
+      if (isSelected) {
+        return { ...prev, [type]: current.filter((v) => v !== value) };
+      } else {
+        return { ...prev, [type]: [...current, value] };
+      }
+    });
+  };
+
   const handleRegionSelect = (region: string) => {
-    // 地方検索短縮ボタンからのコールバック
-    onSearch({ region });
+    toggleFilter("regions", region);
   };
 
   const handlePrefectureSelect = (pref: string) => {
-    // 県検索短縮ボタンからのコールバック
-    onSearch({ pref });
+    toggleFilter("prefs", pref);
+    setIsMapOpen(false);
   };
 
   const handleMunicipalitySelect = (pref: string, muni: string) => {
-    onSearch({ pref, city: muni });
+    toggleFilter("prefs", pref);
+    toggleFilter("cities", muni);
+    setIsMapOpen(false);
   };
 
   const handleJobTypeSelect = (id: string) => {
+    toggleFilter("categories", id);
     setIsJobTypeOpen(false);
-    onSearch({ category: id });
   };
 
   const handleSalarySelect = (id: string) => {
+    toggleFilter("salaries", id);
     setIsSalaryOpen(false);
-    onSearch({ salary: id });
   };
 
   const handleWorkStyleSelect = (id: string) => {
+    toggleFilter("styles", id);
     setIsWorkStyleOpen(false);
-    onSearch({ style: id });
   };
 
   const handleKeywordSearch = () => {
-    onSearch({ keyword });
+    onSearch({
+      ...activeFilters,
+      keyword,
+    });
   };
 
   const quickTags = [
@@ -705,8 +740,12 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                       {quickTags.map((tag, idx) => (
                         <button
                           key={idx}
-                          className="flex-shrink-0 px-5 py-2.5 bg-white/10 hover:bg-amber-500 hover:text-slate-900 border border-white/10 rounded-full text-xs font-black transition-all active:scale-95"
-                          onClick={() => onSearch({ keyword: tag })}
+                          className={`flex-shrink-0 px-5 py-2.5 transition-all active:scale-95 rounded-full text-xs font-black border ${
+                            activeFilters.tags.includes(tag)
+                              ? "bg-amber-500 text-slate-900 border-amber-500 shadow-lg shadow-amber-500/20"
+                              : "bg-white/10 text-white border-white/10 hover:bg-white/20"
+                          }`}
+                          onClick={() => toggleFilter("tags", tag)}
                         >
                           {tag}
                         </button>
@@ -763,6 +802,45 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                     </button>
                   </div>
                 </div>
+
+                {/* 選択中のタグ表示 */}
+                {(
+                  Object.keys(activeFilters) as Array<keyof ActiveFilters>
+                ).some((key) => activeFilters[key].length > 0) && (
+                  <div className="flex flex-wrap gap-2 pt-2 pb-1">
+                    {(
+                      Object.keys(activeFilters) as Array<keyof ActiveFilters>
+                    ).map((key) => {
+                      const icons: Record<string, string> = {
+                        categories: "Briefcase",
+                        prefs: "MapPin",
+                        cities: "MapPin",
+                        tags: "Zap",
+                        salaries: "Wallet",
+                        styles: "Layers",
+                        regions: "Compass",
+                      };
+                      return activeFilters[key].map((value) => (
+                        <button
+                          key={`${key}-${value}`}
+                          onClick={() => toggleFilter(key, value)}
+                          className="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg text-[10px] md:text-xs font-bold text-white transition-all group active:scale-95"
+                        >
+                          <LucideIcon
+                            name={icons[key] || "Search"}
+                            className="text-amber-500"
+                            size={12}
+                          />
+                          {value}
+                          <X
+                            size={12}
+                            className="text-slate-500 group-hover:text-red-400"
+                          />
+                        </button>
+                      ));
+                    })}
+                  </div>
+                )}
 
                 <button
                   className={`w-full gradient-gold hover:brightness-110 text-slate-900 font-black py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3 ${isSearchAccordionOpen ? "mt-8" : "mt-0"}`}

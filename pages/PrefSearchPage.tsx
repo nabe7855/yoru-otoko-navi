@@ -15,7 +15,7 @@ interface PrefSearchPageProps {
   prefName: string;
   prefSlug: string;
   cities: City[];
-  onSearch: (filters: Record<string, unknown>) => void;
+  onSearch: (filters: Record<string, any>) => void;
   onBack: () => void;
 }
 
