@@ -139,7 +139,7 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
   return (
     <div className="fixed inset-0 top-20 bottom-0 z-50 flex flex-col bg-slate-50 w-full md:static md:h-auto md:bg-transparent md:container md:mx-auto md:max-w-2xl md:py-8 md:px-4 md:z-0">
       {/* Chat History */}
-      <div className="flex-grow overflow-y-auto p-4 space-y-4 no-scrollbar pb-24 md:pb-8">
+      <div className="flex-grow overflow-y-auto p-4 space-y-4 no-scrollbar pb-32 md:pb-8">
         {chatHistory.map((msg, i) => (
           <div
             key={i}
@@ -162,7 +162,7 @@ const JobMatcherPage: React.FC<JobMatcherPageProps> = ({
       </div>
 
       {/* Input Area (Fixed at bottom of this container, above mobile nav) */}
-      <div className="bg-white border-t border-indigo-50 p-4 pb-20 md:pb-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[60] w-full">
+      <div className="bg-white border-t border-indigo-50 p-4 pb-28 md:pb-4 shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-[60] w-full">
         <div className="grid grid-cols-2 gap-3">
           {MATCHING_QUESTIONS[step].options.map((opt) => (
             <button
