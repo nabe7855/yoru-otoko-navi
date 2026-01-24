@@ -1,0 +1,303 @@
+[
+  {
+    "id": "46-kagoshima-shi",
+    "name": "鹿児島市",
+    "en": "Kagoshima-shi",
+    "slug": "kagoshima-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-kanoya-shi",
+    "name": "鹿屋市",
+    "en": "Kanoya-shi",
+    "slug": "kanoya-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-makurazaki-shi",
+    "name": "枕崎市",
+    "en": "Makurazaki-shi",
+    "slug": "makurazaki-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-akune-shi",
+    "name": "阿久根市",
+    "en": "Akune-shi",
+    "slug": "akune-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-izumi-shi",
+    "name": "出水市",
+    "en": "Izumi-shi",
+    "slug": "izumi-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-ibusuki-shi",
+    "name": "指宿市",
+    "en": "Ibusuki-shi",
+    "slug": "ibusuki-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-nishinomote-shi",
+    "name": "西之表市",
+    "en": "Nishinomote-shi",
+    "slug": "nishinomote-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-tarumizu-shi",
+    "name": "垂水市",
+    "en": "Tarumizu-shi",
+    "slug": "tarumizu-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-satsumasendai-shi",
+    "name": "薩摩川内市",
+    "en": "Satsumasendai-shi",
+    "slug": "satsumasendai-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-hioki-shi",
+    "name": "日置市",
+    "en": "Hioki-shi",
+    "slug": "hioki-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-so-shi",
+    "name": "曽於市",
+    "en": "So-shi",
+    "slug": "so-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-kirishima-shi",
+    "name": "霧島市",
+    "en": "Kirishima-shi",
+    "slug": "kirishima-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-ichikikushikino-shi",
+    "name": "いちき串木野市",
+    "en": "Ichikikushikino-shi",
+    "slug": "ichikikushikino-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-minamisatsuma-shi",
+    "name": "南さつま市",
+    "en": "Minamisatsuma-shi",
+    "slug": "minamisatsuma-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-shibushi-shi",
+    "name": "志布志市",
+    "en": "Shibushi-shi",
+    "slug": "shibushi-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-amami-shi",
+    "name": "奄美市",
+    "en": "Amami-shi",
+    "slug": "amami-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-minamikyushu-shi",
+    "name": "南九州市",
+    "en": "Minamikyushu-shi",
+    "slug": "minamikyushu-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-isa-shi",
+    "name": "伊佐市",
+    "en": "Isa-shi",
+    "slug": "isa-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-aira-shi",
+    "name": "姶良市",
+    "en": "Aira-shi",
+    "slug": "aira-shi",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-mishima-mura",
+    "name": "三島村",
+    "en": "Mishima-mura",
+    "slug": "mishima-mura",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-toshima-mura",
+    "name": "十島村",
+    "en": "Toshima-mura",
+    "slug": "toshima-mura",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-satsuma-cho",
+    "name": "さつま町",
+    "en": "Satsuma-cho",
+    "slug": "satsuma-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-nagashima-cho",
+    "name": "長島町",
+    "en": "Nagashima-cho",
+    "slug": "nagashima-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-yusui-cho",
+    "name": "湧水町",
+    "en": "Yusui-cho",
+    "slug": "yusui-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-osaki-cho",
+    "name": "大崎町",
+    "en": "Osaki-cho",
+    "slug": "osaki-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-higashikushira-cho",
+    "name": "東串良町",
+    "en": "Higashikushira-cho",
+    "slug": "higashikushira-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-kinko-cho",
+    "name": "錦江町",
+    "en": "Kinko-cho",
+    "slug": "kinko-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-minamiosumi-cho",
+    "name": "南大隅町",
+    "en": "Minamiosumi-cho",
+    "slug": "minamiosumi-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-kimotsuki-cho",
+    "name": "肝付町",
+    "en": "Kimotsuki-cho",
+    "slug": "kimotsuki-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-nakatane-cho",
+    "name": "中種子町",
+    "en": "Nakatane-cho",
+    "slug": "nakatane-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-minamitane-cho",
+    "name": "南種子町",
+    "en": "Minamitane-cho",
+    "slug": "minamitane-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-yakushima-cho",
+    "name": "屋久島町",
+    "en": "Yakushima-cho",
+    "slug": "yakushima-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-yamato-son",
+    "name": "大和村",
+    "en": "Yamato-son",
+    "slug": "yamato-son",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-uken-son",
+    "name": "宇検村",
+    "en": "Uken-son",
+    "slug": "uken-son",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-setochi-cho",
+    "name": "瀬戸内町",
+    "en": "Setochi-cho",
+    "slug": "setochi-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-tatsugo-cho",
+    "name": "龍郷町",
+    "en": "Tatsugo-cho",
+    "slug": "tatsugo-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-kikai-cho",
+    "name": "喜界町",
+    "en": "Kikai-cho",
+    "slug": "kikai-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-tokunoshima-cho",
+    "name": "徳之島町",
+    "en": "Tokunoshima-cho",
+    "slug": "tokunoshima-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-amagi-cho",
+    "name": "天城町",
+    "en": "Amagi-cho",
+    "slug": "amagi-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-isen-cho",
+    "name": "伊仙町",
+    "en": "Isen-cho",
+    "slug": "isen-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-wadomari-cho",
+    "name": "和泊町",
+    "en": "Wadomari-cho",
+    "slug": "wadomari-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-china-cho",
+    "name": "知名町",
+    "en": "China-cho",
+    "slug": "china-cho",
+    "prefCode": "46"
+  },
+  {
+    "id": "46-yoron-cho",
+    "name": "与論町",
+    "en": "Yoron-cho",
+    "slug": "yoron-cho",
+    "prefCode": "46"
+  }
+]

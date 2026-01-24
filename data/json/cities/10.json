@@ -1,0 +1,247 @@
+[
+  {
+    "id": "10-maebashi-shi",
+    "name": "前橋市",
+    "en": "Maebashi-shi",
+    "slug": "maebashi-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-takasaki-shi",
+    "name": "高崎市",
+    "en": "Takasaki-shi",
+    "slug": "takasaki-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-kiryu-shi",
+    "name": "桐生市",
+    "en": "Kiryu-shi",
+    "slug": "kiryu-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-isesaki-shi",
+    "name": "伊勢崎市",
+    "en": "Isesaki-shi",
+    "slug": "isesaki-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-ota-shi",
+    "name": "太田市",
+    "en": "Ota-shi",
+    "slug": "ota-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-numata-shi",
+    "name": "沼田市",
+    "en": "Numata-shi",
+    "slug": "numata-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-tatebayashi-shi",
+    "name": "館林市",
+    "en": "Tatebayashi-shi",
+    "slug": "tatebayashi-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-shibukawa-shi",
+    "name": "渋川市",
+    "en": "Shibukawa-shi",
+    "slug": "shibukawa-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-fujioka-shi",
+    "name": "藤岡市",
+    "en": "Fujioka-shi",
+    "slug": "fujioka-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-tomioka-shi",
+    "name": "富岡市",
+    "en": "Tomioka-shi",
+    "slug": "tomioka-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-annaka-shi",
+    "name": "安中市",
+    "en": "Annaka-shi",
+    "slug": "annaka-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-midori-shi",
+    "name": "みどり市",
+    "en": "Midori-shi",
+    "slug": "midori-shi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-shinto-mura",
+    "name": "榛東村",
+    "en": "Shinto-mura",
+    "slug": "shinto-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-yoshioka-machi",
+    "name": "吉岡町",
+    "en": "Yoshioka-machi",
+    "slug": "yoshioka-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-ueno-mura",
+    "name": "上野村",
+    "en": "Ueno-mura",
+    "slug": "ueno-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-kanna-machi",
+    "name": "神流町",
+    "en": "Kanna-machi",
+    "slug": "kanna-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-shimonita-machi",
+    "name": "下仁田町",
+    "en": "Shimonita-machi",
+    "slug": "shimonita-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-nammoku-mura",
+    "name": "南牧村",
+    "en": "Nammoku-mura",
+    "slug": "nammoku-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-kanra-machi",
+    "name": "甘楽町",
+    "en": "Kanra-machi",
+    "slug": "kanra-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-nakanojo-machi",
+    "name": "中之条町",
+    "en": "Nakanojo-machi",
+    "slug": "nakanojo-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-naganohara-machi",
+    "name": "長野原町",
+    "en": "Naganohara-machi",
+    "slug": "naganohara-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-tsumagoi-mura",
+    "name": "嬬恋村",
+    "en": "Tsumagoi-mura",
+    "slug": "tsumagoi-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-kusatsu-machi",
+    "name": "草津町",
+    "en": "Kusatsu-machi",
+    "slug": "kusatsu-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-takayama-mura",
+    "name": "高山村",
+    "en": "Takayama-mura",
+    "slug": "takayama-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-higashiagatsuma-machi",
+    "name": "東吾妻町",
+    "en": "Higashiagatsuma-machi",
+    "slug": "higashiagatsuma-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-katashina-mura",
+    "name": "片品村",
+    "en": "Katashina-mura",
+    "slug": "katashina-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-kawaba-mura",
+    "name": "川場村",
+    "en": "Kawaba-mura",
+    "slug": "kawaba-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-showa-mura",
+    "name": "昭和村",
+    "en": "Showa-mura",
+    "slug": "showa-mura",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-minakami-machi",
+    "name": "みなかみ町",
+    "en": "Minakami-machi",
+    "slug": "minakami-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-tamamura-machi",
+    "name": "玉村町",
+    "en": "Tamamura-machi",
+    "slug": "tamamura-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-itakura-machi",
+    "name": "板倉町",
+    "en": "Itakura-machi",
+    "slug": "itakura-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-meiwa-machi",
+    "name": "明和町",
+    "en": "Meiwa-machi",
+    "slug": "meiwa-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-chiyoda-machi",
+    "name": "千代田町",
+    "en": "Chiyoda-machi",
+    "slug": "chiyoda-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-oizumi-machi",
+    "name": "大泉町",
+    "en": "Oizumi-machi",
+    "slug": "oizumi-machi",
+    "prefCode": "10"
+  },
+  {
+    "id": "10-ora-machi",
+    "name": "邑楽町",
+    "en": "Ora-machi",
+    "slug": "ora-machi",
+    "prefCode": "10"
+  }
+]

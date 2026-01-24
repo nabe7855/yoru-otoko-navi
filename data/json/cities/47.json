@@ -1,0 +1,289 @@
+[
+  {
+    "id": "47-naha-shi",
+    "name": "那覇市",
+    "en": "Naha-shi",
+    "slug": "naha-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-ginowan-shi",
+    "name": "宜野湾市",
+    "en": "Ginowan-shi",
+    "slug": "ginowan-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-ishigaki-shi",
+    "name": "石垣市",
+    "en": "Ishigaki-shi",
+    "slug": "ishigaki-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-urasoe-shi",
+    "name": "浦添市",
+    "en": "Urasoe-shi",
+    "slug": "urasoe-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-nago-shi",
+    "name": "名護市",
+    "en": "Nago-shi",
+    "slug": "nago-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-itoman-shi",
+    "name": "糸満市",
+    "en": "Itoman-shi",
+    "slug": "itoman-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-okinawa-shi",
+    "name": "沖縄市",
+    "en": "Okinawa-shi",
+    "slug": "okinawa-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-tomigusuku-shi",
+    "name": "豊見城市",
+    "en": "Tomigusuku-shi",
+    "slug": "tomigusuku-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-uruma-shi",
+    "name": "うるま市",
+    "en": "Uruma-shi",
+    "slug": "uruma-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-miyakojima-shi",
+    "name": "宮古島市",
+    "en": "Miyakojima-shi",
+    "slug": "miyakojima-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-nanjo-shi",
+    "name": "南城市",
+    "en": "Nanjo-shi",
+    "slug": "nanjo-shi",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kunigami-son",
+    "name": "国頭村",
+    "en": "Kunigami-son",
+    "slug": "kunigami-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-ogimi-son",
+    "name": "大宜味村",
+    "en": "Ogimi-son",
+    "slug": "ogimi-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-higashi-son",
+    "name": "東村",
+    "en": "Higashi-son",
+    "slug": "higashi-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-nakijin-son",
+    "name": "今帰仁村",
+    "en": "Nakijin-son",
+    "slug": "nakijin-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-motobu-cho",
+    "name": "本部町",
+    "en": "Motobu-cho",
+    "slug": "motobu-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-onna-son",
+    "name": "恩納村",
+    "en": "Onna-son",
+    "slug": "onna-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-ginoza-son",
+    "name": "宜野座村",
+    "en": "Ginoza-son",
+    "slug": "ginoza-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kin-cho",
+    "name": "金武町",
+    "en": "Kin-cho",
+    "slug": "kin-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-ie-son",
+    "name": "伊江村",
+    "en": "Ie-son",
+    "slug": "ie-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-yomitan-son",
+    "name": "読谷村",
+    "en": "Yomitan-son",
+    "slug": "yomitan-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kadena-cho",
+    "name": "嘉手納町",
+    "en": "Kadena-cho",
+    "slug": "kadena-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-chatan-cho",
+    "name": "北谷町",
+    "en": "Chatan-cho",
+    "slug": "chatan-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kitanakagusuku-son",
+    "name": "北中城村",
+    "en": "Kitanakagusuku-son",
+    "slug": "kitanakagusuku-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-nakagusuku-son",
+    "name": "中城村",
+    "en": "Nakagusuku-son",
+    "slug": "nakagusuku-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-nishihara-cho",
+    "name": "西原町",
+    "en": "Nishihara-cho",
+    "slug": "nishihara-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-yonabaru-cho",
+    "name": "与那原町",
+    "en": "Yonabaru-cho",
+    "slug": "yonabaru-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-haebaru-cho",
+    "name": "南風原町",
+    "en": "Haebaru-cho",
+    "slug": "haebaru-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-tokashiki-son",
+    "name": "渡嘉敷村",
+    "en": "Tokashiki-son",
+    "slug": "tokashiki-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-zamami-son",
+    "name": "座間味村",
+    "en": "Zamami-son",
+    "slug": "zamami-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-aguni-son",
+    "name": "粟国村",
+    "en": "Aguni-son",
+    "slug": "aguni-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-tonaki-son",
+    "name": "渡名喜村",
+    "en": "Tonaki-son",
+    "slug": "tonaki-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-minamidaito-son",
+    "name": "南大東村",
+    "en": "Minamidaito-son",
+    "slug": "minamidaito-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kitadaito-son",
+    "name": "北大東村",
+    "en": "Kitadaito-son",
+    "slug": "kitadaito-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-iheya-son",
+    "name": "伊平屋村",
+    "en": "Iheya-son",
+    "slug": "iheya-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-izena-son",
+    "name": "伊是名村",
+    "en": "Izena-son",
+    "slug": "izena-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-kumejima-cho",
+    "name": "久米島町",
+    "en": "Kumejima-cho",
+    "slug": "kumejima-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-yaese-cho",
+    "name": "八重瀬町",
+    "en": "Yaese-cho",
+    "slug": "yaese-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-tarama-son",
+    "name": "多良間村",
+    "en": "Tarama-son",
+    "slug": "tarama-son",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-taketomi-cho",
+    "name": "竹富町",
+    "en": "Taketomi-cho",
+    "slug": "taketomi-cho",
+    "prefCode": "47"
+  },
+  {
+    "id": "47-yonaguni-cho",
+    "name": "与那国町",
+    "en": "Yonaguni-cho",
+    "slug": "yonaguni-cho",
+    "prefCode": "47"
+  }
+]

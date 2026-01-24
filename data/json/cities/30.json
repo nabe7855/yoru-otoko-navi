@@ -1,0 +1,212 @@
+[
+  {
+    "id": "30-wakayama-shi",
+    "name": "和歌山市",
+    "en": "Wakayama-shi",
+    "slug": "wakayama-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kainan-shi",
+    "name": "海南市",
+    "en": "Kainan-shi",
+    "slug": "kainan-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-hashimoto-shi",
+    "name": "橋本市",
+    "en": "Hashimoto-shi",
+    "slug": "hashimoto-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-arida-shi",
+    "name": "有田市",
+    "en": "Arida-shi",
+    "slug": "arida-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-gobo-shi",
+    "name": "御坊市",
+    "en": "Gobo-shi",
+    "slug": "gobo-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-tanabe-shi",
+    "name": "田辺市",
+    "en": "Tanabe-shi",
+    "slug": "tanabe-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-shingu-shi",
+    "name": "新宮市",
+    "en": "Shingu-shi",
+    "slug": "shingu-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kinokawa-shi",
+    "name": "紀の川市",
+    "en": "Kinokawa-shi",
+    "slug": "kinokawa-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-iwade-shi",
+    "name": "岩出市",
+    "en": "Iwade-shi",
+    "slug": "iwade-shi",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kimino-cho",
+    "name": "紀美野町",
+    "en": "Kimino-cho",
+    "slug": "kimino-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-katsuragi-cho",
+    "name": "かつらぎ町",
+    "en": "Katsuragi-cho",
+    "slug": "katsuragi-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kudoyama-cho",
+    "name": "九度山町",
+    "en": "Kudoyama-cho",
+    "slug": "kudoyama-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-koya-cho",
+    "name": "高野町",
+    "en": "Koya-cho",
+    "slug": "koya-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-yuasa-cho",
+    "name": "湯浅町",
+    "en": "Yuasa-cho",
+    "slug": "yuasa-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-hirogawa-cho",
+    "name": "広川町",
+    "en": "Hirogawa-cho",
+    "slug": "hirogawa-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-aridagawa-cho",
+    "name": "有田川町",
+    "en": "Aridagawa-cho",
+    "slug": "aridagawa-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-mihama-cho",
+    "name": "美浜町",
+    "en": "Mihama-cho",
+    "slug": "mihama-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-hidaka-cho",
+    "name": "日高町",
+    "en": "Hidaka-cho",
+    "slug": "hidaka-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-yura-cho",
+    "name": "由良町",
+    "en": "Yura-cho",
+    "slug": "yura-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-inami-cho",
+    "name": "印南町",
+    "en": "Inami-cho",
+    "slug": "inami-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-minabe-cho",
+    "name": "みなべ町",
+    "en": "Minabe-cho",
+    "slug": "minabe-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-hidakagawa-cho",
+    "name": "日高川町",
+    "en": "Hidakagawa-cho",
+    "slug": "hidakagawa-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-shirahama-cho",
+    "name": "白浜町",
+    "en": "Shirahama-cho",
+    "slug": "shirahama-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kamitonda-cho",
+    "name": "上富田町",
+    "en": "Kamitonda-cho",
+    "slug": "kamitonda-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-susami-cho",
+    "name": "すさみ町",
+    "en": "Susami-cho",
+    "slug": "susami-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-nachikatsura-cho",
+    "name": "那智勝浦町",
+    "en": "Nachikatsura-cho",
+    "slug": "nachikatsura-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-taiji-cho",
+    "name": "太地町",
+    "en": "Taiji-cho",
+    "slug": "taiji-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kozagawa-cho",
+    "name": "古座川町",
+    "en": "Kozagawa-cho",
+    "slug": "kozagawa-cho",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kitayama-mura",
+    "name": "北山村",
+    "en": "Kitayama-mura",
+    "slug": "kitayama-mura",
+    "prefCode": "30"
+  },
+  {
+    "id": "30-kushimoto-cho",
+    "name": "串本町",
+    "en": "Kushimoto-cho",
+    "slug": "kushimoto-cho",
+    "prefCode": "30"
+  }
+]

@@ -1,0 +1,233 @@
+[
+  {
+    "id": "03-morioka-shi",
+    "name": "盛岡市",
+    "en": "Morioka-shi",
+    "slug": "morioka-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-miyako-shi",
+    "name": "宮古市",
+    "en": "Miyako-shi",
+    "slug": "miyako-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-ofunato-shi",
+    "name": "大船渡市",
+    "en": "Ofunato-shi",
+    "slug": "ofunato-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-hanamaki-shi",
+    "name": "花巻市",
+    "en": "Hanamaki-shi",
+    "slug": "hanamaki-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kitakami-shi",
+    "name": "北上市",
+    "en": "Kitakami-shi",
+    "slug": "kitakami-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kuji-shi",
+    "name": "久慈市",
+    "en": "Kuji-shi",
+    "slug": "kuji-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-tono-shi",
+    "name": "遠野市",
+    "en": "Tono-shi",
+    "slug": "tono-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-ichinoseki-shi",
+    "name": "一関市",
+    "en": "Ichinoseki-shi",
+    "slug": "ichinoseki-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-rikuzentakata-shi",
+    "name": "陸前高田市",
+    "en": "Rikuzentakata-shi",
+    "slug": "rikuzentakata-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kamaishi-shi",
+    "name": "釜石市",
+    "en": "Kamaishi-shi",
+    "slug": "kamaishi-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-ninohe-shi",
+    "name": "二戸市",
+    "en": "Ninohe-shi",
+    "slug": "ninohe-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-hachimantai-shi",
+    "name": "八幡平市",
+    "en": "Hachimantai-shi",
+    "slug": "hachimantai-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-oshu-shi",
+    "name": "奥州市",
+    "en": "Oshu-shi",
+    "slug": "oshu-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-takizawa-shi",
+    "name": "滝沢市",
+    "en": "Takizawa-shi",
+    "slug": "takizawa-shi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-shizukuishi-cho",
+    "name": "雫石町",
+    "en": "Shizukuishi-cho",
+    "slug": "shizukuishi-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kuzumaki-machi",
+    "name": "葛巻町",
+    "en": "Kuzumaki-machi",
+    "slug": "kuzumaki-machi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-iwate-machi",
+    "name": "岩手町",
+    "en": "Iwate-machi",
+    "slug": "iwate-machi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-shiwa-cho",
+    "name": "紫波町",
+    "en": "Shiwa-cho",
+    "slug": "shiwa-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-yahaba-cho",
+    "name": "矢巾町",
+    "en": "Yahaba-cho",
+    "slug": "yahaba-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-nishiwaga-machi",
+    "name": "西和賀町",
+    "en": "Nishiwaga-machi",
+    "slug": "nishiwaga-machi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kanegasaki-cho",
+    "name": "金ケ崎町",
+    "en": "Kanegasaki-cho",
+    "slug": "kanegasaki-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-hiraizumi-cho",
+    "name": "平泉町",
+    "en": "Hiraizumi-cho",
+    "slug": "hiraizumi-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-sumita-cho",
+    "name": "住田町",
+    "en": "Sumita-cho",
+    "slug": "sumita-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-otsuchi-cho",
+    "name": "大槌町",
+    "en": "Otsuchi-cho",
+    "slug": "otsuchi-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-yamada-machi",
+    "name": "山田町",
+    "en": "Yamada-machi",
+    "slug": "yamada-machi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-iwaizumi-cho",
+    "name": "岩泉町",
+    "en": "Iwaizumi-cho",
+    "slug": "iwaizumi-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-tanohata-mura",
+    "name": "田野畑村",
+    "en": "Tanohata-mura",
+    "slug": "tanohata-mura",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-fudai-mura",
+    "name": "普代村",
+    "en": "Fudai-mura",
+    "slug": "fudai-mura",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-karumai-machi",
+    "name": "軽米町",
+    "en": "Karumai-machi",
+    "slug": "karumai-machi",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-noda-mura",
+    "name": "野田村",
+    "en": "Noda-mura",
+    "slug": "noda-mura",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-kunohe-mura",
+    "name": "九戸村",
+    "en": "Kunohe-mura",
+    "slug": "kunohe-mura",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-hirono-cho",
+    "name": "洋野町",
+    "en": "Hirono-cho",
+    "slug": "hirono-cho",
+    "prefCode": "03"
+  },
+  {
+    "id": "03-ichinohe-machi",
+    "name": "一戸町",
+    "en": "Ichinohe-machi",
+    "slug": "ichinohe-machi",
+    "prefCode": "03"
+  }
+]

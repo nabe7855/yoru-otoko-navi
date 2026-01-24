@@ -1,0 +1,191 @@
+[
+  {
+    "id": "19-kofu-shi",
+    "name": "甲府市",
+    "en": "Kofu-shi",
+    "slug": "kofu-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-fujiyoshida-shi",
+    "name": "富士吉田市",
+    "en": "Fujiyoshida-shi",
+    "slug": "fujiyoshida-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-tsuru-shi",
+    "name": "都留市",
+    "en": "Tsuru-shi",
+    "slug": "tsuru-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-yamanashi-shi",
+    "name": "山梨市",
+    "en": "Yamanashi-shi",
+    "slug": "yamanashi-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-otsuki-shi",
+    "name": "大月市",
+    "en": "Otsuki-shi",
+    "slug": "otsuki-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-nirasaki-shi",
+    "name": "韮崎市",
+    "en": "Nirasaki-shi",
+    "slug": "nirasaki-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-minamiarupusu-shi",
+    "name": "南アルプス市",
+    "en": "Minamiarupusu-shi",
+    "slug": "minamiarupusu-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-hokuto-shi",
+    "name": "北杜市",
+    "en": "Hokuto-shi",
+    "slug": "hokuto-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-kai-shi",
+    "name": "甲斐市",
+    "en": "Kai-shi",
+    "slug": "kai-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-fuefuki-shi",
+    "name": "笛吹市",
+    "en": "Fuefuki-shi",
+    "slug": "fuefuki-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-uenohara-shi",
+    "name": "上野原市",
+    "en": "Uenohara-shi",
+    "slug": "uenohara-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-koshu-shi",
+    "name": "甲州市",
+    "en": "Koshu-shi",
+    "slug": "koshu-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-chuo-shi",
+    "name": "中央市",
+    "en": "Chuo-shi",
+    "slug": "chuo-shi",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-ichikawamisato-cho",
+    "name": "市川三郷町",
+    "en": "Ichikawamisato-cho",
+    "slug": "ichikawamisato-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-hayakawa-cho",
+    "name": "早川町",
+    "en": "Hayakawa-cho",
+    "slug": "hayakawa-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-minobu-cho",
+    "name": "身延町",
+    "en": "Minobu-cho",
+    "slug": "minobu-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-nambu-cho",
+    "name": "南部町",
+    "en": "Nambu-cho",
+    "slug": "nambu-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-fujikawa-cho",
+    "name": "富士川町",
+    "en": "Fujikawa-cho",
+    "slug": "fujikawa-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-showa-cho",
+    "name": "昭和町",
+    "en": "Showa-cho",
+    "slug": "showa-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-doshi-mura",
+    "name": "道志村",
+    "en": "Doshi-mura",
+    "slug": "doshi-mura",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-nishikatsura-cho",
+    "name": "西桂町",
+    "en": "Nishikatsura-cho",
+    "slug": "nishikatsura-cho",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-oshino-mura",
+    "name": "忍野村",
+    "en": "Oshino-mura",
+    "slug": "oshino-mura",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-yamanakako-mura",
+    "name": "山中湖村",
+    "en": "Yamanakako-mura",
+    "slug": "yamanakako-mura",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-narusawa-mura",
+    "name": "鳴沢村",
+    "en": "Narusawa-mura",
+    "slug": "narusawa-mura",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-fujikawaguchiko-mac",
+    "name": "富士河口湖町",
+    "en": "Fujikawaguchiko-mac",
+    "slug": "fujikawaguchiko-mac",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-kosuge-mura",
+    "name": "小菅村",
+    "en": "Kosuge-mura",
+    "slug": "kosuge-mura",
+    "prefCode": "19"
+  },
+  {
+    "id": "19-tabayama-mura",
+    "name": "丹波山村",
+    "en": "Tabayama-mura",
+    "slug": "tabayama-mura",
+    "prefCode": "19"
+  }
+]

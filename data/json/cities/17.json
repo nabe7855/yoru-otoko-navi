@@ -1,0 +1,135 @@
+[
+  {
+    "id": "17-kanazawa-shi",
+    "name": "金沢市",
+    "en": "Kanazawa-shi",
+    "slug": "kanazawa-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-nanao-shi",
+    "name": "七尾市",
+    "en": "Nanao-shi",
+    "slug": "nanao-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-komatsu-shi",
+    "name": "小松市",
+    "en": "Komatsu-shi",
+    "slug": "komatsu-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-wajima-shi",
+    "name": "輪島市",
+    "en": "Wajima-shi",
+    "slug": "wajima-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-suzu-shi",
+    "name": "珠洲市",
+    "en": "Suzu-shi",
+    "slug": "suzu-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-kaga-shi",
+    "name": "加賀市",
+    "en": "Kaga-shi",
+    "slug": "kaga-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-hakui-shi",
+    "name": "羽咋市",
+    "en": "Hakui-shi",
+    "slug": "hakui-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-kahoku-shi",
+    "name": "かほく市",
+    "en": "Kahoku-shi",
+    "slug": "kahoku-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-hakusan-shi",
+    "name": "白山市",
+    "en": "Hakusan-shi",
+    "slug": "hakusan-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-nomi-shi",
+    "name": "能美市",
+    "en": "Nomi-shi",
+    "slug": "nomi-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-nonoichi-shi",
+    "name": "野々市市",
+    "en": "Nonoichi-shi",
+    "slug": "nonoichi-shi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-kawakita-machi",
+    "name": "川北町",
+    "en": "Kawakita-machi",
+    "slug": "kawakita-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-tsubata-machi",
+    "name": "津幡町",
+    "en": "Tsubata-machi",
+    "slug": "tsubata-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-uchinada-machi",
+    "name": "内灘町",
+    "en": "Uchinada-machi",
+    "slug": "uchinada-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-shika-machi",
+    "name": "志賀町",
+    "en": "Shika-machi",
+    "slug": "shika-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-hodatsushimizu-cho",
+    "name": "宝達志水町",
+    "en": "Hodatsushimizu-cho",
+    "slug": "hodatsushimizu-cho",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-nakanoto-machi",
+    "name": "中能登町",
+    "en": "Nakanoto-machi",
+    "slug": "nakanoto-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-anamizu-machi",
+    "name": "穴水町",
+    "en": "Anamizu-machi",
+    "slug": "anamizu-machi",
+    "prefCode": "17"
+  },
+  {
+    "id": "17-noto-cho",
+    "name": "能登町",
+    "en": "Noto-cho",
+    "slug": "noto-cho",
+    "prefCode": "17"
+  }
+]

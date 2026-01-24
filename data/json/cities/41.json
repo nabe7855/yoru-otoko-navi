@@ -1,0 +1,142 @@
+[
+  {
+    "id": "41-saga-shi",
+    "name": "佐賀市",
+    "en": "Saga-shi",
+    "slug": "saga-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-karatsu-shi",
+    "name": "唐津市",
+    "en": "Karatsu-shi",
+    "slug": "karatsu-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-tosu-shi",
+    "name": "鳥栖市",
+    "en": "Tosu-shi",
+    "slug": "tosu-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-taku-shi",
+    "name": "多久市",
+    "en": "Taku-shi",
+    "slug": "taku-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-imari-shi",
+    "name": "伊万里市",
+    "en": "Imari-shi",
+    "slug": "imari-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-takeo-shi",
+    "name": "武雄市",
+    "en": "Takeo-shi",
+    "slug": "takeo-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-kashima-shi",
+    "name": "鹿島市",
+    "en": "Kashima-shi",
+    "slug": "kashima-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-ogi-shi",
+    "name": "小城市",
+    "en": "Ogi-shi",
+    "slug": "ogi-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-ureshino-shi",
+    "name": "嬉野市",
+    "en": "Ureshino-shi",
+    "slug": "ureshino-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-kanzaki-shi",
+    "name": "神埼市",
+    "en": "Kanzaki-shi",
+    "slug": "kanzaki-shi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-yoshinogari-cho",
+    "name": "吉野ヶ里町",
+    "en": "Yoshinogari-cho",
+    "slug": "yoshinogari-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-kiyama-cho",
+    "name": "基山町",
+    "en": "Kiyama-cho",
+    "slug": "kiyama-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-kamimine-cho",
+    "name": "上峰町",
+    "en": "Kamimine-cho",
+    "slug": "kamimine-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-miyaki-cho",
+    "name": "みやき町",
+    "en": "Miyaki-cho",
+    "slug": "miyaki-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-genkai-cho",
+    "name": "玄海町",
+    "en": "Genkai-cho",
+    "slug": "genkai-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-arita-cho",
+    "name": "有田町",
+    "en": "Arita-cho",
+    "slug": "arita-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-omachi-cho",
+    "name": "大町町",
+    "en": "Omachi-cho",
+    "slug": "omachi-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-kohoku-machi",
+    "name": "江北町",
+    "en": "Kohoku-machi",
+    "slug": "kohoku-machi",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-shiroishi-cho",
+    "name": "白石町",
+    "en": "Shiroishi-cho",
+    "slug": "shiroishi-cho",
+    "prefCode": "41"
+  },
+  {
+    "id": "41-tara-cho",
+    "name": "太良町",
+    "en": "Tara-cho",
+    "slug": "tara-cho",
+    "prefCode": "41"
+  }
+]

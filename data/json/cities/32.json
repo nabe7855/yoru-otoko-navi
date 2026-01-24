@@ -1,0 +1,135 @@
+[
+  {
+    "id": "32-matsue-shi",
+    "name": "松江市",
+    "en": "Matsue-shi",
+    "slug": "matsue-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-hamada-shi",
+    "name": "浜田市",
+    "en": "Hamada-shi",
+    "slug": "hamada-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-izumo-shi",
+    "name": "出雲市",
+    "en": "Izumo-shi",
+    "slug": "izumo-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-masuda-shi",
+    "name": "益田市",
+    "en": "Masuda-shi",
+    "slug": "masuda-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-oda-shi",
+    "name": "大田市",
+    "en": "Oda-shi",
+    "slug": "oda-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-yasugi-shi",
+    "name": "安来市",
+    "en": "Yasugi-shi",
+    "slug": "yasugi-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-gotsu-shi",
+    "name": "江津市",
+    "en": "Gotsu-shi",
+    "slug": "gotsu-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-unnan-shi",
+    "name": "雲南市",
+    "en": "Unnan-shi",
+    "slug": "unnan-shi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-okuizumo-cho",
+    "name": "奥出雲町",
+    "en": "Okuizumo-cho",
+    "slug": "okuizumo-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-iinan-cho",
+    "name": "飯南町",
+    "en": "Iinan-cho",
+    "slug": "iinan-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-kawamoto-machi",
+    "name": "川本町",
+    "en": "Kawamoto-machi",
+    "slug": "kawamoto-machi",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-misato-cho",
+    "name": "美郷町",
+    "en": "Misato-cho",
+    "slug": "misato-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-onan-cho",
+    "name": "邑南町",
+    "en": "Onan-cho",
+    "slug": "onan-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-tsuwano-cho",
+    "name": "津和野町",
+    "en": "Tsuwano-cho",
+    "slug": "tsuwano-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-yoshika-cho",
+    "name": "吉賀町",
+    "en": "Yoshika-cho",
+    "slug": "yoshika-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-ama-cho",
+    "name": "海士町",
+    "en": "Ama-cho",
+    "slug": "ama-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-nishinoshima-cho",
+    "name": "西ノ島町",
+    "en": "Nishinoshima-cho",
+    "slug": "nishinoshima-cho",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-chibu-mura",
+    "name": "知夫村",
+    "en": "Chibu-mura",
+    "slug": "chibu-mura",
+    "prefCode": "32"
+  },
+  {
+    "id": "32-okinoshima-cho",
+    "name": "隠岐の島町",
+    "en": "Okinoshima-cho",
+    "slug": "okinoshima-cho",
+    "prefCode": "32"
+  }
+]

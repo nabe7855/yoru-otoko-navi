@@ -1,5 +1,4 @@
-"use client";
-
+import { City } from "@/lib/location";
 import {
   ArrowRight,
   Building2,
@@ -14,55 +13,11 @@ import React from "react";
 
 interface PrefSearchPageProps {
   prefName: string;
+  prefSlug: string;
+  cities: City[];
   onSearch: (filters: Record<string, unknown>) => void;
   onBack: () => void;
 }
-
-const MAJOR_CITIES = [
-  {
-    name: "札幌市",
-    count: "275,063",
-    img: "https://images.unsplash.com/photo-1576615278693-f93892701f56?auto=format&fit=crop&q=80&w=300",
-  },
-  {
-    name: "旭川市",
-    count: "29,742",
-    img: "https://images.unsplash.com/photo-1549488497-256795402cc0?auto=format&fit=crop&q=80&w=300",
-  },
-  {
-    name: "函館市",
-    count: "24,085",
-    img: "https://images.unsplash.com/photo-1621356066795-927f884a4417?auto=format&fit=crop&q=80&w=300",
-  },
-  {
-    name: "帯広市",
-    count: "21,928",
-    img: "https://images.unsplash.com/photo-1542931237-323a1b1abc72?auto=format&fit=crop&q=80&w=300",
-  },
-];
-
-const OTHER_CITIES = [
-  "苫小牧市",
-  "千歳市",
-  "釧路市",
-  "小樽市",
-  "恵庭市",
-  "江別市",
-  "北広島市",
-  "北見市",
-  "岩見沢市",
-  "石狩市",
-  "室蘭市",
-  "網走市",
-  "北斗市",
-  "登別市",
-  "滝川市",
-  "富良野市",
-  "美唄市",
-  "砂川市",
-  "伊達市",
-  "紋別市",
-];
 
 const STATIONS = [
   "札幌駅",
@@ -79,11 +34,19 @@ const STATIONS = [
 
 const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
   prefName,
+  prefSlug,
+  cities,
   onSearch,
   onBack,
 }) => {
   const relatedJobsCount = ((prefName?.length || 0) * 123 + 1000) % 5000;
   if (!prefName) return null;
+
+  // Separate major cities. Since we don't have population data or images,
+  // we will just treat the first few as featured or skip the featured section design if no images.
+  // For now, let's use a placeholder image for featured cities to keep the UI structure.
+  const featuredCities = cities.slice(0, 4);
+  const otherCities = cities.slice(4);
 
   return (
     <div className="bg-white min-h-screen">
@@ -128,54 +91,60 @@ const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
         </div>
 
         {/* Section 1: Major Cities (Featured) */}
-        <section className="mb-20">
-          <div className="flex items-center gap-4 mb-10">
-            <div className="p-3 bg-indigo-50 rounded-2xl text-indigo-600 shadow-sm">
-              <Sparkles size={24} />
+        {featuredCities.length > 0 && (
+          <section className="mb-20">
+            <div className="flex items-center gap-4 mb-10">
+              <div className="p-3 bg-indigo-50 rounded-2xl text-indigo-600 shadow-sm">
+                <Sparkles size={24} />
+              </div>
+              <div>
+                <h2 className="text-xl md:text-3xl font-black text-slate-800 tracking-tight">
+                  主要エリアから探す
+                </h2>
+                <p className="text-slate-400 text-xs md:text-sm font-bold mt-1 tracking-wider uppercase">
+                  — RECOMMENDED AREAS —
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="text-xl md:text-3xl font-black text-slate-800 tracking-tight">
-                主要エリアから探す
-              </h2>
-              <p className="text-slate-400 text-xs md:text-sm font-bold mt-1 tracking-wider uppercase">
-                — RECOMMENDED AREAS —
-              </p>
-            </div>
-          </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {MAJOR_CITIES.map((city) => (
-              <div
-                key={city.name}
-                onClick={() => onSearch({ pref: prefName, city: city.name })}
-                className="group relative flex flex-col aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl hover:shadow-2xl hover:border-indigo-500/30 cursor-pointer transition-all duration-500"
-              >
-                <img
-                  src={city.img}
-                  alt={city.name}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
-                <div className="relative mt-auto p-6 md:p-8">
-                  <div className="flex items-center gap-2 text-amber-500 font-bold text-[10px] uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <TrendingUp size={12} /> Hot Area
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-black text-white mb-2">
-                    {city.name}
-                  </h3>
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-bold text-slate-300 flex items-center gap-1">
-                      <Building2 size={12} /> {city.count} 案件
-                    </span>
-                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white scale-0 group-hover:scale-100 transition-transform">
-                      <ArrowRight size={16} />
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+              {featuredCities.map((city) => (
+                <div
+                  key={city.name}
+                  onClick={() => onSearch({ pref: prefSlug, city: city.name })}
+                  className="group relative flex flex-col aspect-[4/5] rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl hover:shadow-2xl hover:border-indigo-500/30 cursor-pointer transition-all duration-500"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1519074069444-1ba4fff66d16?auto=format&fit=crop&q=80&w=600"
+                    alt={city.name}
+                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000 grayscale-[0.2] group-hover:grayscale-0"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent"></div>
+                  <div className="relative mt-auto p-6 md:p-8">
+                    <div className="flex items-center gap-2 text-amber-500 font-bold text-[10px] uppercase tracking-widest mb-2 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <TrendingUp size={12} /> Hot Area
+                    </div>
+                    <h3 className="text-xl md:text-2xl font-black text-white mb-2">
+                      {city.name}
+                    </h3>
+                    <div className="flex items-center justify-between">
+                      <span className="text-xs font-bold text-slate-300 flex items-center gap-1">
+                        <Building2 size={12} />{" "}
+                        {Math.floor(
+                          ((city.name.length * 567) % 1000) + 100,
+                        ).toLocaleString()}{" "}
+                        案件
+                      </span>
+                      <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-white scale-0 group-hover:scale-100 transition-transform">
+                        <ArrowRight size={16} />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </section>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Section 2: Municipalities List */}
         <section className="mb-20">
@@ -188,17 +157,17 @@ const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
             </h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
-            {OTHER_CITIES.map((city) => (
+            {otherCities.map((city) => (
               <button
-                key={city}
-                onClick={() => onSearch({ pref: prefName, city })}
+                key={city.id}
+                onClick={() => onSearch({ pref: prefSlug, city: city.name })}
                 className="group flex flex-col gap-1 p-4 bg-white border border-slate-100 rounded-2xl hover:border-indigo-500 hover:shadow-lg transition-all text-left active:scale-[0.97]"
               >
                 <span className="text-xs md:text-sm font-bold text-slate-600 group-hover:text-indigo-600 transition-colors uppercase">
-                  {city}
+                  {city.name}
                 </span>
                 <span className="text-[10px] font-black text-slate-300 group-hover:text-indigo-400 tracking-tighter">
-                  {Math.floor(100 + city.length * 50).toLocaleString()}{" "}
+                  {Math.floor(100 + city.name.length * 50).toLocaleString()}{" "}
                   <span>求人</span>
                 </span>
               </button>
@@ -220,7 +189,7 @@ const PrefSearchPage: React.FC<PrefSearchPageProps> = ({
             {STATIONS.map((station) => (
               <button
                 key={station}
-                onClick={() => onSearch({ pref: prefName, keyword: station })}
+                onClick={() => onSearch({ pref: prefSlug, keyword: station })}
                 className="px-6 py-3 bg-slate-50 border border-slate-200 rounded-full text-slate-600 font-bold text-xs md:text-sm hover:bg-slate-900 hover:text-white hover:border-slate-900 transition-all active:scale-[0.95] flex items-center gap-2"
               >
                 <div className="w-1.5 h-1.5 rounded-full bg-slate-300"></div>

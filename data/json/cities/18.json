@@ -1,0 +1,121 @@
+[
+  {
+    "id": "18-fukui-shi",
+    "name": "福井市",
+    "en": "Fukui-shi",
+    "slug": "fukui-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-tsuruga-shi",
+    "name": "敦賀市",
+    "en": "Tsuruga-shi",
+    "slug": "tsuruga-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-obama-shi",
+    "name": "小浜市",
+    "en": "Obama-shi",
+    "slug": "obama-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-ono-shi",
+    "name": "大野市",
+    "en": "Ono-shi",
+    "slug": "ono-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-katsuyama-shi",
+    "name": "勝山市",
+    "en": "Katsuyama-shi",
+    "slug": "katsuyama-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-sabae-shi",
+    "name": "鯖江市",
+    "en": "Sabae-shi",
+    "slug": "sabae-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-awara-shi",
+    "name": "あわら市",
+    "en": "Awara-shi",
+    "slug": "awara-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-echizen-shi",
+    "name": "越前市",
+    "en": "Echizen-shi",
+    "slug": "echizen-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-sakai-shi",
+    "name": "坂井市",
+    "en": "Sakai-shi",
+    "slug": "sakai-shi",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-eiheiji-cho",
+    "name": "永平寺町",
+    "en": "Eiheiji-cho",
+    "slug": "eiheiji-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-ikeda-cho",
+    "name": "池田町",
+    "en": "Ikeda-cho",
+    "slug": "ikeda-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-minamiechizen-cho",
+    "name": "南越前町",
+    "en": "Minamiechizen-cho",
+    "slug": "minamiechizen-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-echizen-cho",
+    "name": "越前町",
+    "en": "Echizen-cho",
+    "slug": "echizen-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-mihama-cho",
+    "name": "美浜町",
+    "en": "Mihama-cho",
+    "slug": "mihama-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-takahama-cho",
+    "name": "高浜町",
+    "en": "Takahama-cho",
+    "slug": "takahama-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-oi-cho",
+    "name": "おおい町",
+    "en": "Oi-cho",
+    "slug": "oi-cho",
+    "prefCode": "18"
+  },
+  {
+    "id": "18-wakasa-cho",
+    "name": "若狭町",
+    "en": "Wakasa-cho",
+    "slug": "wakasa-cho",
+    "prefCode": "18"
+  }
+]

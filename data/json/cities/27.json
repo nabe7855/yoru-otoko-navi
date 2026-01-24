@@ -1,0 +1,303 @@
+[
+  {
+    "id": "27-osaka-shi",
+    "name": "大阪市",
+    "en": "Osaka-shi",
+    "slug": "osaka-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-sakai-shi",
+    "name": "堺市",
+    "en": "Sakai-shi",
+    "slug": "sakai-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kishiwada-shi",
+    "name": "岸和田市",
+    "en": "Kishiwada-shi",
+    "slug": "kishiwada-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-toyonaka-shi",
+    "name": "豊中市",
+    "en": "Toyonaka-shi",
+    "slug": "toyonaka-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-ikeda-shi",
+    "name": "池田市",
+    "en": "Ikeda-shi",
+    "slug": "ikeda-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-suita-shi",
+    "name": "吹田市",
+    "en": "Suita-shi",
+    "slug": "suita-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-izumiotsu-shi",
+    "name": "泉大津市",
+    "en": "Izumiotsu-shi",
+    "slug": "izumiotsu-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-takatsuki-shi",
+    "name": "高槻市",
+    "en": "Takatsuki-shi",
+    "slug": "takatsuki-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kaizuka-shi",
+    "name": "貝塚市",
+    "en": "Kaizuka-shi",
+    "slug": "kaizuka-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-moriguchi-shi",
+    "name": "守口市",
+    "en": "Moriguchi-shi",
+    "slug": "moriguchi-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-hirakata-shi",
+    "name": "枚方市",
+    "en": "Hirakata-shi",
+    "slug": "hirakata-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-ibaraki-shi",
+    "name": "茨木市",
+    "en": "Ibaraki-shi",
+    "slug": "ibaraki-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-yao-shi",
+    "name": "八尾市",
+    "en": "Yao-shi",
+    "slug": "yao-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-izumisano-shi",
+    "name": "泉佐野市",
+    "en": "Izumisano-shi",
+    "slug": "izumisano-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-tondabayashi-shi",
+    "name": "富田林市",
+    "en": "Tondabayashi-shi",
+    "slug": "tondabayashi-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-neyagawa-shi",
+    "name": "寝屋川市",
+    "en": "Neyagawa-shi",
+    "slug": "neyagawa-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kawachinagano-shi",
+    "name": "河内長野市",
+    "en": "Kawachinagano-shi",
+    "slug": "kawachinagano-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-matsubara-shi",
+    "name": "松原市",
+    "en": "Matsubara-shi",
+    "slug": "matsubara-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-daito-shi",
+    "name": "大東市",
+    "en": "Daito-shi",
+    "slug": "daito-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-izumi-shi",
+    "name": "和泉市",
+    "en": "Izumi-shi",
+    "slug": "izumi-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-mino-shi",
+    "name": "箕面市",
+    "en": "Mino-shi",
+    "slug": "mino-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kashiwara-shi",
+    "name": "柏原市",
+    "en": "Kashiwara-shi",
+    "slug": "kashiwara-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-habikino-shi",
+    "name": "羽曳野市",
+    "en": "Habikino-shi",
+    "slug": "habikino-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kadoma-shi",
+    "name": "門真市",
+    "en": "Kadoma-shi",
+    "slug": "kadoma-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-settsu-shi",
+    "name": "摂津市",
+    "en": "Settsu-shi",
+    "slug": "settsu-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-takaishi-shi",
+    "name": "高石市",
+    "en": "Takaishi-shi",
+    "slug": "takaishi-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-fujiidera-shi",
+    "name": "藤井寺市",
+    "en": "Fujiidera-shi",
+    "slug": "fujiidera-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-higashiosaka-shi",
+    "name": "東大阪市",
+    "en": "Higashiosaka-shi",
+    "slug": "higashiosaka-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-sennan-shi",
+    "name": "泉南市",
+    "en": "Sennan-shi",
+    "slug": "sennan-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-shijonawate-shi",
+    "name": "四條畷市",
+    "en": "Shijonawate-shi",
+    "slug": "shijonawate-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-katano-shi",
+    "name": "交野市",
+    "en": "Katano-shi",
+    "slug": "katano-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-osakasayama-shi",
+    "name": "大阪狭山市",
+    "en": "Osakasayama-shi",
+    "slug": "osakasayama-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-hannan-shi",
+    "name": "阪南市",
+    "en": "Hannan-shi",
+    "slug": "hannan-shi",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-shimamoto-cho",
+    "name": "島本町",
+    "en": "Shimamoto-cho",
+    "slug": "shimamoto-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-toyono-cho",
+    "name": "豊能町",
+    "en": "Toyono-cho",
+    "slug": "toyono-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-nose-cho",
+    "name": "能勢町",
+    "en": "Nose-cho",
+    "slug": "nose-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-tadaoka-cho",
+    "name": "忠岡町",
+    "en": "Tadaoka-cho",
+    "slug": "tadaoka-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kumatori-cho",
+    "name": "熊取町",
+    "en": "Kumatori-cho",
+    "slug": "kumatori-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-tajiri-cho",
+    "name": "田尻町",
+    "en": "Tajiri-cho",
+    "slug": "tajiri-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-misaki-cho",
+    "name": "岬町",
+    "en": "Misaki-cho",
+    "slug": "misaki-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-taishi-cho",
+    "name": "太子町",
+    "en": "Taishi-cho",
+    "slug": "taishi-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-kanan-cho",
+    "name": "河南町",
+    "en": "Kanan-cho",
+    "slug": "kanan-cho",
+    "prefCode": "27"
+  },
+  {
+    "id": "27-chihayaakasaka-mu",
+    "name": "千早赤阪村",
+    "en": "Chihayaakasaka-mu",
+    "slug": "chihayaakasaka-mu",
+    "prefCode": "27"
+  }
+]

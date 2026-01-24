@@ -1,0 +1,184 @@
+[
+  {
+    "id": "26-kyoto-shi",
+    "name": "京都市",
+    "en": "Kyoto-shi",
+    "slug": "kyoto-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-fukuchiyama-shi",
+    "name": "福知山市",
+    "en": "Fukuchiyama-shi",
+    "slug": "fukuchiyama-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-maizuru-shi",
+    "name": "舞鶴市",
+    "en": "Maizuru-shi",
+    "slug": "maizuru-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-ayabe-shi",
+    "name": "綾部市",
+    "en": "Ayabe-shi",
+    "slug": "ayabe-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-uji-shi",
+    "name": "宇治市",
+    "en": "Uji-shi",
+    "slug": "uji-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-miyazu-shi",
+    "name": "宮津市",
+    "en": "Miyazu-shi",
+    "slug": "miyazu-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kameoka-shi",
+    "name": "亀岡市",
+    "en": "Kameoka-shi",
+    "slug": "kameoka-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-joyo-shi",
+    "name": "城陽市",
+    "en": "Joyo-shi",
+    "slug": "joyo-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-muko-shi",
+    "name": "向日市",
+    "en": "Muko-shi",
+    "slug": "muko-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-nagaokakyo-shi",
+    "name": "長岡京市",
+    "en": "Nagaokakyo-shi",
+    "slug": "nagaokakyo-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-yawata-shi",
+    "name": "八幡市",
+    "en": "Yawata-shi",
+    "slug": "yawata-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kyotanabe-shi",
+    "name": "京田辺市",
+    "en": "Kyotanabe-shi",
+    "slug": "kyotanabe-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kyotango-shi",
+    "name": "京丹後市",
+    "en": "Kyotango-shi",
+    "slug": "kyotango-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-nantan-shi",
+    "name": "南丹市",
+    "en": "Nantan-shi",
+    "slug": "nantan-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kizugawa-shi",
+    "name": "木津川市",
+    "en": "Kizugawa-shi",
+    "slug": "kizugawa-shi",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-oyamazaki-cho",
+    "name": "大山崎町",
+    "en": "Oyamazaki-cho",
+    "slug": "oyamazaki-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kumiyama-cho",
+    "name": "久御山町",
+    "en": "Kumiyama-cho",
+    "slug": "kumiyama-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-ide-cho",
+    "name": "井手町",
+    "en": "Ide-cho",
+    "slug": "ide-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-ujitawara-cho",
+    "name": "宇治田原町",
+    "en": "Ujitawara-cho",
+    "slug": "ujitawara-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kasagi-cho",
+    "name": "笠置町",
+    "en": "Kasagi-cho",
+    "slug": "kasagi-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-wazuka-cho",
+    "name": "和束町",
+    "en": "Wazuka-cho",
+    "slug": "wazuka-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-seika-cho",
+    "name": "精華町",
+    "en": "Seika-cho",
+    "slug": "seika-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-minamiyamashiro-mura",
+    "name": "南山城村",
+    "en": "Minamiyamashiro-mura",
+    "slug": "minamiyamashiro-mura",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-kyotamba-cho",
+    "name": "京丹波町",
+    "en": "Kyotamba-cho",
+    "slug": "kyotamba-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-ine-cho",
+    "name": "伊根町",
+    "en": "Ine-cho",
+    "slug": "ine-cho",
+    "prefCode": "26"
+  },
+  {
+    "id": "26-yosano-cho",
+    "name": "与謝野町",
+    "en": "Yosano-cho",
+    "slug": "yosano-cho",
+    "prefCode": "26"
+  }
+]

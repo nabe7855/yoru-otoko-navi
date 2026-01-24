@@ -1,0 +1,177 @@
+[
+  {
+    "id": "09-utsunomiya-shi",
+    "name": "宇都宮市",
+    "en": "Utsunomiya-shi",
+    "slug": "utsunomiya-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-ashikaga-shi",
+    "name": "足利市",
+    "en": "Ashikaga-shi",
+    "slug": "ashikaga-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-tochigi-shi",
+    "name": "栃木市",
+    "en": "Tochigi-shi",
+    "slug": "tochigi-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-sano-shi",
+    "name": "佐野市",
+    "en": "Sano-shi",
+    "slug": "sano-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-kanuma-shi",
+    "name": "鹿沼市",
+    "en": "Kanuma-shi",
+    "slug": "kanuma-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nikko-shi",
+    "name": "日光市",
+    "en": "Nikko-shi",
+    "slug": "nikko-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-oyama-shi",
+    "name": "小山市",
+    "en": "Oyama-shi",
+    "slug": "oyama-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-moka-shi",
+    "name": "真岡市",
+    "en": "Moka-shi",
+    "slug": "moka-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-otawara-shi",
+    "name": "大田原市",
+    "en": "Otawara-shi",
+    "slug": "otawara-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-yaita-shi",
+    "name": "矢板市",
+    "en": "Yaita-shi",
+    "slug": "yaita-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nasushiobara-shi",
+    "name": "那須塩原市",
+    "en": "Nasushiobara-shi",
+    "slug": "nasushiobara-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-sakura-shi",
+    "name": "さくら市",
+    "en": "Sakura-shi",
+    "slug": "sakura-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nasukarasuyama-shi",
+    "name": "那須烏山市",
+    "en": "Nasukarasuyama-shi",
+    "slug": "nasukarasuyama-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-shimotsuke-shi",
+    "name": "下野市",
+    "en": "Shimotsuke-shi",
+    "slug": "shimotsuke-shi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-kaminokawa-machi",
+    "name": "上三川町",
+    "en": "Kaminokawa-machi",
+    "slug": "kaminokawa-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-mashiko-machi",
+    "name": "益子町",
+    "en": "Mashiko-machi",
+    "slug": "mashiko-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-motegi-machi",
+    "name": "茂木町",
+    "en": "Motegi-machi",
+    "slug": "motegi-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-ichikai-machi",
+    "name": "市貝町",
+    "en": "Ichikai-machi",
+    "slug": "ichikai-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-haga-machi",
+    "name": "芳賀町",
+    "en": "Haga-machi",
+    "slug": "haga-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-mibu-machi",
+    "name": "壬生町",
+    "en": "Mibu-machi",
+    "slug": "mibu-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nogi-machi",
+    "name": "野木町",
+    "en": "Nogi-machi",
+    "slug": "nogi-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-shioya-machi",
+    "name": "塩谷町",
+    "en": "Shioya-machi",
+    "slug": "shioya-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-takanezawa-machi",
+    "name": "高根沢町",
+    "en": "Takanezawa-machi",
+    "slug": "takanezawa-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nasu-machi",
+    "name": "那須町",
+    "en": "Nasu-machi",
+    "slug": "nasu-machi",
+    "prefCode": "09"
+  },
+  {
+    "id": "09-nakagawa-machi",
+    "name": "那珂川町",
+    "en": "Nakagawa-machi",
+    "slug": "nakagawa-machi",
+    "prefCode": "09"
+  }
+]

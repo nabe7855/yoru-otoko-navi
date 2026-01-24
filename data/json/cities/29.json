@@ -1,0 +1,275 @@
+[
+  {
+    "id": "29-nara-shi",
+    "name": "奈良市",
+    "en": "Nara-shi",
+    "slug": "nara-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-yamatotakada-shi",
+    "name": "大和高田市",
+    "en": "Yamatotakada-shi",
+    "slug": "yamatotakada-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-yamatokoriyama-shi",
+    "name": "大和郡山市",
+    "en": "Yamatokoriyama-shi",
+    "slug": "yamatokoriyama-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-tenri-shi",
+    "name": "天理市",
+    "en": "Tenri-shi",
+    "slug": "tenri-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kashihara-shi",
+    "name": "橿原市",
+    "en": "Kashihara-shi",
+    "slug": "kashihara-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-sakurai-shi",
+    "name": "桜井市",
+    "en": "Sakurai-shi",
+    "slug": "sakurai-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-gojo-shi",
+    "name": "五條市",
+    "en": "Gojo-shi",
+    "slug": "gojo-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-gose-shi",
+    "name": "御所市",
+    "en": "Gose-shi",
+    "slug": "gose-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-ikoma-shi",
+    "name": "生駒市",
+    "en": "Ikoma-shi",
+    "slug": "ikoma-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kashiba-shi",
+    "name": "香芝市",
+    "en": "Kashiba-shi",
+    "slug": "kashiba-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-katsuragi-shi",
+    "name": "葛城市",
+    "en": "Katsuragi-shi",
+    "slug": "katsuragi-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-uda-shi",
+    "name": "宇陀市",
+    "en": "Uda-shi",
+    "slug": "uda-shi",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-yamazoe-mura",
+    "name": "山添村",
+    "en": "Yamazoe-mura",
+    "slug": "yamazoe-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-heguri-cho",
+    "name": "平群町",
+    "en": "Heguri-cho",
+    "slug": "heguri-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-sango-cho",
+    "name": "三郷町",
+    "en": "Sango-cho",
+    "slug": "sango-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-ikaruga-cho",
+    "name": "斑鳩町",
+    "en": "Ikaruga-cho",
+    "slug": "ikaruga-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-ando-cho",
+    "name": "安堵町",
+    "en": "Ando-cho",
+    "slug": "ando-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kawanishi-cho",
+    "name": "川西町",
+    "en": "Kawanishi-cho",
+    "slug": "kawanishi-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-miyake-cho",
+    "name": "三宅町",
+    "en": "Miyake-cho",
+    "slug": "miyake-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-tawaramoto-cho",
+    "name": "田原本町",
+    "en": "Tawaramoto-cho",
+    "slug": "tawaramoto-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-soni-mura",
+    "name": "曽爾村",
+    "en": "Soni-mura",
+    "slug": "soni-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-mitsue-mura",
+    "name": "御杖村",
+    "en": "Mitsue-mura",
+    "slug": "mitsue-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-takatori-cho",
+    "name": "高取町",
+    "en": "Takatori-cho",
+    "slug": "takatori-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-asuka-mura",
+    "name": "明日香村",
+    "en": "Asuka-mura",
+    "slug": "asuka-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kammaki-cho",
+    "name": "上牧町",
+    "en": "Kammaki-cho",
+    "slug": "kammaki-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-oji-cho",
+    "name": "王寺町",
+    "en": "Oji-cho",
+    "slug": "oji-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-koryo-cho",
+    "name": "広陵町",
+    "en": "Koryo-cho",
+    "slug": "koryo-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kawai-cho",
+    "name": "河合町",
+    "en": "Kawai-cho",
+    "slug": "kawai-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-yoshino-cho",
+    "name": "吉野町",
+    "en": "Yoshino-cho",
+    "slug": "yoshino-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-oyodo-cho",
+    "name": "大淀町",
+    "en": "Oyodo-cho",
+    "slug": "oyodo-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-shimoichi-cho",
+    "name": "下市町",
+    "en": "Shimoichi-cho",
+    "slug": "shimoichi-cho",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kurotaki-mura",
+    "name": "黒滝村",
+    "en": "Kurotaki-mura",
+    "slug": "kurotaki-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-tenkawa-mura",
+    "name": "天川村",
+    "en": "Tenkawa-mura",
+    "slug": "tenkawa-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-nosegawa-mura",
+    "name": "野迫川村",
+    "en": "Nosegawa-mura",
+    "slug": "nosegawa-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-totsukawa-mura",
+    "name": "十津川村",
+    "en": "Totsukawa-mura",
+    "slug": "totsukawa-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-shimokitayama-mura",
+    "name": "下北山村",
+    "en": "Shimokitayama-mura",
+    "slug": "shimokitayama-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kamikitayama-mura",
+    "name": "上北山村",
+    "en": "Kamikitayama-mura",
+    "slug": "kamikitayama-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-kawakami-mura",
+    "name": "川上村",
+    "en": "Kawakami-mura",
+    "slug": "kawakami-mura",
+    "prefCode": "29"
+  },
+  {
+    "id": "29-higashiyoshino-mura",
+    "name": "東吉野村",
+    "en": "Higashiyoshino-mura",
+    "slug": "higashiyoshino-mura",
+    "prefCode": "29"
+  }
+]

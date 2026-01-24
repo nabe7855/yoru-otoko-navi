@@ -1,0 +1,121 @@
+[
+  {
+    "id": "37-takamatsu-shi",
+    "name": "高松市",
+    "en": "Takamatsu-shi",
+    "slug": "takamatsu-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-marugame-shi",
+    "name": "丸亀市",
+    "en": "Marugame-shi",
+    "slug": "marugame-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-sakaide-shi",
+    "name": "坂出市",
+    "en": "Sakaide-shi",
+    "slug": "sakaide-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-zentsuji-shi",
+    "name": "善通寺市",
+    "en": "Zentsuji-shi",
+    "slug": "zentsuji-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-kanonji-shi",
+    "name": "観音寺市",
+    "en": "Kanonji-shi",
+    "slug": "kanonji-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-sanuki-shi",
+    "name": "さぬき市",
+    "en": "Sanuki-shi",
+    "slug": "sanuki-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-higashikagawa-shi",
+    "name": "東かがわ市",
+    "en": "Higashikagawa-shi",
+    "slug": "higashikagawa-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-mitoyo-shi",
+    "name": "三豊市",
+    "en": "Mitoyo-shi",
+    "slug": "mitoyo-shi",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-tonosho-cho",
+    "name": "土庄町",
+    "en": "Tonosho-cho",
+    "slug": "tonosho-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-shodoshima-cho",
+    "name": "小豆島町",
+    "en": "Shodoshima-cho",
+    "slug": "shodoshima-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-miki-cho",
+    "name": "三木町",
+    "en": "Miki-cho",
+    "slug": "miki-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-naoshima-cho",
+    "name": "直島町",
+    "en": "Naoshima-cho",
+    "slug": "naoshima-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-utazu-cho",
+    "name": "宇多津町",
+    "en": "Utazu-cho",
+    "slug": "utazu-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-ayagawa-cho",
+    "name": "綾川町",
+    "en": "Ayagawa-cho",
+    "slug": "ayagawa-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-kotohira-cho",
+    "name": "琴平町",
+    "en": "Kotohira-cho",
+    "slug": "kotohira-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-tadotsu-cho",
+    "name": "多度津町",
+    "en": "Tadotsu-cho",
+    "slug": "tadotsu-cho",
+    "prefCode": "37"
+  },
+  {
+    "id": "37-manno-cho",
+    "name": "まんのう町",
+    "en": "Manno-cho",
+    "slug": "manno-cho",
+    "prefCode": "37"
+  }
+]

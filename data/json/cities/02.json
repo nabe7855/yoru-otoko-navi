@@ -1,0 +1,282 @@
+[
+  {
+    "id": "02-aomori-shi",
+    "name": "青森市",
+    "en": "Aomori-shi",
+    "slug": "aomori-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-hirosaki-shi",
+    "name": "弘前市",
+    "en": "Hirosaki-shi",
+    "slug": "hirosaki-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-hachinohe-shi",
+    "name": "八戸市",
+    "en": "Hachinohe-shi",
+    "slug": "hachinohe-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-kuroishi-shi",
+    "name": "黒石市",
+    "en": "Kuroishi-shi",
+    "slug": "kuroishi-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-goshogawara-shi",
+    "name": "五所川原市",
+    "en": "Goshogawara-shi",
+    "slug": "goshogawara-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-towada-shi",
+    "name": "十和田市",
+    "en": "Towada-shi",
+    "slug": "towada-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-misawa-shi",
+    "name": "三沢市",
+    "en": "Misawa-shi",
+    "slug": "misawa-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-mutsu-shi",
+    "name": "むつ市",
+    "en": "Mutsu-shi",
+    "slug": "mutsu-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-tsugaru-shi",
+    "name": "つがる市",
+    "en": "Tsugaru-shi",
+    "slug": "tsugaru-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-hirakawa-shi",
+    "name": "平川市",
+    "en": "Hirakawa-shi",
+    "slug": "hirakawa-shi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-hiranai-machi",
+    "name": "平内町",
+    "en": "Hiranai-machi",
+    "slug": "hiranai-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-imabetsu-machi",
+    "name": "今別町",
+    "en": "Imabetsu-machi",
+    "slug": "imabetsu-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-yomogita-mura",
+    "name": "蓬田村",
+    "en": "Yomogita-mura",
+    "slug": "yomogita-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-sotogahama-machi",
+    "name": "外ヶ浜町",
+    "en": "Sotogahama-machi",
+    "slug": "sotogahama-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-ajigasawa-machi",
+    "name": "鰺ヶ沢町",
+    "en": "Ajigasawa-machi",
+    "slug": "ajigasawa-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-fukaura-machi",
+    "name": "深浦町",
+    "en": "Fukaura-machi",
+    "slug": "fukaura-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-nishimeya-mura",
+    "name": "西目屋村",
+    "en": "Nishimeya-mura",
+    "slug": "nishimeya-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-fujisaki-machi",
+    "name": "藤崎町",
+    "en": "Fujisaki-machi",
+    "slug": "fujisaki-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-owani-machi",
+    "name": "大鰐町",
+    "en": "Owani-machi",
+    "slug": "owani-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-inakadate-mura",
+    "name": "田舎館村",
+    "en": "Inakadate-mura",
+    "slug": "inakadate-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-itayanagi-machi",
+    "name": "板柳町",
+    "en": "Itayanagi-machi",
+    "slug": "itayanagi-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-tsuruta-machi",
+    "name": "鶴田町",
+    "en": "Tsuruta-machi",
+    "slug": "tsuruta-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-nakadomari-machi",
+    "name": "中泊町",
+    "en": "Nakadomari-machi",
+    "slug": "nakadomari-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-noheji-machi",
+    "name": "野辺地町",
+    "en": "Noheji-machi",
+    "slug": "noheji-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-shichinohe-machi",
+    "name": "七戸町",
+    "en": "Shichinohe-machi",
+    "slug": "shichinohe-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-rokunohe-machi",
+    "name": "六戸町",
+    "en": "Rokunohe-machi",
+    "slug": "rokunohe-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-yokohama-machi",
+    "name": "横浜町",
+    "en": "Yokohama-machi",
+    "slug": "yokohama-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-tohoku-machi",
+    "name": "東北町",
+    "en": "Tohoku-machi",
+    "slug": "tohoku-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-rokkasho-mura",
+    "name": "六ヶ所村",
+    "en": "Rokkasho-mura",
+    "slug": "rokkasho-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-oirase-cho",
+    "name": "おいらせ町",
+    "en": "Oirase-cho",
+    "slug": "oirase-cho",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-oma-machi",
+    "name": "大間町",
+    "en": "Oma-machi",
+    "slug": "oma-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-higashidori-mura",
+    "name": "東通村",
+    "en": "Higashidori-mura",
+    "slug": "higashidori-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-kazamaura-mura",
+    "name": "風間浦村",
+    "en": "Kazamaura-mura",
+    "slug": "kazamaura-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-sai-mura",
+    "name": "佐井村",
+    "en": "Sai-mura",
+    "slug": "sai-mura",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-sannohe-machi",
+    "name": "三戸町",
+    "en": "Sannohe-machi",
+    "slug": "sannohe-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-gonohe-machi",
+    "name": "五戸町",
+    "en": "Gonohe-machi",
+    "slug": "gonohe-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-takko-machi",
+    "name": "田子町",
+    "en": "Takko-machi",
+    "slug": "takko-machi",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-nambu-cho",
+    "name": "南部町",
+    "en": "Nambu-cho",
+    "slug": "nambu-cho",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-hashikami-cho",
+    "name": "階上町",
+    "en": "Hashikami-cho",
+    "slug": "hashikami-cho",
+    "prefCode": "02"
+  },
+  {
+    "id": "02-shingo-mura",
+    "name": "新郷村",
+    "en": "Shingo-mura",
+    "slug": "shingo-mura",
+    "prefCode": "02"
+  }
+]

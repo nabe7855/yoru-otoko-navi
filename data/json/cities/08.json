@@ -1,0 +1,310 @@
+[
+  {
+    "id": "08-mito-shi",
+    "name": "水戸市",
+    "en": "Mito-shi",
+    "slug": "mito-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-hitachi-shi",
+    "name": "日立市",
+    "en": "Hitachi-shi",
+    "slug": "hitachi-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-tsuchiura-shi",
+    "name": "土浦市",
+    "en": "Tsuchiura-shi",
+    "slug": "tsuchiura-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-koga-shi",
+    "name": "古河市",
+    "en": "Koga-shi",
+    "slug": "koga-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-ishioka-shi",
+    "name": "石岡市",
+    "en": "Ishioka-shi",
+    "slug": "ishioka-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-yuki-shi",
+    "name": "結城市",
+    "en": "Yuki-shi",
+    "slug": "yuki-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-ryugasaki-shi",
+    "name": "龍ケ崎市",
+    "en": "Ryugasaki-shi",
+    "slug": "ryugasaki-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-shimotsuma-shi",
+    "name": "下妻市",
+    "en": "Shimotsuma-shi",
+    "slug": "shimotsuma-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-joso-shi",
+    "name": "常総市",
+    "en": "Joso-shi",
+    "slug": "joso-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-hitachiota-shi",
+    "name": "常陸太田市",
+    "en": "Hitachiota-shi",
+    "slug": "hitachiota-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-takahagi-shi",
+    "name": "高萩市",
+    "en": "Takahagi-shi",
+    "slug": "takahagi-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kitaibaraki-shi",
+    "name": "北茨城市",
+    "en": "Kitaibaraki-shi",
+    "slug": "kitaibaraki-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kasama-shi",
+    "name": "笠間市",
+    "en": "Kasama-shi",
+    "slug": "kasama-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-toride-shi",
+    "name": "取手市",
+    "en": "Toride-shi",
+    "slug": "toride-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-ushiku-shi",
+    "name": "牛久市",
+    "en": "Ushiku-shi",
+    "slug": "ushiku-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-tsukuba-shi",
+    "name": "つくば市",
+    "en": "Tsukuba-shi",
+    "slug": "tsukuba-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-hitachinaka-shi",
+    "name": "ひたちなか市",
+    "en": "Hitachinaka-shi",
+    "slug": "hitachinaka-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kashima-shi",
+    "name": "鹿嶋市",
+    "en": "Kashima-shi",
+    "slug": "kashima-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-itako-shi",
+    "name": "潮来市",
+    "en": "Itako-shi",
+    "slug": "itako-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-moriya-shi",
+    "name": "守谷市",
+    "en": "Moriya-shi",
+    "slug": "moriya-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-hitachiomiya-shi",
+    "name": "常陸大宮市",
+    "en": "Hitachiomiya-shi",
+    "slug": "hitachiomiya-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-naka-shi",
+    "name": "那珂市",
+    "en": "Naka-shi",
+    "slug": "naka-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-chikusei-shi",
+    "name": "筑西市",
+    "en": "Chikusei-shi",
+    "slug": "chikusei-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-bando-shi",
+    "name": "坂東市",
+    "en": "Bando-shi",
+    "slug": "bando-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-inashiki-shi",
+    "name": "稲敷市",
+    "en": "Inashiki-shi",
+    "slug": "inashiki-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kasumigaura-shi",
+    "name": "かすみがうら市",
+    "en": "Kasumigaura-shi",
+    "slug": "kasumigaura-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-sakuragawa-shi",
+    "name": "桜川市",
+    "en": "Sakuragawa-shi",
+    "slug": "sakuragawa-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kamisu-shi",
+    "name": "神栖市",
+    "en": "Kamisu-shi",
+    "slug": "kamisu-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-namegata-shi",
+    "name": "行方市",
+    "en": "Namegata-shi",
+    "slug": "namegata-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-hokota-shi",
+    "name": "鉾田市",
+    "en": "Hokota-shi",
+    "slug": "hokota-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-tsukubamirai-shi",
+    "name": "つくばみらい市",
+    "en": "Tsukubamirai-shi",
+    "slug": "tsukubamirai-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-omitama-shi",
+    "name": "小美玉市",
+    "en": "Omitama-shi",
+    "slug": "omitama-shi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-ibaraki-machi",
+    "name": "茨城町",
+    "en": "Ibaraki-machi",
+    "slug": "ibaraki-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-oarai-machi",
+    "name": "大洗町",
+    "en": "Oarai-machi",
+    "slug": "oarai-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-shirosato-machi",
+    "name": "城里町",
+    "en": "Shirosato-machi",
+    "slug": "shirosato-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-tokai-mura",
+    "name": "東海村",
+    "en": "Tokai-mura",
+    "slug": "tokai-mura",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-daigo-machi",
+    "name": "大子町",
+    "en": "Daigo-machi",
+    "slug": "daigo-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-miho-mura",
+    "name": "美浦村",
+    "en": "Miho-mura",
+    "slug": "miho-mura",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-ami-machi",
+    "name": "阿見町",
+    "en": "Ami-machi",
+    "slug": "ami-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-kawachi-machi",
+    "name": "河内町",
+    "en": "Kawachi-machi",
+    "slug": "kawachi-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-yachiyo-machi",
+    "name": "八千代町",
+    "en": "Yachiyo-machi",
+    "slug": "yachiyo-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-goka-machi",
+    "name": "五霞町",
+    "en": "Goka-machi",
+    "slug": "goka-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-sakai-machi",
+    "name": "境町",
+    "en": "Sakai-machi",
+    "slug": "sakai-machi",
+    "prefCode": "08"
+  },
+  {
+    "id": "08-tone-machi",
+    "name": "利根町",
+    "en": "Tone-machi",
+    "slug": "tone-machi",
+    "prefCode": "08"
+  }
+]

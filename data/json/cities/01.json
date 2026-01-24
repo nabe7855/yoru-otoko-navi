@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "01-sapporo-shi",
+    "name": "札幌市",
+    "en": "Sapporo-shi",
+    "slug": "sapporo-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hakodate-shi",
+    "name": "函館市",
+    "en": "Hakodate-shi",
+    "slug": "hakodate-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-otaru-shi",
+    "name": "小樽市",
+    "en": "Otaru-shi",
+    "slug": "otaru-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-asahikawa-shi",
+    "name": "旭川市",
+    "en": "Asahikawa-shi",
+    "slug": "asahikawa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-muroran-shi",
+    "name": "室蘭市",
+    "en": "Muroran-shi",
+    "slug": "muroran-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kushiro-shi",
+    "name": "釧路市",
+    "en": "Kushiro-shi",
+    "slug": "kushiro-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-obihiro-shi",
+    "name": "帯広市",
+    "en": "Obihiro-shi",
+    "slug": "obihiro-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kitami-shi",
+    "name": "北見市",
+    "en": "Kitami-shi",
+    "slug": "kitami-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-yubari-shi",
+    "name": "夕張市",
+    "en": "Yubari-shi",
+    "slug": "yubari-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-iwamizawa-shi",
+    "name": "岩見沢市",
+    "en": "Iwamizawa-shi",
+    "slug": "iwamizawa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-abashiri-shi",
+    "name": "網走市",
+    "en": "Abashiri-shi",
+    "slug": "abashiri-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rumoi-shi",
+    "name": "留萌市",
+    "en": "Rumoi-shi",
+    "slug": "rumoi-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tomakomai-shi",
+    "name": "苫小牧市",
+    "en": "Tomakomai-shi",
+    "slug": "tomakomai-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-wakkanai-shi",
+    "name": "稚内市",
+    "en": "Wakkanai-shi",
+    "slug": "wakkanai-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-bibai-shi",
+    "name": "美唄市",
+    "en": "Bibai-shi",
+    "slug": "bibai-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ashibetsu-shi",
+    "name": "芦別市",
+    "en": "Ashibetsu-shi",
+    "slug": "ashibetsu-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ebetsu-shi",
+    "name": "江別市",
+    "en": "Ebetsu-shi",
+    "slug": "ebetsu-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-akabira-shi",
+    "name": "赤平市",
+    "en": "Akabira-shi",
+    "slug": "akabira-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-mombetsu-shi",
+    "name": "紋別市",
+    "en": "Mombetsu-shi",
+    "slug": "mombetsu-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shibetsu-shi",
+    "name": "士別市",
+    "en": "Shibetsu-shi",
+    "slug": "shibetsu-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nayoro-shi",
+    "name": "名寄市",
+    "en": "Nayoro-shi",
+    "slug": "nayoro-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-mikasa-shi",
+    "name": "三笠市",
+    "en": "Mikasa-shi",
+    "slug": "mikasa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nemuro-shi",
+    "name": "根室市",
+    "en": "Nemuro-shi",
+    "slug": "nemuro-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-chitose-shi",
+    "name": "千歳市",
+    "en": "Chitose-shi",
+    "slug": "chitose-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-takikawa-shi",
+    "name": "滝川市",
+    "en": "Takikawa-shi",
+    "slug": "takikawa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-sunagawa-shi",
+    "name": "砂川市",
+    "en": "Sunagawa-shi",
+    "slug": "sunagawa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-utashinai-shi",
+    "name": "歌志内市",
+    "en": "Utashinai-shi",
+    "slug": "utashinai-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-fukagawa-shi",
+    "name": "深川市",
+    "en": "Fukagawa-shi",
+    "slug": "fukagawa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-furano-shi",
+    "name": "富良野市",
+    "en": "Furano-shi",
+    "slug": "furano-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-noboribetsu-shi",
+    "name": "登別市",
+    "en": "Noboribetsu-shi",
+    "slug": "noboribetsu-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-eniwa-shi",
+    "name": "恵庭市",
+    "en": "Eniwa-shi",
+    "slug": "eniwa-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-date-shi",
+    "name": "伊達市",
+    "en": "Date-shi",
+    "slug": "date-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kitahiroshima-shi",
+    "name": "北広島市",
+    "en": "Kitahiroshima-shi",
+    "slug": "kitahiroshima-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ishikari-shi",
+    "name": "石狩市",
+    "en": "Ishikari-shi",
+    "slug": "ishikari-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hokuto-shi",
+    "name": "北斗市",
+    "en": "Hokuto-shi",
+    "slug": "hokuto-shi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tobetsu-cho",
+    "name": "当別町",
+    "en": "Tobetsu-cho",
+    "slug": "tobetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shinshinotsu-mura",
+    "name": "新篠津村",
+    "en": "Shinshinotsu-mura",
+    "slug": "shinshinotsu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-matsumae-cho",
+    "name": "松前町",
+    "en": "Matsumae-cho",
+    "slug": "matsumae-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-fukushima-cho",
+    "name": "福島町",
+    "en": "Fukushima-cho",
+    "slug": "fukushima-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shiriuchi-cho",
+    "name": "知内町",
+    "en": "Shiriuchi-cho",
+    "slug": "shiriuchi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kikonai-cho",
+    "name": "木古内町",
+    "en": "Kikonai-cho",
+    "slug": "kikonai-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nanae-cho",
+    "name": "七飯町",
+    "en": "Nanae-cho",
+    "slug": "nanae-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shikabe-cho",
+    "name": "鹿部町",
+    "en": "Shikabe-cho",
+    "slug": "shikabe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-mori-machi",
+    "name": "森町",
+    "en": "Mori-machi",
+    "slug": "mori-machi",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-yakumo-cho",
+    "name": "八雲町",
+    "en": "Yakumo-cho",
+    "slug": "yakumo-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-oshamambe-cho",
+    "name": "長万部町",
+    "en": "Oshamambe-cho",
+    "slug": "oshamambe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-esashi-cho",
+    "name": "江差町",
+    "en": "Esashi-cho",
+    "slug": "esashi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kaminokuni-cho",
+    "name": "上ノ国町",
+    "en": "Kaminokuni-cho",
+    "slug": "kaminokuni-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-assabu-cho",
+    "name": "厚沢部町",
+    "en": "Assabu-cho",
+    "slug": "assabu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-otobe-cho",
+    "name": "乙部町",
+    "en": "Otobe-cho",
+    "slug": "otobe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-okushiri-cho",
+    "name": "奥尻町",
+    "en": "Okushiri-cho",
+    "slug": "okushiri-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-imakane-cho",
+    "name": "今金町",
+    "en": "Imakane-cho",
+    "slug": "imakane-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-setana-cho",
+    "name": "せたな町",
+    "en": "Setana-cho",
+    "slug": "setana-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shimamaki-mura",
+    "name": "島牧村",
+    "en": "Shimamaki-mura",
+    "slug": "shimamaki-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-suttsu-cho",
+    "name": "寿都町",
+    "en": "Suttsu-cho",
+    "slug": "suttsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kuromatsunai-cho",
+    "name": "黒松内町",
+    "en": "Kuromatsunai-cho",
+    "slug": "kuromatsunai-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rankoshi-cho",
+    "name": "蘭越町",
+    "en": "Rankoshi-cho",
+    "slug": "rankoshi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-niseko-cho",
+    "name": "ニセコ町",
+    "en": "Niseko-cho",
+    "slug": "niseko-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-makkari-mura",
+    "name": "真狩村",
+    "en": "Makkari-mura",
+    "slug": "makkari-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rusutsu-mura",
+    "name": "留寿都村",
+    "en": "Rusutsu-mura",
+    "slug": "rusutsu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kimobetsu-cho",
+    "name": "喜茂別町",
+    "en": "Kimobetsu-cho",
+    "slug": "kimobetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kyogoku-cho",
+    "name": "京極町",
+    "en": "Kyogoku-cho",
+    "slug": "kyogoku-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kutchan-cho",
+    "name": "倶知安町",
+    "en": "Kutchan-cho",
+    "slug": "kutchan-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kyowa-cho",
+    "name": "共和町",
+    "en": "Kyowa-cho",
+    "slug": "kyowa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-iwanai-cho",
+    "name": "岩内町",
+    "en": "Iwanai-cho",
+    "slug": "iwanai-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tomari-mura",
+    "name": "泊村",
+    "en": "Tomari-mura",
+    "slug": "tomari-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kamoenai-mura",
+    "name": "神恵内村",
+    "en": "Kamoenai-mura",
+    "slug": "kamoenai-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shakotan-cho",
+    "name": "積丹町",
+    "en": "Shakotan-cho",
+    "slug": "shakotan-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-furubira-cho",
+    "name": "古平町",
+    "en": "Furubira-cho",
+    "slug": "furubira-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-niki-cho",
+    "name": "仁木町",
+    "en": "Niki-cho",
+    "slug": "niki-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-yoichi-cho",
+    "name": "余市町",
+    "en": "Yoichi-cho",
+    "slug": "yoichi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-akaigawa-mura",
+    "name": "赤井川村",
+    "en": "Akaigawa-mura",
+    "slug": "akaigawa-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-namporo-cho",
+    "name": "南幌町",
+    "en": "Namporo-cho",
+    "slug": "namporo-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-naie-cho",
+    "name": "奈井江町",
+    "en": "Naie-cho",
+    "slug": "naie-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kamisunagawa-cho",
+    "name": "上砂川町",
+    "en": "Kamisunagawa-cho",
+    "slug": "kamisunagawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-yuni-cho",
+    "name": "由仁町",
+    "en": "Yuni-cho",
+    "slug": "yuni-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-naganuma-cho",
+    "name": "長沼町",
+    "en": "Naganuma-cho",
+    "slug": "naganuma-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kuriyama-cho",
+    "name": "栗山町",
+    "en": "Kuriyama-cho",
+    "slug": "kuriyama-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tsukigata-cho",
+    "name": "月形町",
+    "en": "Tsukigata-cho",
+    "slug": "tsukigata-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-urausu-cho",
+    "name": "浦臼町",
+    "en": "Urausu-cho",
+    "slug": "urausu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shintotsukawa-cho",
+    "name": "新十津川町",
+    "en": "Shintotsukawa-cho",
+    "slug": "shintotsukawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-moseushi-cho",
+    "name": "妹背牛町",
+    "en": "Moseushi-cho",
+    "slug": "moseushi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-chippubetsu-cho",
+    "name": "秩父別町",
+    "en": "Chippubetsu-cho",
+    "slug": "chippubetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-uryu-cho",
+    "name": "雨竜町",
+    "en": "Uryu-cho",
+    "slug": "uryu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hokuryu-cho",
+    "name": "北竜町",
+    "en": "Hokuryu-cho",
+    "slug": "hokuryu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-numata-cho",
+    "name": "沼田町",
+    "en": "Numata-cho",
+    "slug": "numata-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-takasu-cho",
+    "name": "鷹栖町",
+    "en": "Takasu-cho",
+    "slug": "takasu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-higashikagura-cho",
+    "name": "東神楽町",
+    "en": "Higashikagura-cho",
+    "slug": "higashikagura-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-toma-cho",
+    "name": "当麻町",
+    "en": "Toma-cho",
+    "slug": "toma-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-pippu-cho",
+    "name": "比布町",
+    "en": "Pippu-cho",
+    "slug": "pippu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-aibetsu-cho",
+    "name": "愛別町",
+    "en": "Aibetsu-cho",
+    "slug": "aibetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kamikawa-cho",
+    "name": "上川町",
+    "en": "Kamikawa-cho",
+    "slug": "kamikawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-higashikawa-cho",
+    "name": "東川町",
+    "en": "Higashikawa-cho",
+    "slug": "higashikawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-biei-cho",
+    "name": "美瑛町",
+    "en": "Biei-cho",
+    "slug": "biei-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kamifurano-cho",
+    "name": "上富良野町",
+    "en": "Kamifurano-cho",
+    "slug": "kamifurano-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nakafurano-cho",
+    "name": "中富良野町",
+    "en": "Nakafurano-cho",
+    "slug": "nakafurano-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-minamifurano-cho",
+    "name": "南富良野町",
+    "en": "Minamifurano-cho",
+    "slug": "minamifurano-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shimukappu-mura",
+    "name": "占冠村",
+    "en": "Shimukappu-mura",
+    "slug": "shimukappu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-wassamu-cho",
+    "name": "和寒町",
+    "en": "Wassamu-cho",
+    "slug": "wassamu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kembuchi-cho",
+    "name": "剣淵町",
+    "en": "Kembuchi-cho",
+    "slug": "kembuchi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shimokawa-cho",
+    "name": "下川町",
+    "en": "Shimokawa-cho",
+    "slug": "shimokawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-bifuka-cho",
+    "name": "美深町",
+    "en": "Bifuka-cho",
+    "slug": "bifuka-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-otoineppu-mura",
+    "name": "音威子府村",
+    "en": "Otoineppu-mura",
+    "slug": "otoineppu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nakagawa-cho",
+    "name": "中川町",
+    "en": "Nakagawa-cho",
+    "slug": "nakagawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-horokanai-cho",
+    "name": "幌加内町",
+    "en": "Horokanai-cho",
+    "slug": "horokanai-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-mashike-cho",
+    "name": "増毛町",
+    "en": "Mashike-cho",
+    "slug": "mashike-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-obira-cho",
+    "name": "小平町",
+    "en": "Obira-cho",
+    "slug": "obira-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tomamae-cho",
+    "name": "苫前町",
+    "en": "Tomamae-cho",
+    "slug": "tomamae-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-haboro-cho",
+    "name": "羽幌町",
+    "en": "Haboro-cho",
+    "slug": "haboro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shosambetsu-mura",
+    "name": "初山別村",
+    "en": "Shosambetsu-mura",
+    "slug": "shosambetsu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-embetsu-cho",
+    "name": "遠別町",
+    "en": "Embetsu-cho",
+    "slug": "embetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-teshio-cho",
+    "name": "天塩町",
+    "en": "Teshio-cho",
+    "slug": "teshio-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-sarufutsu-mura",
+    "name": "猿払村",
+    "en": "Sarufutsu-mura",
+    "slug": "sarufutsu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hamatombetsu-cho",
+    "name": "浜頓別町",
+    "en": "Hamatombetsu-cho",
+    "slug": "hamatombetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nakatombetsu-cho",
+    "name": "中頓別町",
+    "en": "Nakatombetsu-cho",
+    "slug": "nakatombetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-esashi-cho",
+    "name": "枝幸町",
+    "en": "Esashi-cho",
+    "slug": "esashi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-toyotomi-cho",
+    "name": "豊富町",
+    "en": "Toyotomi-cho",
+    "slug": "toyotomi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rebun-cho",
+    "name": "礼文町",
+    "en": "Rebun-cho",
+    "slug": "rebun-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rishiri-cho",
+    "name": "利尻町",
+    "en": "Rishiri-cho",
+    "slug": "rishiri-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rishirifuji-cho",
+    "name": "利尻富士町",
+    "en": "Rishirifuji-cho",
+    "slug": "rishirifuji-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-horonobe-cho",
+    "name": "幌延町",
+    "en": "Horonobe-cho",
+    "slug": "horonobe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-bihoro-cho",
+    "name": "美幌町",
+    "en": "Bihoro-cho",
+    "slug": "bihoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tsubetsu-cho",
+    "name": "津別町",
+    "en": "Tsubetsu-cho",
+    "slug": "tsubetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shari-cho",
+    "name": "斜里町",
+    "en": "Shari-cho",
+    "slug": "shari-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kiyosato-cho",
+    "name": "清里町",
+    "en": "Kiyosato-cho",
+    "slug": "kiyosato-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-koshimizu-cho",
+    "name": "小清水町",
+    "en": "Koshimizu-cho",
+    "slug": "koshimizu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kunneppu-cho",
+    "name": "訓子府町",
+    "en": "Kunneppu-cho",
+    "slug": "kunneppu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-oketo-cho",
+    "name": "置戸町",
+    "en": "Oketo-cho",
+    "slug": "oketo-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-saroma-cho",
+    "name": "佐呂間町",
+    "en": "Saroma-cho",
+    "slug": "saroma-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-engaru-cho",
+    "name": "遠軽町",
+    "en": "Engaru-cho",
+    "slug": "engaru-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-yubetsu-cho",
+    "name": "湧別町",
+    "en": "Yubetsu-cho",
+    "slug": "yubetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-takinoe-cho",
+    "name": "滝上町",
+    "en": "Takinoe-cho",
+    "slug": "takinoe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-okoppe-cho",
+    "name": "興部町",
+    "en": "Okoppe-cho",
+    "slug": "okoppe-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nishiokoppe-mura",
+    "name": "西興部村",
+    "en": "Nishiokoppe-mura",
+    "slug": "nishiokoppe-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-omu-cho",
+    "name": "雄武町",
+    "en": "Omu-cho",
+    "slug": "omu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ozora-cho",
+    "name": "大空町",
+    "en": "Ozora-cho",
+    "slug": "ozora-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-toyora-cho",
+    "name": "豊浦町",
+    "en": "Toyora-cho",
+    "slug": "toyora-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-sobetsu-cho",
+    "name": "壮瞥町",
+    "en": "Sobetsu-cho",
+    "slug": "sobetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shiraoi-cho",
+    "name": "白老町",
+    "en": "Shiraoi-cho",
+    "slug": "shiraoi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-atsuma-cho",
+    "name": "厚真町",
+    "en": "Atsuma-cho",
+    "slug": "atsuma-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-toyako-cho",
+    "name": "洞爺湖町",
+    "en": "Toyako-cho",
+    "slug": "toyako-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-abira-cho",
+    "name": "安平町",
+    "en": "Abira-cho",
+    "slug": "abira-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-mukawa-cho",
+    "name": "むかわ町",
+    "en": "Mukawa-cho",
+    "slug": "mukawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hidaka-cho",
+    "name": "日高町",
+    "en": "Hidaka-cho",
+    "slug": "hidaka-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-biratori-cho",
+    "name": "平取町",
+    "en": "Biratori-cho",
+    "slug": "biratori-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-niikappu-cho",
+    "name": "新冠町",
+    "en": "Niikappu-cho",
+    "slug": "niikappu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-urakawa-cho",
+    "name": "浦河町",
+    "en": "Urakawa-cho",
+    "slug": "urakawa-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-samani-cho",
+    "name": "様似町",
+    "en": "Samani-cho",
+    "slug": "samani-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-erimo-cho",
+    "name": "えりも町",
+    "en": "Erimo-cho",
+    "slug": "erimo-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shinhidaka-cho",
+    "name": "新ひだか町",
+    "en": "Shinhidaka-cho",
+    "slug": "shinhidaka-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-otofuke-cho",
+    "name": "音更町",
+    "en": "Otofuke-cho",
+    "slug": "otofuke-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shihoro-cho",
+    "name": "士幌町",
+    "en": "Shihoro-cho",
+    "slug": "shihoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kamishihoro-cho",
+    "name": "上士幌町",
+    "en": "Kamishihoro-cho",
+    "slug": "kamishihoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shikaoi-cho",
+    "name": "鹿追町",
+    "en": "Shikaoi-cho",
+    "slug": "shikaoi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shintoku-cho",
+    "name": "新得町",
+    "en": "Shintoku-cho",
+    "slug": "shintoku-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shimizu-cho",
+    "name": "清水町",
+    "en": "Shimizu-cho",
+    "slug": "shimizu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-memuro-cho",
+    "name": "芽室町",
+    "en": "Memuro-cho",
+    "slug": "memuro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nakasatsunai-mura",
+    "name": "中札内村",
+    "en": "Nakasatsunai-mura",
+    "slug": "nakasatsunai-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-sarabetsu-mura",
+    "name": "更別村",
+    "en": "Sarabetsu-mura",
+    "slug": "sarabetsu-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-taiki-cho",
+    "name": "大樹町",
+    "en": "Taiki-cho",
+    "slug": "taiki-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hiro-cho",
+    "name": "広尾町",
+    "en": "Hiro-cho",
+    "slug": "hiro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-makubetsu-cho",
+    "name": "幕別町",
+    "en": "Makubetsu-cho",
+    "slug": "makubetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ikeda-cho",
+    "name": "池田町",
+    "en": "Ikeda-cho",
+    "slug": "ikeda-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-toyokoro-cho",
+    "name": "豊頃町",
+    "en": "Toyokoro-cho",
+    "slug": "toyokoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hombetsu-cho",
+    "name": "本別町",
+    "en": "Hombetsu-cho",
+    "slug": "hombetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-ashoro-cho",
+    "name": "足寄町",
+    "en": "Ashoro-cho",
+    "slug": "ashoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rikubetsu-cho",
+    "name": "陸別町",
+    "en": "Rikubetsu-cho",
+    "slug": "rikubetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-urahoro-cho",
+    "name": "浦幌町",
+    "en": "Urahoro-cho",
+    "slug": "urahoro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-kushiro-cho",
+    "name": "釧路町",
+    "en": "Kushiro-cho",
+    "slug": "kushiro-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-akkeshi-cho",
+    "name": "厚岸町",
+    "en": "Akkeshi-cho",
+    "slug": "akkeshi-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-hamanaka-cho",
+    "name": "浜中町",
+    "en": "Hamanaka-cho",
+    "slug": "hamanaka-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shibecha-cho",
+    "name": "標茶町",
+    "en": "Shibecha-cho",
+    "slug": "shibecha-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-teshikaga-cho",
+    "name": "弟子屈町",
+    "en": "Teshikaga-cho",
+    "slug": "teshikaga-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-tsurui-mura",
+    "name": "鶴居村",
+    "en": "Tsurui-mura",
+    "slug": "tsurui-mura",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shiranuka-cho",
+    "name": "白糠町",
+    "en": "Shiranuka-cho",
+    "slug": "shiranuka-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-betsukai-cho",
+    "name": "別海町",
+    "en": "Betsukai-cho",
+    "slug": "betsukai-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-nakashibetsu-cho",
+    "name": "中標津町",
+    "en": "Nakashibetsu-cho",
+    "slug": "nakashibetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-shibetsu-cho",
+    "name": "標津町",
+    "en": "Shibetsu-cho",
+    "slug": "shibetsu-cho",
+    "prefCode": "01"
+  },
+  {
+    "id": "01-rausu-cho",
+    "name": "羅臼町",
+    "en": "Rausu-cho",
+    "slug": "rausu-cho",
+    "prefCode": "01"
+  }
+]

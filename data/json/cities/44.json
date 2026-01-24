@@ -1,0 +1,128 @@
+[
+  {
+    "id": "44-oita-shi",
+    "name": "大分市",
+    "en": "Oita-shi",
+    "slug": "oita-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-beppu-shi",
+    "name": "別府市",
+    "en": "Beppu-shi",
+    "slug": "beppu-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-nakatsu-shi",
+    "name": "中津市",
+    "en": "Nakatsu-shi",
+    "slug": "nakatsu-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-hita-shi",
+    "name": "日田市",
+    "en": "Hita-shi",
+    "slug": "hita-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-saiki-shi",
+    "name": "佐伯市",
+    "en": "Saiki-shi",
+    "slug": "saiki-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-usuki-shi",
+    "name": "臼杵市",
+    "en": "Usuki-shi",
+    "slug": "usuki-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-tsukumi-shi",
+    "name": "津久見市",
+    "en": "Tsukumi-shi",
+    "slug": "tsukumi-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-taketa-shi",
+    "name": "竹田市",
+    "en": "Taketa-shi",
+    "slug": "taketa-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-bungotakada-shi",
+    "name": "豊後高田市",
+    "en": "Bungotakada-shi",
+    "slug": "bungotakada-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-kitsuki-shi",
+    "name": "杵築市",
+    "en": "Kitsuki-shi",
+    "slug": "kitsuki-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-usa-shi",
+    "name": "宇佐市",
+    "en": "Usa-shi",
+    "slug": "usa-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-bungoono-shi",
+    "name": "豊後大野市",
+    "en": "Bungoono-shi",
+    "slug": "bungoono-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-yufu-shi",
+    "name": "由布市",
+    "en": "Yufu-shi",
+    "slug": "yufu-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-kunisaki-shi",
+    "name": "国東市",
+    "en": "Kunisaki-shi",
+    "slug": "kunisaki-shi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-himeshima-mura",
+    "name": "姫島村",
+    "en": "Himeshima-mura",
+    "slug": "himeshima-mura",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-hiji-machi",
+    "name": "日出町",
+    "en": "Hiji-machi",
+    "slug": "hiji-machi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-kokonoe-machi",
+    "name": "九重町",
+    "en": "Kokonoe-machi",
+    "slug": "kokonoe-machi",
+    "prefCode": "44"
+  },
+  {
+    "id": "44-kusu-machi",
+    "name": "玖珠町",
+    "en": "Kusu-machi",
+    "slug": "kusu-machi",
+    "prefCode": "44"
+  }
+]

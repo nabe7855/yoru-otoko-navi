@@ -1,0 +1,247 @@
+[
+  {
+    "id": "04-sendai-shi",
+    "name": "仙台市",
+    "en": "Sendai-shi",
+    "slug": "sendai-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-ishinomaki-shi",
+    "name": "石巻市",
+    "en": "Ishinomaki-shi",
+    "slug": "ishinomaki-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shiogama-shi",
+    "name": "塩竈市",
+    "en": "Shiogama-shi",
+    "slug": "shiogama-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-kesennuma-shi",
+    "name": "気仙沼市",
+    "en": "Kesennuma-shi",
+    "slug": "kesennuma-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shiroishi-shi",
+    "name": "白石市",
+    "en": "Shiroishi-shi",
+    "slug": "shiroishi-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-natori-shi",
+    "name": "名取市",
+    "en": "Natori-shi",
+    "slug": "natori-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-kakuda-shi",
+    "name": "角田市",
+    "en": "Kakuda-shi",
+    "slug": "kakuda-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-tagajo-shi",
+    "name": "多賀城市",
+    "en": "Tagajo-shi",
+    "slug": "tagajo-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-iwanuma-shi",
+    "name": "岩沼市",
+    "en": "Iwanuma-shi",
+    "slug": "iwanuma-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-tome-shi",
+    "name": "登米市",
+    "en": "Tome-shi",
+    "slug": "tome-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-kurihara-shi",
+    "name": "栗原市",
+    "en": "Kurihara-shi",
+    "slug": "kurihara-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-higashimatsushima-shi",
+    "name": "東松島市",
+    "en": "Higashimatsushima-shi",
+    "slug": "higashimatsushima-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-osaki-shi",
+    "name": "大崎市",
+    "en": "Osaki-shi",
+    "slug": "osaki-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-tomiya-shi",
+    "name": "富谷市",
+    "en": "Tomiya-shi",
+    "slug": "tomiya-shi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-zao-machi",
+    "name": "蔵王町",
+    "en": "Zao-machi",
+    "slug": "zao-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shichikashuku-machi",
+    "name": "七ヶ宿町",
+    "en": "Shichikashuku-machi",
+    "slug": "shichikashuku-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-ogawara-machi",
+    "name": "大河原町",
+    "en": "Ogawara-machi",
+    "slug": "ogawara-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-murata-machi",
+    "name": "村田町",
+    "en": "Murata-machi",
+    "slug": "murata-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shibata-machi",
+    "name": "柴田町",
+    "en": "Shibata-machi",
+    "slug": "shibata-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-kawasaki-machi",
+    "name": "川崎町",
+    "en": "Kawasaki-machi",
+    "slug": "kawasaki-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-marumori-machi",
+    "name": "丸森町",
+    "en": "Marumori-machi",
+    "slug": "marumori-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-watari-cho",
+    "name": "亘理町",
+    "en": "Watari-cho",
+    "slug": "watari-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-yamamoto-cho",
+    "name": "山元町",
+    "en": "Yamamoto-cho",
+    "slug": "yamamoto-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-matsushima-machi",
+    "name": "松島町",
+    "en": "Matsushima-machi",
+    "slug": "matsushima-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shichigahama-machi",
+    "name": "七ヶ浜町",
+    "en": "Shichigahama-machi",
+    "slug": "shichigahama-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-rifu-cho",
+    "name": "利府町",
+    "en": "Rifu-cho",
+    "slug": "rifu-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-taiwa-cho",
+    "name": "大和町",
+    "en": "Taiwa-cho",
+    "slug": "taiwa-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-osato-cho",
+    "name": "大郷町",
+    "en": "Osato-cho",
+    "slug": "osato-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-ohira-mura",
+    "name": "大衡村",
+    "en": "Ohira-mura",
+    "slug": "ohira-mura",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-shikama-cho",
+    "name": "色麻町",
+    "en": "Shikama-cho",
+    "slug": "shikama-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-kami-machi",
+    "name": "加美町",
+    "en": "Kami-machi",
+    "slug": "kami-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-wakuya-cho",
+    "name": "涌谷町",
+    "en": "Wakuya-cho",
+    "slug": "wakuya-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-misato-machi",
+    "name": "美里町",
+    "en": "Misato-machi",
+    "slug": "misato-machi",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-onagawa-cho",
+    "name": "女川町",
+    "en": "Onagawa-cho",
+    "slug": "onagawa-cho",
+    "prefCode": "04"
+  },
+  {
+    "id": "04-minamisanriku-cho",
+    "name": "南三陸町",
+    "en": "Minamisanriku-cho",
+    "slug": "minamisanriku-cho",
+    "prefCode": "04"
+  }
+]

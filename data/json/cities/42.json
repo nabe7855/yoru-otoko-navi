@@ -1,0 +1,149 @@
+[
+  {
+    "id": "42-nagasaki-shi",
+    "name": "長崎市",
+    "en": "Nagasaki-shi",
+    "slug": "nagasaki-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-sasebo-shi",
+    "name": "佐世保市",
+    "en": "Sasebo-shi",
+    "slug": "sasebo-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-shimabara-shi",
+    "name": "島原市",
+    "en": "Shimabara-shi",
+    "slug": "shimabara-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-isahaya-shi",
+    "name": "諫早市",
+    "en": "Isahaya-shi",
+    "slug": "isahaya-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-omura-shi",
+    "name": "大村市",
+    "en": "Omura-shi",
+    "slug": "omura-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-hirado-shi",
+    "name": "平戸市",
+    "en": "Hirado-shi",
+    "slug": "hirado-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-matsura-shi",
+    "name": "松浦市",
+    "en": "Matsura-shi",
+    "slug": "matsura-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-tsushima-shi",
+    "name": "対馬市",
+    "en": "Tsushima-shi",
+    "slug": "tsushima-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-iki-shi",
+    "name": "壱岐市",
+    "en": "Iki-shi",
+    "slug": "iki-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-goto-shi",
+    "name": "五島市",
+    "en": "Goto-shi",
+    "slug": "goto-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-saikai-shi",
+    "name": "西海市",
+    "en": "Saikai-shi",
+    "slug": "saikai-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-unzen-shi",
+    "name": "雲仙市",
+    "en": "Unzen-shi",
+    "slug": "unzen-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-minamishimabara-shi",
+    "name": "南島原市",
+    "en": "Minamishimabara-shi",
+    "slug": "minamishimabara-shi",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-nagayo-cho",
+    "name": "長与町",
+    "en": "Nagayo-cho",
+    "slug": "nagayo-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-togitsu-cho",
+    "name": "時津町",
+    "en": "Togitsu-cho",
+    "slug": "togitsu-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-higashisonogi-cho",
+    "name": "東彼杵町",
+    "en": "Higashisonogi-cho",
+    "slug": "higashisonogi-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-kawatana-cho",
+    "name": "川棚町",
+    "en": "Kawatana-cho",
+    "slug": "kawatana-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-hasami-cho",
+    "name": "波佐見町",
+    "en": "Hasami-cho",
+    "slug": "hasami-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-ojika-cho",
+    "name": "小値賀町",
+    "en": "Ojika-cho",
+    "slug": "ojika-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-saza-cho",
+    "name": "佐々町",
+    "en": "Saza-cho",
+    "slug": "saza-cho",
+    "prefCode": "42"
+  },
+  {
+    "id": "42-shinkamigoto-cho",
+    "name": "新上五島町",
+    "en": "Shinkamigoto-cho",
+    "slug": "shinkamigoto-cho",
+    "prefCode": "42"
+  }
+]

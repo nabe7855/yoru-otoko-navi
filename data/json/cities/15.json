@@ -1,0 +1,212 @@
+[
+  {
+    "id": "15-niigata-shi",
+    "name": "新潟市",
+    "en": "Niigata-shi",
+    "slug": "niigata-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-nagaoka-shi",
+    "name": "長岡市",
+    "en": "Nagaoka-shi",
+    "slug": "nagaoka-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-sanjo-shi",
+    "name": "三条市",
+    "en": "Sanjo-shi",
+    "slug": "sanjo-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-kashiwazaki-shi",
+    "name": "柏崎市",
+    "en": "Kashiwazaki-shi",
+    "slug": "kashiwazaki-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-shibata-shi",
+    "name": "新発田市",
+    "en": "Shibata-shi",
+    "slug": "shibata-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-ojiya-shi",
+    "name": "小千谷市",
+    "en": "Ojiya-shi",
+    "slug": "ojiya-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-kamo-shi",
+    "name": "加茂市",
+    "en": "Kamo-shi",
+    "slug": "kamo-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-tokamachi-shi",
+    "name": "十日町市",
+    "en": "Tokamachi-shi",
+    "slug": "tokamachi-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-mitsuke-shi",
+    "name": "見附市",
+    "en": "Mitsuke-shi",
+    "slug": "mitsuke-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-murakami-shi",
+    "name": "村上市",
+    "en": "Murakami-shi",
+    "slug": "murakami-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-tsubame-shi",
+    "name": "燕市",
+    "en": "Tsubame-shi",
+    "slug": "tsubame-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-itoigawa-shi",
+    "name": "糸魚川市",
+    "en": "Itoigawa-shi",
+    "slug": "itoigawa-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-myoko-shi",
+    "name": "妙高市",
+    "en": "Myoko-shi",
+    "slug": "myoko-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-gosen-shi",
+    "name": "五泉市",
+    "en": "Gosen-shi",
+    "slug": "gosen-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-joetsu-shi",
+    "name": "上越市",
+    "en": "Joetsu-shi",
+    "slug": "joetsu-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-agano-shi",
+    "name": "阿賀野市",
+    "en": "Agano-shi",
+    "slug": "agano-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-sado-shi",
+    "name": "佐渡市",
+    "en": "Sado-shi",
+    "slug": "sado-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-uonuma-shi",
+    "name": "魚沼市",
+    "en": "Uonuma-shi",
+    "slug": "uonuma-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-minamiuonuma-shi",
+    "name": "南魚沼市",
+    "en": "Minamiuonuma-shi",
+    "slug": "minamiuonuma-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-tainai-shi",
+    "name": "胎内市",
+    "en": "Tainai-shi",
+    "slug": "tainai-shi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-seiro-machi",
+    "name": "聖籠町",
+    "en": "Seiro-machi",
+    "slug": "seiro-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-yahiko-mura",
+    "name": "弥彦村",
+    "en": "Yahiko-mura",
+    "slug": "yahiko-mura",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-tagami-machi",
+    "name": "田上町",
+    "en": "Tagami-machi",
+    "slug": "tagami-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-aga-machi",
+    "name": "阿賀町",
+    "en": "Aga-machi",
+    "slug": "aga-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-izumozaki-machi",
+    "name": "出雲崎町",
+    "en": "Izumozaki-machi",
+    "slug": "izumozaki-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-yuzawa-machi",
+    "name": "湯沢町",
+    "en": "Yuzawa-machi",
+    "slug": "yuzawa-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-tsunan-machi",
+    "name": "津南町",
+    "en": "Tsunan-machi",
+    "slug": "tsunan-machi",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-kariwa-mura",
+    "name": "刈羽村",
+    "en": "Kariwa-mura",
+    "slug": "kariwa-mura",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-sekikawa-mura",
+    "name": "関川村",
+    "en": "Sekikawa-mura",
+    "slug": "sekikawa-mura",
+    "prefCode": "15"
+  },
+  {
+    "id": "15-awashimaura-mura",
+    "name": "粟島浦村",
+    "en": "Awashimaura-mura",
+    "slug": "awashimaura-mura",
+    "prefCode": "15"
+  }
+]

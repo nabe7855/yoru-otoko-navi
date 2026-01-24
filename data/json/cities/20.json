@@ -1,0 +1,541 @@
+[
+  {
+    "id": "20-nagano-shi",
+    "name": "長野市",
+    "en": "Nagano-shi",
+    "slug": "nagano-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-matsumoto-shi",
+    "name": "松本市",
+    "en": "Matsumoto-shi",
+    "slug": "matsumoto-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-ueda-shi",
+    "name": "上田市",
+    "en": "Ueda-shi",
+    "slug": "ueda-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-okaya-shi",
+    "name": "岡谷市",
+    "en": "Okaya-shi",
+    "slug": "okaya-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-iida-shi",
+    "name": "飯田市",
+    "en": "Iida-shi",
+    "slug": "iida-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-suwa-shi",
+    "name": "諏訪市",
+    "en": "Suwa-shi",
+    "slug": "suwa-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-suzaka-shi",
+    "name": "須坂市",
+    "en": "Suzaka-shi",
+    "slug": "suzaka-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-komoro-shi",
+    "name": "小諸市",
+    "en": "Komoro-shi",
+    "slug": "komoro-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-ina-shi",
+    "name": "伊那市",
+    "en": "Ina-shi",
+    "slug": "ina-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-komagane-shi",
+    "name": "駒ヶ根市",
+    "en": "Komagane-shi",
+    "slug": "komagane-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-nakano-shi",
+    "name": "中野市",
+    "en": "Nakano-shi",
+    "slug": "nakano-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-omachi-shi",
+    "name": "大町市",
+    "en": "Omachi-shi",
+    "slug": "omachi-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-iiyama-shi",
+    "name": "飯山市",
+    "en": "Iiyama-shi",
+    "slug": "iiyama-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-chino-shi",
+    "name": "茅野市",
+    "en": "Chino-shi",
+    "slug": "chino-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-shiojiri-shi",
+    "name": "塩尻市",
+    "en": "Shiojiri-shi",
+    "slug": "shiojiri-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-saku-shi",
+    "name": "佐久市",
+    "en": "Saku-shi",
+    "slug": "saku-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-chikuma-shi",
+    "name": "千曲市",
+    "en": "Chikuma-shi",
+    "slug": "chikuma-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-tomi-shi",
+    "name": "東御市",
+    "en": "Tomi-shi",
+    "slug": "tomi-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-azumino-shi",
+    "name": "安曇野市",
+    "en": "Azumino-shi",
+    "slug": "azumino-shi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-komi-machi",
+    "name": "小海町",
+    "en": "Komi-machi",
+    "slug": "komi-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-kawakami-mura",
+    "name": "川上村",
+    "en": "Kawakami-mura",
+    "slug": "kawakami-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-minamimaki-mura",
+    "name": "南牧村",
+    "en": "Minamimaki-mura",
+    "slug": "minamimaki-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-minamiaiki-mura",
+    "name": "南相木村",
+    "en": "Minamiaiki-mura",
+    "slug": "minamiaiki-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-kitaaiki-mura",
+    "name": "北相木村",
+    "en": "Kitaaiki-mura",
+    "slug": "kitaaiki-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-sakuho-machi",
+    "name": "佐久穂町",
+    "en": "Sakuho-machi",
+    "slug": "sakuho-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-karuizawa-machi",
+    "name": "軽井沢町",
+    "en": "Karuizawa-machi",
+    "slug": "karuizawa-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-miyota-machi",
+    "name": "御代田町",
+    "en": "Miyota-machi",
+    "slug": "miyota-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-tateshina-machi",
+    "name": "立科町",
+    "en": "Tateshina-machi",
+    "slug": "tateshina-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-aoki-mura",
+    "name": "青木村",
+    "en": "Aoki-mura",
+    "slug": "aoki-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-nagawa-machi",
+    "name": "長和町",
+    "en": "Nagawa-machi",
+    "slug": "nagawa-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-shimosuwa-machi",
+    "name": "下諏訪町",
+    "en": "Shimosuwa-machi",
+    "slug": "shimosuwa-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-fujimi-machi",
+    "name": "富士見町",
+    "en": "Fujimi-machi",
+    "slug": "fujimi-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-hara-mura",
+    "name": "原村",
+    "en": "Hara-mura",
+    "slug": "hara-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-tatsuno-machi",
+    "name": "辰野町",
+    "en": "Tatsuno-machi",
+    "slug": "tatsuno-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-minowa-machi",
+    "name": "箕輪町",
+    "en": "Minowa-machi",
+    "slug": "minowa-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-iijima-machi",
+    "name": "飯島町",
+    "en": "Iijima-machi",
+    "slug": "iijima-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-minamiminowa-mura",
+    "name": "南箕輪村",
+    "en": "Minamiminowa-mura",
+    "slug": "minamiminowa-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-nakagawa-mura",
+    "name": "中川村",
+    "en": "Nakagawa-mura",
+    "slug": "nakagawa-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-miyada-mura",
+    "name": "宮田村",
+    "en": "Miyada-mura",
+    "slug": "miyada-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-matsukawa-machi",
+    "name": "松川町",
+    "en": "Matsukawa-machi",
+    "slug": "matsukawa-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-takamori-machi",
+    "name": "高森町",
+    "en": "Takamori-machi",
+    "slug": "takamori-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-anan-cho",
+    "name": "阿南町",
+    "en": "Anan-cho",
+    "slug": "anan-cho",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-achi-mura",
+    "name": "阿智村",
+    "en": "Achi-mura",
+    "slug": "achi-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-hiraya-mura",
+    "name": "平谷村",
+    "en": "Hiraya-mura",
+    "slug": "hiraya-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-neba-mura",
+    "name": "根羽村",
+    "en": "Neba-mura",
+    "slug": "neba-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-shimojo-mura",
+    "name": "下條村",
+    "en": "Shimojo-mura",
+    "slug": "shimojo-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-urugi-mura",
+    "name": "売木村",
+    "en": "Urugi-mura",
+    "slug": "urugi-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-tenryu-mura",
+    "name": "天龍村",
+    "en": "Tenryu-mura",
+    "slug": "tenryu-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-yasuoka-mura",
+    "name": "泰阜村",
+    "en": "Yasuoka-mura",
+    "slug": "yasuoka-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-takagi-mura",
+    "name": "喬木村",
+    "en": "Takagi-mura",
+    "slug": "takagi-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-toyoka-mura",
+    "name": "豊丘村",
+    "en": "Toyoka-mura",
+    "slug": "toyoka-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-oshika-mura",
+    "name": "大鹿村",
+    "en": "Oshika-mura",
+    "slug": "oshika-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-agematsu-machi",
+    "name": "上松町",
+    "en": "Agematsu-machi",
+    "slug": "agematsu-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-nagiso-machi",
+    "name": "南木曽町",
+    "en": "Nagiso-machi",
+    "slug": "nagiso-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-kiso-mura",
+    "name": "木祖村",
+    "en": "Kiso-mura",
+    "slug": "kiso-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-otaki-mura",
+    "name": "王滝村",
+    "en": "Otaki-mura",
+    "slug": "otaki-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-okuwa-mura",
+    "name": "大桑村",
+    "en": "Okuwa-mura",
+    "slug": "okuwa-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-kiso-machi",
+    "name": "木曽町",
+    "en": "Kiso-machi",
+    "slug": "kiso-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-omi-mura",
+    "name": "麻績村",
+    "en": "Omi-mura",
+    "slug": "omi-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-ikusaka-mura",
+    "name": "生坂村",
+    "en": "Ikusaka-mura",
+    "slug": "ikusaka-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-yamagata-mura",
+    "name": "山形村",
+    "en": "Yamagata-mura",
+    "slug": "yamagata-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-asahi-mura",
+    "name": "朝日村",
+    "en": "Asahi-mura",
+    "slug": "asahi-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-chikuhoku-mura",
+    "name": "筑北村",
+    "en": "Chikuhoku-mura",
+    "slug": "chikuhoku-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-ikeda-machi",
+    "name": "池田町",
+    "en": "Ikeda-machi",
+    "slug": "ikeda-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-matsukawa-mura",
+    "name": "松川村",
+    "en": "Matsukawa-mura",
+    "slug": "matsukawa-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-hakuba-mura",
+    "name": "白馬村",
+    "en": "Hakuba-mura",
+    "slug": "hakuba-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-otari-mura",
+    "name": "小谷村",
+    "en": "Otari-mura",
+    "slug": "otari-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-sakaki-machi",
+    "name": "坂城町",
+    "en": "Sakaki-machi",
+    "slug": "sakaki-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-obuse-machi",
+    "name": "小布施町",
+    "en": "Obuse-machi",
+    "slug": "obuse-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-takayama-mura",
+    "name": "高山村",
+    "en": "Takayama-mura",
+    "slug": "takayama-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-yamanochi-machi",
+    "name": "山ノ内町",
+    "en": "Yamanochi-machi",
+    "slug": "yamanochi-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-kijimadaira-mura",
+    "name": "木島平村",
+    "en": "Kijimadaira-mura",
+    "slug": "kijimadaira-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-nozawaonsen-mura",
+    "name": "野沢温泉村",
+    "en": "Nozawaonsen-mura",
+    "slug": "nozawaonsen-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-shinano-machi",
+    "name": "信濃町",
+    "en": "Shinano-machi",
+    "slug": "shinano-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-ogawa-mura",
+    "name": "小川村",
+    "en": "Ogawa-mura",
+    "slug": "ogawa-mura",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-iizuna-machi",
+    "name": "飯綱町",
+    "en": "Iizuna-machi",
+    "slug": "iizuna-machi",
+    "prefCode": "20"
+  },
+  {
+    "id": "20-sakae-mura",
+    "name": "栄村",
+    "en": "Sakae-mura",
+    "slug": "sakae-mura",
+    "prefCode": "20"
+  }
+]

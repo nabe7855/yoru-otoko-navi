@@ -1,0 +1,247 @@
+[
+  {
+    "id": "06-yamagata-shi",
+    "name": "山形市",
+    "en": "Yamagata-shi",
+    "slug": "yamagata-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-yonezawa-shi",
+    "name": "米沢市",
+    "en": "Yonezawa-shi",
+    "slug": "yonezawa-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-tsuruoka-shi",
+    "name": "鶴岡市",
+    "en": "Tsuruoka-shi",
+    "slug": "tsuruoka-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-sakata-shi",
+    "name": "酒田市",
+    "en": "Sakata-shi",
+    "slug": "sakata-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-shinjo-shi",
+    "name": "新庄市",
+    "en": "Shinjo-shi",
+    "slug": "shinjo-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-sagae-shi",
+    "name": "寒河江市",
+    "en": "Sagae-shi",
+    "slug": "sagae-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-kaminoyama-shi",
+    "name": "上山市",
+    "en": "Kaminoyama-shi",
+    "slug": "kaminoyama-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-murayama-shi",
+    "name": "村山市",
+    "en": "Murayama-shi",
+    "slug": "murayama-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-nagai-shi",
+    "name": "長井市",
+    "en": "Nagai-shi",
+    "slug": "nagai-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-tendo-shi",
+    "name": "天童市",
+    "en": "Tendo-shi",
+    "slug": "tendo-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-higashine-shi",
+    "name": "東根市",
+    "en": "Higashine-shi",
+    "slug": "higashine-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-obanazawa-shi",
+    "name": "尾花沢市",
+    "en": "Obanazawa-shi",
+    "slug": "obanazawa-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-nanyo-shi",
+    "name": "南陽市",
+    "en": "Nanyo-shi",
+    "slug": "nanyo-shi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-yamanobe-machi",
+    "name": "山辺町",
+    "en": "Yamanobe-machi",
+    "slug": "yamanobe-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-nakayama-machi",
+    "name": "中山町",
+    "en": "Nakayama-machi",
+    "slug": "nakayama-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-kahoku-cho",
+    "name": "河北町",
+    "en": "Kahoku-cho",
+    "slug": "kahoku-cho",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-nishikawa-machi",
+    "name": "西川町",
+    "en": "Nishikawa-machi",
+    "slug": "nishikawa-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-asahi-machi",
+    "name": "朝日町",
+    "en": "Asahi-machi",
+    "slug": "asahi-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-oe-machi",
+    "name": "大江町",
+    "en": "Oe-machi",
+    "slug": "oe-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-oishida-machi",
+    "name": "大石田町",
+    "en": "Oishida-machi",
+    "slug": "oishida-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-kaneyama-machi",
+    "name": "金山町",
+    "en": "Kaneyama-machi",
+    "slug": "kaneyama-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-mogami-machi",
+    "name": "最上町",
+    "en": "Mogami-machi",
+    "slug": "mogami-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-funagata-machi",
+    "name": "舟形町",
+    "en": "Funagata-machi",
+    "slug": "funagata-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-mamurogawa-machi",
+    "name": "真室川町",
+    "en": "Mamurogawa-machi",
+    "slug": "mamurogawa-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-okura-mura",
+    "name": "大蔵村",
+    "en": "Okura-mura",
+    "slug": "okura-mura",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-sakegawa-mura",
+    "name": "鮭川村",
+    "en": "Sakegawa-mura",
+    "slug": "sakegawa-mura",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-tozawa-mura",
+    "name": "戸沢村",
+    "en": "Tozawa-mura",
+    "slug": "tozawa-mura",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-takahata-machi",
+    "name": "高畠町",
+    "en": "Takahata-machi",
+    "slug": "takahata-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-kawanishi-machi",
+    "name": "川西町",
+    "en": "Kawanishi-machi",
+    "slug": "kawanishi-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-oguni-machi",
+    "name": "小国町",
+    "en": "Oguni-machi",
+    "slug": "oguni-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-shirataka-machi",
+    "name": "白鷹町",
+    "en": "Shirataka-machi",
+    "slug": "shirataka-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-iide-machi",
+    "name": "飯豊町",
+    "en": "Iide-machi",
+    "slug": "iide-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-mikawa-machi",
+    "name": "三川町",
+    "en": "Mikawa-machi",
+    "slug": "mikawa-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-shonai-machi",
+    "name": "庄内町",
+    "en": "Shonai-machi",
+    "slug": "shonai-machi",
+    "prefCode": "06"
+  },
+  {
+    "id": "06-yuza-machi",
+    "name": "遊佐町",
+    "en": "Yuza-machi",
+    "slug": "yuza-machi",
+    "prefCode": "06"
+  }
+]

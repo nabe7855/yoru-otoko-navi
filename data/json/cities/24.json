@@ -1,0 +1,205 @@
+[
+  {
+    "id": "24-tsu-shi",
+    "name": "津市",
+    "en": "Tsu-shi",
+    "slug": "tsu-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-yokkaichi-shi",
+    "name": "四日市市",
+    "en": "Yokkaichi-shi",
+    "slug": "yokkaichi-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-ise-shi",
+    "name": "伊勢市",
+    "en": "Ise-shi",
+    "slug": "ise-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-matsusaka-shi",
+    "name": "松阪市",
+    "en": "Matsusaka-shi",
+    "slug": "matsusaka-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kuwana-shi",
+    "name": "桑名市",
+    "en": "Kuwana-shi",
+    "slug": "kuwana-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-suzuka-shi",
+    "name": "鈴鹿市",
+    "en": "Suzuka-shi",
+    "slug": "suzuka-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-nabari-shi",
+    "name": "名張市",
+    "en": "Nabari-shi",
+    "slug": "nabari-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-owase-shi",
+    "name": "尾鷲市",
+    "en": "Owase-shi",
+    "slug": "owase-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kameyama-shi",
+    "name": "亀山市",
+    "en": "Kameyama-shi",
+    "slug": "kameyama-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-toba-shi",
+    "name": "鳥羽市",
+    "en": "Toba-shi",
+    "slug": "toba-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kumano-shi",
+    "name": "熊野市",
+    "en": "Kumano-shi",
+    "slug": "kumano-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-inabe-shi",
+    "name": "いなべ市",
+    "en": "Inabe-shi",
+    "slug": "inabe-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-shima-shi",
+    "name": "志摩市",
+    "en": "Shima-shi",
+    "slug": "shima-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-iga-shi",
+    "name": "伊賀市",
+    "en": "Iga-shi",
+    "slug": "iga-shi",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kisosaki-cho",
+    "name": "木曽岬町",
+    "en": "Kisosaki-cho",
+    "slug": "kisosaki-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-toin-cho",
+    "name": "東員町",
+    "en": "Toin-cho",
+    "slug": "toin-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-komono-cho",
+    "name": "菰野町",
+    "en": "Komono-cho",
+    "slug": "komono-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-asahi-cho",
+    "name": "朝日町",
+    "en": "Asahi-cho",
+    "slug": "asahi-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kawagoe-cho",
+    "name": "川越町",
+    "en": "Kawagoe-cho",
+    "slug": "kawagoe-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-taki-cho",
+    "name": "多気町",
+    "en": "Taki-cho",
+    "slug": "taki-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-meiwa-cho",
+    "name": "明和町",
+    "en": "Meiwa-cho",
+    "slug": "meiwa-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-odai-cho",
+    "name": "大台町",
+    "en": "Odai-cho",
+    "slug": "odai-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-tamaki-cho",
+    "name": "玉城町",
+    "en": "Tamaki-cho",
+    "slug": "tamaki-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-watarai-cho",
+    "name": "度会町",
+    "en": "Watarai-cho",
+    "slug": "watarai-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-taiki-cho",
+    "name": "大紀町",
+    "en": "Taiki-cho",
+    "slug": "taiki-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-minamiise-cho",
+    "name": "南伊勢町",
+    "en": "Minamiise-cho",
+    "slug": "minamiise-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kihoku-cho",
+    "name": "紀北町",
+    "en": "Kihoku-cho",
+    "slug": "kihoku-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-mihama-cho",
+    "name": "御浜町",
+    "en": "Mihama-cho",
+    "slug": "mihama-cho",
+    "prefCode": "24"
+  },
+  {
+    "id": "24-kiho-cho",
+    "name": "紀宝町",
+    "en": "Kiho-cho",
+    "slug": "kiho-cho",
+    "prefCode": "24"
+  }
+]

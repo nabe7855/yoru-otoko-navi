@@ -1,0 +1,163 @@
+[
+  {
+    "id": "34-hiroshima-shi",
+    "name": "広島市",
+    "en": "Hiroshima-shi",
+    "slug": "hiroshima-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-kure-shi",
+    "name": "呉市",
+    "en": "Kure-shi",
+    "slug": "kure-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-takehara-shi",
+    "name": "竹原市",
+    "en": "Takehara-shi",
+    "slug": "takehara-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-mihara-shi",
+    "name": "三原市",
+    "en": "Mihara-shi",
+    "slug": "mihara-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-onomichi-shi",
+    "name": "尾道市",
+    "en": "Onomichi-shi",
+    "slug": "onomichi-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-fukuyama-shi",
+    "name": "福山市",
+    "en": "Fukuyama-shi",
+    "slug": "fukuyama-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-fuchu-shi",
+    "name": "府中市",
+    "en": "Fuchu-shi",
+    "slug": "fuchu-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-miyoshi-shi",
+    "name": "三次市",
+    "en": "Miyoshi-shi",
+    "slug": "miyoshi-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-shobara-shi",
+    "name": "庄原市",
+    "en": "Shobara-shi",
+    "slug": "shobara-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-otake-shi",
+    "name": "大竹市",
+    "en": "Otake-shi",
+    "slug": "otake-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-higashihiroshima-shi",
+    "name": "東広島市",
+    "en": "Higashihiroshima-shi",
+    "slug": "higashihiroshima-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-hatsukaichi-shi",
+    "name": "廿日市市",
+    "en": "Hatsukaichi-shi",
+    "slug": "hatsukaichi-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-akitakata-shi",
+    "name": "安芸高田市",
+    "en": "Akitakata-shi",
+    "slug": "akitakata-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-etajima-shi",
+    "name": "江田島市",
+    "en": "Etajima-shi",
+    "slug": "etajima-shi",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-fuchu-cho",
+    "name": "府中町",
+    "en": "Fuchu-cho",
+    "slug": "fuchu-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-kaita-cho",
+    "name": "海田町",
+    "en": "Kaita-cho",
+    "slug": "kaita-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-kumano-cho",
+    "name": "熊野町",
+    "en": "Kumano-cho",
+    "slug": "kumano-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-saka-cho",
+    "name": "坂町",
+    "en": "Saka-cho",
+    "slug": "saka-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-akiota-cho",
+    "name": "安芸太田町",
+    "en": "Akiota-cho",
+    "slug": "akiota-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-kitahiroshima-cho",
+    "name": "北広島町",
+    "en": "Kitahiroshima-cho",
+    "slug": "kitahiroshima-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-osakikamijima-cho",
+    "name": "大崎上島町",
+    "en": "Osakikamijima-cho",
+    "slug": "osakikamijima-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-sera-cho",
+    "name": "世羅町",
+    "en": "Sera-cho",
+    "slug": "sera-cho",
+    "prefCode": "34"
+  },
+  {
+    "id": "34-jinsekikogen-cho",
+    "name": "神石高原町",
+    "en": "Jinsekikogen-cho",
+    "slug": "jinsekikogen-cho",
+    "prefCode": "34"
+  }
+]

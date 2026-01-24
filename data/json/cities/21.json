@@ -1,0 +1,296 @@
+[
+  {
+    "id": "21-gifu-shi",
+    "name": "岐阜市",
+    "en": "Gifu-shi",
+    "slug": "gifu-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ogaki-shi",
+    "name": "大垣市",
+    "en": "Ogaki-shi",
+    "slug": "ogaki-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-takayama-shi",
+    "name": "高山市",
+    "en": "Takayama-shi",
+    "slug": "takayama-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-tajimi-shi",
+    "name": "多治見市",
+    "en": "Tajimi-shi",
+    "slug": "tajimi-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-seki-shi",
+    "name": "関市",
+    "en": "Seki-shi",
+    "slug": "seki-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-nakatsugawa-shi",
+    "name": "中津川市",
+    "en": "Nakatsugawa-shi",
+    "slug": "nakatsugawa-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-mino-shi",
+    "name": "美濃市",
+    "en": "Mino-shi",
+    "slug": "mino-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-mizunami-shi",
+    "name": "瑞浪市",
+    "en": "Mizunami-shi",
+    "slug": "mizunami-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-hashima-shi",
+    "name": "羽島市",
+    "en": "Hashima-shi",
+    "slug": "hashima-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ena-shi",
+    "name": "恵那市",
+    "en": "Ena-shi",
+    "slug": "ena-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-minokamo-shi",
+    "name": "美濃加茂市",
+    "en": "Minokamo-shi",
+    "slug": "minokamo-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-toki-shi",
+    "name": "土岐市",
+    "en": "Toki-shi",
+    "slug": "toki-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kakamigahara-shi",
+    "name": "各務原市",
+    "en": "Kakamigahara-shi",
+    "slug": "kakamigahara-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kani-shi",
+    "name": "可児市",
+    "en": "Kani-shi",
+    "slug": "kani-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-yamagata-shi",
+    "name": "山県市",
+    "en": "Yamagata-shi",
+    "slug": "yamagata-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-mizuho-shi",
+    "name": "瑞穂市",
+    "en": "Mizuho-shi",
+    "slug": "mizuho-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-hida-shi",
+    "name": "飛騨市",
+    "en": "Hida-shi",
+    "slug": "hida-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-motosu-shi",
+    "name": "本巣市",
+    "en": "Motosu-shi",
+    "slug": "motosu-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-gujo-shi",
+    "name": "郡上市",
+    "en": "Gujo-shi",
+    "slug": "gujo-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-gero-shi",
+    "name": "下呂市",
+    "en": "Gero-shi",
+    "slug": "gero-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kaizu-shi",
+    "name": "海津市",
+    "en": "Kaizu-shi",
+    "slug": "kaizu-shi",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ginan-cho",
+    "name": "岐南町",
+    "en": "Ginan-cho",
+    "slug": "ginan-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kasamatsu-cho",
+    "name": "笠松町",
+    "en": "Kasamatsu-cho",
+    "slug": "kasamatsu-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-yoro-cho",
+    "name": "養老町",
+    "en": "Yoro-cho",
+    "slug": "yoro-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-tarui-cho",
+    "name": "垂井町",
+    "en": "Tarui-cho",
+    "slug": "tarui-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-sekigahara-cho",
+    "name": "関ケ原町",
+    "en": "Sekigahara-cho",
+    "slug": "sekigahara-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-godo-cho",
+    "name": "神戸町",
+    "en": "Godo-cho",
+    "slug": "godo-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-wanochi-cho",
+    "name": "輪之内町",
+    "en": "Wanochi-cho",
+    "slug": "wanochi-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ampachi-cho",
+    "name": "安八町",
+    "en": "Ampachi-cho",
+    "slug": "ampachi-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ibigawa-cho",
+    "name": "揖斐川町",
+    "en": "Ibigawa-cho",
+    "slug": "ibigawa-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ono-cho",
+    "name": "大野町",
+    "en": "Ono-cho",
+    "slug": "ono-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-ikeda-cho",
+    "name": "池田町",
+    "en": "Ikeda-cho",
+    "slug": "ikeda-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kitagata-cho",
+    "name": "北方町",
+    "en": "Kitagata-cho",
+    "slug": "kitagata-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-sakahogi-cho",
+    "name": "坂祝町",
+    "en": "Sakahogi-cho",
+    "slug": "sakahogi-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-tomika-cho",
+    "name": "富加町",
+    "en": "Tomika-cho",
+    "slug": "tomika-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-kawabe-cho",
+    "name": "川辺町",
+    "en": "Kawabe-cho",
+    "slug": "kawabe-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-hichiso-cho",
+    "name": "七宗町",
+    "en": "Hichiso-cho",
+    "slug": "hichiso-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-yaotsu-cho",
+    "name": "八百津町",
+    "en": "Yaotsu-cho",
+    "slug": "yaotsu-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-shirakawa-cho",
+    "name": "白川町",
+    "en": "Shirakawa-cho",
+    "slug": "shirakawa-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-higashishirakawa-mura",
+    "name": "東白川村",
+    "en": "Higashishirakawa-mura",
+    "slug": "higashishirakawa-mura",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-mitake-cho",
+    "name": "御嵩町",
+    "en": "Mitake-cho",
+    "slug": "mitake-cho",
+    "prefCode": "21"
+  },
+  {
+    "id": "21-shirakawa-mura",
+    "name": "白川村",
+    "en": "Shirakawa-mura",
+    "slug": "shirakawa-mura",
+    "prefCode": "21"
+  }
+]

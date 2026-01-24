@@ -1,0 +1,422 @@
+[
+  {
+    "id": "40-kitakyushu-shi",
+    "name": "北九州市",
+    "en": "Kitakyushu-shi",
+    "slug": "kitakyushu-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-fukuoka-shi",
+    "name": "福岡市",
+    "en": "Fukuoka-shi",
+    "slug": "fukuoka-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-omuta-shi",
+    "name": "大牟田市",
+    "en": "Omuta-shi",
+    "slug": "omuta-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kurume-shi",
+    "name": "久留米市",
+    "en": "Kurume-shi",
+    "slug": "kurume-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-nogata-shi",
+    "name": "直方市",
+    "en": "Nogata-shi",
+    "slug": "nogata-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-iizuka-shi",
+    "name": "飯塚市",
+    "en": "Iizuka-shi",
+    "slug": "iizuka-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-tagawa-shi",
+    "name": "田川市",
+    "en": "Tagawa-shi",
+    "slug": "tagawa-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-yanagawa-shi",
+    "name": "柳川市",
+    "en": "Yanagawa-shi",
+    "slug": "yanagawa-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-yame-shi",
+    "name": "八女市",
+    "en": "Yame-shi",
+    "slug": "yame-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-chikugo-shi",
+    "name": "筑後市",
+    "en": "Chikugo-shi",
+    "slug": "chikugo-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-okawa-shi",
+    "name": "大川市",
+    "en": "Okawa-shi",
+    "slug": "okawa-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-yukuhashi-shi",
+    "name": "行橋市",
+    "en": "Yukuhashi-shi",
+    "slug": "yukuhashi-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-buzen-shi",
+    "name": "豊前市",
+    "en": "Buzen-shi",
+    "slug": "buzen-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-nakama-shi",
+    "name": "中間市",
+    "en": "Nakama-shi",
+    "slug": "nakama-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-ogori-shi",
+    "name": "小郡市",
+    "en": "Ogori-shi",
+    "slug": "ogori-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-chikushino-shi",
+    "name": "筑紫野市",
+    "en": "Chikushino-shi",
+    "slug": "chikushino-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kasuga-shi",
+    "name": "春日市",
+    "en": "Kasuga-shi",
+    "slug": "kasuga-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-onojo-shi",
+    "name": "大野城市",
+    "en": "Onojo-shi",
+    "slug": "onojo-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-munakata-shi",
+    "name": "宗像市",
+    "en": "Munakata-shi",
+    "slug": "munakata-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-dazaifu-shi",
+    "name": "太宰府市",
+    "en": "Dazaifu-shi",
+    "slug": "dazaifu-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-koga-shi",
+    "name": "古賀市",
+    "en": "Koga-shi",
+    "slug": "koga-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-fukutsu-shi",
+    "name": "福津市",
+    "en": "Fukutsu-shi",
+    "slug": "fukutsu-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-ukiha-shi",
+    "name": "うきは市",
+    "en": "Ukiha-shi",
+    "slug": "ukiha-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-miyawaka-shi",
+    "name": "宮若市",
+    "en": "Miyawaka-shi",
+    "slug": "miyawaka-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kama-shi",
+    "name": "嘉麻市",
+    "en": "Kama-shi",
+    "slug": "kama-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-asakura-shi",
+    "name": "朝倉市",
+    "en": "Asakura-shi",
+    "slug": "asakura-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-miyama-shi",
+    "name": "みやま市",
+    "en": "Miyama-shi",
+    "slug": "miyama-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-itoshima-shi",
+    "name": "糸島市",
+    "en": "Itoshima-shi",
+    "slug": "itoshima-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-nakagawa-shi",
+    "name": "那珂川市",
+    "en": "Nakagawa-shi",
+    "slug": "nakagawa-shi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-umi-machi",
+    "name": "宇美町",
+    "en": "Umi-machi",
+    "slug": "umi-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-sasaguri-machi",
+    "name": "篠栗町",
+    "en": "Sasaguri-machi",
+    "slug": "sasaguri-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-shime-machi",
+    "name": "志免町",
+    "en": "Shime-machi",
+    "slug": "shime-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-sue-machi",
+    "name": "須惠町",
+    "en": "Sue-machi",
+    "slug": "sue-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-shingu-machi",
+    "name": "新宮町",
+    "en": "Shingu-machi",
+    "slug": "shingu-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-hisayama-machi",
+    "name": "久山町",
+    "en": "Hisayama-machi",
+    "slug": "hisayama-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kasuya-machi",
+    "name": "粕屋町",
+    "en": "Kasuya-machi",
+    "slug": "kasuya-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-ashiya-machi",
+    "name": "芦屋町",
+    "en": "Ashiya-machi",
+    "slug": "ashiya-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-mizumaki-machi",
+    "name": "水巻町",
+    "en": "Mizumaki-machi",
+    "slug": "mizumaki-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-okagaki-machi",
+    "name": "岡垣町",
+    "en": "Okagaki-machi",
+    "slug": "okagaki-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-onga-cho",
+    "name": "遠賀町",
+    "en": "Onga-cho",
+    "slug": "onga-cho",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kotake-machi",
+    "name": "小竹町",
+    "en": "Kotake-machi",
+    "slug": "kotake-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kurate-machi",
+    "name": "鞍手町",
+    "en": "Kurate-machi",
+    "slug": "kurate-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-keisen-machi",
+    "name": "桂川町",
+    "en": "Keisen-machi",
+    "slug": "keisen-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-chikuzen-machi",
+    "name": "筑前町",
+    "en": "Chikuzen-machi",
+    "slug": "chikuzen-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-toho-mura",
+    "name": "東峰村",
+    "en": "Toho-mura",
+    "slug": "toho-mura",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-tachiarai-machi",
+    "name": "大刀洗町",
+    "en": "Tachiarai-machi",
+    "slug": "tachiarai-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-oki-machi",
+    "name": "大木町",
+    "en": "Oki-machi",
+    "slug": "oki-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-hirokawa-machi",
+    "name": "広川町",
+    "en": "Hirokawa-machi",
+    "slug": "hirokawa-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kawara-machi",
+    "name": "香春町",
+    "en": "Kawara-machi",
+    "slug": "kawara-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-soeda-machi",
+    "name": "添田町",
+    "en": "Soeda-machi",
+    "slug": "soeda-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-itoda-machi",
+    "name": "糸田町",
+    "en": "Itoda-machi",
+    "slug": "itoda-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kawasaki-machi",
+    "name": "川崎町",
+    "en": "Kawasaki-machi",
+    "slug": "kawasaki-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-oto-machi",
+    "name": "大任町",
+    "en": "Oto-machi",
+    "slug": "oto-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-aka-mura",
+    "name": "赤村",
+    "en": "Aka-mura",
+    "slug": "aka-mura",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-fukuchi-machi",
+    "name": "福智町",
+    "en": "Fukuchi-machi",
+    "slug": "fukuchi-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-kanda-machi",
+    "name": "苅田町",
+    "en": "Kanda-machi",
+    "slug": "kanda-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-miyako-machi",
+    "name": "みやこ町",
+    "en": "Miyako-machi",
+    "slug": "miyako-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-yoshitomi-machi",
+    "name": "吉富町",
+    "en": "Yoshitomi-machi",
+    "slug": "yoshitomi-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-koge-machi",
+    "name": "上毛町",
+    "en": "Koge-machi",
+    "slug": "koge-machi",
+    "prefCode": "40"
+  },
+  {
+    "id": "40-chikujo-machi",
+    "name": "築上町",
+    "en": "Chikujo-machi",
+    "slug": "chikujo-machi",
+    "prefCode": "40"
+  }
+]

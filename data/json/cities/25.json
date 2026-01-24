@@ -1,0 +1,135 @@
+[
+  {
+    "id": "25-otsu-shi",
+    "name": "大津市",
+    "en": "Otsu-shi",
+    "slug": "otsu-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-hikone-shi",
+    "name": "彦根市",
+    "en": "Hikone-shi",
+    "slug": "hikone-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-nagahama-shi",
+    "name": "長浜市",
+    "en": "Nagahama-shi",
+    "slug": "nagahama-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-omihachiman-shi",
+    "name": "近江八幡市",
+    "en": "Omihachiman-shi",
+    "slug": "omihachiman-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-kusatsu-shi",
+    "name": "草津市",
+    "en": "Kusatsu-shi",
+    "slug": "kusatsu-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-moriyama-shi",
+    "name": "守山市",
+    "en": "Moriyama-shi",
+    "slug": "moriyama-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-ritto-shi",
+    "name": "栗東市",
+    "en": "Ritto-shi",
+    "slug": "ritto-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-koka-shi",
+    "name": "甲賀市",
+    "en": "Koka-shi",
+    "slug": "koka-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-yasu-shi",
+    "name": "野洲市",
+    "en": "Yasu-shi",
+    "slug": "yasu-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-konan-shi",
+    "name": "湖南市",
+    "en": "Konan-shi",
+    "slug": "konan-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-takashima-shi",
+    "name": "高島市",
+    "en": "Takashima-shi",
+    "slug": "takashima-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-higashiomi-shi",
+    "name": "東近江市",
+    "en": "Higashiomi-shi",
+    "slug": "higashiomi-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-maibara-shi",
+    "name": "米原市",
+    "en": "Maibara-shi",
+    "slug": "maibara-shi",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-hino-cho",
+    "name": "日野町",
+    "en": "Hino-cho",
+    "slug": "hino-cho",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-ryuo-cho",
+    "name": "竜王町",
+    "en": "Ryuo-cho",
+    "slug": "ryuo-cho",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-aisho-cho",
+    "name": "愛荘町",
+    "en": "Aisho-cho",
+    "slug": "aisho-cho",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-toyosato-cho",
+    "name": "豊郷町",
+    "en": "Toyosato-cho",
+    "slug": "toyosato-cho",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-kora-cho",
+    "name": "甲良町",
+    "en": "Kora-cho",
+    "slug": "kora-cho",
+    "prefCode": "25"
+  },
+  {
+    "id": "25-taga-cho",
+    "name": "多賀町",
+    "en": "Taga-cho",
+    "slug": "taga-cho",
+    "prefCode": "25"
+  }
+]

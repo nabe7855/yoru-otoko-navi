@@ -1,0 +1,191 @@
+[
+  {
+    "id": "33-okayama-shi",
+    "name": "岡山市",
+    "en": "Okayama-shi",
+    "slug": "okayama-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-kurashiki-shi",
+    "name": "倉敷市",
+    "en": "Kurashiki-shi",
+    "slug": "kurashiki-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-tsuyama-shi",
+    "name": "津山市",
+    "en": "Tsuyama-shi",
+    "slug": "tsuyama-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-tamano-shi",
+    "name": "玉野市",
+    "en": "Tamano-shi",
+    "slug": "tamano-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-kasaoka-shi",
+    "name": "笠岡市",
+    "en": "Kasaoka-shi",
+    "slug": "kasaoka-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-ibara-shi",
+    "name": "井原市",
+    "en": "Ibara-shi",
+    "slug": "ibara-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-soja-shi",
+    "name": "総社市",
+    "en": "Soja-shi",
+    "slug": "soja-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-takahashi-shi",
+    "name": "高梁市",
+    "en": "Takahashi-shi",
+    "slug": "takahashi-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-niimi-shi",
+    "name": "新見市",
+    "en": "Niimi-shi",
+    "slug": "niimi-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-bizen-shi",
+    "name": "備前市",
+    "en": "Bizen-shi",
+    "slug": "bizen-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-setochi-shi",
+    "name": "瀬戸内市",
+    "en": "Setochi-shi",
+    "slug": "setochi-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-akaiwa-shi",
+    "name": "赤磐市",
+    "en": "Akaiwa-shi",
+    "slug": "akaiwa-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-maniwa-shi",
+    "name": "真庭市",
+    "en": "Maniwa-shi",
+    "slug": "maniwa-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-mimasaka-shi",
+    "name": "美作市",
+    "en": "Mimasaka-shi",
+    "slug": "mimasaka-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-asakuchi-shi",
+    "name": "浅口市",
+    "en": "Asakuchi-shi",
+    "slug": "asakuchi-shi",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-wake-cho",
+    "name": "和気町",
+    "en": "Wake-cho",
+    "slug": "wake-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-hayashima-cho",
+    "name": "早島町",
+    "en": "Hayashima-cho",
+    "slug": "hayashima-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-satosho-cho",
+    "name": "里庄町",
+    "en": "Satosho-cho",
+    "slug": "satosho-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-yakage-cho",
+    "name": "矢掛町",
+    "en": "Yakage-cho",
+    "slug": "yakage-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-shinjo-son",
+    "name": "新庄村",
+    "en": "Shinjo-son",
+    "slug": "shinjo-son",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-kagamino-cho",
+    "name": "鏡野町",
+    "en": "Kagamino-cho",
+    "slug": "kagamino-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-shoo-cho",
+    "name": "勝央町",
+    "en": "Shoo-cho",
+    "slug": "shoo-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-nagi-cho",
+    "name": "奈義町",
+    "en": "Nagi-cho",
+    "slug": "nagi-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-nishiawakura-son",
+    "name": "西粟倉村",
+    "en": "Nishiawakura-son",
+    "slug": "nishiawakura-son",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-kumenan-cho",
+    "name": "久米南町",
+    "en": "Kumenan-cho",
+    "slug": "kumenan-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-misaki-cho",
+    "name": "美咲町",
+    "en": "Misaki-cho",
+    "slug": "misaki-cho",
+    "prefCode": "33"
+  },
+  {
+    "id": "33-kibichuo-cho",
+    "name": "吉備中央町",
+    "en": "Kibichuo-cho",
+    "slug": "kibichuo-cho",
+    "prefCode": "33"
+  }
+]

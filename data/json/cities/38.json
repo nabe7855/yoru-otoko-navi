@@ -1,0 +1,142 @@
+[
+  {
+    "id": "38-matsuyama-shi",
+    "name": "松山市",
+    "en": "Matsuyama-shi",
+    "slug": "matsuyama-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-imabari-shi",
+    "name": "今治市",
+    "en": "Imabari-shi",
+    "slug": "imabari-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-uwajima-shi",
+    "name": "宇和島市",
+    "en": "Uwajima-shi",
+    "slug": "uwajima-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-yawatahama-shi",
+    "name": "八幡浜市",
+    "en": "Yawatahama-shi",
+    "slug": "yawatahama-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-niihama-shi",
+    "name": "新居浜市",
+    "en": "Niihama-shi",
+    "slug": "niihama-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-saijo-shi",
+    "name": "西条市",
+    "en": "Saijo-shi",
+    "slug": "saijo-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-ozu-shi",
+    "name": "大洲市",
+    "en": "Ozu-shi",
+    "slug": "ozu-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-iyo-shi",
+    "name": "伊予市",
+    "en": "Iyo-shi",
+    "slug": "iyo-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-shikokuchuo-shi",
+    "name": "四国中央市",
+    "en": "Shikokuchuo-shi",
+    "slug": "shikokuchuo-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-seiyo-shi",
+    "name": "西予市",
+    "en": "Seiyo-shi",
+    "slug": "seiyo-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-toon-shi",
+    "name": "東温市",
+    "en": "Toon-shi",
+    "slug": "toon-shi",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-kamijima-cho",
+    "name": "上島町",
+    "en": "Kamijima-cho",
+    "slug": "kamijima-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-kumakogen-cho",
+    "name": "久万高原町",
+    "en": "Kumakogen-cho",
+    "slug": "kumakogen-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-masaki-cho",
+    "name": "松前町",
+    "en": "Masaki-cho",
+    "slug": "masaki-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-tobe-cho",
+    "name": "砥部町",
+    "en": "Tobe-cho",
+    "slug": "tobe-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-uchiko-cho",
+    "name": "内子町",
+    "en": "Uchiko-cho",
+    "slug": "uchiko-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-ikata-cho",
+    "name": "伊方町",
+    "en": "Ikata-cho",
+    "slug": "ikata-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-matsuno-cho",
+    "name": "松野町",
+    "en": "Matsuno-cho",
+    "slug": "matsuno-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-kihoku-cho",
+    "name": "鬼北町",
+    "en": "Kihoku-cho",
+    "slug": "kihoku-cho",
+    "prefCode": "38"
+  },
+  {
+    "id": "38-ainan-cho",
+    "name": "愛南町",
+    "en": "Ainan-cho",
+    "slug": "ainan-cho",
+    "prefCode": "38"
+  }
+]

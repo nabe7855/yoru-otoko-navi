@@ -1,0 +1,436 @@
+[
+  {
+    "id": "13-chiyoda-ku",
+    "name": "千代田区",
+    "en": "Chiyoda-ku",
+    "slug": "chiyoda-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-chuo-ku",
+    "name": "中央区",
+    "en": "Chuo-ku",
+    "slug": "chuo-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-minato-ku",
+    "name": "港区",
+    "en": "Minato-ku",
+    "slug": "minato-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-shinjuku-ku",
+    "name": "新宿区",
+    "en": "Shinjuku-ku",
+    "slug": "shinjuku-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-bunkyo-ku",
+    "name": "文京区",
+    "en": "Bunkyo-ku",
+    "slug": "bunkyo-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-taito-ku",
+    "name": "台東区",
+    "en": "Taito-ku",
+    "slug": "taito-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-sumida-ku",
+    "name": "墨田区",
+    "en": "Sumida-ku",
+    "slug": "sumida-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-koto-ku",
+    "name": "江東区",
+    "en": "Koto-ku",
+    "slug": "koto-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-shinagawa-ku",
+    "name": "品川区",
+    "en": "Shinagawa-ku",
+    "slug": "shinagawa-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-meguro-ku",
+    "name": "目黒区",
+    "en": "Meguro-ku",
+    "slug": "meguro-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-ota-ku",
+    "name": "大田区",
+    "en": "Ota-ku",
+    "slug": "ota-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-setagaya-ku",
+    "name": "世田谷区",
+    "en": "Setagaya-ku",
+    "slug": "setagaya-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-shibuya-ku",
+    "name": "渋谷区",
+    "en": "Shibuya-ku",
+    "slug": "shibuya-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-nakano-ku",
+    "name": "中野区",
+    "en": "Nakano-ku",
+    "slug": "nakano-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-suginami-ku",
+    "name": "杉並区",
+    "en": "Suginami-ku",
+    "slug": "suginami-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-toshima-ku",
+    "name": "豊島区",
+    "en": "Toshima-ku",
+    "slug": "toshima-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kita-ku",
+    "name": "北区",
+    "en": "Kita-ku",
+    "slug": "kita-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-arakawa-ku",
+    "name": "荒川区",
+    "en": "Arakawa-ku",
+    "slug": "arakawa-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-itabashi-ku",
+    "name": "板橋区",
+    "en": "Itabashi-ku",
+    "slug": "itabashi-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-nerima-ku",
+    "name": "練馬区",
+    "en": "Nerima-ku",
+    "slug": "nerima-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-adachi-ku",
+    "name": "足立区",
+    "en": "Adachi-ku",
+    "slug": "adachi-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-katsushika-ku",
+    "name": "葛飾区",
+    "en": "Katsushika-ku",
+    "slug": "katsushika-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-edogawa-ku",
+    "name": "江戸川区",
+    "en": "Edogawa-ku",
+    "slug": "edogawa-ku",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hachioji-shi",
+    "name": "八王子市",
+    "en": "Hachioji-shi",
+    "slug": "hachioji-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-tachikawa-shi",
+    "name": "立川市",
+    "en": "Tachikawa-shi",
+    "slug": "tachikawa-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-musashino-shi",
+    "name": "武蔵野市",
+    "en": "Musashino-shi",
+    "slug": "musashino-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-mitaka-shi",
+    "name": "三鷹市",
+    "en": "Mitaka-shi",
+    "slug": "mitaka-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-ome-shi",
+    "name": "青梅市",
+    "en": "Ome-shi",
+    "slug": "ome-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-fuchu-shi",
+    "name": "府中市",
+    "en": "Fuchu-shi",
+    "slug": "fuchu-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-akishima-shi",
+    "name": "昭島市",
+    "en": "Akishima-shi",
+    "slug": "akishima-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-chofu-shi",
+    "name": "調布市",
+    "en": "Chofu-shi",
+    "slug": "chofu-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-machida-shi",
+    "name": "町田市",
+    "en": "Machida-shi",
+    "slug": "machida-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-koganei-shi",
+    "name": "小金井市",
+    "en": "Koganei-shi",
+    "slug": "koganei-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kodaira-shi",
+    "name": "小平市",
+    "en": "Kodaira-shi",
+    "slug": "kodaira-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hino-shi",
+    "name": "日野市",
+    "en": "Hino-shi",
+    "slug": "hino-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-higashimurayama-shi",
+    "name": "東村山市",
+    "en": "Higashimurayama-shi",
+    "slug": "higashimurayama-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kokubunji-shi",
+    "name": "国分寺市",
+    "en": "Kokubunji-shi",
+    "slug": "kokubunji-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kunitachi-shi",
+    "name": "国立市",
+    "en": "Kunitachi-shi",
+    "slug": "kunitachi-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-fussa-shi",
+    "name": "福生市",
+    "en": "Fussa-shi",
+    "slug": "fussa-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-komae-shi",
+    "name": "狛江市",
+    "en": "Komae-shi",
+    "slug": "komae-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-higashiyamato-shi",
+    "name": "東大和市",
+    "en": "Higashiyamato-shi",
+    "slug": "higashiyamato-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kiyose-shi",
+    "name": "清瀬市",
+    "en": "Kiyose-shi",
+    "slug": "kiyose-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-higashikurume-shi",
+    "name": "東久留米市",
+    "en": "Higashikurume-shi",
+    "slug": "higashikurume-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-musashimurayama-shi",
+    "name": "武蔵村山市",
+    "en": "Musashimurayama-shi",
+    "slug": "musashimurayama-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-tama-shi",
+    "name": "多摩市",
+    "en": "Tama-shi",
+    "slug": "tama-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-inagi-shi",
+    "name": "稲城市",
+    "en": "Inagi-shi",
+    "slug": "inagi-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hamura-shi",
+    "name": "羽村市",
+    "en": "Hamura-shi",
+    "slug": "hamura-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-akiruno-shi",
+    "name": "あきる野市",
+    "en": "Akiruno-shi",
+    "slug": "akiruno-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-nishitokyo-shi",
+    "name": "西東京市",
+    "en": "Nishitokyo-shi",
+    "slug": "nishitokyo-shi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-mizuho-machi",
+    "name": "瑞穂町",
+    "en": "Mizuho-machi",
+    "slug": "mizuho-machi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hinode-machi",
+    "name": "日の出町",
+    "en": "Hinode-machi",
+    "slug": "hinode-machi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hinohara-mura",
+    "name": "檜原村",
+    "en": "Hinohara-mura",
+    "slug": "hinohara-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-okutama-machi",
+    "name": "奥多摩町",
+    "en": "Okutama-machi",
+    "slug": "okutama-machi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-oshima-machi",
+    "name": "大島町",
+    "en": "Oshima-machi",
+    "slug": "oshima-machi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-toshima-mura",
+    "name": "利島村",
+    "en": "Toshima-mura",
+    "slug": "toshima-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-niijima-mura",
+    "name": "新島村",
+    "en": "Niijima-mura",
+    "slug": "niijima-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-kozushima-mura",
+    "name": "神津島村",
+    "en": "Kozushima-mura",
+    "slug": "kozushima-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-miyake-mura",
+    "name": "三宅村",
+    "en": "Miyake-mura",
+    "slug": "miyake-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-mikurajima-mura",
+    "name": "御蔵島村",
+    "en": "Mikurajima-mura",
+    "slug": "mikurajima-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-hachijo-machi",
+    "name": "八丈町",
+    "en": "Hachijo-machi",
+    "slug": "hachijo-machi",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-aogashima-mura",
+    "name": "青ヶ島村",
+    "en": "Aogashima-mura",
+    "slug": "aogashima-mura",
+    "prefCode": "13"
+  },
+  {
+    "id": "13-ogasawara-mura",
+    "name": "小笠原村",
+    "en": "Ogasawara-mura",
+    "slug": "ogasawara-mura",
+    "prefCode": "13"
+  }
+]

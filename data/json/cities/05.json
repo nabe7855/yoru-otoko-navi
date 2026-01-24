@@ -1,0 +1,177 @@
+[
+  {
+    "id": "05-akita-shi",
+    "name": "秋田市",
+    "en": "Akita-shi",
+    "slug": "akita-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-noshiro-shi",
+    "name": "能代市",
+    "en": "Noshiro-shi",
+    "slug": "noshiro-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-yokote-shi",
+    "name": "横手市",
+    "en": "Yokote-shi",
+    "slug": "yokote-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-odate-shi",
+    "name": "大館市",
+    "en": "Odate-shi",
+    "slug": "odate-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-oga-shi",
+    "name": "男鹿市",
+    "en": "Oga-shi",
+    "slug": "oga-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-yuzawa-shi",
+    "name": "湯沢市",
+    "en": "Yuzawa-shi",
+    "slug": "yuzawa-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-kazuno-shi",
+    "name": "鹿角市",
+    "en": "Kazuno-shi",
+    "slug": "kazuno-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-yurihonjo-shi",
+    "name": "由利本荘市",
+    "en": "Yurihonjo-shi",
+    "slug": "yurihonjo-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-katagami-shi",
+    "name": "潟上市",
+    "en": "Katagami-shi",
+    "slug": "katagami-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-daisen-shi",
+    "name": "大仙市",
+    "en": "Daisen-shi",
+    "slug": "daisen-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-kitaakita-shi",
+    "name": "北秋田市",
+    "en": "Kitaakita-shi",
+    "slug": "kitaakita-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-nikaho-shi",
+    "name": "にかほ市",
+    "en": "Nikaho-shi",
+    "slug": "nikaho-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-semboku-shi",
+    "name": "仙北市",
+    "en": "Semboku-shi",
+    "slug": "semboku-shi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-kosaka-machi",
+    "name": "小坂町",
+    "en": "Kosaka-machi",
+    "slug": "kosaka-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-kamikoani-mura",
+    "name": "上小阿仁村",
+    "en": "Kamikoani-mura",
+    "slug": "kamikoani-mura",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-fujisato-machi",
+    "name": "藤里町",
+    "en": "Fujisato-machi",
+    "slug": "fujisato-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-mitane-cho",
+    "name": "三種町",
+    "en": "Mitane-cho",
+    "slug": "mitane-cho",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-happo-cho",
+    "name": "八峰町",
+    "en": "Happo-cho",
+    "slug": "happo-cho",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-gojome-machi",
+    "name": "五城目町",
+    "en": "Gojome-machi",
+    "slug": "gojome-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-hachirogata-machi",
+    "name": "八郎潟町",
+    "en": "Hachirogata-machi",
+    "slug": "hachirogata-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-ikawa-machi",
+    "name": "井川町",
+    "en": "Ikawa-machi",
+    "slug": "ikawa-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-ogata-mura",
+    "name": "大潟村",
+    "en": "Ogata-mura",
+    "slug": "ogata-mura",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-misato-cho",
+    "name": "美郷町",
+    "en": "Misato-cho",
+    "slug": "misato-cho",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-ugo-machi",
+    "name": "羽後町",
+    "en": "Ugo-machi",
+    "slug": "ugo-machi",
+    "prefCode": "05"
+  },
+  {
+    "id": "05-higashinaruse-mura",
+    "name": "東成瀬村",
+    "en": "Higashinaruse-mura",
+    "slug": "higashinaruse-mura",
+    "prefCode": "05"
+  }
+]

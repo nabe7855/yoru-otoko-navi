@@ -1,0 +1,107 @@
+[
+  {
+    "id": "16-toyama-shi",
+    "name": "富山市",
+    "en": "Toyama-shi",
+    "slug": "toyama-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-takaoka-shi",
+    "name": "高岡市",
+    "en": "Takaoka-shi",
+    "slug": "takaoka-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-uozu-shi",
+    "name": "魚津市",
+    "en": "Uozu-shi",
+    "slug": "uozu-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-himi-shi",
+    "name": "氷見市",
+    "en": "Himi-shi",
+    "slug": "himi-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-namerikawa-shi",
+    "name": "滑川市",
+    "en": "Namerikawa-shi",
+    "slug": "namerikawa-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-kurobe-shi",
+    "name": "黒部市",
+    "en": "Kurobe-shi",
+    "slug": "kurobe-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-tonami-shi",
+    "name": "砺波市",
+    "en": "Tonami-shi",
+    "slug": "tonami-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-oyabe-shi",
+    "name": "小矢部市",
+    "en": "Oyabe-shi",
+    "slug": "oyabe-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-nanto-shi",
+    "name": "南砺市",
+    "en": "Nanto-shi",
+    "slug": "nanto-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-imizu-shi",
+    "name": "射水市",
+    "en": "Imizu-shi",
+    "slug": "imizu-shi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-funahashi-mura",
+    "name": "舟橋村",
+    "en": "Funahashi-mura",
+    "slug": "funahashi-mura",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-kamiichi-machi",
+    "name": "上市町",
+    "en": "Kamiichi-machi",
+    "slug": "kamiichi-machi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-tateyama-machi",
+    "name": "立山町",
+    "en": "Tateyama-machi",
+    "slug": "tateyama-machi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-nyuzen-machi",
+    "name": "入善町",
+    "en": "Nyuzen-machi",
+    "slug": "nyuzen-machi",
+    "prefCode": "16"
+  },
+  {
+    "id": "16-asahi-machi",
+    "name": "朝日町",
+    "en": "Asahi-machi",
+    "slug": "asahi-machi",
+    "prefCode": "16"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "id": "45-miyazaki-shi",
+    "name": "宮崎市",
+    "en": "Miyazaki-shi",
+    "slug": "miyazaki-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-miyakonojo-shi",
+    "name": "都城市",
+    "en": "Miyakonojo-shi",
+    "slug": "miyakonojo-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-nobeoka-shi",
+    "name": "延岡市",
+    "en": "Nobeoka-shi",
+    "slug": "nobeoka-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-nichinan-shi",
+    "name": "日南市",
+    "en": "Nichinan-shi",
+    "slug": "nichinan-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kobayashi-shi",
+    "name": "小林市",
+    "en": "Kobayashi-shi",
+    "slug": "kobayashi-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-hyuga-shi",
+    "name": "日向市",
+    "en": "Hyuga-shi",
+    "slug": "hyuga-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kushima-shi",
+    "name": "串間市",
+    "en": "Kushima-shi",
+    "slug": "kushima-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-saito-shi",
+    "name": "西都市",
+    "en": "Saito-shi",
+    "slug": "saito-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-ebino-shi",
+    "name": "えびの市",
+    "en": "Ebino-shi",
+    "slug": "ebino-shi",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-mimata-cho",
+    "name": "三股町",
+    "en": "Mimata-cho",
+    "slug": "mimata-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-takaharu-cho",
+    "name": "高原町",
+    "en": "Takaharu-cho",
+    "slug": "takaharu-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kunitomi-cho",
+    "name": "国富町",
+    "en": "Kunitomi-cho",
+    "slug": "kunitomi-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-aya-cho",
+    "name": "綾町",
+    "en": "Aya-cho",
+    "slug": "aya-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-takanabe-cho",
+    "name": "高鍋町",
+    "en": "Takanabe-cho",
+    "slug": "takanabe-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-shintomi-cho",
+    "name": "新富町",
+    "en": "Shintomi-cho",
+    "slug": "shintomi-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-nishimera-son",
+    "name": "西米良村",
+    "en": "Nishimera-son",
+    "slug": "nishimera-son",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kijo-cho",
+    "name": "木城町",
+    "en": "Kijo-cho",
+    "slug": "kijo-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kawaminami-cho",
+    "name": "川南町",
+    "en": "Kawaminami-cho",
+    "slug": "kawaminami-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-tsuno-cho",
+    "name": "都農町",
+    "en": "Tsuno-cho",
+    "slug": "tsuno-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-kadogawa-cho",
+    "name": "門川町",
+    "en": "Kadogawa-cho",
+    "slug": "kadogawa-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-morotsuka-son",
+    "name": "諸塚村",
+    "en": "Morotsuka-son",
+    "slug": "morotsuka-son",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-shiiba-son",
+    "name": "椎葉村",
+    "en": "Shiiba-son",
+    "slug": "shiiba-son",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-misato-cho",
+    "name": "美郷町",
+    "en": "Misato-cho",
+    "slug": "misato-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-takachiho-cho",
+    "name": "高千穂町",
+    "en": "Takachiho-cho",
+    "slug": "takachiho-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-hinokage-cho",
+    "name": "日之影町",
+    "en": "Hinokage-cho",
+    "slug": "hinokage-cho",
+    "prefCode": "45"
+  },
+  {
+    "id": "45-gokase-cho",
+    "name": "五ヶ瀬町",
+    "en": "Gokase-cho",
+    "slug": "gokase-cho",
+    "prefCode": "45"
+  }
+]

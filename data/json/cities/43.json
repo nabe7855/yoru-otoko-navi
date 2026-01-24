@@ -1,0 +1,317 @@
+[
+  {
+    "id": "43-kumamoto-shi",
+    "name": "熊本市",
+    "en": "Kumamoto-shi",
+    "slug": "kumamoto-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-yatsushiro-shi",
+    "name": "八代市",
+    "en": "Yatsushiro-shi",
+    "slug": "yatsushiro-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-hitoyoshi-shi",
+    "name": "人吉市",
+    "en": "Hitoyoshi-shi",
+    "slug": "hitoyoshi-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-arao-shi",
+    "name": "荒尾市",
+    "en": "Arao-shi",
+    "slug": "arao-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-minamata-shi",
+    "name": "水俣市",
+    "en": "Minamata-shi",
+    "slug": "minamata-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-tamana-shi",
+    "name": "玉名市",
+    "en": "Tamana-shi",
+    "slug": "tamana-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-yamaga-shi",
+    "name": "山鹿市",
+    "en": "Yamaga-shi",
+    "slug": "yamaga-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kikuchi-shi",
+    "name": "菊池市",
+    "en": "Kikuchi-shi",
+    "slug": "kikuchi-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-uto-shi",
+    "name": "宇土市",
+    "en": "Uto-shi",
+    "slug": "uto-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kamiamakusa-shi",
+    "name": "上天草市",
+    "en": "Kamiamakusa-shi",
+    "slug": "kamiamakusa-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-uki-shi",
+    "name": "宇城市",
+    "en": "Uki-shi",
+    "slug": "uki-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-aso-shi",
+    "name": "阿蘇市",
+    "en": "Aso-shi",
+    "slug": "aso-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-amakusa-shi",
+    "name": "天草市",
+    "en": "Amakusa-shi",
+    "slug": "amakusa-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-koshi-shi",
+    "name": "合志市",
+    "en": "Koshi-shi",
+    "slug": "koshi-shi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-misato-machi",
+    "name": "美里町",
+    "en": "Misato-machi",
+    "slug": "misato-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-gyokuto-machi",
+    "name": "玉東町",
+    "en": "Gyokuto-machi",
+    "slug": "gyokuto-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-nankan-machi",
+    "name": "南関町",
+    "en": "Nankan-machi",
+    "slug": "nankan-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-nagasu-machi",
+    "name": "長洲町",
+    "en": "Nagasu-machi",
+    "slug": "nagasu-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-nagomi-machi",
+    "name": "和水町",
+    "en": "Nagomi-machi",
+    "slug": "nagomi-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-ozu-machi",
+    "name": "大津町",
+    "en": "Ozu-machi",
+    "slug": "ozu-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kikuyo-machi",
+    "name": "菊陽町",
+    "en": "Kikuyo-machi",
+    "slug": "kikuyo-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-minamioguni-machi",
+    "name": "南小国町",
+    "en": "Minamioguni-machi",
+    "slug": "minamioguni-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-oguni-machi",
+    "name": "小国町",
+    "en": "Oguni-machi",
+    "slug": "oguni-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-ubuyama-mura",
+    "name": "産山村",
+    "en": "Ubuyama-mura",
+    "slug": "ubuyama-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-takamori-machi",
+    "name": "高森町",
+    "en": "Takamori-machi",
+    "slug": "takamori-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-nishihara-mura",
+    "name": "西原村",
+    "en": "Nishihara-mura",
+    "slug": "nishihara-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-minamiaso-mura",
+    "name": "南阿蘇村",
+    "en": "Minamiaso-mura",
+    "slug": "minamiaso-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-mifune-machi",
+    "name": "御船町",
+    "en": "Mifune-machi",
+    "slug": "mifune-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kashima-machi",
+    "name": "嘉島町",
+    "en": "Kashima-machi",
+    "slug": "kashima-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-mashiki-machi",
+    "name": "益城町",
+    "en": "Mashiki-machi",
+    "slug": "mashiki-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kosa-machi",
+    "name": "甲佐町",
+    "en": "Kosa-machi",
+    "slug": "kosa-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-yamato-cho",
+    "name": "山都町",
+    "en": "Yamato-cho",
+    "slug": "yamato-cho",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-hikawa-cho",
+    "name": "氷川町",
+    "en": "Hikawa-cho",
+    "slug": "hikawa-cho",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-ashikita-machi",
+    "name": "芦北町",
+    "en": "Ashikita-machi",
+    "slug": "ashikita-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-tsunagi-machi",
+    "name": "津奈木町",
+    "en": "Tsunagi-machi",
+    "slug": "tsunagi-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-nishiki-machi",
+    "name": "錦町",
+    "en": "Nishiki-machi",
+    "slug": "nishiki-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-taragi-machi",
+    "name": "多良木町",
+    "en": "Taragi-machi",
+    "slug": "taragi-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-yunomae-machi",
+    "name": "湯前町",
+    "en": "Yunomae-machi",
+    "slug": "yunomae-machi",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-mizukami-mura",
+    "name": "水上村",
+    "en": "Mizukami-mura",
+    "slug": "mizukami-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-sagara-mura",
+    "name": "相良村",
+    "en": "Sagara-mura",
+    "slug": "sagara-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-itsuki-mura",
+    "name": "五木村",
+    "en": "Itsuki-mura",
+    "slug": "itsuki-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-yamae-mura",
+    "name": "山江村",
+    "en": "Yamae-mura",
+    "slug": "yamae-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-kuma-mura",
+    "name": "球磨村",
+    "en": "Kuma-mura",
+    "slug": "kuma-mura",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-asagiri-cho",
+    "name": "あさぎり町",
+    "en": "Asagiri-cho",
+    "slug": "asagiri-cho",
+    "prefCode": "43"
+  },
+  {
+    "id": "43-reihoku-machi",
+    "name": "苓北町",
+    "en": "Reihoku-machi",
+    "slug": "reihoku-machi",
+    "prefCode": "43"
+  }
+]

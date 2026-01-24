@@ -1,0 +1,289 @@
+[
+  {
+    "id": "28-kobe-shi",
+    "name": "神戸市",
+    "en": "Kobe-shi",
+    "slug": "kobe-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-himeji-shi",
+    "name": "姫路市",
+    "en": "Himeji-shi",
+    "slug": "himeji-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-amagasaki-shi",
+    "name": "尼崎市",
+    "en": "Amagasaki-shi",
+    "slug": "amagasaki-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-akashi-shi",
+    "name": "明石市",
+    "en": "Akashi-shi",
+    "slug": "akashi-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-nishinomiya-shi",
+    "name": "西宮市",
+    "en": "Nishinomiya-shi",
+    "slug": "nishinomiya-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-sumoto-shi",
+    "name": "洲本市",
+    "en": "Sumoto-shi",
+    "slug": "sumoto-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-ashiya-shi",
+    "name": "芦屋市",
+    "en": "Ashiya-shi",
+    "slug": "ashiya-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-itami-shi",
+    "name": "伊丹市",
+    "en": "Itami-shi",
+    "slug": "itami-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-aioi-shi",
+    "name": "相生市",
+    "en": "Aioi-shi",
+    "slug": "aioi-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-toyoka-shi",
+    "name": "豊岡市",
+    "en": "Toyoka-shi",
+    "slug": "toyoka-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kakogawa-shi",
+    "name": "加古川市",
+    "en": "Kakogawa-shi",
+    "slug": "kakogawa-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-ako-shi",
+    "name": "赤穂市",
+    "en": "Ako-shi",
+    "slug": "ako-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-nishiwaki-shi",
+    "name": "西脇市",
+    "en": "Nishiwaki-shi",
+    "slug": "nishiwaki-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-takarazuka-shi",
+    "name": "宝塚市",
+    "en": "Takarazuka-shi",
+    "slug": "takarazuka-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-miki-shi",
+    "name": "三木市",
+    "en": "Miki-shi",
+    "slug": "miki-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-takasago-shi",
+    "name": "高砂市",
+    "en": "Takasago-shi",
+    "slug": "takasago-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kawanishi-shi",
+    "name": "川西市",
+    "en": "Kawanishi-shi",
+    "slug": "kawanishi-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-ono-shi",
+    "name": "小野市",
+    "en": "Ono-shi",
+    "slug": "ono-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-sanda-shi",
+    "name": "三田市",
+    "en": "Sanda-shi",
+    "slug": "sanda-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kasai-shi",
+    "name": "加西市",
+    "en": "Kasai-shi",
+    "slug": "kasai-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-tambasasayama-shi",
+    "name": "丹波篠山市",
+    "en": "Tambasasayama-shi",
+    "slug": "tambasasayama-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-yabu-shi",
+    "name": "養父市",
+    "en": "Yabu-shi",
+    "slug": "yabu-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-tamba-shi",
+    "name": "丹波市",
+    "en": "Tamba-shi",
+    "slug": "tamba-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-minamiawaji-shi",
+    "name": "南あわじ市",
+    "en": "Minamiawaji-shi",
+    "slug": "minamiawaji-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-asago-shi",
+    "name": "朝来市",
+    "en": "Asago-shi",
+    "slug": "asago-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-awaji-shi",
+    "name": "淡路市",
+    "en": "Awaji-shi",
+    "slug": "awaji-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-shiso-shi",
+    "name": "宍粟市",
+    "en": "Shiso-shi",
+    "slug": "shiso-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kato-shi",
+    "name": "加東市",
+    "en": "Kato-shi",
+    "slug": "kato-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-tatsuno-shi",
+    "name": "たつの市",
+    "en": "Tatsuno-shi",
+    "slug": "tatsuno-shi",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-inagawa-cho",
+    "name": "猪名川町",
+    "en": "Inagawa-cho",
+    "slug": "inagawa-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-taka-cho",
+    "name": "多可町",
+    "en": "Taka-cho",
+    "slug": "taka-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-inami-cho",
+    "name": "稲美町",
+    "en": "Inami-cho",
+    "slug": "inami-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-harima-cho",
+    "name": "播磨町",
+    "en": "Harima-cho",
+    "slug": "harima-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-ichikawa-cho",
+    "name": "市川町",
+    "en": "Ichikawa-cho",
+    "slug": "ichikawa-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-fukusaki-cho",
+    "name": "福崎町",
+    "en": "Fukusaki-cho",
+    "slug": "fukusaki-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kamikawa-cho",
+    "name": "神河町",
+    "en": "Kamikawa-cho",
+    "slug": "kamikawa-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-taishi-cho",
+    "name": "太子町",
+    "en": "Taishi-cho",
+    "slug": "taishi-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kamigori-cho",
+    "name": "上郡町",
+    "en": "Kamigori-cho",
+    "slug": "kamigori-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-sayo-cho",
+    "name": "佐用町",
+    "en": "Sayo-cho",
+    "slug": "sayo-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-kami-cho",
+    "name": "香美町",
+    "en": "Kami-cho",
+    "slug": "kami-cho",
+    "prefCode": "28"
+  },
+  {
+    "id": "28-shinonsen-cho",
+    "name": "新温泉町",
+    "en": "Shinonsen-cho",
+    "slug": "shinonsen-cho",
+    "prefCode": "28"
+  }
+]

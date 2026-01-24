@@ -1,0 +1,247 @@
+[
+  {
+    "id": "22-shizuoka-shi",
+    "name": "静岡市",
+    "en": "Shizuoka-shi",
+    "slug": "shizuoka-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-hamamatsu-shi",
+    "name": "浜松市",
+    "en": "Hamamatsu-shi",
+    "slug": "hamamatsu-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-numazu-shi",
+    "name": "沼津市",
+    "en": "Numazu-shi",
+    "slug": "numazu-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-atami-shi",
+    "name": "熱海市",
+    "en": "Atami-shi",
+    "slug": "atami-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-mishima-shi",
+    "name": "三島市",
+    "en": "Mishima-shi",
+    "slug": "mishima-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-fujinomiya-shi",
+    "name": "富士宮市",
+    "en": "Fujinomiya-shi",
+    "slug": "fujinomiya-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-ito-shi",
+    "name": "伊東市",
+    "en": "Ito-shi",
+    "slug": "ito-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-shimada-shi",
+    "name": "島田市",
+    "en": "Shimada-shi",
+    "slug": "shimada-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-fuji-shi",
+    "name": "富士市",
+    "en": "Fuji-shi",
+    "slug": "fuji-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-iwata-shi",
+    "name": "磐田市",
+    "en": "Iwata-shi",
+    "slug": "iwata-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-yaizu-shi",
+    "name": "焼津市",
+    "en": "Yaizu-shi",
+    "slug": "yaizu-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kakegawa-shi",
+    "name": "掛川市",
+    "en": "Kakegawa-shi",
+    "slug": "kakegawa-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-fujieda-shi",
+    "name": "藤枝市",
+    "en": "Fujieda-shi",
+    "slug": "fujieda-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-gotemba-shi",
+    "name": "御殿場市",
+    "en": "Gotemba-shi",
+    "slug": "gotemba-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-fukuroi-shi",
+    "name": "袋井市",
+    "en": "Fukuroi-shi",
+    "slug": "fukuroi-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-shimoda-shi",
+    "name": "下田市",
+    "en": "Shimoda-shi",
+    "slug": "shimoda-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-susono-shi",
+    "name": "裾野市",
+    "en": "Susono-shi",
+    "slug": "susono-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kosai-shi",
+    "name": "湖西市",
+    "en": "Kosai-shi",
+    "slug": "kosai-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-izu-shi",
+    "name": "伊豆市",
+    "en": "Izu-shi",
+    "slug": "izu-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-omaezaki-shi",
+    "name": "御前崎市",
+    "en": "Omaezaki-shi",
+    "slug": "omaezaki-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kikugawa-shi",
+    "name": "菊川市",
+    "en": "Kikugawa-shi",
+    "slug": "kikugawa-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-izunokuni-shi",
+    "name": "伊豆の国市",
+    "en": "Izunokuni-shi",
+    "slug": "izunokuni-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-makinohara-shi",
+    "name": "牧之原市",
+    "en": "Makinohara-shi",
+    "slug": "makinohara-shi",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-higashiizu-cho",
+    "name": "東伊豆町",
+    "en": "Higashiizu-cho",
+    "slug": "higashiizu-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kawazu-cho",
+    "name": "河津町",
+    "en": "Kawazu-cho",
+    "slug": "kawazu-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-minamiizu-cho",
+    "name": "南伊豆町",
+    "en": "Minamiizu-cho",
+    "slug": "minamiizu-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-matsuzaki-cho",
+    "name": "松崎町",
+    "en": "Matsuzaki-cho",
+    "slug": "matsuzaki-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-nishiizu-cho",
+    "name": "西伊豆町",
+    "en": "Nishiizu-cho",
+    "slug": "nishiizu-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kannami-cho",
+    "name": "函南町",
+    "en": "Kannami-cho",
+    "slug": "kannami-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-shimizu-cho",
+    "name": "清水町",
+    "en": "Shimizu-cho",
+    "slug": "shimizu-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-nagaizumi-cho",
+    "name": "長泉町",
+    "en": "Nagaizumi-cho",
+    "slug": "nagaizumi-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-oyama-cho",
+    "name": "小山町",
+    "en": "Oyama-cho",
+    "slug": "oyama-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-yoshida-cho",
+    "name": "吉田町",
+    "en": "Yoshida-cho",
+    "slug": "yoshida-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-kawanehon-cho",
+    "name": "川根本町",
+    "en": "Kawanehon-cho",
+    "slug": "kawanehon-cho",
+    "prefCode": "22"
+  },
+  {
+    "id": "22-mori-machi",
+    "name": "森町",
+    "en": "Mori-machi",
+    "slug": "mori-machi",
+    "prefCode": "22"
+  }
+]

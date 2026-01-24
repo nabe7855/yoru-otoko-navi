@@ -1,0 +1,135 @@
+[
+  {
+    "id": "35-shimonoseki-shi",
+    "name": "下関市",
+    "en": "Shimonoseki-shi",
+    "slug": "shimonoseki-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-ube-shi",
+    "name": "宇部市",
+    "en": "Ube-shi",
+    "slug": "ube-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-yamaguchi-shi",
+    "name": "山口市",
+    "en": "Yamaguchi-shi",
+    "slug": "yamaguchi-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-hagi-shi",
+    "name": "萩市",
+    "en": "Hagi-shi",
+    "slug": "hagi-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-hofu-shi",
+    "name": "防府市",
+    "en": "Hofu-shi",
+    "slug": "hofu-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-kudamatsu-shi",
+    "name": "下松市",
+    "en": "Kudamatsu-shi",
+    "slug": "kudamatsu-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-iwakuni-shi",
+    "name": "岩国市",
+    "en": "Iwakuni-shi",
+    "slug": "iwakuni-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-hikari-shi",
+    "name": "光市",
+    "en": "Hikari-shi",
+    "slug": "hikari-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-nagato-shi",
+    "name": "長門市",
+    "en": "Nagato-shi",
+    "slug": "nagato-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-yanai-shi",
+    "name": "柳井市",
+    "en": "Yanai-shi",
+    "slug": "yanai-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-mine-shi",
+    "name": "美祢市",
+    "en": "Mine-shi",
+    "slug": "mine-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-shunan-shi",
+    "name": "周南市",
+    "en": "Shunan-shi",
+    "slug": "shunan-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-sanyoonoda-shi",
+    "name": "山陽小野田市",
+    "en": "Sanyoonoda-shi",
+    "slug": "sanyoonoda-shi",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-suooshima-cho",
+    "name": "周防大島町",
+    "en": "Suooshima-cho",
+    "slug": "suooshima-cho",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-waki-cho",
+    "name": "和木町",
+    "en": "Waki-cho",
+    "slug": "waki-cho",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-kaminoseki-cho",
+    "name": "上関町",
+    "en": "Kaminoseki-cho",
+    "slug": "kaminoseki-cho",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-tabuse-cho",
+    "name": "田布施町",
+    "en": "Tabuse-cho",
+    "slug": "tabuse-cho",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-hirao-cho",
+    "name": "平生町",
+    "en": "Hirao-cho",
+    "slug": "hirao-cho",
+    "prefCode": "35"
+  },
+  {
+    "id": "35-abu-cho",
+    "name": "阿武町",
+    "en": "Abu-cho",
+    "slug": "abu-cho",
+    "prefCode": "35"
+  }
+]

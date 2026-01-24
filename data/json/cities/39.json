@@ -1,0 +1,240 @@
+[
+  {
+    "id": "39-kochi-shi",
+    "name": "高知市",
+    "en": "Kochi-shi",
+    "slug": "kochi-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-muroto-shi",
+    "name": "室戸市",
+    "en": "Muroto-shi",
+    "slug": "muroto-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-aki-shi",
+    "name": "安芸市",
+    "en": "Aki-shi",
+    "slug": "aki-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-nankoku-shi",
+    "name": "南国市",
+    "en": "Nankoku-shi",
+    "slug": "nankoku-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-tosa-shi",
+    "name": "土佐市",
+    "en": "Tosa-shi",
+    "slug": "tosa-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-susaki-shi",
+    "name": "須崎市",
+    "en": "Susaki-shi",
+    "slug": "susaki-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-sukumo-shi",
+    "name": "宿毛市",
+    "en": "Sukumo-shi",
+    "slug": "sukumo-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-tosashimizu-shi",
+    "name": "土佐清水市",
+    "en": "Tosashimizu-shi",
+    "slug": "tosashimizu-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-shimanto-shi",
+    "name": "四万十市",
+    "en": "Shimanto-shi",
+    "slug": "shimanto-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-konan-shi",
+    "name": "香南市",
+    "en": "Konan-shi",
+    "slug": "konan-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-kami-shi",
+    "name": "香美市",
+    "en": "Kami-shi",
+    "slug": "kami-shi",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-toyo-cho",
+    "name": "東洋町",
+    "en": "Toyo-cho",
+    "slug": "toyo-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-nahari-cho",
+    "name": "奈半利町",
+    "en": "Nahari-cho",
+    "slug": "nahari-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-tano-cho",
+    "name": "田野町",
+    "en": "Tano-cho",
+    "slug": "tano-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-yasuda-cho",
+    "name": "安田町",
+    "en": "Yasuda-cho",
+    "slug": "yasuda-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-kitagawa-mura",
+    "name": "北川村",
+    "en": "Kitagawa-mura",
+    "slug": "kitagawa-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-umaji-mura",
+    "name": "馬路村",
+    "en": "Umaji-mura",
+    "slug": "umaji-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-geisei-mura",
+    "name": "芸西村",
+    "en": "Geisei-mura",
+    "slug": "geisei-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-motoyama-cho",
+    "name": "本山町",
+    "en": "Motoyama-cho",
+    "slug": "motoyama-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-otoyo-cho",
+    "name": "大豊町",
+    "en": "Otoyo-cho",
+    "slug": "otoyo-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-tosa-cho",
+    "name": "土佐町",
+    "en": "Tosa-cho",
+    "slug": "tosa-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-okawa-mura",
+    "name": "大川村",
+    "en": "Okawa-mura",
+    "slug": "okawa-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-ino-cho",
+    "name": "いの町",
+    "en": "Ino-cho",
+    "slug": "ino-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-niyodogawa-cho",
+    "name": "仁淀川町",
+    "en": "Niyodogawa-cho",
+    "slug": "niyodogawa-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-nakatosa-cho",
+    "name": "中土佐町",
+    "en": "Nakatosa-cho",
+    "slug": "nakatosa-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-sakawa-cho",
+    "name": "佐川町",
+    "en": "Sakawa-cho",
+    "slug": "sakawa-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-ochi-cho",
+    "name": "越知町",
+    "en": "Ochi-cho",
+    "slug": "ochi-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-yusuhara-cho",
+    "name": "檮原町",
+    "en": "Yusuhara-cho",
+    "slug": "yusuhara-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-hidaka-mura",
+    "name": "日高村",
+    "en": "Hidaka-mura",
+    "slug": "hidaka-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-tsuno-cho",
+    "name": "津野町",
+    "en": "Tsuno-cho",
+    "slug": "tsuno-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-shimanto-cho",
+    "name": "四万十町",
+    "en": "Shimanto-cho",
+    "slug": "shimanto-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-otsuki-cho",
+    "name": "大月町",
+    "en": "Otsuki-cho",
+    "slug": "otsuki-cho",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-mihara-mura",
+    "name": "三原村",
+    "en": "Mihara-mura",
+    "slug": "mihara-mura",
+    "prefCode": "39"
+  },
+  {
+    "id": "39-kuroshio-cho",
+    "name": "黒潮町",
+    "en": "Kuroshio-cho",
+    "slug": "kuroshio-cho",
+    "prefCode": "39"
+  }
+]

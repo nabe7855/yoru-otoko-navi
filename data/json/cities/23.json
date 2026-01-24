@@ -1,0 +1,380 @@
+[
+  {
+    "id": "23-nagoya-shi",
+    "name": "名古屋市",
+    "en": "Nagoya-shi",
+    "slug": "nagoya-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyohashi-shi",
+    "name": "豊橋市",
+    "en": "Toyohashi-shi",
+    "slug": "toyohashi-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-okazaki-shi",
+    "name": "岡崎市",
+    "en": "Okazaki-shi",
+    "slug": "okazaki-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-ichinomiya-shi",
+    "name": "一宮市",
+    "en": "Ichinomiya-shi",
+    "slug": "ichinomiya-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-seto-shi",
+    "name": "瀬戸市",
+    "en": "Seto-shi",
+    "slug": "seto-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-handa-shi",
+    "name": "半田市",
+    "en": "Handa-shi",
+    "slug": "handa-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kasugai-shi",
+    "name": "春日井市",
+    "en": "Kasugai-shi",
+    "slug": "kasugai-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyokawa-shi",
+    "name": "豊川市",
+    "en": "Toyokawa-shi",
+    "slug": "toyokawa-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-tsushima-shi",
+    "name": "津島市",
+    "en": "Tsushima-shi",
+    "slug": "tsushima-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-hekinan-shi",
+    "name": "碧南市",
+    "en": "Hekinan-shi",
+    "slug": "hekinan-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kariya-shi",
+    "name": "刈谷市",
+    "en": "Kariya-shi",
+    "slug": "kariya-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyota-shi",
+    "name": "豊田市",
+    "en": "Toyota-shi",
+    "slug": "toyota-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-anjo-shi",
+    "name": "安城市",
+    "en": "Anjo-shi",
+    "slug": "anjo-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-nishio-shi",
+    "name": "西尾市",
+    "en": "Nishio-shi",
+    "slug": "nishio-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-gamagori-shi",
+    "name": "蒲郡市",
+    "en": "Gamagori-shi",
+    "slug": "gamagori-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-inuyama-shi",
+    "name": "犬山市",
+    "en": "Inuyama-shi",
+    "slug": "inuyama-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-tokoname-shi",
+    "name": "常滑市",
+    "en": "Tokoname-shi",
+    "slug": "tokoname-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-konan-shi",
+    "name": "江南市",
+    "en": "Konan-shi",
+    "slug": "konan-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-komaki-shi",
+    "name": "小牧市",
+    "en": "Komaki-shi",
+    "slug": "komaki-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-inazawa-shi",
+    "name": "稲沢市",
+    "en": "Inazawa-shi",
+    "slug": "inazawa-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-shinshiro-shi",
+    "name": "新城市",
+    "en": "Shinshiro-shi",
+    "slug": "shinshiro-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-tokai-shi",
+    "name": "東海市",
+    "en": "Tokai-shi",
+    "slug": "tokai-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-obu-shi",
+    "name": "大府市",
+    "en": "Obu-shi",
+    "slug": "obu-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-chita-shi",
+    "name": "知多市",
+    "en": "Chita-shi",
+    "slug": "chita-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-chiryu-shi",
+    "name": "知立市",
+    "en": "Chiryu-shi",
+    "slug": "chiryu-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-owariasahi-shi",
+    "name": "尾張旭市",
+    "en": "Owariasahi-shi",
+    "slug": "owariasahi-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-takahama-shi",
+    "name": "高浜市",
+    "en": "Takahama-shi",
+    "slug": "takahama-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-iwakura-shi",
+    "name": "岩倉市",
+    "en": "Iwakura-shi",
+    "slug": "iwakura-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyoake-shi",
+    "name": "豊明市",
+    "en": "Toyoake-shi",
+    "slug": "toyoake-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-nisshin-shi",
+    "name": "日進市",
+    "en": "Nisshin-shi",
+    "slug": "nisshin-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-tahara-shi",
+    "name": "田原市",
+    "en": "Tahara-shi",
+    "slug": "tahara-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-aisai-shi",
+    "name": "愛西市",
+    "en": "Aisai-shi",
+    "slug": "aisai-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kiyosu-shi",
+    "name": "清須市",
+    "en": "Kiyosu-shi",
+    "slug": "kiyosu-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kitanagoya-shi",
+    "name": "北名古屋市",
+    "en": "Kitanagoya-shi",
+    "slug": "kitanagoya-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-yatomi-shi",
+    "name": "弥富市",
+    "en": "Yatomi-shi",
+    "slug": "yatomi-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-miyoshi-shi",
+    "name": "みよし市",
+    "en": "Miyoshi-shi",
+    "slug": "miyoshi-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-ama-shi",
+    "name": "あま市",
+    "en": "Ama-shi",
+    "slug": "ama-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-nagakute-shi",
+    "name": "長久手市",
+    "en": "Nagakute-shi",
+    "slug": "nagakute-shi",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-togo-cho",
+    "name": "東郷町",
+    "en": "Togo-cho",
+    "slug": "togo-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyoyama-cho",
+    "name": "豊山町",
+    "en": "Toyoyama-cho",
+    "slug": "toyoyama-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-oguchi-cho",
+    "name": "大口町",
+    "en": "Oguchi-cho",
+    "slug": "oguchi-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-fuso-cho",
+    "name": "扶桑町",
+    "en": "Fuso-cho",
+    "slug": "fuso-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-oharu-cho",
+    "name": "大治町",
+    "en": "Oharu-cho",
+    "slug": "oharu-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kanie-cho",
+    "name": "蟹江町",
+    "en": "Kanie-cho",
+    "slug": "kanie-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-tobishima-mura",
+    "name": "飛島村",
+    "en": "Tobishima-mura",
+    "slug": "tobishima-mura",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-agui-cho",
+    "name": "阿久比町",
+    "en": "Agui-cho",
+    "slug": "agui-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-higashiura-cho",
+    "name": "東浦町",
+    "en": "Higashiura-cho",
+    "slug": "higashiura-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-minamichita-cho",
+    "name": "南知多町",
+    "en": "Minamichita-cho",
+    "slug": "minamichita-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-mihama-cho",
+    "name": "美浜町",
+    "en": "Mihama-cho",
+    "slug": "mihama-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-taketoyo-cho",
+    "name": "武豊町",
+    "en": "Taketoyo-cho",
+    "slug": "taketoyo-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-kota-cho",
+    "name": "幸田町",
+    "en": "Kota-cho",
+    "slug": "kota-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-shitara-cho",
+    "name": "設楽町",
+    "en": "Shitara-cho",
+    "slug": "shitara-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toei-cho",
+    "name": "東栄町",
+    "en": "Toei-cho",
+    "slug": "toei-cho",
+    "prefCode": "23"
+  },
+  {
+    "id": "23-toyone-mura",
+    "name": "豊根村",
+    "en": "Toyone-mura",
+    "slug": "toyone-mura",
+    "prefCode": "23"
+  }
+]

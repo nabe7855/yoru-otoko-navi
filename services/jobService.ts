@@ -131,7 +131,19 @@ export const jobService = {
     let query = supabase.from("jobs").select("*").eq("status", "published");
 
     if (filters.category) query = query.eq("category", filters.category);
-    if (filters.pref) query = query.eq("area_pref", filters.pref);
+    if (filters.pref) {
+      // Normalize prefecture name (e.g., "tokyo" or "東京" -> "東京都")
+      const { LocationService } = require("@/lib/location");
+      const prefectures = LocationService.getAllPrefectures();
+      const foundPref = prefectures.find(
+        (p: any) =>
+          p.id === filters.pref?.toLowerCase() ||
+          p.name === filters.pref ||
+          p.name.replace(/[県府都]$/, "") === filters.pref,
+      );
+      const normalizedPref = foundPref ? foundPref.name : filters.pref;
+      query = query.eq("area_pref", normalizedPref);
+    }
     if (filters.city) query = query.ilike("area_city", `%${filters.city}%`);
     if (filters.employment_type)
       query = query.eq("employment_type", filters.employment_type);

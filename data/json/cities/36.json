@@ -1,0 +1,170 @@
+[
+  {
+    "id": "36-tokushima-shi",
+    "name": "徳島市",
+    "en": "Tokushima-shi",
+    "slug": "tokushima-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-naruto-shi",
+    "name": "鳴門市",
+    "en": "Naruto-shi",
+    "slug": "naruto-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-komatsushima-shi",
+    "name": "小松島市",
+    "en": "Komatsushima-shi",
+    "slug": "komatsushima-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-anan-shi",
+    "name": "阿南市",
+    "en": "Anan-shi",
+    "slug": "anan-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-yoshinogawa-shi",
+    "name": "吉野川市",
+    "en": "Yoshinogawa-shi",
+    "slug": "yoshinogawa-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-awa-shi",
+    "name": "阿波市",
+    "en": "Awa-shi",
+    "slug": "awa-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-mima-shi",
+    "name": "美馬市",
+    "en": "Mima-shi",
+    "slug": "mima-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-miyoshi-shi",
+    "name": "三好市",
+    "en": "Miyoshi-shi",
+    "slug": "miyoshi-shi",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-katsura-cho",
+    "name": "勝浦町",
+    "en": "Katsura-cho",
+    "slug": "katsura-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-kamikatsu-cho",
+    "name": "上勝町",
+    "en": "Kamikatsu-cho",
+    "slug": "kamikatsu-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-sanagochi-son",
+    "name": "佐那河内村",
+    "en": "Sanagochi-son",
+    "slug": "sanagochi-son",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-ishii-cho",
+    "name": "石井町",
+    "en": "Ishii-cho",
+    "slug": "ishii-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-kamiyama-cho",
+    "name": "神山町",
+    "en": "Kamiyama-cho",
+    "slug": "kamiyama-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-naka-cho",
+    "name": "那賀町",
+    "en": "Naka-cho",
+    "slug": "naka-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-mugi-cho",
+    "name": "牟岐町",
+    "en": "Mugi-cho",
+    "slug": "mugi-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-minami-cho",
+    "name": "美波町",
+    "en": "Minami-cho",
+    "slug": "minami-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-kaiyo-cho",
+    "name": "海陽町",
+    "en": "Kaiyo-cho",
+    "slug": "kaiyo-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-matsushige-cho",
+    "name": "松茂町",
+    "en": "Matsushige-cho",
+    "slug": "matsushige-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-kitajima-cho",
+    "name": "北島町",
+    "en": "Kitajima-cho",
+    "slug": "kitajima-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-aizumi-cho",
+    "name": "藍住町",
+    "en": "Aizumi-cho",
+    "slug": "aizumi-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-itano-cho",
+    "name": "板野町",
+    "en": "Itano-cho",
+    "slug": "itano-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-kamiita-cho",
+    "name": "上板町",
+    "en": "Kamiita-cho",
+    "slug": "kamiita-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-tsurugi-cho",
+    "name": "つるぎ町",
+    "en": "Tsurugi-cho",
+    "slug": "tsurugi-cho",
+    "prefCode": "36"
+  },
+  {
+    "id": "36-higashimiyoshi-cho",
+    "name": "東みよし町",
+    "en": "Higashimiyoshi-cho",
+    "slug": "higashimiyoshi-cho",
+    "prefCode": "36"
+  }
+]

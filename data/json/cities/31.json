@@ -1,0 +1,135 @@
+[
+  {
+    "id": "31-tottori-shi",
+    "name": "鳥取市",
+    "en": "Tottori-shi",
+    "slug": "tottori-shi",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-yonago-shi",
+    "name": "米子市",
+    "en": "Yonago-shi",
+    "slug": "yonago-shi",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-kurayoshi-shi",
+    "name": "倉吉市",
+    "en": "Kurayoshi-shi",
+    "slug": "kurayoshi-shi",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-sakaiminato-shi",
+    "name": "境港市",
+    "en": "Sakaiminato-shi",
+    "slug": "sakaiminato-shi",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-iwami-cho",
+    "name": "岩美町",
+    "en": "Iwami-cho",
+    "slug": "iwami-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-wakasa-cho",
+    "name": "若桜町",
+    "en": "Wakasa-cho",
+    "slug": "wakasa-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-chizu-cho",
+    "name": "智頭町",
+    "en": "Chizu-cho",
+    "slug": "chizu-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-yazu-cho",
+    "name": "八頭町",
+    "en": "Yazu-cho",
+    "slug": "yazu-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-misasa-cho",
+    "name": "三朝町",
+    "en": "Misasa-cho",
+    "slug": "misasa-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-yurihama-cho",
+    "name": "湯梨浜町",
+    "en": "Yurihama-cho",
+    "slug": "yurihama-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-kotora-cho",
+    "name": "琴浦町",
+    "en": "Kotora-cho",
+    "slug": "kotora-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-hokuei-cho",
+    "name": "北栄町",
+    "en": "Hokuei-cho",
+    "slug": "hokuei-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-hiezu-son",
+    "name": "日吉津村",
+    "en": "Hiezu-son",
+    "slug": "hiezu-son",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-daisen-cho",
+    "name": "大山町",
+    "en": "Daisen-cho",
+    "slug": "daisen-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-nambu-cho",
+    "name": "南部町",
+    "en": "Nambu-cho",
+    "slug": "nambu-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-hoki-cho",
+    "name": "伯耆町",
+    "en": "Hoki-cho",
+    "slug": "hoki-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-nichinan-cho",
+    "name": "日南町",
+    "en": "Nichinan-cho",
+    "slug": "nichinan-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-hino-cho",
+    "name": "日野町",
+    "en": "Hino-cho",
+    "slug": "hino-cho",
+    "prefCode": "31"
+  },
+  {
+    "id": "31-kofu-cho",
+    "name": "江府町",
+    "en": "Kofu-cho",
+    "slug": "kofu-cho",
+    "prefCode": "31"
+  }
+]

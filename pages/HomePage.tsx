@@ -207,12 +207,16 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     setCurrentSlide((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
   const handleRegionSelect = (region: string) => {
-    onSearch({ pref: region });
+    // 地方タップ時は、マップ内での遷移のみとし、トップレベルでの検索は行わない（ズームイン動作）
+    console.log("Region selected:", region);
+  };
+
+  const handlePrefectureSelect = (pref: string) => {
+    onSearch({ pref });
   };
 
   const handleMunicipalitySelect = (pref: string, muni: string) => {
-    setIsMapOpen(false);
-    onSearch({ pref, area_city: muni });
+    onSearch({ pref, city: muni });
   };
 
   const handleJobTypeSelect = (id: string) => {
@@ -267,6 +271,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </button>
             <JapanMap
               onRegionSelect={handleRegionSelect}
+              onPrefectureSelect={handlePrefectureSelect}
               onMunicipalitySelect={handleMunicipalitySelect}
             />
           </div>

@@ -1,0 +1,380 @@
+[
+  {
+    "id": "12-chiba-shi",
+    "name": "千葉市",
+    "en": "Chiba-shi",
+    "slug": "chiba-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-choshi-shi",
+    "name": "銚子市",
+    "en": "Choshi-shi",
+    "slug": "choshi-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-ichikawa-shi",
+    "name": "市川市",
+    "en": "Ichikawa-shi",
+    "slug": "ichikawa-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-funabashi-shi",
+    "name": "船橋市",
+    "en": "Funabashi-shi",
+    "slug": "funabashi-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-tateyama-shi",
+    "name": "館山市",
+    "en": "Tateyama-shi",
+    "slug": "tateyama-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kisarazu-shi",
+    "name": "木更津市",
+    "en": "Kisarazu-shi",
+    "slug": "kisarazu-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-matsudo-shi",
+    "name": "松戸市",
+    "en": "Matsudo-shi",
+    "slug": "matsudo-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-noda-shi",
+    "name": "野田市",
+    "en": "Noda-shi",
+    "slug": "noda-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-mobara-shi",
+    "name": "茂原市",
+    "en": "Mobara-shi",
+    "slug": "mobara-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-narita-shi",
+    "name": "成田市",
+    "en": "Narita-shi",
+    "slug": "narita-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-sakura-shi",
+    "name": "佐倉市",
+    "en": "Sakura-shi",
+    "slug": "sakura-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-togane-shi",
+    "name": "東金市",
+    "en": "Togane-shi",
+    "slug": "togane-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-asahi-shi",
+    "name": "旭市",
+    "en": "Asahi-shi",
+    "slug": "asahi-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-narashino-shi",
+    "name": "習志野市",
+    "en": "Narashino-shi",
+    "slug": "narashino-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kashiwa-shi",
+    "name": "柏市",
+    "en": "Kashiwa-shi",
+    "slug": "kashiwa-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-katsura-shi",
+    "name": "勝浦市",
+    "en": "Katsura-shi",
+    "slug": "katsura-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-ichihara-shi",
+    "name": "市原市",
+    "en": "Ichihara-shi",
+    "slug": "ichihara-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-nagareyama-shi",
+    "name": "流山市",
+    "en": "Nagareyama-shi",
+    "slug": "nagareyama-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-yachiyo-shi",
+    "name": "八千代市",
+    "en": "Yachiyo-shi",
+    "slug": "yachiyo-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-abiko-shi",
+    "name": "我孫子市",
+    "en": "Abiko-shi",
+    "slug": "abiko-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kamogawa-shi",
+    "name": "鴨川市",
+    "en": "Kamogawa-shi",
+    "slug": "kamogawa-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kamagaya-shi",
+    "name": "鎌ケ谷市",
+    "en": "Kamagaya-shi",
+    "slug": "kamagaya-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kimitsu-shi",
+    "name": "君津市",
+    "en": "Kimitsu-shi",
+    "slug": "kimitsu-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-futtsu-shi",
+    "name": "富津市",
+    "en": "Futtsu-shi",
+    "slug": "futtsu-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-urayasu-shi",
+    "name": "浦安市",
+    "en": "Urayasu-shi",
+    "slug": "urayasu-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-yotsukaido-shi",
+    "name": "四街道市",
+    "en": "Yotsukaido-shi",
+    "slug": "yotsukaido-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-sodegaura-shi",
+    "name": "袖ケ浦市",
+    "en": "Sodegaura-shi",
+    "slug": "sodegaura-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-yachimata-shi",
+    "name": "八街市",
+    "en": "Yachimata-shi",
+    "slug": "yachimata-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-inzai-shi",
+    "name": "印西市",
+    "en": "Inzai-shi",
+    "slug": "inzai-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-shiroi-shi",
+    "name": "白井市",
+    "en": "Shiroi-shi",
+    "slug": "shiroi-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-tomisato-shi",
+    "name": "富里市",
+    "en": "Tomisato-shi",
+    "slug": "tomisato-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-minamiboso-shi",
+    "name": "南房総市",
+    "en": "Minamiboso-shi",
+    "slug": "minamiboso-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-sosa-shi",
+    "name": "匝瑳市",
+    "en": "Sosa-shi",
+    "slug": "sosa-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-katori-shi",
+    "name": "香取市",
+    "en": "Katori-shi",
+    "slug": "katori-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-sammu-shi",
+    "name": "山武市",
+    "en": "Sammu-shi",
+    "slug": "sammu-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-isumi-shi",
+    "name": "いすみ市",
+    "en": "Isumi-shi",
+    "slug": "isumi-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-oamishirasato-shi",
+    "name": "大網白里市",
+    "en": "Oamishirasato-shi",
+    "slug": "oamishirasato-shi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-shisui-machi",
+    "name": "酒々井町",
+    "en": "Shisui-machi",
+    "slug": "shisui-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-sakae-machi",
+    "name": "栄町",
+    "en": "Sakae-machi",
+    "slug": "sakae-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kozaki-machi",
+    "name": "神崎町",
+    "en": "Kozaki-machi",
+    "slug": "kozaki-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-tako-machi",
+    "name": "多古町",
+    "en": "Tako-machi",
+    "slug": "tako-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-tonosho-machi",
+    "name": "東庄町",
+    "en": "Tonosho-machi",
+    "slug": "tonosho-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kujukuri-machi",
+    "name": "九十九里町",
+    "en": "Kujukuri-machi",
+    "slug": "kujukuri-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-shibayama-machi",
+    "name": "芝山町",
+    "en": "Shibayama-machi",
+    "slug": "shibayama-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-yokoshibahikari-machi",
+    "name": "横芝光町",
+    "en": "Yokoshibahikari-machi",
+    "slug": "yokoshibahikari-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-ichinomiya-machi",
+    "name": "一宮町",
+    "en": "Ichinomiya-machi",
+    "slug": "ichinomiya-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-mutsuzawa-machi",
+    "name": "睦沢町",
+    "en": "Mutsuzawa-machi",
+    "slug": "mutsuzawa-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-chosei-mura",
+    "name": "長生村",
+    "en": "Chosei-mura",
+    "slug": "chosei-mura",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-shirako-machi",
+    "name": "白子町",
+    "en": "Shirako-machi",
+    "slug": "shirako-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-nagara-machi",
+    "name": "長柄町",
+    "en": "Nagara-machi",
+    "slug": "nagara-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-chonan-machi",
+    "name": "長南町",
+    "en": "Chonan-machi",
+    "slug": "chonan-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-otaki-machi",
+    "name": "大多喜町",
+    "en": "Otaki-machi",
+    "slug": "otaki-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-onjuku-machi",
+    "name": "御宿町",
+    "en": "Onjuku-machi",
+    "slug": "onjuku-machi",
+    "prefCode": "12"
+  },
+  {
+    "id": "12-kyonan-machi",
+    "name": "鋸南町",
+    "en": "Kyonan-machi",
+    "slug": "kyonan-machi",
+    "prefCode": "12"
+  }
+]

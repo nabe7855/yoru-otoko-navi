@@ -1,0 +1,233 @@
+[
+  {
+    "id": "14-yokohama-shi",
+    "name": "横浜市",
+    "en": "Yokohama-shi",
+    "slug": "yokohama-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-kawasaki-shi",
+    "name": "川崎市",
+    "en": "Kawasaki-shi",
+    "slug": "kawasaki-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-sagamihara-shi",
+    "name": "相模原市",
+    "en": "Sagamihara-shi",
+    "slug": "sagamihara-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-yokosuka-shi",
+    "name": "横須賀市",
+    "en": "Yokosuka-shi",
+    "slug": "yokosuka-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-hiratsuka-shi",
+    "name": "平塚市",
+    "en": "Hiratsuka-shi",
+    "slug": "hiratsuka-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-kamakura-shi",
+    "name": "鎌倉市",
+    "en": "Kamakura-shi",
+    "slug": "kamakura-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-fujisawa-shi",
+    "name": "藤沢市",
+    "en": "Fujisawa-shi",
+    "slug": "fujisawa-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-odawara-shi",
+    "name": "小田原市",
+    "en": "Odawara-shi",
+    "slug": "odawara-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-chigasaki-shi",
+    "name": "茅ヶ崎市",
+    "en": "Chigasaki-shi",
+    "slug": "chigasaki-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-zushi-shi",
+    "name": "逗子市",
+    "en": "Zushi-shi",
+    "slug": "zushi-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-miura-shi",
+    "name": "三浦市",
+    "en": "Miura-shi",
+    "slug": "miura-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-hadano-shi",
+    "name": "秦野市",
+    "en": "Hadano-shi",
+    "slug": "hadano-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-atsugi-shi",
+    "name": "厚木市",
+    "en": "Atsugi-shi",
+    "slug": "atsugi-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-yamato-shi",
+    "name": "大和市",
+    "en": "Yamato-shi",
+    "slug": "yamato-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-isehara-shi",
+    "name": "伊勢原市",
+    "en": "Isehara-shi",
+    "slug": "isehara-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-ebina-shi",
+    "name": "海老名市",
+    "en": "Ebina-shi",
+    "slug": "ebina-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-zama-shi",
+    "name": "座間市",
+    "en": "Zama-shi",
+    "slug": "zama-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-minamiashigara-shi",
+    "name": "南足柄市",
+    "en": "Minamiashigara-shi",
+    "slug": "minamiashigara-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-ayase-shi",
+    "name": "綾瀬市",
+    "en": "Ayase-shi",
+    "slug": "ayase-shi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-hayama-machi",
+    "name": "葉山町",
+    "en": "Hayama-machi",
+    "slug": "hayama-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-samukawa-machi",
+    "name": "寒川町",
+    "en": "Samukawa-machi",
+    "slug": "samukawa-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-oiso-machi",
+    "name": "大磯町",
+    "en": "Oiso-machi",
+    "slug": "oiso-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-ninomiya-machi",
+    "name": "二宮町",
+    "en": "Ninomiya-machi",
+    "slug": "ninomiya-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-nakai-machi",
+    "name": "中井町",
+    "en": "Nakai-machi",
+    "slug": "nakai-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-oi-machi",
+    "name": "大井町",
+    "en": "Oi-machi",
+    "slug": "oi-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-matsuda-machi",
+    "name": "松田町",
+    "en": "Matsuda-machi",
+    "slug": "matsuda-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-yamakita-machi",
+    "name": "山北町",
+    "en": "Yamakita-machi",
+    "slug": "yamakita-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-kaisei-machi",
+    "name": "開成町",
+    "en": "Kaisei-machi",
+    "slug": "kaisei-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-hakone-machi",
+    "name": "箱根町",
+    "en": "Hakone-machi",
+    "slug": "hakone-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-manazuru-machi",
+    "name": "真鶴町",
+    "en": "Manazuru-machi",
+    "slug": "manazuru-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-yugawara-machi",
+    "name": "湯河原町",
+    "en": "Yugawara-machi",
+    "slug": "yugawara-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-aikawa-machi",
+    "name": "愛川町",
+    "en": "Aikawa-machi",
+    "slug": "aikawa-machi",
+    "prefCode": "14"
+  },
+  {
+    "id": "14-kiyokawa-mura",
+    "name": "清川村",
+    "en": "Kiyokawa-mura",
+    "slug": "kiyokawa-mura",
+    "prefCode": "14"
+  }
+]
