@@ -121,6 +121,14 @@ export const MATCHING_QUESTIONS = [
 ];
 
 export const JOB_TYPES_FOR_OVERLAY = [
+  { name: "キャバクラ", icon: "Sparkles", id: "キャバクラ" },
+  { name: "ガールズバー", icon: "Martini", id: "ガールズバー" },
+  { name: "スナック", icon: "Music", id: "スナック" },
+  { name: "ラウンジ", icon: "Coffee", id: "ラウンジ" },
+  { name: "ホストクラブ", icon: "Star", id: "ホストクラブ" },
+  { name: "バー", icon: "Martini", id: "バー" },
+  { name: "クラブ", icon: "Music", id: "クラブ" },
+  { name: "ニュークラブ", icon: "Sparkles", id: "ニュークラブ" },
   {
     name: "黒服(ボーイ)",
     icon: "Users",
@@ -190,11 +198,6 @@ export const JOB_TYPES_FOR_OVERLAY = [
     name: "メンズコンカフェ",
     icon: "Coffee",
     id: "MenConCafe",
-  },
-  {
-    name: "ホスト",
-    icon: "Star",
-    id: "Host",
   },
   {
     name: "ボーイズバー",

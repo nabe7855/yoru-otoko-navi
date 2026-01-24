@@ -240,12 +240,14 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   };
 
   const quickTags = [
-    "日払い",
-    "寮完備",
-    "30代歓迎",
-    "未経験OK",
-    "即入居可",
-    "週1OK",
+    "日払いOK",
+    "未経験歓迎",
+    "経験者優遇",
+    "送迎あり",
+    "寮・社宅あり",
+    "託児所あり",
+    "自由シフト",
+    "週1日からOK",
   ];
 
   const getFormerJobIcon = (job: string) => {
