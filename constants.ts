@@ -207,29 +207,29 @@ export const JOB_TYPES_FOR_OVERLAY = [
 ];
 
 export const SALARY_OPTIONS_FOR_OVERLAY = [
-  { name: "月給30万円〜", icon: "Banknote", id: "monthly_30" },
-  { name: "月給50万円〜", icon: "Gem", id: "monthly_50" },
-  { name: "月給80万円〜", icon: "Trophy", id: "monthly_80" },
-  { name: "日給1.2万円〜", icon: "HandCoins", id: "daily_12" },
-  { name: "日給1.5万円〜", icon: "Coins", id: "daily_15" },
-  { name: "時給1,500円〜", icon: "Clock", id: "hourly_15" },
-  { name: "時給2,000円〜", icon: "Zap", id: "hourly_20" },
-  { name: "高額バックあり", icon: "Percent", id: "high_back" },
-  { name: "即日日払いOK", icon: "Wallet", id: "daily_pay" },
-  { name: "昇給随時", icon: "ArrowUpRight", id: "raise" },
+  { name: "月給30万円〜", icon: "Banknote", id: "月給30万円〜" },
+  { name: "月給50万円〜", icon: "Gem", id: "月給50万円〜" },
+  { name: "月給80万円〜", icon: "Trophy", id: "月給80万円〜" },
+  { name: "日給1.2万円〜", icon: "HandCoins", id: "日給1.2万円〜" },
+  { name: "日給1.5万円〜", icon: "Coins", id: "日給1.5万円〜" },
+  { name: "時給1,500円〜", icon: "Clock", id: "時給1,500円〜" },
+  { name: "時給2,000円〜", icon: "Zap", id: "時給2,000円〜" },
+  { name: "高額バックあり", icon: "Percent", id: "高額バックあり" },
+  { name: "即日日払いOK", icon: "Wallet", id: "即日日払いOK" },
+  { name: "昇給随時", icon: "ArrowUpRight", id: "昇給随時" },
 ];
 
 export const WORK_STYLE_OPTIONS_FOR_OVERLAY = [
-  { name: "正社員・転職", icon: "Briefcase", id: "FullTime" },
-  { name: "アルバイト", icon: "Utensils", id: "PartTime" },
-  { name: "パート", icon: "ShoppingBag", id: "Part" },
-  { name: "派遣", icon: "Calculator", id: "Temporary" },
-  { name: "契約社員", icon: "PenTool", id: "Contract" },
-  { name: "業務委託", icon: "Scissors", id: "Outsourcing" },
-  { name: "在宅ワーク", icon: "Headset", id: "Remote" },
-  { name: "フリーランス", icon: "Laptop", id: "Freelance" },
-  { name: "新卒", icon: "GraduationCap", id: "NewGrad" },
-  { name: "インターン", icon: "Award", id: "Intern" },
+  { name: "正社員・転職", icon: "Briefcase", id: "正社員・転職" },
+  { name: "アルバイト", icon: "Utensils", id: "アルバイト" },
+  { name: "パート", icon: "ShoppingBag", id: "パート" },
+  { name: "派遣", icon: "Calculator", id: "派遣" },
+  { name: "契約社員", icon: "PenTool", id: "契約社員" },
+  { name: "業務委託", icon: "Scissors", id: "業務委託" },
+  { name: "在宅ワーク", icon: "Headset", id: "在宅ワーク" },
+  { name: "フリーランス", icon: "Laptop", id: "フリーランス" },
+  { name: "新卒", icon: "GraduationCap", id: "新卒" },
+  { name: "インターン", icon: "Award", id: "インターン" },
 ];
 
 export const MOCK_COLUMNS = [

@@ -12,6 +12,7 @@ import {
   SUCCESS_STORIES,
   WORK_STYLE_OPTIONS_FOR_OVERLAY,
 } from "@/constants";
+import { LocationService } from "@/lib/location";
 import { jobService } from "@/services/jobService";
 import { Job } from "@/types";
 import {
@@ -227,6 +228,14 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   const prevSlide = () =>
     setCurrentSlide((prev) => (prev - 1 + SLIDES.length) % SLIDES.length);
 
+  const addFilter = (type: keyof ActiveFilters, value: string) => {
+    setActiveFilters((prev) => {
+      const current = prev[type];
+      if (current.includes(value)) return prev;
+      return { ...prev, [type]: [...current, value] };
+    });
+  };
+
   const toggleFilter = (type: keyof ActiveFilters, value: string) => {
     setActiveFilters((prev) => {
       const current = prev[type];
@@ -243,14 +252,27 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     toggleFilter("regions", region);
   };
 
-  const handlePrefectureSelect = (pref: string) => {
-    toggleFilter("prefs", pref);
+  const handlePrefectureSelect = (prefSlug: string) => {
+    const pref = LocationService.getPrefectureBySlug(prefSlug);
+    if (pref) {
+      addFilter("prefs", pref.name);
+      // Find region
+      const regions = LocationService.getRegions();
+      const region = regions.find((r: any) => r.prefs.includes(pref.code));
+      if (region) addFilter("regions", region.name);
+    }
     setIsMapOpen(false);
   };
 
-  const handleMunicipalitySelect = (pref: string, muni: string) => {
-    toggleFilter("prefs", pref);
-    toggleFilter("cities", muni);
+  const handleMunicipalitySelect = (prefSlug: string, muni: string) => {
+    const pref = LocationService.getPrefectureBySlug(prefSlug);
+    if (pref) {
+      addFilter("prefs", pref.name);
+      const regions = LocationService.getRegions();
+      const region = regions.find((r: any) => r.prefs.includes(pref.code));
+      if (region) addFilter("regions", region.name);
+    }
+    addFilter("cities", muni);
     setIsMapOpen(false);
   };
 
