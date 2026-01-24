@@ -628,3 +628,88 @@ export const SUCCESS_STORIES: SuccessStory[] = [
       "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=800",
   },
 ];
+// リッチハンバーガーメニュー用定数
+export const QUICK_MENU_ITEMS = [
+  {
+    id: "daily-pay",
+    label: "即日日払いのお店",
+    icon: "Banknote",
+    link: "/jobs?tags=日払いOK",
+    color: "from-emerald-500 to-teal-500",
+  },
+  {
+    id: "trial",
+    label: "体験バイトOK",
+    icon: "UserCheck",
+    link: "/jobs?tags=体験入店OK",
+    color: "from-blue-500 to-indigo-500",
+  },
+  {
+    id: "high-income",
+    label: "高収入幹部候補",
+    icon: "Trophy",
+    link: "/jobs?category=店長幹部候補",
+    color: "from-amber-500 to-orange-500",
+  },
+  {
+    id: "dormitory",
+    label: "寮社宅完備",
+    icon: "Home",
+    link: "/jobs?tags=寮社宅あり",
+    color: "from-purple-500 to-pink-500",
+  },
+  {
+    id: "age-30-50",
+    label: "30-50代歓迎",
+    icon: "TrendingUp",
+    link: "/jobs?tags=30代歓迎",
+    color: "from-rose-500 to-red-500",
+  },
+  {
+    id: "driver",
+    label: "送迎ドライバー",
+    icon: "Car",
+    link: "/jobs?category=送りドライバー",
+    color: "from-cyan-500 to-blue-500",
+  },
+  {
+    id: "diagnosis",
+    label: "適職タイプ診断",
+    icon: "Target",
+    link: "/matcher",
+    color: "from-indigo-500 to-purple-500",
+  },
+  {
+    id: "interview",
+    label: "成功者インタビュー",
+    icon: "Star",
+    link: "/#success-stories",
+    color: "from-yellow-500 to-amber-500",
+  },
+  {
+    id: "knowhow",
+    label: "稼げるノウハウ",
+    icon: "BookOpen",
+    link: "/#master-guides",
+    color: "from-orange-500 to-red-500",
+  },
+];
+
+export const MENU_BANNERS = [
+  {
+    id: "success-roadmap",
+    title: "未経験からの成功ロードマップ",
+    subtitle: "3ヶ月で月収50万円を目指す",
+    image: "https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=800",
+    link: "/#master-guides",
+    gradient: "from-indigo-600 to-purple-600",
+  },
+  {
+    id: "campaign",
+    title: "今月限定！入社お祝い金増額",
+    subtitle: "最大10万円プレゼント",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=800",
+    link: "/jobs",
+    gradient: "from-amber-600 to-orange-600",
+  },
+];

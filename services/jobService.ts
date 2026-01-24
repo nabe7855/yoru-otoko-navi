@@ -2,6 +2,7 @@ import { createClient } from "@/lib/supabase/client";
 import {
   Application,
   ApplicationInput,
+  Article,
   Employer,
   Job,
   JobCreateInput,
@@ -9,7 +10,12 @@ import {
   Profile,
   SeekerProfile,
 } from "@/types";
-import { mockApplications, mockEmployers, mockJobs } from "./mockData";
+import {
+  mockApplications,
+  mockArticles,
+  mockEmployers,
+  mockJobs,
+} from "./mockData";
 
 const supabase = createClient();
 
@@ -22,6 +28,14 @@ export const jobService = {
       return [];
     }
     return data as Profile[];
+  },
+
+  async deleteUser(userId: string): Promise<void> {
+    const { error } = await supabase.from("profiles").delete().eq("id", userId);
+    if (error) {
+      console.error("Error deleting user:", error);
+      throw error;
+    }
   },
 
   async getSeekerProfile(userId: string): Promise<SeekerProfile | null> {
@@ -160,6 +174,24 @@ export const jobService = {
     return data as Job;
   },
 
+  async updateJob(
+    jobId: string,
+    jobData: Partial<JobCreateInput>,
+  ): Promise<void> {
+    const { error } = await supabase
+      .from("jobs")
+      .update({
+        ...jobData,
+        updated_at: new Date().toISOString(),
+      })
+      .eq("id", jobId);
+
+    if (error) {
+      console.error("Error updating job:", error);
+      throw error;
+    }
+  },
+
   async updateJobStatus(jobId: string, status: Job["status"]): Promise<void> {
     const { error } = await supabase
       .from("jobs")
@@ -263,6 +295,116 @@ export const jobService = {
       .update({ status })
       .eq("id", appId);
     if (error) console.error("Error updating application status:", error);
+  },
+
+  async getAppliedJobs(
+    userId: string,
+  ): Promise<{ application: Application; job: Job }[]> {
+    const { data: apps, error } = await supabase
+      .from("applications")
+      .select("*")
+      .eq("seeker_user_id", userId)
+      .order("created_at", { ascending: false });
+
+    if (error) {
+      console.error("Error fetching applied jobs:", error);
+      return [];
+    }
+
+    const applicationList = apps as Application[];
+    const jobs = await Promise.all(
+      applicationList.map(async (app) => {
+        const job = await this.getJobById(app.job_id);
+        return job ? { application: app, job } : null;
+      }),
+    );
+
+    return jobs.filter(
+      (item): item is { application: Application; job: Job } => item !== null,
+    );
+  },
+
+  // Mock implementation for Favorites (LocalStorage)
+  async getFavoriteJobs(userId: string): Promise<Job[]> {
+    if (typeof window === "undefined") return [];
+    const favorites = JSON.parse(
+      localStorage.getItem(`favorites_${userId}`) || "[]",
+    );
+    const jobs = await Promise.all(
+      favorites.map((id: string) => this.getJobById(id)),
+    );
+    return jobs.filter((j): j is Job => j !== null);
+  },
+
+  async toggleFavoriteJob(userId: string, jobId: string): Promise<boolean> {
+    if (typeof window === "undefined") return false;
+    const key = `favorites_${userId}`;
+    const favorites = JSON.parse(localStorage.getItem(key) || "[]");
+    let newFavorites;
+    let isFavorited = false;
+
+    if (favorites.includes(jobId)) {
+      newFavorites = favorites.filter((id: string) => id !== jobId);
+    } else {
+      newFavorites = [...favorites, jobId];
+      isFavorited = true;
+    }
+
+    localStorage.setItem(key, JSON.stringify(newFavorites));
+    return isFavorited;
+  },
+
+  async isJobFavorited(userId: string, jobId: string): Promise<boolean> {
+    if (typeof window === "undefined") return false;
+    const favorites = JSON.parse(
+      localStorage.getItem(`favorites_${userId}`) || "[]",
+    );
+    return favorites.includes(jobId);
+  },
+
+  // Mock implementation for Scout Messages
+  async getScoutMessages(
+    userId: string,
+  ): Promise<
+    { id: string; employer: string; message: string; date: string }[]
+  > {
+    // Return mock data for now
+    return [
+      {
+        id: "1",
+        employer: "Club Ginza Royal",
+        message:
+          "あなたのプロフィールを拝見し、ぜひ一度面接にお越しいただきたくご連絡いたしました。当店の幹部候補として...",
+        date: "2024-05-20",
+      },
+      {
+        id: "2",
+        employer: "Lounge 華",
+        message: "未経験歓迎！体験入店から始めてみませんか？日払いも可能です。",
+        date: "2024-05-18",
+      },
+    ];
+  },
+
+  // Mock implementation for Articles
+  async getArticles(): Promise<Article[]> {
+    return Promise.resolve(mockArticles);
+  },
+
+  async updateArticle(
+    articleId: string,
+    data: Partial<Article>,
+  ): Promise<void> {
+    console.log(`Updated article ${articleId}`, data);
+    return Promise.resolve();
+  },
+
+  async toggleArticleStatus(
+    articleId: string,
+    status: Article["status"],
+  ): Promise<void> {
+    console.log(`Article ${articleId} status changed to ${status}`);
+    return Promise.resolve();
   },
 
   async getMatchingTalents(): Promise<SeekerProfile[]> {

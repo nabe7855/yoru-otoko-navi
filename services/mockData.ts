@@ -1,4 +1,4 @@
-import { Application, Employer, Job, Profile } from "../types";
+import { Application, Article, Employer, Job, Profile } from "../types";
 
 export const mockProfiles: Profile[] = [
   {
@@ -77,3 +77,58 @@ export const mockJobs: Job[] = [
 ];
 
 export const mockApplications: Application[] = [];
+
+export const mockArticles: Article[] = [
+  {
+    id: "a1",
+    title: "【未経験必見】ボーイの仕事内容を徹底解説！1日の流れから給与まで",
+    type: "column",
+    thumbnail_url:
+      "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800",
+    category: "お仕事ガイド",
+    status: "published",
+    published_at: "2024-05-15",
+    author: "編集部",
+    content: "ボーイの仕事は...",
+    is_featured: false,
+  },
+  {
+    id: "a2",
+    title: "稼げる店舗の特徴とは？優良店を見極める3つのポイント",
+    type: "column",
+    thumbnail_url:
+      "https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&q=80&w=800",
+    category: "稼ぐテクニック",
+    status: "published",
+    published_at: "2024-05-18",
+    author: "編集部",
+    content: "稼げる店舗には共通点があります...",
+    is_featured: true,
+  },
+  {
+    id: "a3",
+    title: "2024年夏！注目のエリア特集 〜新宿・歌舞伎町編〜",
+    type: "special",
+    thumbnail_url:
+      "https://images.unsplash.com/photo-1534234828563-025178d8a7d1?auto=format&fit=crop&q=80&w=800",
+    category: "エリア特集",
+    status: "scheduled",
+    published_at: "2024-06-01",
+    author: "編集部",
+    content: "今年の夏は歌舞伎町が熱い...",
+    is_featured: true,
+  },
+  {
+    id: "a4",
+    title: "黒服に向いている人・向いていない人の特徴診断",
+    type: "column",
+    thumbnail_url:
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=800",
+    category: "自己分析",
+    status: "draft",
+    published_at: "",
+    author: "編集部",
+    content: "下書き中の記事です...",
+    is_featured: false,
+  },
+];

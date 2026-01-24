@@ -175,3 +175,18 @@ export type ApplicationInput = Omit<
   Application,
   "id" | "status" | "created_at"
 >;
+
+export type ArticleStatus = "published" | "draft" | "scheduled";
+
+export interface Article {
+  id: string;
+  title: string;
+  type: "special" | "column";
+  thumbnail_url: string;
+  category: string;
+  status: ArticleStatus;
+  published_at: string;
+  author: string;
+  content: string; // HTML or Markdown
+  is_featured?: boolean;
+}
