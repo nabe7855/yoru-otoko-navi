@@ -212,7 +212,8 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
   };
 
   const handlePrefectureSelect = (pref: string) => {
-    onSearch({ pref });
+    // 県選択時は、マップ内での詳細ズーム（市区町村選択）へ移行するため、ここでの検索・遷移は行わない
+    console.log("Prefecture selected for zoom:", pref);
   };
 
   const handleMunicipalitySelect = (pref: string, muni: string) => {
@@ -257,12 +258,12 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     <div className="animate-in fade-in duration-700 bg-white min-h-screen">
       {/* エリア選択地図オーバーレイ */}
       {isMapOpen && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8 animate-in fade-in duration-300">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 md:p-8">
           <div
-            className="absolute inset-0 bg-slate-950/90 backdrop-blur-md"
+            className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl animate-fade-in"
             onClick={() => setIsMapOpen(false)}
           ></div>
-          <div className="relative w-full max-w-5xl max-h-[90vh] overflow-hidden rounded-[2.5rem] shadow-2xl border border-white/10 animate-in zoom-in-95 duration-300">
+          <div className="relative w-full max-w-5xl max-h-[90vh] overflow-hidden rounded-[2.5rem] shadow-2xl border border-white/10 animate-map-entrance">
             <button
               onClick={() => setIsMapOpen(false)}
               className="absolute top-6 right-6 z-[110] w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all active:scale-90"
