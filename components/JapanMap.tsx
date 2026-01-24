@@ -187,8 +187,8 @@ const JapanMap: React.FC<JapanMapProps> = ({
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
       {/* Header Section */}
-      <div className="relative z-10 mb-8 flex items-start justify-between">
-        <div className="flex-1">
+      <div className="relative z-10 mb-8 flex flex-wrap items-start gap-4 md:gap-6 pr-16 md:pr-20">
+        <div>
           <div className="flex items-center gap-3 mb-2">
             <div
               className={`w-2 h-8 rounded-full transition-all duration-500 shadow-lg ${currentRegionData ? currentRegionData.color.replace("fill-", "bg-").replace("/80", "") : "bg-amber-500 shadow-amber-500/20"}`}
@@ -201,7 +201,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
                   : `${activePref}のエリア`}
             </h3>
           </div>
-          <p className="text-xs md:text-sm text-slate-400 font-medium">
+          <p className="text-xs md:text-sm text-slate-400 font-medium max-w-md">
             {view === "national"
               ? "日本地図から希望の地方をタップしてください"
               : view === "regional"
@@ -211,8 +211,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
         </div>
 
         {(view === "regional" || view === "municipal") && (
-          <div className="flex items-center gap-2 shrink-0">
-            {/* Direct Search Shortcut in Header */}
+          <div className="flex items-center gap-2 mt-1">
             <button
               onClick={() =>
                 view === "regional"
@@ -227,8 +226,9 @@ const JapanMap: React.FC<JapanMapProps> = ({
               />
               <span className="whitespace-nowrap">
                 {view === "regional"
-                  ? `${currentRegionData?.label}地方すべてで検索`
-                  : `${activePref}全体で検索`}
+                  ? `${currentRegionData?.label}地方すべて`
+                  : `${activePref}全体`}
+                で検索
               </span>
             </button>
 
