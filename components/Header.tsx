@@ -47,12 +47,6 @@ const Header: React.FC = () => {
               30秒診断
             </Link>
             <Link
-              href="/faq"
-              className={`hover:text-amber-400 transition-colors ${pathname === "/faq" ? "text-amber-400" : "text-slate-300"}`}
-            >
-              よくある質問
-            </Link>
-            <Link
               href="/employer"
               className="hover:text-amber-400 transition-colors border-l border-slate-700 pl-10 text-slate-400"
             >
