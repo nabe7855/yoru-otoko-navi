@@ -1,6 +1,6 @@
 "use client";
 
-import { Home, Search, User } from "lucide-react";
+import { HelpCircle, Home, Search, Star, User } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -12,6 +12,8 @@ const MobileNav: React.FC = () => {
   const navItems = [
     { label: "ホーム", href: "/", icon: Home },
     { label: "求人探す", href: "/jobs", icon: Search },
+    { label: "特集", href: "/features", icon: Star },
+    { label: "FAQ", href: "/faq", icon: HelpCircle },
     { label: "マイページ", href: "/profile", icon: User },
   ];
 

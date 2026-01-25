@@ -622,29 +622,30 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </div>
 
             {/* 夜男ナビが選ばれる理由 */}
-            <div className="bg-slate-900 rounded-[2.5rem] p-10 text-white flex flex-col gap-8 shadow-xl">
+            {/* 夜男ナビが選ばれる理由 */}
+            <div className="bg-white rounded-[2.5rem] p-10 text-slate-800 flex flex-col gap-8 shadow-xl border border-slate-200">
               <div className="text-center md:text-left">
-                <h4 className="text-xl font-black mb-2">
+                <h4 className="text-xl font-black mb-2 text-slate-900">
                   夜男ナビが選ばれる理由
                 </h4>
-                <p className="text-slate-400 text-sm">
+                <p className="text-slate-500 text-sm">
                   安心・安全に稼げる環境を保証します。
                 </p>
               </div>
               <div className="flex justify-around">
                 <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-amber-400 border border-white/10">
+                  <div className="w-12 h-12 bg-amber-50 rounded-2xl flex items-center justify-center text-amber-500 border border-amber-100 shadow-sm">
                     <ShieldCheck size={28} />
                   </div>
-                  <span className="text-[10px] font-black uppercase text-slate-500">
+                  <span className="text-[10px] font-black uppercase text-slate-600">
                     安全保証
                   </span>
                 </div>
                 <div className="flex flex-col items-center gap-2">
-                  <div className="w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center text-indigo-400 border border-white/10">
+                  <div className="w-12 h-12 bg-indigo-50 rounded-2xl flex items-center justify-center text-indigo-500 border border-indigo-100 shadow-sm">
                     <Zap size={28} />
                   </div>
-                  <span className="text-[10px] font-black uppercase text-slate-500">
+                  <span className="text-[10px] font-black uppercase text-slate-600">
                     即日採用
                   </span>
                 </div>
@@ -652,11 +653,12 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </div>
 
             {/* MASTER GUIDE セクション */}
-            <div className="bg-slate-950 rounded-[2.5rem] p-6 md:p-8 border border-white/5 shadow-2xl space-y-6 overflow-hidden relative">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 rounded-full blur-3xl"></div>
+            {/* MASTER GUIDE セクション */}
+            <div className="bg-white rounded-[2.5rem] p-6 md:p-8 border border-slate-200 shadow-xl space-y-6 overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-100/50 rounded-full blur-3xl pointer-events-none"></div>
               <div className="relative z-10 text-center md:text-left mb-2">
-                <h3 className="text-sm md:text-base font-black text-white flex items-center gap-2 justify-center md:justify-start">
-                  <Compass className="text-amber-500" size={20} />
+                <h3 className="text-sm md:text-base font-black text-slate-800 flex items-center gap-2 justify-center md:justify-start">
+                  <Compass className="text-cyan-500" size={20} />
                   MASTER GUIDE
                 </h3>
                 <p className="text-[10px] text-slate-500 font-bold mt-1 uppercase tracking-widest">
@@ -668,29 +670,37 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 {MASTER_GUIDES_ENHANCED.map((guide) => (
                   <button
                     key={guide.id}
-                    className={`group relative p-5 rounded-3xl border ${guide.accent} bg-gradient-to-br ${guide.gradient} text-left overflow-hidden transition-all hover:scale-[1.02] hover:border-amber-500/50 active:scale-[0.98] shadow-xl flex items-center gap-5`}
+                    className={`group relative p-5 rounded-3xl border border-slate-100 bg-gradient-to-br from-white to-slate-50 text-left overflow-hidden transition-all hover:scale-[1.02] hover:border-cyan-200 hover:shadow-lg active:scale-[0.98] shadow-sm flex items-center gap-5`}
                   >
                     <div className="absolute -right-10 -bottom-10 opacity-5 group-hover:opacity-10 group-hover:scale-125 transition-all duration-1000">
-                      <LucideIcon name={guide.iconName} size={28} />
+                      <LucideIcon
+                        name={guide.iconName}
+                        size={28}
+                        className="text-slate-900"
+                      />
                     </div>
-                    <div className="shrink-0 w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center border border-white/10 group-hover:bg-amber-500/10 group-hover:border-amber-500/30 transition-all">
-                      <LucideIcon name={guide.iconName} size={28} />
+                    <div className="shrink-0 w-14 h-14 rounded-2xl bg-slate-100 flex items-center justify-center border border-slate-200 group-hover:bg-cyan-50 group-hover:border-cyan-200 transition-all">
+                      <LucideIcon
+                        name={guide.iconName}
+                        size={28}
+                        className="text-slate-600 group-hover:text-cyan-600"
+                      />
                     </div>
                     <div className="flex-grow">
                       <div className="flex items-center justify-between mb-1">
-                        <h4 className="text-sm md:text-base font-black text-white group-hover:text-amber-400 transition-colors">
+                        <h4 className="text-sm md:text-base font-black text-slate-800 group-hover:text-cyan-700 transition-colors">
                           {guide.title}
                         </h4>
-                        <span className="text-[7px] md:text-[8px] font-black text-amber-500 flex items-center gap-1 uppercase tracking-wider animate-pulse bg-amber-500/10 px-1.5 py-0.5 rounded border border-amber-500/20">
+                        <span className="text-[7px] md:text-[8px] font-black text-amber-500 flex items-center gap-1 uppercase tracking-wider animate-pulse bg-amber-50 px-1.5 py-0.5 rounded border border-amber-200">
                           <Sparkles size={8} /> {guide.microCopy}
                         </span>
                       </div>
-                      <p className="text-[10px] md:text-xs text-slate-400 group-hover:text-slate-200 transition-colors leading-snug line-clamp-1">
+                      <p className="text-[10px] md:text-xs text-slate-500 group-hover:text-slate-600 transition-colors leading-snug line-clamp-1">
                         {guide.copy}
                       </p>
                     </div>
                     <ChevronRight
-                      className="shrink-0 text-slate-700 group-hover:text-amber-500 transition-all group-hover:translate-x-1"
+                      className="shrink-0 text-slate-400 group-hover:text-cyan-500 transition-all group-hover:translate-x-1"
                       size={16}
                     />
                   </button>
@@ -727,18 +737,18 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
           {/* メメインエリア */}
           <div className="lg:col-span-8 space-y-10 md:space-y-16">
             {/* 検索セクション */}
-            <div className="bg-slate-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-slate-900/40 text-white relative overflow-hidden border border-white/10">
-              <div className="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div className="bg-white rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-cyan-900/10 text-slate-800 relative overflow-hidden border border-slate-100">
+              <div className="absolute -top-24 -right-24 w-64 h-64 bg-cyan-100/50 rounded-full blur-[100px] pointer-events-none"></div>
               <div className="relative z-10 flex flex-col">
                 <div className="flex flex-col md:flex-row gap-3">
                   <div className="relative group flex-grow">
-                    <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-amber-400 transition-colors">
+                    <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-cyan-500 transition-colors">
                       <Search size={22} />
                     </div>
                     <input
                       type="text"
                       placeholder="エリア・キーワードを入力（例：新宿 日払い 30代）"
-                      className="w-full bg-white/5 border-2 border-white/10 hover:border-white/20 focus:border-amber-500/50 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-white placeholder:text-white/30 focus:outline-none focus:ring-4 focus:ring-amber-500/10 transition-all"
+                      className="w-full bg-slate-50 border-2 border-slate-200 hover:border-cyan-200 focus:border-cyan-500 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-cyan-500/10 transition-all shadow-inner"
                       value={keyword}
                       onChange={(e) => setKeyword(e.target.value)}
                     />
@@ -749,8 +759,8 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                     }
                     className={`flex items-center justify-center gap-2 px-6 py-5 rounded-2xl font-black transition-all active:scale-95 whitespace-nowrap ${
                       isSearchAccordionOpen
-                        ? "bg-amber-500 text-slate-900 shadow-lg shadow-amber-500/20"
-                        : "bg-white/10 text-white border border-white/10 hover:bg-white/20"
+                        ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                        : "bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200"
                     }`}
                   >
                     <ListFilter size={20} />
@@ -776,15 +786,15 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                           key={idx}
                           className={`flex-shrink-0 px-5 py-2.5 transition-all active:scale-95 rounded-full text-xs font-black border ${
                             activeFilters.tags.includes(tag)
-                              ? "bg-amber-500 text-slate-900 border-amber-500 shadow-lg shadow-amber-500/20"
-                              : "bg-white/10 text-white border-white/10 hover:bg-white/20"
+                              ? "bg-cyan-500 text-white border-cyan-500 shadow-lg shadow-cyan-500/20"
+                              : "bg-slate-50 text-slate-600 border-slate-200 hover:bg-white hover:border-cyan-300"
                           }`}
                           onClick={() => toggleFilter("tags", tag)}
                         >
                           {tag}
                         </button>
                       ))}
-                      <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-white/20 transition-all">
+                      <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-50 border border-slate-200 rounded-full hover:bg-white transition-all text-slate-400">
                         <ChevronRight size={18} />
                       </button>
                     </div>
@@ -792,45 +802,45 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                     <button
                       onClick={() => setIsMapOpen(true)}
-                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-amber-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-cyan-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
                     >
-                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform shadow-inner">
+                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-cyan-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                         <MapPin size={26} strokeWidth={2.5} />
                       </div>
-                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                         エリアで探す
                       </span>
                     </button>
                     <button
                       onClick={() => setIsJobTypeOpen(true)}
-                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-indigo-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-indigo-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
                     >
-                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform shadow-inner">
+                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-indigo-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                         <Briefcase size={26} strokeWidth={2.5} />
                       </div>
-                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                         職種で探す
                       </span>
                     </button>
                     <button
                       onClick={() => setIsSalaryOpen(true)}
-                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-emerald-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
                     >
-                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform shadow-inner">
+                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-emerald-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                         <Wallet size={26} strokeWidth={2.5} />
                       </div>
-                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                         給与で探す
                       </span>
                     </button>
                     <button
                       onClick={() => setIsWorkStyleOpen(true)}
-                      className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+                      className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-blue-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
                     >
-                      <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shadow-inner">
+                      <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                         <Layers size={26} strokeWidth={2.5} />
                       </div>
-                      <span className="text-[11px] md:text-xs font-black tracking-tighter">
+                      <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                         働き方で探す
                       </span>
                     </button>
@@ -858,7 +868,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                         <button
                           key={`${key}-${value}`}
                           onClick={() => toggleFilter(key, value)}
-                          className="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg text-[10px] md:text-xs font-bold text-white transition-all group active:scale-95"
+                          className="flex items-center gap-2 px-3 py-1.5 bg-slate-100 hover:bg-slate-200 border border-slate-200 rounded-xl text-[10px] md:text-xs font-black text-slate-700 transition-all group active:scale-95"
                         >
                           <LucideIcon
                             name={icons[key] || "Search"}
@@ -868,7 +878,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                           {value}
                           <X
                             size={12}
-                            className="text-slate-500 group-hover:text-red-400"
+                            className="text-slate-400 group-hover:text-red-500 transition-colors"
                           />
                         </button>
                       ));
@@ -899,19 +909,19 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             </div>
 
             {/* SUCCESS ROAD セクション */}
-            <section className="bg-slate-950 rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-12 border border-white/5 shadow-inner relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-indigo-500/5 rounded-full blur-[100px] pointer-events-none"></div>
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-amber-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+            <section className="bg-gradient-to-br from-cyan-50 to-blue-100 rounded-[2.5rem] md:rounded-[3rem] p-6 md:p-12 border border-blue-200 shadow-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-64 h-64 bg-cyan-400/10 rounded-full blur-[100px] pointer-events-none"></div>
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-400/10 rounded-full blur-[100px] pointer-events-none"></div>
               <div className="relative z-10 mb-8 md:mb-10 text-center md:text-left">
-                <h2 className="text-xl md:text-4xl font-black text-white mb-2 md:mb-3 tracking-tighter flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
-                  <span className="bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
+                <h2 className="text-xl md:text-4xl font-black text-slate-800 mb-2 md:mb-3 tracking-tighter flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+                  <span className="bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
                     SUCCESS ROAD
                   </span>
                   <span className="text-slate-500 text-base md:text-2xl font-bold tracking-normal">
                     — 成功者たちのリアル —
                   </span>
                 </h2>
-                <p className="text-slate-400 text-xs md:text-base font-medium">
+                <p className="text-slate-600 text-xs md:text-base font-bold">
                   現場スタッフから幹部候補まで。夜男ナビで人生を変えた男たちの軌跡。
                 </p>
               </div>
@@ -919,7 +929,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 {SUCCESS_STORIES.map((story) => (
                   <div
                     key={story.id}
-                    className="flex-shrink-0 w-[260px] md:w-auto snap-center group bg-slate-900 rounded-[2rem] border border-white/10 overflow-hidden hover:border-amber-500/50 transition-all duration-500 flex flex-col h-full shadow-2xl"
+                    className="flex-shrink-0 w-[260px] md:w-auto snap-center group bg-white border border-blue-100 rounded-[2.5rem] overflow-hidden hover:border-indigo-400 hover:shadow-2xl transition-all duration-500 flex flex-col h-full shadow-lg"
                   >
                     <div className="relative aspect-[3/4] overflow-hidden">
                       <img
@@ -945,9 +955,9 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                       </div>
                     </div>
                     <div className="p-4 md:p-6 flex-grow flex flex-col justify-between space-y-4">
-                      <div className="bg-slate-950/50 rounded-xl md:rounded-2xl p-3 md:p-4 border border-white/5">
+                      <div className="bg-blue-50/50 rounded-2xl p-3 md:p-4 border border-blue-100/50">
                         <div className="flex justify-between items-center mb-1">
-                          <span className="text-[9px] md:text-[10px] font-black text-slate-500 uppercase tracking-widest">
+                          <span className="text-[9px] md:text-[10px] font-black text-slate-400 uppercase tracking-widest">
                             Monthly Income
                           </span>
                           <div className="flex items-center gap-1 text-emerald-500">
@@ -958,7 +968,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                           </div>
                         </div>
                         <div className="flex items-baseline gap-2">
-                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-amber-400 to-amber-200 bg-clip-text text-transparent">
+                          <span className="text-xl md:text-2xl font-black bg-gradient-to-r from-indigo-600 to-blue-500 bg-clip-text text-transparent">
                             {story.monthlyIncome}
                           </span>
                           <span className="text-[9px] md:text-[10px] text-slate-500 line-through">
@@ -979,11 +989,11 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                           </span>
                         </div>
                       </div>
-                      <p className="text-xs md:text-sm font-bold text-white leading-relaxed line-clamp-2 italic px-1">
+                      <p className="text-xs md:text-sm font-bold text-slate-700 leading-relaxed line-clamp-2 italic px-1">
                         {" "}
                         「{story.catchphrase}」{" "}
                       </p>
-                      <button className="w-full py-2.5 md:py-3.5 bg-white/5 border border-white/10 text-white text-[10px] md:text-xs font-black rounded-xl group-hover:bg-amber-500 group-hover:text-slate-900 group-hover:border-amber-500 transition-all flex items-center justify-center gap-2">
+                      <button className="w-full py-3 md:py-4 bg-indigo-50 border border-indigo-100 text-indigo-600 text-[10px] md:text-xs font-black rounded-2xl group-hover:bg-indigo-600 group-hover:text-white group-hover:border-indigo-600 group-hover:shadow-lg group-hover:shadow-indigo-500/30 transition-all flex items-center justify-center gap-2">
                         成功の軌跡を見る
                         <ChevronRight size={14} />
                       </button>
@@ -995,7 +1005,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
                 {SUCCESS_STORIES.map((_, i) => (
                   <div
                     key={i}
-                    className="w-1.5 h-1.5 rounded-full bg-white/20"
+                    className="w-1.5 h-1.5 rounded-full bg-blue-200"
                   ></div>
                 ))}
               </div>

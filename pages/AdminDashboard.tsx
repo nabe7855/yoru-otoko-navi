@@ -41,10 +41,6 @@ const AdminDashboard: React.FC = () => {
     null,
   );
 
-  useEffect(() => {
-    fetchData();
-  }, []);
-
   const fetchData = async () => {
     setLoading(true);
     const [allJobs, allEmployers, allUsers, allArticles] = await Promise.all([
@@ -60,6 +56,10 @@ const AdminDashboard: React.FC = () => {
     setArticles(allArticles);
     setLoading(false);
   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   // Job & Employer Actions
   const handleApproveJob = async (jobId: string) => {

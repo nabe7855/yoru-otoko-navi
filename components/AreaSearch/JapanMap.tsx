@@ -18,6 +18,77 @@ const JapanMap: React.FC<JapanMapProps> = ({
   const [svgContent, setSvgContent] = useState<string>("");
   const [regions, setRegions] = useState<Region[]>([]);
 
+  const handlePrefClick = (el: SVGElement) => {
+    // Extract pref ID from class
+    const classList = Array.from(el.classList);
+    const prefId = classList.find(
+      (c) =>
+        c !== "prefecture" &&
+        c !== "geolonia-svg-map-prefecture" &&
+        !REGIONS_IDS.includes(c),
+    ); // Heuristic
+
+    if (!prefId) return;
+
+    const pref = LocationService.getPrefectureBySlug(prefId);
+    if (!pref) return;
+
+    // Find which region this pref belongs to
+    const region = regions.find((r) =>
+      r.prefectures.some((p) => p.code === pref.code),
+    );
+    if (!region) return;
+
+    if (!selectedRegion) {
+      // Region Selection Mode
+      if (onRegionSelect) onRegionSelect(region);
+    } else {
+      // Prefecture Selection Mode (only if in selected region)
+      if (selectedRegion.id === region.id) {
+        if (onPrefectureSelect) onPrefectureSelect(pref);
+      }
+    }
+  };
+
+  const zoomToRegion = (region: Region, svg: SVGSVGElement) => {
+    // Calculate bbox of the region
+    let minX = Infinity,
+      minY = Infinity,
+      maxX = -Infinity,
+      maxY = -Infinity;
+    let found = false;
+
+    region.prefectures.forEach((pref) => {
+      const el = svg.querySelector(`.${pref.id}`) as SVGGraphicsElement;
+      if (el) {
+        const bbox = el.getBBox();
+        minX = Math.min(minX, bbox.x);
+        minY = Math.min(minY, bbox.y);
+        maxX = Math.max(maxX, bbox.x + bbox.width);
+        maxY = Math.max(maxY, bbox.y + bbox.height);
+        found = true;
+      }
+    });
+
+    if (found) {
+      // Add padding
+      const padding = 20;
+      const vb = `${minX - padding} ${minY - padding} ${maxX - minX + padding * 2} ${maxY - minY + padding * 2}`;
+      svg.setAttribute("viewBox", vb);
+    }
+  };
+
+  const resetZoom = (svg: SVGSVGElement) => {
+    // Assuming original viewBox is somewhere in the SVG string or we can infer roughly
+    // map-mobile.svg usually covers whole Japan.
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgContent, "image/svg+xml");
+    const originalVB = doc.documentElement.getAttribute("viewBox");
+    if (originalVB) {
+      svg.setAttribute("viewBox", originalVB);
+    }
+  };
+
   useEffect(() => {
     // Load Regions data
     setRegions(LocationService.getRegions());
@@ -98,88 +169,6 @@ const JapanMap: React.FC<JapanMapProps> = ({
       resetZoom(svgElement);
     }
   }, [svgContent, regions, selectedRegion]);
-
-  const handlePrefClick = (el: SVGElement) => {
-    // Extract pref ID from class
-    const classList = Array.from(el.classList);
-    const prefId = classList.find(
-      (c) =>
-        c !== "prefecture" &&
-        c !== "geolonia-svg-map-prefecture" &&
-        !REGIONS_IDS.includes(c),
-    ); // Heuristic
-
-    if (!prefId) return;
-
-    const pref = LocationService.getPrefectureBySlug(prefId);
-    if (!pref) return;
-
-    // Find which region this pref belongs to
-    const region = regions.find((r) =>
-      r.prefectures.some((p) => p.code === pref.code),
-    );
-    if (!region) return;
-
-    if (!selectedRegion) {
-      // Region Selection Mode
-      if (onRegionSelect) onRegionSelect(region);
-    } else {
-      // Prefecture Selection Mode (only if in selected region)
-      if (selectedRegion.id === region.id) {
-        if (onPrefectureSelect) onPrefectureSelect(pref);
-      }
-    }
-  };
-
-  const zoomToRegion = (region: Region, svg: SVGSVGElement) => {
-    // Calculate bbox of the region
-    let minX = Infinity,
-      minY = Infinity,
-      maxX = -Infinity,
-      maxY = -Infinity;
-    let found = false;
-
-    region.prefectures.forEach((pref) => {
-      const el = svg.querySelector(`.${pref.id}`) as SVGGraphicsElement;
-      if (el) {
-        const bbox = el.getBBox();
-        minX = Math.min(minX, bbox.x);
-        minY = Math.min(minY, bbox.y);
-        maxX = Math.max(maxX, bbox.x + bbox.width);
-        maxY = Math.max(maxY, bbox.y + bbox.height);
-        found = true;
-      }
-    });
-
-    if (found) {
-      // Add padding
-      const padding = 20;
-      const vb = `${minX - padding} ${minY - padding} ${maxX - minX + padding * 2} ${maxY - minY + padding * 2}`;
-      svg.setAttribute("viewBox", vb);
-    }
-  };
-
-  const resetZoom = (svg: SVGSVGElement) => {
-    // Assuming original viewBox is somewhere in the SVG string or we can infer roughly
-    // map-mobile.svg usually covers whole Japan.
-    // Let's check original viewBox or set a default one if known.
-    // Or just re-parse the string to get original viewBox?
-    // Simpler: hardcode rough Japan bbox or remove attribute to let it default (if set in SVG)
-    // But we overwrote it.
-    // A safe way is to capture initial viewBox.
-    // For now, reload SVG content handles resetting naturally because we re-render.
-    // Actually, we are updating the DOM node directly, so we need to reset.
-
-    // Hack: Finding Hokkaido and Okinawa and making a box
-    // ... Or just use the original viewBox if we parsed it.
-    // Let's assume the SVG has a viewBox.
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(svgContent, "image/svg+xml");
-    const originalVB = doc.documentElement.getAttribute("viewBox");
-    if (originalVB) {
-      svg.setAttribute("viewBox", originalVB);
-    }
-  };
 
   return (
     <div

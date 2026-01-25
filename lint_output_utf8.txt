@@ -1,0 +1,260 @@
+﻿
+> yoru-otoko-navi@0.1.0 lint
+> eslint
+
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\app\admin\setup\page.tsx
+  34:14  warning  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\app\page.tsx
+   8:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  11:46  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\app\pref\[name]\page.tsx
+  44:34  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\CityModal.tsx
+  24:7  error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\CityModal.tsx:24:7
+  22 |   useEffect(() => {
+  23 |     if (isOpen && prefecture) {
+> 24 |       setLoading(true);
+     |       ^^^^^^^^^^ Avoid calling setState() directly within an effect
+  25 |       LocationService.getCitiesByPrefCode(prefecture.code).then((data) => {
+  26 |         setCities(data);
+  27 |         setLoading(false);  react-hooks/set-state-in-effect
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx
+   57:19  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              @typescript-eslint/no-explicit-any
+   59:9   error    Error: Cannot access variable before it is declared
+
+`handlePrefClick` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:59:9
+  57 |       (element as any).onclick = (e: MouseEvent) => {
+  58 |         e.stopPropagation();
+> 59 |         handlePrefClick(element);
+     |         ^^^^^^^^^^^^^^^ `handlePrefClick` accessed before it is declared
+  60 |       };
+  61 |     });
+  62 |
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:102:3
+  100 |   }, [svgContent, regions, selectedRegion]);
+  101 |
+> 102 |   const handlePrefClick = (el: SVGElement) => {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 103 |     // Extract pref ID from class
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 104 |     const classList = Array.from(el.classList);
+      窶ｦ
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 131 |     }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 132 |   };
+      | ^^^^^ `handlePrefClick` is declared here
+  133 |
+  134 |   const zoomToRegion = (region: Region, svg: SVGSVGElement) => {
+  135 |     // Calculate bbox of the region                                                                                   react-hooks/immutability
+   96:7   error    Error: Cannot access variable before it is declared
+
+`zoomToRegion` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:96:7
+  94 |     // Zoom to region if selected
+  95 |     if (selectedRegion) {
+> 96 |       zoomToRegion(selectedRegion, svgElement);
+     |       ^^^^^^^^^^^^ `zoomToRegion` accessed before it is declared
+  97 |     } else {
+  98 |       resetZoom(svgElement);
+  99 |     }
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:134:3
+  132 |   };
+  133 |
+> 134 |   const zoomToRegion = (region: Region, svg: SVGSVGElement) => {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 135 |     // Calculate bbox of the region
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 136 |     let minX = Infinity,
+      窶ｦ
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 159 |     }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 160 |   };
+      | ^^^^^ `zoomToRegion` is declared here
+  161 |
+  162 |   const resetZoom = (svg: SVGSVGElement) => {
+  163 |     // Assuming original viewBox is somewhere in the SVG string or we can infer roughly                                                               react-hooks/immutability
+   98:7   error    Error: Cannot access variable before it is declared
+
+`resetZoom` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:98:7
+   96 |       zoomToRegion(selectedRegion, svgElement);
+   97 |     } else {
+>  98 |       resetZoom(svgElement);
+      |       ^^^^^^^^^ `resetZoom` accessed before it is declared
+   99 |     }
+  100 |   }, [svgContent, regions, selectedRegion]);
+  101 |
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\AreaSearch\JapanMap.tsx:162:3
+  160 |   };
+  161 |
+> 162 |   const resetZoom = (svg: SVGSVGElement) => {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 163 |     // Assuming original viewBox is somewhere in the SVG string or we can infer roughly
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 164 |     // map-mobile.svg usually covers whole Japan.
+      窶ｦ
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 181 |     }
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 182 |   };
+      | ^^^^^ `resetZoom` is declared here
+  183 |
+  184 |   return (
+  185 |     <div  react-hooks/immutability
+  100:6   warning  React Hook useEffect has missing dependencies: 'handlePrefClick' and 'resetZoom'. Either include them or remove the dependency array                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  react-hooks/exhaustive-deps
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\JapanMap.tsx
+  120:3   warning  'onPrefectureClick' is defined but never used  @typescript-eslint/no-unused-vars
+  282:50  warning  'index' is defined but never used              @typescript-eslint/no-unused-vars
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\components\JobCard.tsx
+  53:11  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\AdminDashboard.tsx
+   45:5   error    Error: Cannot access variable before it is declared
+
+`fetchData` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\AdminDashboard.tsx:45:5
+  43 |
+  44 |   useEffect(() => {
+> 45 |     fetchData();
+     |     ^^^^^^^^^ `fetchData` accessed before it is declared
+  46 |   }, []);
+  47 |
+  48 |   const fetchData = async () => {
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\AdminDashboard.tsx:48:3
+  46 |   }, []);
+  47 |
+> 48 |   const fetchData = async () => {
+     |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 49 |     setLoading(true);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 50 |     const [allJobs, allEmployers, allUsers, allArticles] = await Promise.all([
+     窶ｦ
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 61 |     setLoading(false);
+     | ^^^^^^^^^^^^^^^^^^^^^
+> 62 |   };
+     | ^^^^^ `fetchData` is declared here
+  63 |
+  64 |   // Job & Employer Actions
+  65 |   const handleApproveJob = async (jobId: string) => {  react-hooks/immutability
+   95:14  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  142:11  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-explicit-any
+  147:28  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     @typescript-eslint/no-explicit-any
+  375:25  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @next/next/no-img-element
+  715:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      @next/next/no-img-element
+  715:23  warning  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    jsx-a11y/alt-text
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\EmployerDashboard.tsx
+   88:14  warning  'error' is defined but never used         @typescript-eslint/no-unused-vars
+  154:57  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\HomePage.tsx
+    73:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   250:9   warning  'handleRegionSelect' is assigned a value but never used                                                                                                                                                                                                                                  @typescript-eslint/no-unused-vars
+   259:9   warning  'handlePrefectureSelect' is assigned a value but never used                                                                                                                                                                                                                              @typescript-eslint/no-unused-vars
+   264:39  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   270:9   warning  'handleMunicipalitySelect' is assigned a value but never used                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+   274:11  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   283:39  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+   528:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+   719:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+   934:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+  1083:23  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\JobDetailPage.tsx
+  150:21  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\JobListPage.tsx
+  348:62  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  363:60  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\MyProfilePage.tsx
+  178:53  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\pages\PrefSearchPage.tsx
+   18:38  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                 @typescript-eslint/no-explicit-any
+  117:19  warning  Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` or a custom image loader to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\apply_color_slots.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\apply_color_slots_v2.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\calc_region_centers.js
+  1:12  error    A `require()` style import is forbidden       @typescript-eslint/no-require-imports
+  2:7   warning  'path' is assigned a value but never used     @typescript-eslint/no-unused-vars
+  2:14  error    A `require()` style import is forbidden       @typescript-eslint/no-require-imports
+  5:7   warning  'content' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\extract_detailed_paths.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\extract_pref_bboxes.js
+  1:12  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+  2:7   warning  'path' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  2:14  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\fetch_data.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\generate_exhaustive_data.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\generate_municipalities.js
+  1:12  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+  2:7   warning  'path' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  2:14  error    A `require()` style import is forbidden    @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\inspect_csv.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\inspect_svg.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\merge_municipalities.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\process_locations.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+  2:14  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\scripts\update_map_data_bboxes.js
+  1:12  error  A `require()` style import is forbidden  @typescript-eslint/no-require-imports
+
+C:\Users\nabe7\Documents\Projects\Projects\yoru-otoko-navi\services\jobService.ts
+  142:33  error    A `require()` style import is forbidden   @typescript-eslint/no-require-imports
+  147:13  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  171:15  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  433:5   warning  'userId' is defined but never used        @typescript-eslint/no-unused-vars
+
+笨・66 problems (42 errors, 24 warnings)
+

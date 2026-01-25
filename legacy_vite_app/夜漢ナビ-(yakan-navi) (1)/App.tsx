@@ -69,7 +69,7 @@ const App: React.FC = () => {
         <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white/90 backdrop-blur-md border-t border-slate-200 h-16 flex items-center justify-around px-2 z-[55] shadow-[0_-5px_15px_rgba(0,0,0,0.05)]">
           <NavLink
             to="/"
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               `flex flex-col items-center gap-1 transition-colors ${isActive ? "text-indigo-600" : "text-slate-400"}`
             }
           >
@@ -80,7 +80,7 @@ const App: React.FC = () => {
           </NavLink>
           <NavLink
             to="/search"
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               `flex flex-col items-center gap-1 transition-colors ${isActive ? "text-indigo-600" : "text-slate-400"}`
             }
           >
@@ -91,7 +91,7 @@ const App: React.FC = () => {
           </NavLink>
           <NavLink
             to="/features"
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               `flex flex-col items-center gap-1 transition-colors ${isActive ? "text-indigo-600" : "text-slate-400"}`
             }
           >
@@ -102,7 +102,7 @@ const App: React.FC = () => {
           </NavLink>
           <NavLink
             to="/faq"
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               `flex flex-col items-center gap-1 transition-colors ${isActive ? "text-indigo-600" : "text-slate-400"}`
             }
           >
@@ -113,7 +113,7 @@ const App: React.FC = () => {
           </NavLink>
           <NavLink
             to="/member"
-            className={({ isActive }) =>
+            className={({ isActive }: { isActive: boolean }) =>
               `flex flex-col items-center gap-1 transition-colors ${isActive ? "text-indigo-600" : "text-slate-400"}`
             }
           >

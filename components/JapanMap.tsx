@@ -182,18 +182,19 @@ const JapanMap: React.FC<JapanMapProps> = ({
   }
 
   return (
-    <div className="relative w-full bg-slate-900 border border-slate-800 rounded-[2.5rem] overflow-hidden shadow-2xl p-6 md:p-8 transition-all duration-700 h-[600px] flex flex-col group/map">
+    <div className="relative w-full bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-xl p-6 md:p-8 transition-all duration-700 h-[600px] flex flex-col group/map">
       {/* Background Grid Pattern */}
-      <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:24px_24px]"></div>
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
+      {/* Header Section */}
       {/* Header Section */}
       <div className="relative z-10 mb-8 flex flex-wrap items-start gap-4 md:gap-6 pr-16 md:pr-20">
         <div>
           <div className="flex items-center gap-3 mb-2">
             <div
-              className={`w-2 h-8 rounded-full transition-all duration-500 shadow-lg ${currentRegionData ? currentRegionData.color.replace("fill-", "bg-").replace("/80", "") : "bg-amber-500 shadow-amber-500/20"}`}
+              className={`w-2 h-8 rounded-full transition-all duration-500 shadow-lg ${currentRegionData ? currentRegionData.color.replace("fill-", "bg-").replace("/80", "") : "bg-cyan-500 shadow-cyan-500/20"}`}
             ></div>
-            <h3 className="text-xl md:text-2xl font-black text-white tracking-tight">
+            <h3 className="text-xl md:text-2xl font-black text-slate-800 tracking-tight">
               {view === "national"
                 ? "エリアから探す"
                 : view === "regional"
@@ -201,7 +202,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
                   : `${activePref}のエリア`}
             </h3>
           </div>
-          <p className="text-xs md:text-sm text-slate-400 font-medium max-w-md">
+          <p className="text-xs md:text-sm text-slate-500 font-medium max-w-md">
             {view === "national"
               ? "日本地図から希望の地方をタップしてください"
               : view === "regional"
@@ -218,7 +219,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
                   ? onRegionSelect?.(activeRegion!)
                   : onPrefectureSelect?.(activePref!)
               }
-              className="group/search-btn flex items-center gap-2 px-3 md:px-5 py-2.5 rounded-2xl border border-amber-500/30 bg-amber-500/10 backdrop-blur-xl text-amber-400 font-black text-[10px] md:text-sm tracking-tight md:tracking-widest shadow-lg hover:bg-amber-400 hover:text-slate-900 active:scale-95 transition-all"
+              className="group/search-btn flex items-center gap-2 px-3 md:px-5 py-2.5 rounded-2xl border border-cyan-500/30 bg-cyan-500/10 backdrop-blur-xl text-cyan-600 font-black text-[10px] md:text-sm tracking-tight md:tracking-widest shadow-lg hover:bg-cyan-500 hover:text-white active:scale-95 transition-all"
             >
               <Navigation2
                 size={14}
@@ -234,7 +235,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
             <button
               onClick={handleBack}
-              className="flex items-center gap-2 text-[10px] md:text-xs font-black text-slate-300 hover:text-white transition-all bg-white/5 hover:bg-white/10 px-3 md:px-4 py-2.5 rounded-2xl border border-white/10 active:scale-95 shrink-0"
+              className="flex items-center gap-2 text-[10px] md:text-xs font-black text-slate-500 hover:text-slate-800 transition-all bg-white border border-slate-200 hover:bg-slate-50 px-3 md:px-4 py-2.5 rounded-2xl active:scale-95 shrink-0 shadow-sm"
             >
               <ChevronLeft size={16} />
               <span className="hidden sm:inline">戻る</span>
@@ -387,10 +388,10 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
         {/* Municipal View (Side List) */}
         <div
-          className={`h-full border-l border-white/5 bg-white/[0.02] backdrop-blur-sm transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-6 
+          className={`h-full border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-6 
             ${view === "municipal" ? "w-[60%] opacity-100 translate-x-0" : "w-0 opacity-0 translate-x-32 pointer-events-none"}`}
         >
-          <div className="flex items-center gap-4 p-4 bg-white/5 rounded-3xl mb-6 border border-white/10 backdrop-blur-sm shadow-xl">
+          <div className="flex items-center gap-4 p-4 bg-white/50 rounded-3xl mb-6 border border-slate-100 backdrop-blur-sm shadow-sm">
             <div
               className={`p-3 rounded-2xl shadow-lg ${currentRegionData?.color.replace("fill-", "bg-").replace("/80", "")}`}
             >
@@ -400,18 +401,18 @@ const JapanMap: React.FC<JapanMapProps> = ({
               <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
                 SELECTED PREFECTURE
               </span>
-              <p className="text-lg font-black text-white leading-tight">
+              <p className="text-lg font-black text-slate-800 leading-tight">
                 {activePref}
               </p>
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-white/10 scrollbar-track-transparent">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
             {municipalities.map((muni, index: number) => (
               <button
                 key={muni}
                 onClick={() => onMunicipalitySelect?.(activePref!, muni)}
-                className="flex items-center gap-2 p-1.5 md:p-3 bg-white/5 border border-white/5 rounded-xl md:rounded-2xl text-left hover:bg-indigo-600/20 hover:border-indigo-500/50 transition-all group active:scale-[0.97] animate-nurutto overflow-hidden"
+                className="flex items-center gap-2 p-1.5 md:p-3 bg-white border border-slate-100 rounded-xl md:rounded-2xl text-left hover:bg-cyan-50 hover:border-cyan-200 transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md"
                 style={
                   {
                     "--delay": index * 30,
@@ -419,13 +420,13 @@ const JapanMap: React.FC<JapanMapProps> = ({
                   } as React.CSSProperties
                 }
               >
-                <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-slate-700 group-hover:bg-amber-400 transition-all group-hover:scale-125 shrink-0"></div>
-                <span className="text-[13px] md:text-sm font-bold text-slate-300 group-hover:text-white transition-colors whitespace-nowrap">
+                <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-slate-300 group-hover:bg-cyan-500 transition-all group-hover:scale-125 shrink-0"></div>
+                <span className="text-[13px] md:text-sm font-bold text-slate-600 group-hover:text-cyan-700 transition-colors whitespace-nowrap">
                   {muni}
                 </span>
                 <Navigation2
                   size={10}
-                  className="ml-auto opacity-0 group-hover:opacity-100 text-indigo-400 -rotate-45 transition-all shrink-0 hidden sm:block"
+                  className="ml-auto opacity-0 group-hover:opacity-100 text-cyan-400 -rotate-45 transition-all shrink-0 hidden sm:block"
                 />
               </button>
             ))}
@@ -435,16 +436,16 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
       {/* Footer Instructions */}
       <div className="mt-8 flex items-center justify-center shrink-0">
-        <div className="flex items-center gap-3 px-6 py-2 bg-slate-950/50 rounded-full border border-white/5 backdrop-blur-md">
+        <div className="flex items-center gap-3 px-6 py-2 bg-white/80 rounded-full border border-slate-200 backdrop-blur-md shadow-sm">
           <div className="flex gap-1">
             <div
-              className={`w-1.5 h-1.5 rounded-full ${view === "national" ? "bg-amber-400 animate-pulse" : "bg-slate-700"}`}
+              className={`w-1.5 h-1.5 rounded-full ${view === "national" ? "bg-amber-400 animate-pulse" : "bg-slate-300"}`}
             ></div>
             <div
-              className={`w-1.5 h-1.5 rounded-full ${view === "regional" ? "bg-indigo-400 animate-pulse" : "bg-slate-700"}`}
+              className={`w-1.5 h-1.5 rounded-full ${view === "regional" ? "bg-cyan-400 animate-pulse" : "bg-slate-300"}`}
             ></div>
             <div
-              className={`w-1.5 h-1.5 rounded-full ${view === "municipal" ? "bg-emerald-400 animate-pulse" : "bg-slate-700"}`}
+              className={`w-1.5 h-1.5 rounded-full ${view === "municipal" ? "bg-emerald-400 animate-pulse" : "bg-slate-300"}`}
             ></div>
           </div>
           <span className="text-[10px] md:text-xs font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">

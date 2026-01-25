@@ -87,18 +87,18 @@ const SearchSection: React.FC<SearchSectionProps> = ({
   onAccordionToggle,
 }) => {
   return (
-    <div className="bg-slate-900 rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-slate-900/40 text-white relative overflow-hidden border border-white/10">
-      <div className="absolute -top-24 -right-24 w-64 h-64 bg-amber-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <div className="bg-white rounded-[2.5rem] p-6 md:p-10 shadow-2xl shadow-cyan-900/10 text-slate-800 relative overflow-hidden border border-slate-100">
+      <div className="absolute -top-24 -right-24 w-64 h-64 bg-cyan-100/50 rounded-full blur-[100px] pointer-events-none"></div>
       <div className="relative z-10 flex flex-col">
         <div className="flex flex-col md:flex-row gap-3">
           <div className="relative group flex-grow">
-            <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-amber-400 transition-colors">
+            <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none text-slate-400 group-focus-within:text-cyan-500 transition-colors">
               <Search size={22} />
             </div>
             <input
               type="text"
               placeholder="エリア・キーワードを入力（例：新宿 日払い 30代）"
-              className="w-full bg-white/5 border-2 border-white/10 hover:border-white/20 focus:border-amber-500/50 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-white placeholder:text-white/30 focus:outline-none focus:ring-4 focus:ring-amber-500/10 transition-all"
+              className="w-full bg-slate-50 border-2 border-slate-200 hover:border-cyan-200 focus:border-cyan-500 rounded-2xl py-5 pl-14 pr-6 text-base font-bold text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-4 focus:ring-cyan-500/10 transition-all shadow-inner"
               value={keyword}
               onChange={(e) => onKeywordChange(e.target.value)}
             />
@@ -108,8 +108,8 @@ const SearchSection: React.FC<SearchSectionProps> = ({
               onClick={onAccordionToggle}
               className={`flex items-center justify-center gap-2 px-6 py-5 rounded-2xl font-black transition-all active:scale-95 whitespace-nowrap ${
                 isAccordionOpen
-                  ? "bg-amber-500 text-slate-900 shadow-lg shadow-amber-500/20"
-                  : "bg-white/10 text-white border border-white/10 hover:bg-white/20"
+                  ? "bg-cyan-500 text-white shadow-lg shadow-cyan-500/30"
+                  : "bg-slate-100 text-slate-600 border border-slate-200 hover:bg-slate-200"
               }`}
             >
               <ListFilter size={20} />
@@ -135,15 +135,15 @@ const SearchSection: React.FC<SearchSectionProps> = ({
                   key={idx}
                   className={`flex-shrink-0 px-5 py-2.5 transition-all active:scale-95 rounded-full text-xs font-black border ${
                     activeFilters.tags.includes(tag)
-                      ? "bg-amber-500 text-slate-900 border-amber-500 shadow-lg shadow-amber-500/20"
-                      : "bg-white/10 text-white border-white/10 hover:bg-white/20"
+                      ? "bg-cyan-500 text-white border-cyan-500 shadow-lg shadow-cyan-500/20"
+                      : "bg-slate-50 text-slate-600 border-slate-200 hover:bg-white hover:border-cyan-300"
                   }`}
                   onClick={() => onFilterToggle("tags", tag)}
                 >
                   {tag}
                 </button>
               ))}
-              <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-white/5 border border-white/10 rounded-full hover:bg-white/20 transition-all">
+              <button className="flex-shrink-0 w-10 h-10 flex items-center justify-center bg-slate-50 border border-slate-200 rounded-full hover:bg-white transition-all text-slate-400">
                 <ChevronRight size={18} />
               </button>
             </div>
@@ -151,45 +151,45 @@ const SearchSection: React.FC<SearchSectionProps> = ({
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             <button
               onClick={onMapOpen}
-              className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-amber-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+              className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-cyan-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
             >
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-amber-500 group-hover:scale-110 transition-transform shadow-inner">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-cyan-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                 <MapPin size={26} strokeWidth={2.5} />
               </div>
-              <span className="text-[11px] md:text-xs font-black tracking-tighter">
+              <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                 エリアで探す
               </span>
             </button>
             <button
               onClick={onJobTypeOpen}
-              className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-indigo-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+              className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-indigo-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
             >
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform shadow-inner">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-indigo-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                 <Briefcase size={26} strokeWidth={2.5} />
               </div>
-              <span className="text-[11px] md:text-xs font-black tracking-tighter">
+              <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                 職種で探す
               </span>
             </button>
             <button
               onClick={onSalaryOpen}
-              className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-emerald-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+              className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-emerald-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
             >
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform shadow-inner">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-emerald-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                 <Wallet size={26} strokeWidth={2.5} />
               </div>
-              <span className="text-[11px] md:text-xs font-black tracking-tighter">
+              <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                 給与で探す
               </span>
             </button>
             <button
               onClick={onWorkStyleOpen}
-              className="flex flex-col items-center justify-center gap-3 p-5 bg-white/5 border border-white/5 hover:border-blue-500/50 hover:bg-white/10 rounded-2xl transition-all group active:scale-95"
+              className="flex flex-col items-center justify-center gap-3 p-5 bg-slate-50 border border-slate-200 hover:border-blue-500 hover:bg-white rounded-2xl transition-all group active:scale-95 shadow-sm"
             >
-              <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform shadow-inner">
+              <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform shadow-md border border-slate-100">
                 <Layers size={26} strokeWidth={2.5} />
               </div>
-              <span className="text-[11px] md:text-xs font-black tracking-tighter">
+              <span className="text-[11px] md:text-xs font-black tracking-tighter text-slate-700">
                 働き方で探す
               </span>
             </button>
@@ -216,17 +216,17 @@ const SearchSection: React.FC<SearchSectionProps> = ({
                   <button
                     key={`${key}-${value}`}
                     onClick={() => onFilterToggle(key, value)}
-                    className="flex items-center gap-2 px-3 py-1.5 bg-white/10 hover:bg-white/20 border border-white/10 rounded-lg text-[10px] md:text-xs font-bold text-white transition-all group active:scale-95"
+                    className="flex items-center gap-2 px-3 py-1.5 bg-indigo-50 hover:bg-indigo-100 border border-indigo-100 rounded-xl text-[10px] md:text-xs font-black text-indigo-700 transition-all group active:scale-95"
                   >
                     <LucideIcon
                       name={icons[key] || "Search"}
-                      className="text-amber-500"
+                      className="text-indigo-500"
                       size={12}
                     />
                     {value}
                     <X
                       size={12}
-                      className="text-slate-500 group-hover:text-red-400"
+                      className="text-indigo-300 group-hover:text-red-500 transition-colors"
                     />
                   </button>
                 ));
@@ -236,22 +236,22 @@ const SearchSection: React.FC<SearchSectionProps> = ({
         )}
 
         <button
-          className={`w-full gradient-gold hover:brightness-110 text-slate-900 font-black py-5 rounded-2xl shadow-2xl shadow-amber-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3 ${isAccordionOpen ? "mt-8" : "mt-0"}`}
+          className={`w-full gradient-cyan hover:brightness-110 text-white font-black py-5 rounded-2xl shadow-2xl shadow-cyan-500/30 transition-all active:scale-[0.98] text-lg flex items-center justify-center gap-3 ${isAccordionOpen ? "mt-8" : "mt-0"}`}
           onClick={onSearch}
         >
           <Search size={24} />
           この条件で検索する
         </button>
-        <div className="flex items-center justify-between pt-2 border-t border-white/5">
+        <div className="flex items-center justify-between pt-2 border-t border-slate-200 mt-4">
           <div className="flex items-center gap-2 text-[10px] md:text-xs text-slate-500 font-bold">
             <History size={14} />
             <span>最近検索した条件：</span>
-            <button className="text-slate-300 hover:text-amber-400 transition-colors underline decoration-slate-600">
+            <button className="text-slate-400 hover:text-cyan-500 transition-colors underline decoration-slate-300">
               新宿 / バンスあり...
             </button>
           </div>
-          <span className="text-[10px] text-slate-700 font-black tracking-widest uppercase">
-            YAKAN NAVI UX
+          <span className="text-[10px] text-slate-400 font-black tracking-widest uppercase">
+            YORUO NAVI UX
           </span>
         </div>
       </div>
