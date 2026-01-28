@@ -139,7 +139,7 @@ const CityModal: React.FC<CityModalProps> = ({
                   <button
                     key={city.id}
                     onClick={() => onCitySelect(city)}
-                    className="w-full py-4 px-2 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition group"
+                    className="w-full py-8 px-4 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition group"
                   >
                     <span className="font-bold text-slate-700 text-lg group-hover:text-indigo-600 transition">
                       {city.name}
