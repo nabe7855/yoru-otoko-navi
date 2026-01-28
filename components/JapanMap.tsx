@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronLeft, Landmark, Navigation2 } from "lucide-react";
+import { ChevronLeft, Navigation2 } from "lucide-react";
 import React, { useState } from "react";
 import { DEFAULT_MUNICIPALITIES, MUNICIPALITIES_DATA } from "../constants";
 import { Region } from "../types";
@@ -391,22 +391,6 @@ const JapanMap: React.FC<JapanMapProps> = ({
           className={`h-full border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-6 
             ${view === "municipal" ? "w-[60%] opacity-100 translate-x-0" : "w-0 opacity-0 translate-x-32 pointer-events-none"}`}
         >
-          <div className="flex items-center gap-4 p-4 bg-white/50 rounded-3xl mb-6 border border-slate-100 backdrop-blur-sm shadow-sm">
-            <div
-              className={`p-3 rounded-2xl shadow-lg ${currentRegionData?.color.replace("fill-", "bg-").replace("/80", "")}`}
-            >
-              <Landmark size={24} className="text-white" />
-            </div>
-            <div>
-              <span className="text-[10px] text-slate-400 font-black uppercase tracking-[0.2em]">
-                SELECTED PREFECTURE
-              </span>
-              <p className="text-lg font-black text-slate-800 leading-tight">
-                {activePref}
-              </p>
-            </div>
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
             {municipalities.map((muni, index: number) => (
               <button
