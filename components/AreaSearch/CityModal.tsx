@@ -120,7 +120,7 @@ const CityModal: React.FC<CityModalProps> = ({
                     <button
                       key={city.id}
                       onClick={() => onCitySelect(city)}
-                      className="px-4 py-3 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-xl font-bold text-indigo-700 text-sm hover:shadow-md transition text-left"
+                      className="px-4 py-8 bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 rounded-xl font-bold text-indigo-700 text-sm hover:shadow-md transition text-left"
                     >
                       {city.name}
                     </button>
@@ -139,7 +139,7 @@ const CityModal: React.FC<CityModalProps> = ({
                   <button
                     key={city.id}
                     onClick={() => onCitySelect(city)}
-                    className="w-full py-8 px-4 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition group"
+                    className="w-full py-4 px-2 flex justify-between items-center hover:bg-slate-50 active:bg-slate-100 transition group"
                   >
                     <span className="font-bold text-slate-700 text-lg group-hover:text-indigo-600 transition">
                       {city.name}

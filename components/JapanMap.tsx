@@ -165,7 +165,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
       DEFAULT_MUNICIPALITIES
     : [];
 
-  const nationalViewBox = "0 0 1000 1000";
+  const nationalViewBox = "150 50 750 750";
   let currentViewBox = nationalViewBox;
 
   if (view === "municipal" && activePrefData) {
@@ -412,7 +412,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
               <button
                 key={muni}
                 onClick={() => onMunicipalitySelect?.(activePref!, muni)}
-                className="flex items-center gap-2 p-1.5 md:p-3 bg-white border border-slate-100 rounded-xl md:rounded-2xl text-left hover:bg-cyan-50 hover:border-cyan-200 transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md"
+                className="flex items-center gap-2 p-5 md:p-9 bg-white border border-slate-100 rounded-xl md:rounded-2xl text-left hover:bg-cyan-50 hover:border-cyan-200 transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md"
                 style={
                   {
                     "--delay": index * 30,

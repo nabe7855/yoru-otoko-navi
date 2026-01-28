@@ -79,10 +79,14 @@ const JapanMap: React.FC<JapanMapProps> = ({
   };
 
   const resetZoom = (svg: SVGSVGElement) => {
-    // デフォルトの1000x1000だと余白が多いため、少しズームした状態をデフォルトにする
-    // 日本全体が入るように調整 (150, 50, 750, 750) 程度が程よいズーム感
-    const landlockedVB = "150 50 750 750";
-    svg.setAttribute("viewBox", landlockedVB);
+    // Assuming original viewBox is somewhere in the SVG string or we can infer roughly
+    // map-mobile.svg usually covers whole Japan.
+    const parser = new DOMParser();
+    const doc = parser.parseFromString(svgContent, "image/svg+xml");
+    const originalVB = doc.documentElement.getAttribute("viewBox");
+    if (originalVB) {
+      svg.setAttribute("viewBox", originalVB);
+    }
   };
 
   useEffect(() => {
