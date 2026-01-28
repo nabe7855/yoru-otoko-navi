@@ -268,7 +268,10 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
     setIsMapOpen(false);
   };
 
-  const handleMunicipalitySelect = (prefNameOrSlug: string, muni: string) => {
+  const handleMunicipalitiesSelect = (
+    prefNameOrSlug: string,
+    munis: string[],
+  ) => {
     // JapanMap passes prefecture name (e.g., "長野県"), not slug
     const allPrefs = LocationService.getAllPrefectures();
     const pref = allPrefs.find(
@@ -284,7 +287,12 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
       const region = regions.find((r: any) => r.prefs.includes(pref.code));
       if (region) addFilter("regions", region.name);
     }
-    addFilter("cities", muni);
+    // Add all selected cities
+    setActiveFilters((prev) => {
+      const currentCities = prev.cities;
+      const newCities = Array.from(new Set([...currentCities, ...munis]));
+      return { ...prev, cities: newCities };
+    });
     setIsMapOpen(false);
   };
 
@@ -346,7 +354,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
             <JapanMap
               onRegionSelect={handleRegionSelect}
               onPrefectureSelect={handlePrefectureSelect}
-              onMunicipalitySelect={handleMunicipalitySelect}
+              onMunicipalitiesSelect={handleMunicipalitiesSelect}
             />
           </div>
         </div>

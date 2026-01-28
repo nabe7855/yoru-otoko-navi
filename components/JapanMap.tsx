@@ -9,7 +9,7 @@ import { DETAILED_MAP_DATA } from "./MapData";
 interface JapanMapProps {
   onRegionSelect?: (region: Region) => void; // Optional to keep backward compatibility
   onPrefectureSelect?: (pref: string) => void;
-  onMunicipalitySelect?: (pref: string, muni: string) => void;
+  onMunicipalitiesSelect?: (pref: string, munis: string[]) => void;
   onPrefectureClick?: (prefName: string) => void; // Existing prop in current system
 }
 
@@ -116,7 +116,7 @@ const REGION_MAP_DATA: RegionPathData[] = [
 const JapanMap: React.FC<JapanMapProps> = ({
   onRegionSelect,
   onPrefectureSelect,
-  onMunicipalitySelect,
+  onMunicipalitiesSelect,
   onPrefectureClick,
 }) => {
   const [view, setView] = useState<"national" | "regional" | "municipal">(
@@ -125,6 +125,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
   const [activeRegion, setActiveRegion] = useState<Region | null>(null);
   const [activePref, setActivePref] = useState<string | null>(null);
   const [hoveredRegion, setHoveredRegion] = useState<Region | null>(null);
+  const [selectedMunis, setSelectedMunis] = useState<string[]>([]);
 
   const handleRegionClick = (regionId: Region) => {
     setActiveRegion(regionId);
@@ -139,13 +140,20 @@ const JapanMap: React.FC<JapanMapProps> = ({
   };
 
   const handleBack = () => {
-    setActivePref(null);
     if (view === "municipal") {
       setView("regional");
+      setSelectedMunis([]);
     } else {
       setView("national");
       setActiveRegion(null);
+      setActivePref(null);
     }
+  };
+
+  const toggleMuni = (muni: string) => {
+    setSelectedMunis((prev) =>
+      prev.includes(muni) ? prev.filter((m) => m !== muni) : [...prev, muni],
+    );
   };
 
   const currentRegionData = activeRegion
@@ -392,28 +400,57 @@ const JapanMap: React.FC<JapanMapProps> = ({
             ${view === "municipal" ? "w-[60%] opacity-100 translate-x-0" : "w-0 opacity-0 translate-x-32 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
-            {municipalities.map((muni, index: number) => (
-              <button
-                key={muni}
-                onClick={() => onMunicipalitySelect?.(activePref!, muni)}
-                className="flex items-center gap-2 p-5 md:p-9 bg-white border border-slate-100 rounded-xl md:rounded-2xl text-left hover:bg-cyan-50 hover:border-cyan-200 transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md"
-                style={
-                  {
-                    "--delay": index * 30,
-                    animationDelay: `${index * 30}ms`,
-                  } as React.CSSProperties
-                }
-              >
-                <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-slate-300 group-hover:bg-cyan-500 transition-all group-hover:scale-125 shrink-0"></div>
-                <span className="text-[13px] md:text-sm font-bold text-slate-600 group-hover:text-cyan-700 transition-colors whitespace-nowrap">
-                  {muni}
-                </span>
-                <Navigation2
-                  size={10}
-                  className="ml-auto opacity-0 group-hover:opacity-100 text-cyan-400 -rotate-45 transition-all shrink-0 hidden sm:block"
-                />
-              </button>
-            ))}
+            {municipalities.map((muni, index: number) => {
+              const isSelected = selectedMunis.includes(muni);
+              return (
+                <button
+                  key={muni}
+                  onClick={() => toggleMuni(muni)}
+                  className={`flex items-center gap-3 p-5 md:p-9 border rounded-xl md:rounded-2xl text-left transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md ${
+                    isSelected
+                      ? "bg-cyan-500 border-cyan-500 text-white shadow-cyan-200"
+                      : "bg-white border-slate-100 text-slate-600 hover:bg-cyan-50 hover:border-cyan-200"
+                  }`}
+                  style={
+                    {
+                      "--delay": index * 30,
+                      animationDelay: `${index * 30}ms`,
+                    } as React.CSSProperties
+                  }
+                >
+                  <div
+                    className={`shrink-0 w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-all ${
+                      isSelected
+                        ? "bg-white border-white text-cyan-500"
+                        : "bg-slate-50 border-slate-200 group-hover:border-cyan-400"
+                    }`}
+                  >
+                    {isSelected && (
+                      <svg
+                        className="w-4 h-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 13l4 4L19 7"
+                        />
+                      </svg>
+                    )}
+                  </div>
+                  <span
+                    className={`text-[13px] md:text-sm font-bold transition-colors whitespace-nowrap ${
+                      isSelected ? "text-white" : "group-hover:text-cyan-700"
+                    }`}
+                  >
+                    {muni}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>
@@ -437,8 +474,20 @@ const JapanMap: React.FC<JapanMapProps> = ({
               <>マップ上の地方をタップ</>
             ) : view === "regional" ? (
               <>都道府県を選択</>
+            ) : selectedMunis.length > 0 ? (
+              <button
+                onClick={() =>
+                  onMunicipalitiesSelect?.(activePref!, selectedMunis)
+                }
+                className="flex items-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-900 px-4 py-1.5 rounded-full transition-all active:scale-95 shadow-lg shadow-amber-200 animate-in zoom-in-90"
+              >
+                <span>選択した {selectedMunis.length} 件で検索</span>
+                <Navigation2 size={12} fill="currentColor" />
+              </button>
             ) : (
-              <span className="text-amber-400">エリアを決定して検索</span>
+              <span className="text-amber-400 animate-pulse">
+                市区町村を選択してください
+              </span>
             )}
           </span>
         </div>

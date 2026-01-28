@@ -468,11 +468,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
                 router.push(`/jobs?${params.toString()}`);
                 setIsMapOpen(false);
               }}
-              onMunicipalitySelect={(pref, city) => {
-                // Already handled by navigation but let's be safe
-                // Actually map component might handle navigation for municipality?
-                // No, JapanMap usually calls onMunicipalitySelect.
-                // Let's implement this too for consistency
+              onMunicipalitiesSelect={(pref, munis) => {
                 const params = new URLSearchParams();
                 activeFilters.categories.forEach((c) =>
                   params.append("category", c),
@@ -485,7 +481,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
                 if (keyword) params.set("keyword", keyword);
 
                 params.append("pref", pref);
-                params.append("city", city);
+                munis.forEach((m) => params.append("city", m));
 
                 router.push(`/jobs?${params.toString()}`);
                 setIsMapOpen(false);
