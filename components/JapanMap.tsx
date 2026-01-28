@@ -173,7 +173,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
       DEFAULT_MUNICIPALITIES
     : [];
 
-  const nationalViewBox = "150 50 750 750";
+  const nationalViewBox = "0 -100 1100 1150";
   let currentViewBox = nationalViewBox;
 
   if (view === "municipal" && activePrefData) {
