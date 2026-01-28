@@ -173,7 +173,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
       DEFAULT_MUNICIPALITIES
     : [];
 
-  const nationalViewBox = "0 -100 1100 1150";
+  const nationalViewBox = "-15 -85 1120 1160";
   let currentViewBox = nationalViewBox;
 
   if (view === "municipal" && activePrefData) {
@@ -190,7 +190,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
   }
 
   return (
-    <div className="relative w-full bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-xl p-6 md:p-8 transition-all duration-700 h-[600px] flex flex-col group/map">
+    <div className="relative w-full bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-xl p-4 md:p-6 transition-all duration-700 h-[600px] flex flex-col group/map">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
@@ -261,7 +261,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
         >
           <svg
             viewBox={currentViewBox}
-            className="w-full h-full p-4 transition-all duration-[1200ms] cubic-bezier(0.22, 1, 0.36, 1) filter drop-shadow-[0_40px_70px_rgba(0,0,0,0.6)]"
+            className="w-full h-full transition-all duration-[1200ms] cubic-bezier(0.22, 1, 0.36, 1) filter drop-shadow-[0_40px_70px_rgba(0,0,0,0.6)]"
           >
             <defs>
               <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
