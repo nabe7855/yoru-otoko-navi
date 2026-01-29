@@ -396,61 +396,63 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
         {/* Municipal View (Side List) */}
         <div
-          className={`border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
-            ${view === "municipal" ? "h-[55%] md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
+          className={`shrink-0 border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
+            ${view === "municipal" ? "h-[55%] md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 md:h-full w-full md:w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
-            {municipalities.map((muni, index: number) => {
-              const isSelected = selectedMunis.includes(muni);
-              return (
-                <button
-                  key={muni}
-                  onClick={() => toggleMuni(muni)}
-                  className={`flex items-center gap-3 p-4 md:p-9 border rounded-xl md:rounded-2xl text-left transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md ${
-                    isSelected
-                      ? "bg-cyan-500 border-cyan-500 text-white shadow-cyan-200"
-                      : "bg-white border-slate-100 text-slate-600 hover:bg-cyan-50 hover:border-cyan-200"
-                  }`}
-                  style={
-                    {
-                      "--delay": index * 30,
-                      animationDelay: `${index * 30}ms`,
-                    } as React.CSSProperties
-                  }
-                >
-                  <div
-                    className={`shrink-0 w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-all ${
+          <div className="flex-1 min-h-0 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
+              {municipalities.map((muni, index: number) => {
+                const isSelected = selectedMunis.includes(muni);
+                return (
+                  <button
+                    key={muni}
+                    onClick={() => toggleMuni(muni)}
+                    className={`shrink-0 flex items-center gap-3 p-4 md:p-9 border rounded-xl md:rounded-2xl text-left transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md ${
                       isSelected
-                        ? "bg-white border-white text-cyan-500"
-                        : "bg-slate-50 border-slate-200 group-hover:border-cyan-400"
+                        ? "bg-cyan-500 border-cyan-500 text-white shadow-cyan-200"
+                        : "bg-white border-slate-100 text-slate-600 hover:bg-cyan-50 hover:border-cyan-200"
                     }`}
+                    style={
+                      {
+                        "--delay": index * 30,
+                        animationDelay: `${index * 30}ms`,
+                      } as React.CSSProperties
+                    }
                   >
-                    {isSelected && (
-                      <svg
-                        className="w-4 h-4"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M5 13l4 4L19 7"
-                        />
-                      </svg>
-                    )}
-                  </div>
-                  <span
-                    className={`text-[13px] md:text-sm font-bold transition-colors whitespace-nowrap ${
-                      isSelected ? "text-white" : "group-hover:text-cyan-700"
-                    }`}
-                  >
-                    {muni}
-                  </span>
-                </button>
-              );
-            })}
+                    <div
+                      className={`shrink-0 w-6 h-6 rounded-lg border-2 flex items-center justify-center transition-all ${
+                        isSelected
+                          ? "bg-white border-white text-cyan-500"
+                          : "bg-slate-50 border-slate-200 group-hover:border-cyan-400"
+                      }`}
+                    >
+                      {isSelected && (
+                        <svg
+                          className="w-4 h-4"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth="4"
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M5 13l4 4L19 7"
+                          />
+                        </svg>
+                      )}
+                    </div>
+                    <span
+                      className={`text-[13px] md:text-sm font-bold transition-colors whitespace-nowrap ${
+                        isSelected ? "text-white" : "group-hover:text-cyan-700"
+                      }`}
+                    >
+                      {muni}
+                    </span>
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
