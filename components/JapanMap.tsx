@@ -253,11 +253,11 @@ const JapanMap: React.FC<JapanMapProps> = ({
       </div>
 
       {/* Split Main Area */}
-      <div className="relative flex-grow flex overflow-hidden rounded-3xl bg-slate-950/30 border border-white/5">
+      <div className="relative flex-grow flex flex-col md:flex-row overflow-hidden rounded-3xl bg-slate-950/30 border border-white/5 min-h-[450px] md:min-h-0">
         {/* SVG Map Section */}
         <div
-          className={`h-full transition-all duration-[1200ms] cubic-bezier(0.22, 1, 0.36, 1) flex items-center justify-center 
-            ${view === "municipal" ? "w-[40%]" : "w-full"}`}
+          className={`transition-all duration-[1200ms] cubic-bezier(0.22, 1, 0.36, 1) flex items-center justify-center 
+            ${view === "municipal" ? "h-[45%] md:h-full md:w-[40%]" : "h-full w-full"}`}
         >
           <svg
             viewBox={currentViewBox}
@@ -396,8 +396,8 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
         {/* Municipal View (Side List) */}
         <div
-          className={`h-full border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-6 
-            ${view === "municipal" ? "w-[60%] opacity-100 translate-x-0" : "w-0 opacity-0 translate-x-32 pointer-events-none"}`}
+          className={`border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
+            ${view === "municipal" ? "h-[55%] md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
             {municipalities.map((muni, index: number) => {
@@ -406,7 +406,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
                 <button
                   key={muni}
                   onClick={() => toggleMuni(muni)}
-                  className={`flex items-center gap-3 p-5 md:p-9 border rounded-xl md:rounded-2xl text-left transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md ${
+                  className={`flex items-center gap-3 p-4 md:p-9 border rounded-xl md:rounded-2xl text-left transition-all group active:scale-[0.97] animate-nurutto overflow-hidden shadow-sm hover:shadow-md ${
                     isSelected
                       ? "bg-cyan-500 border-cyan-500 text-white shadow-cyan-200"
                       : "bg-white border-slate-100 text-slate-600 hover:bg-cyan-50 hover:border-cyan-200"
