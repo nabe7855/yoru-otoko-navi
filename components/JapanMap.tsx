@@ -399,6 +399,21 @@ const JapanMap: React.FC<JapanMapProps> = ({
           className={`shrink-0 border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
             ${view === "municipal" ? "h-[55%] md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 md:h-full w-full md:w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
         >
+          <div className="flex items-center justify-between mb-4 shrink-0">
+            <span className="text-sm font-black text-slate-800">市区町村を選択</span>
+            <button
+              onClick={() => {
+                if (selectedMunis.length === municipalities.length) {
+                  setSelectedMunis([]);
+                } else {
+                  setSelectedMunis([...municipalities]);
+                }
+              }}
+              className="text-[10px] md:text-xs font-black px-3 py-1.5 rounded-lg border border-slate-200 hover:border-cyan-500 hover:text-cyan-600 transition-all bg-white shadow-sm active:scale-95"
+            >
+              {selectedMunis.length === municipalities.length ? "すべて解除" : "すべて選択"}
+            </button>
+          </div>
           <div className="flex-1 min-h-0 w-full overflow-y-auto pr-1 scrollbar-thin scrollbar-thumb-slate-200 scrollbar-track-transparent">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-2 pb-4">
               {municipalities.map((muni, index: number) => {

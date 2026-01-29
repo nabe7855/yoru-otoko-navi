@@ -186,7 +186,7 @@ const AdminDashboard: React.FC = () => {
 
       {/* Sidebar */}
       <aside
-        className={`fixed md:static inset-y-0 left-0 w-72 bg-slate-900 z-30 transform transition-transform duration-300 md:transform-none flex flex-col ${
+        className={`fixed md:static inset-y-0 left-0 w-72 bg-slate-900 z-30 transition-transform duration-300 md:translate-x-0 flex flex-col ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
