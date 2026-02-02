@@ -347,7 +347,7 @@ const HomePage: React.FC<HomePageProps> = ({ onSearch }) => {
           <div className="relative w-full max-w-5xl max-h-[90vh] overflow-hidden rounded-[2.5rem] shadow-2xl border border-white/10 animate-map-entrance">
             <button
               onClick={() => setIsMapOpen(false)}
-              className="absolute top-6 right-6 z-[110] w-12 h-12 rounded-full bg-white/10 hover:bg-white/20 text-white flex items-center justify-center transition-all active:scale-90"
+              className="absolute top-6 right-6 z-[110] w-12 h-12 rounded-full bg-white border border-slate-200 text-slate-800 shadow-xl hover:bg-slate-50 flex items-center justify-center transition-all active:scale-90"
             >
               <X size={24} />
             </button>

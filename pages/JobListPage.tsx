@@ -489,9 +489,9 @@ const JobListPage: React.FC<JobListPageProps> = ({
             />
             <button
               onClick={() => setIsMapOpen(false)}
-              className="absolute top-4 right-4 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-slate-100 transition"
+              className="absolute top-6 right-6 z-[110] w-12 h-12 bg-white border border-slate-200 rounded-full flex items-center justify-center shadow-xl hover:bg-slate-50 text-slate-800 transition-all active:scale-90"
             >
-              <X size={20} />
+              <X size={24} />
             </button>
           </div>
         </div>
