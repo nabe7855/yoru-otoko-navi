@@ -190,7 +190,7 @@ const JapanMap: React.FC<JapanMapProps> = ({
   }
 
   return (
-    <div className="relative w-full bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-xl p-4 md:p-6 transition-all duration-700 h-[600px] flex flex-col group/map">
+    <div className="relative w-full bg-slate-50 border border-slate-200 rounded-[2.5rem] overflow-hidden shadow-xl p-4 md:p-6 transition-all duration-700 h-full flex flex-col group/map">
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-[0.05] pointer-events-none bg-[radial-gradient(#0ea5e9_1px,transparent_1px)] [background-size:24px_24px]"></div>
 
@@ -253,11 +253,11 @@ const JapanMap: React.FC<JapanMapProps> = ({
       </div>
 
       {/* Split Main Area */}
-      <div className="relative flex-grow flex flex-col md:flex-row overflow-hidden rounded-3xl bg-slate-950/30 border border-white/5 min-h-[450px] md:min-h-0">
+      <div className="relative flex-grow flex flex-col md:flex-row overflow-hidden rounded-3xl bg-slate-950/30 border border-white/5 min-h-0">
         {/* SVG Map Section */}
         <div
           className={`transition-all duration-[1200ms] cubic-bezier(0.22, 1, 0.36, 1) flex items-center justify-center 
-            ${view === "municipal" ? "h-[45%] md:h-full md:w-[40%]" : "h-full w-full"}`}
+            ${view === "municipal" ? "h-[250px] md:h-full md:w-[40%]" : "h-full w-full"}`}
         >
           <svg
             viewBox={currentViewBox}
@@ -396,8 +396,8 @@ const JapanMap: React.FC<JapanMapProps> = ({
 
         {/* Municipal View (Side List) */}
         <div
-          className={`shrink-0 border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
-            ${view === "municipal" ? "h-[55%] md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 md:h-full w-full md:w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
+          className={`shrink-0 md:shrink border-t md:border-t-0 md:border-l border-slate-200 bg-white/90 backdrop-blur-md transition-all duration-[1000ms] cubic-bezier(0.22, 1, 0.36, 1) flex flex-col p-4 md:p-6 
+            ${view === "municipal" ? "flex-1 min-h-0 md:h-full md:w-[60%] opacity-100 translate-y-0 md:translate-x-0" : "h-0 md:h-full w-full md:w-0 opacity-0 translate-y-32 md:translate-x-32 pointer-events-none"}`}
         >
           <div className="flex items-center justify-between mb-4 shrink-0">
             <span className="text-sm font-black text-slate-800">

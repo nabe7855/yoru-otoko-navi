@@ -420,7 +420,7 @@ const JobListPage: React.FC<JobListPageProps> = ({
       {/* Modals */}
       {isMapOpen && (
         <div className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4">
-          <div className="w-full max-w-6xl max-h-[90vh] bg-white rounded-3xl overflow-hidden">
+          <div className="w-full max-w-6xl h-[90vh] md:h-[800px] bg-white rounded-3xl overflow-hidden">
             <JapanMap
               onRegionSelect={(region) => {
                 // Determine current params to keep other filters if needed,
